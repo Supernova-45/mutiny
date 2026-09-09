@@ -51,6 +51,14 @@ try {
  await page.mouse.move(box.x+box.width*.5,box.y+box.height*.55);
  await page.mouse.down();await page.mouse.move(box.x+box.width*.58,box.y+box.height*.60,{steps:18});await page.mouse.up();await step();
  assert.notDeepEqual(await right.screenshot(),before,'Right camera must respond to left-view drag');
+ await page.getByRole('button',{name:'Expand 3D',exact:true}).click();
+ assert.ok(await page.locator('.molecular-workspace.expanded').isVisible());
+ const orbitBefore=await right.screenshot();
+ await page.getByRole('button',{name:'Rotate automatically',exact:true}).click();await step(1000);
+ await page.getByRole('button',{name:'Pause rotation',exact:true}).click();
+ assert.notDeepEqual(await right.screenshot(),orbitBefore,'Automatic rotation must update both cameras');
+ await page.keyboard.press('Escape');
+ assert.equal(await page.locator('.molecular-workspace.expanded').count(),0);
  await page.getByRole('button',{name:'Atoms',exact:true}).click();await step(1500);await screen('07-atomic-interface');
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
  await page.setViewportSize({width:390,height:844});await step(1200);await screen('05-mobile-molecule');

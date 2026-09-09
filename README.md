@@ -6,6 +6,8 @@ Explore 232 real vaccine target records from 16 patients, reveal measured T-cell
 
 ![Callback vaccine atlas](outputs/screenshots/02-responses.png)
 
+![Experimental recognition interface](outputs/screenshots/04-receptor.png)
+
 ## Run the app
 
 Node.js 22 is recommended. All displayed results and structures are committed; starting the app needs no model downloads, API keys, account, or GPU.
@@ -28,7 +30,7 @@ npm run build
 - MHCflurry affinity estimates for all 232 published class-I peptide/allele pairs.
 - Matched comparison subset: 188 individually labeled targets, including 22 positives and 166 non-detected responses.
 - Reproducible within-patient shuffling and a central 90% reference envelope from 2,000 orderings.
-- Synchronized molecular cameras, surface/atom views, receptor-bound state switch, residue selection, geometric contacts, and solvent-accessible areas.
+- Synchronized molecular cameras, automatic rotation, an expanded 3D workspace, surface/atom views, receptor-bound state switch, residue selection, geometric contacts, and solvent-accessible areas.
 - Source links, checksum audit, model revision, reference accessions and explicit exclusions.
 
 The ranking interface explores associations. It does not validate a class-I immunogenicity predictor, rank all patient mutations, or predict clinical benefit. The original assay does not assign responding HLA class to every target. All records have both predicted class-I and class-II annotations.

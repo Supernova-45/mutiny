@@ -4,9 +4,10 @@ Built 9 September 2026. Public repository: https://github.com/Supernova-45/callb
 
 ## Delivered
 
+- Minimal-text ivory, charcoal and copper interface, refined using Impeccable’s distill and craft guidance.
 - Interactive React/Vite atlas with all 232 target records across 16 patients.
 - Response reveal, target inspector, ESM/binding orderings on the same eligible targets, and a stable repeated-shuffle reference.
-- Four locally served experimental structures, recovered receptor crystal mates, synchronized 3D cameras, surface/atom views, residue selection, solvent-accessible areas and geometric contacts.
+- Four locally served experimental structures, recovered receptor crystal mates, synchronized 3D cameras, automatic rotation, expanded workspace, surface/atom views, residue selection, solvent-accessible areas and geometric contacts.
 - Frozen scientific scripts, cached versioned inputs, checksums, source attribution and exact model provenance.
 - Portable Rosalind handoff, real app screenshots and a recorded interaction walkthrough.
 
