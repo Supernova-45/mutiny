@@ -1,3 +1,5 @@
 # Rosalind handoff
 
-The complete portable handoff is [outputs/ROSALIND_HANDOFF.md](outputs/ROSALIND_HANDOFF.md). It contains a ready-to-paste instruction for the other account, completed work, exact validation tasks and expected return artifacts.
+Send [outputs/ROSALIND_HANDOFF.md](outputs/ROSALIND_HANDOFF.md) to the other account. It assigns a new structural mechanism analysis, experimental evidence extraction, and a retrospective response-capture dataset.
+
+The proposed interaction and captioned-film build is in [outputs/DEMO_PLAN.md](outputs/DEMO_PLAN.md).

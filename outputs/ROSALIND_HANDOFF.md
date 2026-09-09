@@ -1,67 +1,87 @@
-# Callback — handoff to the Rosalind-enabled account
+# Callback — Rosalind handoff
 
 Repository: https://github.com/Supernova-45/callback
 
-## Paste this instruction into the other account
+Product: **Callback — Cancer vaccine explorer**.
 
-> Continue Callback using this repository. Read README.md, docs/SCIENCE.md and this handoff. The application and both model runs already exist. First inspect the actual Rosalind Workbench plugins available in this account; do not assume a capability. Use supported Rosalind tools to independently validate the published target records and the experimental HHAT structural preparation. Produce reproducible outputs, record the exact plugins and operations used, and capture the actual Workbench workflow. Preserve the scientific scope and all unresolved outcomes. Do not redesign the project, train models, fabricate missing values, or claim work that the tools did not perform.
+## Paste into the Rosalind-enabled account
 
-## Start without Astra
+> Continue Callback from https://github.com/Supernova-45/callback. Read outputs/ROSALIND_HANDOFF.md and docs/SCIENCE.md. Use the actual Rosalind Workbench and connected scientific plugins available in this account to produce the scientific evidence for a new interactive mechanism story: how the HHAT L75F mutation changes the peptide surface encountered by the 302TIL T-cell receptor. The goal is new measured, source-linked artifacts that drive the demo, beyond auditing existing files. First verify available capabilities and report exact plugin names. Independently reconstruct and compare the four experimental HHAT structures; quantify position-6 geometry relative to the HLA scaffold; extract the paper’s experimentally measured receptor-binding and peptide–HLA results without conflating assay types; export mechanism.json, evidence.json, executable analysis, and real Workbench screenshots. Also check a retrospective top-k response-capture dataset for the existing vaccine cohort. Preserve all exclusions and keep the ovarian structural case distinct from the pancreatic vaccine trial. No new model training, simulated molecular trajectories, invented numbers, or app redesign. Return a ZIP or commit for integration in the original account. Complete supported tasks and explicitly mark unsupported ones.
 
-Download the public repository ZIP or clone it. The project is ordinary files and does not depend on the originating chat or model. The web app needs Node.js 22: `npm ci`, then `npm run dev`. All results are precomputed; API keys and model weights are unnecessary for viewing it. If this account cannot run a web server, inspect the data and screenshots and return the scientific artifacts as files for integration in the original account.
+## What this must add
 
-## What is already complete
+The existing app can rotate structures and display scores. The new contribution must answer a biological question with inspectable evidence: **How can changing one part of a tumor peptide change what a T cell recognizes?**
 
-- Audited 232 source records and preserved 23 individual positives / 200 non-detected / seven pool members / two missing outcomes.
-- Retrieved versioned RefSeq/CDS records and strictly verified 197 source contexts.
-- Computed frozen ESM-2 650M scores for those 197 records and MHCflurry affinity estimates for 232 published pairs.
-- Matched comparison subset: 188 records, 22 individually positive and 166 non-detected. Positive target 10:39 fails the present reference mapping; its outcome is not altered.
-- Prepared four HHAT structures, including crystal-mate recovery, HLA-platform alignment, residue SASA and geometric contacts.
-- Built patient maps, response reveal, matched orderings, repeated-shuffle reference, synchronized molecular views and an evidence drawer.
+Rosalind should produce the measurements and source-backed interpretation for three interactions: highlight the mutation, inspect the neighboring Trp6 surface, and compare receptor-free with receptor-bound experimental structures. A contribution badge alone is insufficient.
 
-## Required Rosalind contribution
+## 1. Capability check and inputs
 
-### 0. Verify capabilities
+List exact available plugins, tools, versions where available, and supported operations. Prefer native sequence/alignment/structure viewers and evidence retrieval where available. If numeric analysis runs in Python through Workbench, describe it exactly that way. Do not assume a dedicated molecular-measurement plugin or GPT-Rosalind model access. If the account only supports sequencing workflows, report that this structural task needs additional capabilities; do not invent an unrelated sequencing analysis.
 
-Record exact installed plugin names and the operations actually accessible. Choose supported read-only evidence/sequence/structure analysis tools. If a needed operation is unavailable, mark it unavailable; do not present a generic Python run as a native plugin operation. Python executed through Workbench may be described accurately as such if that is what happens.
+All required inputs are public and cached. No credentials, patient uploads, model downloads or paid datasets are needed for the core task. Clone/download the repo; the existing app runs with Node.js 22, `npm ci`, `npm run dev`. If this account cannot run the app, return analysis files for integration elsewhere.
 
-### 1. Independently validate the cohort
+Read:
+- `docs/SCIENCE.md` and `docs/ROSALIND_VALIDATION_REFERENCE.md`.
+- Devlin et al. 2020: https://www.nature.com/articles/s41589-020-0610-1 ; full text https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/ .
+- Original PDBs in `data/raw/`; prepared coordinates in `public/structures/`; existing measurements in `public/data/structures.json`.
+- Rojas et al. 2023: https://www.nature.com/articles/s41586-023-06063-y ; original Supplementary Table 5 in `data/raw/rojas-2023-table5.xlsx`.
 
-Use the Rojas article and original Supplementary Table 5 in `data/raw/rojas-2023-table5.xlsx`. Independently reproduce counts and target identity checks, then compare with `outputs/rojas-audit.json` and `public/data/cohort.json`.
+## 2. Primary result: the HHAT mechanism
 
-Confirm that all 232 rows carry predictions for both HLA classes and that these columns cannot assign the class mediating an ELISpot response. Inspect the pooled-response explanation in Figure 1. Do not convert seven pool members to seven positives or arbitrarily pick two positives. Do not call the whole cohort a class-I benchmark.
+### Reconstruct first
 
-Return `rosalind/cohort-validation.json` containing checks, observed values, agreement/disagreement, source locations, plugin names and execution evidence references. Save a short human-readable interpretation alongside it.
+Normal peptide KQWLVWLLL; mutant KQWLVWLFL. HHAT L75F maps to peptide position 8. Position 6 is tryptophan (W6). HLA-A*02:06 throughout.
 
-### 2. Independently validate the molecular interface
+| State | Normal | Mutant |
+|---|---|---|
+| Receptor-free pMHC | 6UJQ | 6UJO |
+| Receptor-bound | 6UK2 | 6UK4 |
 
-Read Devlin et al. 2020, especially Figure 3, and inspect the raw RCSB PDB files. This is the most valuable scientific review task.
+The bound asymmetric units do not directly contain the contacting receptor interface. Independently verify the deposited symmetry and crystal-mate recovery: identity rotation plus translations of receptor chains D/E by (+a, −b, 0) for 6UK2 and (0, +b, 0) for 6UK4. Do not mistake separated biological-assembly listings for the contacting complex. Verify chain assignments from the deposited sequence; preserve residue numbering.
 
-**Do not display the raw asymmetric units as the receptor-bound interface.** Recover the contacting TCR crystal mate from deposited unit-cell translations: 6UK2 chains D/E (+a, −b, 0); 6UK4 chains D/E (0, +b, 0), with identity rotation. Compare these transformations with the supplied prepared coordinates. The deposited biological assembly listings split pMHC and TCR; they alone do not establish the contacting complex.
+Align all states using HLA chain A Cα residues 1–180, with 6UJQ as reference. Do not align the peptide to make the effect look larger or smaller. Use identical atom/missingness/alternate-location policies. Report fit residuals and sensitivity to another reasonable HLA-only alignment selection.
 
-Verify peptide sequences, chain identities, HLA alignment, the Trp6–Tyr100α interface, and selected position-6/position-8 contacts. If supported, independently reproduce solvent-accessible areas with a documented probe and atom policy. Distinguish method-dependent differences from errors. Areas here include whole residues; do not compare them directly to reported hydrophobic side-chain-only areas.
+### New measurements
 
-Return `rosalind/structure-validation.json` with the precise transformations, atom selections, measurements, comparison with `public/data/structures.json`, plugin provenance and any corrections. Do not silently substitute a predicted complex. Do not invent a conformational trajectory.
+1. **Where the change appears:** for each peptide position, measure normal-versus-mutant displacement of matching backbone atoms in the receptor-free pair and in the bound pair. For shared amino acids, separately report matching side-chain heavy-atom RMSD. Do not compute a whole-side-chain L/F RMSD using unmatched atoms.
+2. **The W6 comparison:** compare position-6 indole heavy-atom geometry in each receptor-free structure with its own receptor-bound counterpart, after the HLA fit. Return the exact atom lists, RMSDs and, if useful, documented side-chain torsions. Do not assume in advance that any chosen scalar will reproduce the paper’s qualitative interpretation.
+3. **The receptor interface:** verify the W6–Tyr100α contact and report exact atom/centroid endpoints. Preserve the distinction between minimum heavy-atom distance and ring-centroid distance (the latter is approximately 3.31 Å in the existing preparation). Include positions 6 and 8, unique receptor contacts ≤4 Å, and the source coordinates for drawing distance lines.
+4. **Accessibility:** independently check position-6/8 whole-residue SASA using the existing documented method, or document a supported alternative. Separate pMHC-only accessibility from receptor-complex accessibility. Never compare whole-residue areas directly with the paper’s hydrophobic side-chain areas.
 
-### 3. Optional targeted reference check
+Export `rosalind/mechanism.json`, with schema version, input hashes, coordinate frame, state IDs, alignment selections, per-residue measurements and units, missing values as null with reasons, display atom selections and contact endpoints. Supply the executable analysis and environment information. Do not replace existing display coordinates silently: provide proposed corrections separately.
 
-Investigate target `10:39` using the supplied transcript, mutation and flank. Determine whether an explicitly versioned historical RefSeq protein supports it. A verified rescue is useful; guessing an isoform is not. Return evidence and proposed mapping as a separate patch. Recompute the ESM score and eligibility only after that mapping is reviewed.
+### Experimental evidence, not just geometry
 
-## Deliverables to bring back
+Extract exact published measurements that support the biological interpretation: normal/mutant TCR affinity or kinetics, and the peptide–HLA assay results. Preserve assay identity, conditions, units, uncertainty, censoring and table/figure location. Thermal stability must remain thermal stability; do not relabel it as affinity. Do not convert a figure’s qualitative result into an invented number. If only a visual estimate is possible, mark it as such and exclude it from the default numeric display.
 
-1. Validation JSON files and a concise `rosalind/REVIEW.md`, including disagreements and limitations.
-2. One or more screenshots of actual Rosalind tool use and results. Do not generate fake Workbench screenshots.
-3. `rosalind/CONTRIBUTIONS.md`: date, exact plugin names, actual operations, inputs and hashes, output paths, and execution references where available.
-4. A commit or ZIP of these files and any proposed code/data corrections. Keep account credentials and private chat history out of the public repository.
+Export `rosalind/evidence.json`: each fact has a stable ID, claim, evidence type (published experiment / computed geometry / interpretation), source URL and figure/table location, exact values where available, and limitations. Distinguish the paper’s dynamic/pre-organization mechanism from what four static crystal structures alone establish. Distances and contact counts are not binding energies or immune-response probabilities.
 
-At minimum, complete the source-label audit plus one substantive independent structural check through the available Workbench capabilities. If tools cannot perform those tasks, report the limitation; the showcase's Rosalind requirement remains unfinished rather than being replaced by branding.
+The app may then show the experimental contrast between peptide–HLA behavior and receptor recognition, alongside the structural evidence. If any headline is unsupported, return a more accurate one.
 
-## Integration and submission
+## 3. Secondary result: a retrospective response-capture interaction
 
-The original account will integrate the verified artifacts, update the evidence drawer and contribution log, rerun `npm test` and `npm run build`, and capture final application screenshots. The project must not claim Rosalind involvement before this work is complete.
+Create `rosalind/response-capture.json` for all patients, each existing ordering, and k=1 through the number of comparable targets for that patient. At each k return target IDs, individually detected responses recovered, total eligible responses and the pointwise central 90% reference from 2,000 seeded within-patient shuffles. Explicitly record tie-breaking rules and reuse the same eligible targets across orderings.
 
-Deployment to Vercel is the last step and can be done by the user. Do not post, tweet or submit the showcase entry without a separate user instruction.
+This asks: **Among the targets already administered, how early does each ordering recover the measured responses?** It is not a simulated vaccine, prospective target selection, clinical benefit, or comparison to Omnii.
 
-## Scope stays fixed
+Preserve the cohort: 232 records; 23 individually positive, 200 non-detected, seven unresolved pool members, two missing. All 232 records have both predicted class-I and class-II annotations; these do not establish the responding HLA class. Current joint comparison: 188 records, 22 positive and 166 non-detected. Target 10:39 remains visible but excluded due to unresolved reference mapping. Do not call this a class-I immunogenicity benchmark or pick a favorable patient as evidence of general model performance.
 
-One cancer-vaccine cohort, two exploratory computed features, within-patient shuffle reference, one separate HHAT case. No survival predictions, model training, new vaccine design, extra cohorts or clinical recommendations.
+Use the existing order directions and seeded reference method in `src/lib/statistics.mjs`, with an independent small-case check. Cross-check source labels before computing. Do not rescore ESM/MHCflurry or expand the cohort.
+
+## 4. Return package
+
+- `rosalind/mechanism.json`, `evidence.json`, and `response-capture.json` (or explicit unsupported-result reports).
+- Executable analysis, environment and source hashes.
+- `rosalind/REVIEW.md`: conclusions supported, conclusions not supported, discrepancies, proposed corrections. Keep the narrative concise.
+- `rosalind/CONTRIBUTIONS.md`: exact plugins/tools, actual operations, inputs, output paths and execution references. Separate native tools from custom code.
+- Real screenshots of Workbench evidence retrieval, structural inspection and the resulting measurements. Screenshots must show work performed, not a staged interface.
+- A short approved narration/claim list for the demo, with claim IDs pointing into `evidence.json`.
+- One ZIP or commit. No credentials or private chat history.
+
+Minimum substantive success: independently reconstructed interface, at least one new validated geometry comparison, and source-backed experimental interpretation that can drive the interactive story. A count audit alone does not complete the new handoff. Complete the structural result before optional reference rescue or additional analyses.
+
+## 5. Integration boundary
+
+The original account builds the interaction, captioned video and deployment package from the returned evidence. See `outputs/DEMO_PLAN.md`. It will retain the two studies as separate evidence, verify the files, and only then update the Rosalind attribution. Actual Workbench screenshots and exact plugins are needed for the showcase. No social submission or deployment is authorized by this handoff.
+
+This is an original interactive synthesis of published findings, not a claim to have discovered the HHAT mechanism or validated a new vaccine predictor.

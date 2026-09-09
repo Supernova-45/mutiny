@@ -57,8 +57,8 @@ export default function App() {
   useEffect(()=>{fetch('/data/cohort.json').then(r=>{if(!r.ok)throw new Error('Dataset unavailable');return r.json()}).then(setData).catch(e=>setError(e.message))},[]);
   const patients=useMemo(()=>data?[...new Set(data.targets.map(t=>t.patient))].sort((a,b)=>a-b):[],[data]);
   const ordered=useMemo(()=>data?new Map(patients.map(p=>[p,orderTargets(data.targets.filter(t=>t.patient===p),lens,seed+p)])):new Map<number,Target[]>(),[data,patients,lens,seed]);
-  if(error)return <main className="loading"><h1>Couldn’t load the atlas.</h1><p>{error}</p><button onClick={()=>location.reload()}>Try again</button></main>;
-  if(!data)return <main className="loading"><div className="brand-mark"/><span>Opening the atlas…</span></main>;
+  if(error)return <main className="loading"><h1>Couldn’t load the vaccine data.</h1><p>{error}</p><button onClick={()=>location.reload()}>Try again</button></main>;
+  if(!data)return <main className="loading"><div className="brand-mark"/><span>Loading vaccine data…</span></main>;
   const selected= data.targets.find(t=>t.id===targetId) ?? data.targets.find(t=>t.patient===patient)!;
   const patientTargets=ordered.get(patient)??[];
   const hasModels=data.targets.some(t=>t.comparisonEligible);
@@ -77,7 +77,7 @@ export default function App() {
           <button className={`reveal-button ${reveal?'revealed':''}`} onClick={()=>setReveal(!reveal)}>{reveal?<EyeOff size={17}/>:<Eye size={17}/>} {reveal?'Hide responses':'Reveal responses'}<ArrowRight size={16}/></button>
 
         </aside>
-        <section className="cohort-panel" aria-label="Vaccine target atlas">
+        <section className="cohort-panel" aria-label="Cancer vaccine targets">
           <div className="panel-heading"><a href="https://www.nature.com/articles/s41586-023-06063-y" target="_blank" rel="noreferrer">Rojas et al., 2023 <ArrowUpRight size={12}/></a><button className="text-button" onClick={()=>setEvidence(true)}><CircleHelp size={13}/>{lens==='published'?'Already selected for vaccination':'Matched targets · response class unresolved'}</button></div>
           <div className="cohort-axis"><span>PATIENT</span><span>{lens==='published'?'PUBLISHED ORDER':lens==='esm'?'ESM PREFERENCE ↑':lens==='binding'?'PREDICTED nM ↑':'RANDOM ORDER'} <ArrowRight size={12}/></span><span>{reveal?'DETECTED':'TARGETS'}</span></div>
           <div className="patient-rows">{patients.map(p=>{const targets=ordered.get(p)!;const active=p===patient;return <div className={`patient-row ${active?'active':''}`} key={p}>
