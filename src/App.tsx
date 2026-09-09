@@ -70,7 +70,7 @@ export default function App() {
       <div className="header-actions"><button className="icon-button" title="Evidence and methods" aria-label="Evidence and methods" onClick={()=>setEvidence(true)}><BookOpen size={18}/></button><a className="icon-button github" href="https://github.com/Supernova-45/callback" target="_blank" rel="noreferrer" aria-label="GitHub repository"><Github size={18}/></a></div>
     </header>
     {scene==='atlas'?<main className="atlas-page">
-      <section className="intro-bar"><div><h1>Which cancer mutations<br/>trigger T cells?</h1><p className="study-context">Pancreatic cancer vaccine trial · 16 patients · 232 targets</p></div></section>
+      <section className="intro-bar"><div><h1>Which cancer mutations trigger T cells?</h1><p className="study-context">Pancreatic cancer vaccine trial · 16 patients · 232 targets</p></div></section>
       <div className="atlas-layout">
         <aside className="control-rail">
           <div className="lens-buttons">{(['published','esm','binding','shuffle'] as Lens[]).map(l=><button key={l} disabled={l!=='published'&&!hasModels} className={lens===l?'selected':''} onClick={()=>{setLens(l);if(l==='shuffle')setSeed(s=>s+1)}}><span>{lensNames[l]}</span></button>)}</div>
