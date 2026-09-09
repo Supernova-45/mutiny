@@ -65,7 +65,7 @@ export default function Molecule({onEvidence}:{onEvidence:()=>void}) {
   if(!data)return <main className="loading">Opening molecular evidence…</main>;
   const structures=[data.structures.find(s=>s.state==='normal'&&s.bound===bound)!,data.structures.find(s=>s.state==='mutant'&&s.bound===bound)!];
   return <main className="molecule-page">
-    <section className="intro-bar molecular-intro"><div><h1>How a cancer mutation<br/>changes T-cell recognition</h1><p className="study-context">Ovarian cancer · HHAT L75F · Independent structural study</p></div><a className="study-link" href="https://www.nature.com/articles/s41589-020-0610-1" target="_blank" rel="noreferrer">Devlin et al., 2020 <ArrowUpRight size={13}/></a></section>
+    <section className="intro-bar molecular-intro"><div><h1>How a cancer mutation changes T-cell recognition</h1><p className="study-context">Ovarian cancer · HHAT L75F</p></div><a className="study-link" href="https://www.nature.com/articles/s41589-020-0610-1" target="_blank" rel="noreferrer">Devlin et al., 2020 <ArrowUpRight size={13}/></a></section>
     <div className={`molecular-workspace ${expanded?'expanded':''}`}>
       <aside className="molecular-rail">
         <div className="segmented"><button className={surface?'selected':''} onClick={()=>setSurface(true)}>Surface</button><button className={!surface?'selected':''} onClick={()=>setSurface(false)}>Atoms</button></div>
