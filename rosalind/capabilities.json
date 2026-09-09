@@ -1,12 +1,19 @@
 {
   "date": "2026-09-09",
   "scientificPluginsCallable": [],
-  "workbench": "No Rosalind Workbench tool or enabled app/browser surface found",
+  "workbench": "Installed Rosalind Workbench 0.2.5-research-preview, source revision f3a14882a0b8. Launcher rosalind.open is app-only; not exposed in model-callable tools.",
   "pluginDiscovery": "Full exposed ALL_TOOLS inspected; search_plugins, suggest_plugins and tool_search not callable",
   "availablePluginNames": [
     "Spreadsheets",
     "Plugin Management",
     "Sites"
   ],
-  "nativeUIPlugin": "unified-computer-use"
+  "nativeUIPlugin": "unified-computer-use",
+  "catalogRoutesNotVerifiedConnected": [
+    "Life Sciences Literature",
+    "Molecular Structure Viewer",
+    "Sequence Viewer"
+  ],
+  "uiAccessBlock": "Computer Use denied access to com.openai.codex for safety reasons.",
+  "correction": "Earlier absence-from-tools inference did not establish absence from account. User confirmed Workbench use; local plugin manifest now verifies installation."
 }

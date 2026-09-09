@@ -1,5 +1,7 @@
 # Contract validation
 
+**Capability correction:** Rosalind Workbench 0.2.5-research-preview is installed (build revision f3a14882a0b8). Its launcher is app-only. The user confirmed using it. Model-callable scientific tools remain absent in this task; attempted UI access to com.openai.codex was explicitly denied by Computer Use. This does not establish account-wide unavailability. The installed catalog names Life Sciences Literature, Molecular Structure Viewer and Sequence Viewer, but their connected status is unverified. No scientific execution attribution changes.
+
 Run `python rosalind/analysis/validate.py`; detailed results are in `validation.json`.
 
 23 checks pass across Rojas (232 candidates), HCC1395 (11 unlabeled candidates), the separate HHAT project and a matched evidence request/return. Checks cover JSON Schemas and foreign keys, lossless JSON reopening, frozen 188/22/166 eligibility, excluded 10:39, two positive pools with seven unresolved members, distinct source-context/predicted-epitope roles, duplicate assay outcomes across rows, missing scores, direction, units, finite values, IDs, schema versions, exact project/sequence/reference joins, idempotent imports and unapplied proposed corrections. Negative fixtures are in-memory mutations used only as software tests, never scientific measurements or response labels in released datasets.

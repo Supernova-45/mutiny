@@ -1,5 +1,7 @@
 # Actual contributions and capability record
 
+**Capability correction:** Rosalind Workbench 0.2.5-research-preview is installed (build revision f3a14882a0b8). Its launcher is app-only. The user confirmed using it. Model-callable scientific tools remain absent in this task; attempted UI access to com.openai.codex was explicitly denied by Computer Use. This does not establish account-wide unavailability. The installed catalog names Life Sciences Literature, Molecular Structure Viewer and Sequence Viewer, but their connected status is unverified. No scientific execution attribution changes.
+
 Date: 2026-09-09. Execution: local Codex desktop shell, Python and Node; **no Rosalind Workbench work performed**.
 
 The complete callable-tool metadata was searched for Rosalind, scientific capabilities and tool/plugin discovery. Exact plugin names named by exposed connector metadata were **Spreadsheets**, **Plugin Management**, and **Sites**; UI control was exposed through **unified-computer-use**. These are not scientific plugins. No `search_plugins`, `suggest_plugins`, `tool_search`, Rosalind, molecular viewer, alignment or scientific evidence connector was callable. The recommended but uninstalled plugin list is not evidence of a connection. The Plugin Management skill was read; its search tools were not exposed, so account-wide catalog availability could not be certified. No plugins were installed or permission settings changed.

@@ -4,13 +4,13 @@
   "files": [
     {
       "path": "rosalind/CONTRACT_VALIDATION.md",
-      "sha256": "2b0465ddecb50935d5199ecdde7f8acb53bc2ac7daed2268e655e5a9bd9b685d",
-      "bytes": 2445
+      "sha256": "fd954f236fc7adee24a905be1a3cc295ead4bc3be790a427e248ab9959e19403",
+      "bytes": 2995
     },
     {
       "path": "rosalind/CONTRIBUTIONS.md",
-      "sha256": "aadbaaaac042c544786cf8601a9decf040bea47a32a722be4e5456ef3ff56852",
-      "bytes": 3986
+      "sha256": "fa867e350b6478445072e269caba81c509f1deb48d9b9e7b77380ab1f8e7b9e6",
+      "bytes": 4536
     },
     {
       "path": "rosalind/PRODUCT_REVIEW.md",
@@ -19,8 +19,8 @@
     },
     {
       "path": "rosalind/REVIEW.md",
-      "sha256": "6220c1080978890ed106dd0e83ff242ca3c3f7a902416e8d03db3e37d5d4caa3",
-      "bytes": 5690
+      "sha256": "c293d6aea46322e39afeadb7dc72729fa4aab15944d35d4a4e881687e2da553b",
+      "bytes": 6240
     },
     {
       "path": "rosalind/analysis/contracts.py",
@@ -64,8 +64,8 @@
     },
     {
       "path": "rosalind/capabilities.json",
-      "sha256": "2977fe66c0340f5e097b55f03ea009f139c87459ccbc34365eaa94ef8505bf2b",
-      "bytes": 397
+      "sha256": "02a7b938b9b69d8f80e32970ab80672e0a2a3c4a022815946b3db486ee42ca4f",
+      "bytes": 887
     },
     {
       "path": "rosalind/cohort-validation.json",
@@ -149,8 +149,8 @@
     },
     {
       "path": "rosalind/screenshots/UNSUPPORTED.md",
-      "sha256": "d54a5bf3436e709f79501f22cf2533ddf95560ffde26948a2ef67aac4a7158ba",
-      "bytes": 341
+      "sha256": "934b6e6451516d58f54b61d02c1b0facf75bf9fe069980ddaec12c583ade9a57",
+      "bytes": 427
     },
     {
       "path": "rosalind/source-retrieval.json",

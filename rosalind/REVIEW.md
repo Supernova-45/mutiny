@@ -1,5 +1,7 @@
 # Scientific evidence review — 2026-09-09
 
+**Capability correction:** Rosalind Workbench 0.2.5-research-preview is installed (build revision f3a14882a0b8). Its launcher is app-only. The user confirmed using it. Model-callable scientific tools remain absent in this task; attempted UI access to com.openai.codex was explicitly denied by Computer Use. This does not establish account-wide unavailability. The installed catalog names Life Sciences Literature, Molecular Structure Viewer and Sequence Viewer, but their connected status is unverified. No scientific execution attribution changes.
+
 Completed locally in Codex, **not in Rosalind Workbench**. No scientific plugin was callable. The required authentic Workbench execution/screenshots remain unsupported; this package must not be used to claim Rosalind involvement.
 
 ## Supported conclusions and integration claims
