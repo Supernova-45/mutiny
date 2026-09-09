@@ -1,0 +1,1184 @@
+{
+  "1:3": {
+    "score": 0.547933,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "1:4": {
+    "score": -9.657751,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "1:5": {
+    "score": -6.413104,
+    "windowStart": 1,
+    "windowEnd": 364,
+    "device": "mps"
+  },
+  "1:6": {
+    "score": -5.712299,
+    "windowStart": 1,
+    "windowEnd": 132,
+    "device": "mps"
+  },
+  "1:7": {
+    "score": -4.760418,
+    "windowStart": 1399,
+    "windowEnd": 1909,
+    "device": "mps"
+  },
+  "1:17": {
+    "score": -2.626847,
+    "windowStart": 96,
+    "windowEnd": 606,
+    "device": "mps"
+  },
+  "3:6": {
+    "score": -3.893899,
+    "windowStart": 351,
+    "windowEnd": 861,
+    "device": "mps"
+  },
+  "3:8": {
+    "score": -1.604836,
+    "windowStart": 26,
+    "windowEnd": 536,
+    "device": "mps"
+  },
+  "3:10": {
+    "score": -6.313452,
+    "windowStart": 960,
+    "windowEnd": 1470,
+    "device": "mps"
+  },
+  "3:11": {
+    "score": -4.023255,
+    "windowStart": 1,
+    "windowEnd": 353,
+    "device": "mps"
+  },
+  "3:21": {
+    "score": -9.545328,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "3:24": {
+    "score": -0.799981,
+    "windowStart": 1,
+    "windowEnd": 441,
+    "device": "mps"
+  },
+  "3:33": {
+    "score": -3.214122,
+    "windowStart": 17,
+    "windowEnd": 527,
+    "device": "mps"
+  },
+  "3:34": {
+    "score": -1.657248,
+    "windowStart": 548,
+    "windowEnd": 1058,
+    "device": "mps"
+  },
+  "3:36": {
+    "score": 0.113914,
+    "windowStart": 1,
+    "windowEnd": 80,
+    "device": "mps"
+  },
+  "3:55": {
+    "score": -2.557207,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "3:61": {
+    "score": -0.861701,
+    "windowStart": 650,
+    "windowEnd": 1160,
+    "device": "mps"
+  },
+  "3:64": {
+    "score": -1.547603,
+    "windowStart": 1,
+    "windowEnd": 341,
+    "device": "mps"
+  },
+  "3:66": {
+    "score": -1.317108,
+    "windowStart": 109,
+    "windowEnd": 619,
+    "device": "mps"
+  },
+  "3:72": {
+    "score": -3.969707,
+    "windowStart": 1,
+    "windowEnd": 383,
+    "device": "mps"
+  },
+  "3:74": {
+    "score": -2.155165,
+    "windowStart": 697,
+    "windowEnd": 1207,
+    "device": "mps"
+  },
+  "4:4": {
+    "score": -1.369125,
+    "windowStart": 1,
+    "windowEnd": 399,
+    "device": "mps"
+  },
+  "4:6": {
+    "score": -5.578643,
+    "windowStart": 384,
+    "windowEnd": 894,
+    "device": "mps"
+  },
+  "4:18": {
+    "score": -0.991076,
+    "windowStart": 1,
+    "windowEnd": 493,
+    "device": "mps"
+  },
+  "4:27": {
+    "score": -9.562089,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "4:30": {
+    "score": 0.64012,
+    "windowStart": 389,
+    "windowEnd": 899,
+    "device": "mps"
+  },
+  "4:32": {
+    "score": 0.675072,
+    "windowStart": 275,
+    "windowEnd": 785,
+    "device": "mps"
+  },
+  "4:51": {
+    "score": -1.577922,
+    "windowStart": 430,
+    "windowEnd": 940,
+    "device": "mps"
+  },
+  "4:56": {
+    "score": -6.966122,
+    "windowStart": 142,
+    "windowEnd": 652,
+    "device": "mps"
+  },
+  "4:61": {
+    "score": -0.621962,
+    "windowStart": 90,
+    "windowEnd": 600,
+    "device": "mps"
+  },
+  "4:83": {
+    "score": -9.566719,
+    "windowStart": 1,
+    "windowEnd": 165,
+    "device": "mps"
+  },
+  "4:84": {
+    "score": -2.582113,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "4:90": {
+    "score": -5.635692,
+    "windowStart": 1,
+    "windowEnd": 341,
+    "device": "mps"
+  },
+  "4:93": {
+    "score": -1.917711,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "4:95": {
+    "score": -2.495774,
+    "windowStart": 98,
+    "windowEnd": 608,
+    "device": "mps"
+  },
+  "5:5": {
+    "score": -2.203024,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "5:19": {
+    "score": 0.793089,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "5:22": {
+    "score": -7.72598,
+    "windowStart": 1,
+    "windowEnd": 271,
+    "device": "mps"
+  },
+  "5:27": {
+    "score": -9.562089,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "5:42": {
+    "score": -0.943253,
+    "windowStart": 239,
+    "windowEnd": 749,
+    "device": "mps"
+  },
+  "5:46": {
+    "score": -1.964856,
+    "windowStart": 1194,
+    "windowEnd": 1704,
+    "device": "mps"
+  },
+  "5:59": {
+    "score": -0.345862,
+    "windowStart": 92,
+    "windowEnd": 602,
+    "device": "mps"
+  },
+  "5:60": {
+    "score": -7.832382,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "5:61": {
+    "score": -8.642347,
+    "windowStart": 1,
+    "windowEnd": 222,
+    "device": "mps"
+  },
+  "5:74": {
+    "score": -3.062961,
+    "windowStart": 1,
+    "windowEnd": 341,
+    "device": "mps"
+  },
+  "5:79": {
+    "score": -0.964024,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "5:83": {
+    "score": -7.153008,
+    "windowStart": 891,
+    "windowEnd": 1401,
+    "device": "mps"
+  },
+  "5:84": {
+    "score": -0.22375,
+    "windowStart": 846,
+    "windowEnd": 1356,
+    "device": "mps"
+  },
+  "5:88": {
+    "score": -0.939732,
+    "windowStart": 1,
+    "windowEnd": 132,
+    "device": "mps"
+  },
+  "5:92": {
+    "score": 0.168493,
+    "windowStart": 1,
+    "windowEnd": 325,
+    "device": "mps"
+  },
+  "6:6": {
+    "score": -4.729122,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "6:11": {
+    "score": -6.403543,
+    "windowStart": 1,
+    "windowEnd": 377,
+    "device": "mps"
+  },
+  "6:14": {
+    "score": -9.657751,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "6:17": {
+    "score": -4.802418,
+    "windowStart": 1004,
+    "windowEnd": 1514,
+    "device": "mps"
+  },
+  "6:21": {
+    "score": -1.884618,
+    "windowStart": 1,
+    "windowEnd": 200,
+    "device": "mps"
+  },
+  "6:24": {
+    "score": -6.344623,
+    "windowStart": 88,
+    "windowEnd": 598,
+    "device": "mps"
+  },
+  "6:34": {
+    "score": -7.121498,
+    "windowStart": 1,
+    "windowEnd": 393,
+    "device": "mps"
+  },
+  "6:46": {
+    "score": 0.003466,
+    "windowStart": 627,
+    "windowEnd": 1137,
+    "device": "mps"
+  },
+  "6:48": {
+    "score": 0.822993,
+    "windowStart": 1,
+    "windowEnd": 316,
+    "device": "mps"
+  },
+  "9:3": {
+    "score": 0.275518,
+    "windowStart": 376,
+    "windowEnd": 886,
+    "device": "mps"
+  },
+  "9:18": {
+    "score": -6.762179,
+    "windowStart": 1,
+    "windowEnd": 270,
+    "device": "mps"
+  },
+  "9:22": {
+    "score": -9.545328,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "9:24": {
+    "score": -1.672856,
+    "windowStart": 310,
+    "windowEnd": 820,
+    "device": "mps"
+  },
+  "9:31": {
+    "score": -4.72822,
+    "windowStart": 2654,
+    "windowEnd": 3164,
+    "device": "mps"
+  },
+  "9:38": {
+    "score": -1.108436,
+    "windowStart": 1,
+    "windowEnd": 493,
+    "device": "mps"
+  },
+  "9:44": {
+    "score": -7.754793,
+    "windowStart": 111,
+    "windowEnd": 621,
+    "device": "mps"
+  },
+  "9:65": {
+    "score": -2.452626,
+    "windowStart": 137,
+    "windowEnd": 647,
+    "device": "mps"
+  },
+  "9:67": {
+    "score": -0.032663,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "9:69": {
+    "score": -10.920833,
+    "windowStart": 681,
+    "windowEnd": 1191,
+    "device": "mps"
+  },
+  "9:80": {
+    "score": -0.103699,
+    "windowStart": 1,
+    "windowEnd": 506,
+    "device": "mps"
+  },
+  "9:81": {
+    "score": -4.233,
+    "windowStart": 222,
+    "windowEnd": 732,
+    "device": "mps"
+  },
+  "9:85": {
+    "score": -1.426592,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "10:7": {
+    "score": -6.433467,
+    "windowStart": 443,
+    "windowEnd": 953,
+    "device": "mps"
+  },
+  "10:14": {
+    "score": -0.457321,
+    "windowStart": 505,
+    "windowEnd": 1015,
+    "device": "mps"
+  },
+  "10:17": {
+    "score": -9.657751,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "10:24": {
+    "score": -4.170363,
+    "windowStart": 537,
+    "windowEnd": 1047,
+    "device": "mps"
+  },
+  "10:25": {
+    "score": -0.90549,
+    "windowStart": 225,
+    "windowEnd": 735,
+    "device": "mps"
+  },
+  "10:27": {
+    "score": -2.588613,
+    "windowStart": 81,
+    "windowEnd": 591,
+    "device": "mps"
+  },
+  "10:34": {
+    "score": -1.302249,
+    "windowStart": 5,
+    "windowEnd": 515,
+    "device": "mps"
+  },
+  "10:35": {
+    "score": -9.787062,
+    "windowStart": 1,
+    "windowEnd": 380,
+    "device": "mps"
+  },
+  "10:36": {
+    "score": -0.414537,
+    "windowStart": 1,
+    "windowEnd": 386,
+    "device": "mps"
+  },
+  "10:37": {
+    "score": -6.013864,
+    "windowStart": 128,
+    "windowEnd": 638,
+    "device": "mps"
+  },
+  "10:38": {
+    "score": -10.219848,
+    "windowStart": 177,
+    "windowEnd": 687,
+    "device": "mps"
+  },
+  "10:42": {
+    "score": -0.756028,
+    "windowStart": 1,
+    "windowEnd": 319,
+    "device": "mps"
+  },
+  "10:49": {
+    "score": 1.436857,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "11:16": {
+    "score": -8.31204,
+    "windowStart": 60,
+    "windowEnd": 570,
+    "device": "mps"
+  },
+  "11:20": {
+    "score": -11.126769,
+    "windowStart": 3735,
+    "windowEnd": 4245,
+    "device": "mps"
+  },
+  "11:23": {
+    "score": 1.007346,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "11:24": {
+    "score": -4.895757,
+    "windowStart": 297,
+    "windowEnd": 807,
+    "device": "mps"
+  },
+  "11:26": {
+    "score": -2.013004,
+    "windowStart": 133,
+    "windowEnd": 643,
+    "device": "mps"
+  },
+  "11:29": {
+    "score": -2.685554,
+    "windowStart": 70,
+    "windowEnd": 580,
+    "device": "mps"
+  },
+  "11:30": {
+    "score": -0.075084,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "11:34": {
+    "score": -0.876752,
+    "windowStart": 18,
+    "windowEnd": 528,
+    "device": "mps"
+  },
+  "11:39": {
+    "score": -5.011228,
+    "windowStart": 116,
+    "windowEnd": 626,
+    "device": "mps"
+  },
+  "11:45": {
+    "score": -1.594519,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "11:51": {
+    "score": -1.03449,
+    "windowStart": 1,
+    "windowEnd": 359,
+    "device": "mps"
+  },
+  "14:6": {
+    "score": -4.19223,
+    "windowStart": 1,
+    "windowEnd": 309,
+    "device": "mps"
+  },
+  "14:8": {
+    "score": -6.371507,
+    "windowStart": 1,
+    "windowEnd": 254,
+    "device": "mps"
+  },
+  "14:12": {
+    "score": -9.562089,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "14:15": {
+    "score": -3.862048,
+    "windowStart": 652,
+    "windowEnd": 1162,
+    "device": "mps"
+  },
+  "14:17": {
+    "score": -1.720322,
+    "windowStart": 1,
+    "windowEnd": 478,
+    "device": "mps"
+  },
+  "14:25": {
+    "score": -5.30404,
+    "windowStart": 1,
+    "windowEnd": 140,
+    "device": "mps"
+  },
+  "14:28": {
+    "score": -5.385263,
+    "windowStart": 295,
+    "windowEnd": 805,
+    "device": "mps"
+  },
+  "14:29": {
+    "score": -0.666745,
+    "windowStart": 17,
+    "windowEnd": 527,
+    "device": "mps"
+  },
+  "18:2": {
+    "score": -0.39169,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "18:3": {
+    "score": -8.798615,
+    "windowStart": 1,
+    "windowEnd": 189,
+    "device": "mps"
+  },
+  "18:10": {
+    "score": -8.237856,
+    "windowStart": 272,
+    "windowEnd": 782,
+    "device": "mps"
+  },
+  "18:13": {
+    "score": -3.209415,
+    "windowStart": 1,
+    "windowEnd": 468,
+    "device": "mps"
+  },
+  "18:23": {
+    "score": -0.444019,
+    "windowStart": 1,
+    "windowEnd": 465,
+    "device": "mps"
+  },
+  "18:26": {
+    "score": -7.184284,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "18:27": {
+    "score": 1.09057,
+    "windowStart": 693,
+    "windowEnd": 1203,
+    "device": "mps"
+  },
+  "18:29": {
+    "score": -0.228373,
+    "windowStart": 1,
+    "windowEnd": 254,
+    "device": "mps"
+  },
+  "18:30": {
+    "score": -8.48022,
+    "windowStart": 1,
+    "windowEnd": 341,
+    "device": "mps"
+  },
+  "19:2": {
+    "score": -2.1757,
+    "windowStart": 366,
+    "windowEnd": 876,
+    "device": "mps"
+  },
+  "19:3": {
+    "score": -7.242852,
+    "windowStart": 1,
+    "windowEnd": 180,
+    "device": "mps"
+  },
+  "19:4": {
+    "score": -5.489688,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "19:7": {
+    "score": -6.027252,
+    "windowStart": 1,
+    "windowEnd": 370,
+    "device": "mps"
+  },
+  "19:10": {
+    "score": -8.798615,
+    "windowStart": 1,
+    "windowEnd": 189,
+    "device": "mps"
+  },
+  "19:12": {
+    "score": -6.07266,
+    "windowStart": 1,
+    "windowEnd": 358,
+    "device": "mps"
+  },
+  "19:19": {
+    "score": -0.945526,
+    "windowStart": 137,
+    "windowEnd": 647,
+    "device": "mps"
+  },
+  "19:21": {
+    "score": -1.39326,
+    "windowStart": 1,
+    "windowEnd": 493,
+    "device": "mps"
+  },
+  "19:22": {
+    "score": -0.482537,
+    "windowStart": 1908,
+    "windowEnd": 2418,
+    "device": "mps"
+  },
+  "19:39": {
+    "score": -8.803959,
+    "windowStart": 488,
+    "windowEnd": 998,
+    "device": "mps"
+  },
+  "19:44": {
+    "score": -7.63044,
+    "windowStart": 126,
+    "windowEnd": 636,
+    "device": "mps"
+  },
+  "19:45": {
+    "score": -10.887945,
+    "windowStart": 1154,
+    "windowEnd": 1664,
+    "device": "mps"
+  },
+  "19:48": {
+    "score": -6.477866,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "19:62": {
+    "score": -6.770094,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "19:72": {
+    "score": 0.109921,
+    "windowStart": 1607,
+    "windowEnd": 2117,
+    "device": "mps"
+  },
+  "19:75": {
+    "score": -4.156204,
+    "windowStart": 1943,
+    "windowEnd": 2453,
+    "device": "mps"
+  },
+  "19:80": {
+    "score": -0.474487,
+    "windowStart": 3424,
+    "windowEnd": 3934,
+    "device": "mps"
+  },
+  "19:86": {
+    "score": -0.973197,
+    "windowStart": 49,
+    "windowEnd": 559,
+    "device": "mps"
+  },
+  "20:6": {
+    "score": -8.412425,
+    "windowStart": 1,
+    "windowEnd": 189,
+    "device": "mps"
+  },
+  "20:8": {
+    "score": -1.771682,
+    "windowStart": 1,
+    "windowEnd": 334,
+    "device": "mps"
+  },
+  "20:9": {
+    "score": -4.848526,
+    "windowStart": 1,
+    "windowEnd": 196,
+    "device": "mps"
+  },
+  "20:19": {
+    "score": -1.73796,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "20:27": {
+    "score": -1.141982,
+    "windowStart": 166,
+    "windowEnd": 676,
+    "device": "mps"
+  },
+  "20:31": {
+    "score": -3.855797,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "20:42": {
+    "score": -2.169987,
+    "windowStart": 1,
+    "windowEnd": 155,
+    "device": "mps"
+  },
+  "20:43": {
+    "score": -2.381677,
+    "windowStart": 346,
+    "windowEnd": 856,
+    "device": "mps"
+  },
+  "20:44": {
+    "score": -0.780016,
+    "windowStart": 247,
+    "windowEnd": 757,
+    "device": "mps"
+  },
+  "20:47": {
+    "score": -3.396347,
+    "windowStart": 1,
+    "windowEnd": 116,
+    "device": "mps"
+  },
+  "20:51": {
+    "score": -8.787216,
+    "windowStart": 1,
+    "windowEnd": 321,
+    "device": "mps"
+  },
+  "20:59": {
+    "score": -1.117213,
+    "windowStart": 217,
+    "windowEnd": 727,
+    "device": "mps"
+  },
+  "20:60": {
+    "score": -0.394626,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "20:68": {
+    "score": -5.093883,
+    "windowStart": 1,
+    "windowEnd": 156,
+    "device": "mps"
+  },
+  "20:71": {
+    "score": -2.34524,
+    "windowStart": 1,
+    "windowEnd": 341,
+    "device": "mps"
+  },
+  "20:77": {
+    "score": -11.270405,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "23:2": {
+    "score": -6.833199,
+    "windowStart": 248,
+    "windowEnd": 758,
+    "device": "mps"
+  },
+  "23:13": {
+    "score": -0.603456,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "23:21": {
+    "score": -9.562089,
+    "windowStart": 1,
+    "windowEnd": 188,
+    "device": "mps"
+  },
+  "23:28": {
+    "score": -0.984637,
+    "windowStart": 896,
+    "windowEnd": 1406,
+    "device": "mps"
+  },
+  "23:31": {
+    "score": -0.374252,
+    "windowStart": 1,
+    "windowEnd": 177,
+    "device": "mps"
+  },
+  "23:47": {
+    "score": -10.554476,
+    "windowStart": 1,
+    "windowEnd": 433,
+    "device": "mps"
+  },
+  "23:55": {
+    "score": -3.78823,
+    "windowStart": 1,
+    "windowEnd": 341,
+    "device": "mps"
+  },
+  "23:62": {
+    "score": -1.155592,
+    "windowStart": 8922,
+    "windowEnd": 9432,
+    "device": "mps"
+  },
+  "23:67": {
+    "score": 1.066697,
+    "windowStart": 493,
+    "windowEnd": 1003,
+    "device": "mps"
+  },
+  "23:68": {
+    "score": -1.815618,
+    "windowStart": 1,
+    "windowEnd": 344,
+    "device": "mps"
+  },
+  "25:2": {
+    "score": -1.441723,
+    "windowStart": 1554,
+    "windowEnd": 2064,
+    "device": "mps"
+  },
+  "25:15": {
+    "score": -0.89929,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "25:29": {
+    "score": -5.989684,
+    "windowStart": 1,
+    "windowEnd": 423,
+    "device": "mps"
+  },
+  "25:36": {
+    "score": -1.033287,
+    "windowStart": 40,
+    "windowEnd": 550,
+    "device": "mps"
+  },
+  "25:38": {
+    "score": -1.099615,
+    "windowStart": 1,
+    "windowEnd": 341,
+    "device": "mps"
+  },
+  "25:48": {
+    "score": -8.588355,
+    "windowStart": 1466,
+    "windowEnd": 1976,
+    "device": "mps"
+  },
+  "25:52": {
+    "score": -5.69398,
+    "windowStart": 520,
+    "windowEnd": 1030,
+    "device": "mps"
+  },
+  "25:56": {
+    "score": -0.986636,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "25:68": {
+    "score": -6.499966,
+    "windowStart": 69,
+    "windowEnd": 579,
+    "device": "mps"
+  },
+  "25:73": {
+    "score": -3.846615,
+    "windowStart": 1491,
+    "windowEnd": 2001,
+    "device": "mps"
+  },
+  "25:85": {
+    "score": -1.202896,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "25:99": {
+    "score": -1.948496,
+    "windowStart": 1,
+    "windowEnd": 400,
+    "device": "mps"
+  },
+  "25:103": {
+    "score": 0.839539,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "25:105": {
+    "score": -3.269501,
+    "windowStart": 1,
+    "windowEnd": 510,
+    "device": "mps"
+  },
+  "25:120": {
+    "score": -3.190503,
+    "windowStart": 275,
+    "windowEnd": 785,
+    "device": "mps"
+  },
+  "25:123": {
+    "score": -9.702128,
+    "windowStart": 1,
+    "windowEnd": 286,
+    "device": "mps"
+  },
+  "28:9": {
+    "score": -5.635692,
+    "windowStart": 1,
+    "windowEnd": 341,
+    "device": "mps"
+  },
+  "28:23": {
+    "score": -0.462224,
+    "windowStart": 285,
+    "windowEnd": 795,
+    "device": "mps"
+  },
+  "28:27": {
+    "score": -3.086488,
+    "windowStart": 365,
+    "windowEnd": 875,
+    "device": "mps"
+  },
+  "28:28": {
+    "score": -10.291136,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "28:38": {
+    "score": -1.903924,
+    "windowStart": 1,
+    "windowEnd": 501,
+    "device": "mps"
+  },
+  "28:39": {
+    "score": -1.090829,
+    "windowStart": 1,
+    "windowEnd": 495,
+    "device": "mps"
+  },
+  "29:13": {
+    "score": -5.630672,
+    "windowStart": 1,
+    "windowEnd": 189,
+    "device": "mps"
+  },
+  "29:22": {
+    "score": 0.811597,
+    "windowStart": 1,
+    "windowEnd": 504,
+    "device": "mps"
+  },
+  "29:23": {
+    "score": -6.463479,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "29:26": {
+    "score": -2.738411,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "29:38": {
+    "score": -2.07969,
+    "windowStart": 23,
+    "windowEnd": 533,
+    "device": "mps"
+  },
+  "29:44": {
+    "score": 0.143868,
+    "windowStart": 530,
+    "windowEnd": 1040,
+    "device": "mps"
+  },
+  "29:73": {
+    "score": -9.052151,
+    "windowStart": 1,
+    "windowEnd": 249,
+    "device": "mps"
+  },
+  "29:77": {
+    "score": -8.44468,
+    "windowStart": 356,
+    "windowEnd": 866,
+    "device": "mps"
+  },
+  "29:78": {
+    "score": -0.272695,
+    "windowStart": 1002,
+    "windowEnd": 1512,
+    "device": "mps"
+  },
+  "29:82": {
+    "score": -0.380737,
+    "windowStart": 863,
+    "windowEnd": 1373,
+    "device": "mps"
+  },
+  "29:106": {
+    "score": -1.047574,
+    "windowStart": 608,
+    "windowEnd": 1118,
+    "device": "mps"
+  },
+  "29:111": {
+    "score": -2.394963,
+    "windowStart": 198,
+    "windowEnd": 708,
+    "device": "mps"
+  },
+  "29:112": {
+    "score": -6.530396,
+    "windowStart": 1,
+    "windowEnd": 266,
+    "device": "mps"
+  },
+  "29:113": {
+    "score": -3.510337,
+    "windowStart": 1,
+    "windowEnd": 112,
+    "device": "mps"
+  },
+  "29:125": {
+    "score": -3.640317,
+    "windowStart": 29,
+    "windowEnd": 539,
+    "device": "mps"
+  },
+  "29:128": {
+    "score": -4.435094,
+    "windowStart": 1,
+    "windowEnd": 360,
+    "device": "mps"
+  },
+  "29:152": {
+    "score": -8.02882,
+    "windowStart": 1,
+    "windowEnd": 511,
+    "device": "mps"
+  },
+  "29:153": {
+    "score": -4.642375,
+    "windowStart": 110,
+    "windowEnd": 620,
+    "device": "mps"
+  }
+}

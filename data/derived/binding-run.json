@@ -1,0 +1,6 @@
+{
+  "version": "2.1.4",
+  "modelsDirectoryName": "models.combined",
+  "prediction": "binding affinity nM",
+  "pairSelection": "published best class-I peptide/allele"
+}

@@ -1,0 +1,24 @@
+{
+  "6UK2": {
+    "symmetryOperator": 1,
+    "lattice": [
+      1,
+      -1,
+      0
+    ],
+    "atomPairsWithin4A": 46,
+    "closestDistance": 2.557849993778171,
+    "Trp6Ne1ToTyr100AlphaRingCentroid": 3.3115829949350353
+  },
+  "6UK4": {
+    "symmetryOperator": 1,
+    "lattice": [
+      0,
+      1,
+      0
+    ],
+    "atomPairsWithin4A": 65,
+    "closestDistance": 2.5559827044034114,
+    "Trp6Ne1ToTyr100AlphaRingCentroid": 3.3055026947549067
+  }
+}

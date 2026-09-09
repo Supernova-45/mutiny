@@ -1,0 +1,118 @@
+{
+  "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06063-y/MediaObjects/41586_2023_6063_MOESM4_ESM.xlsx",
+  "sha256": "c9942caa0de461e87c3725ae42377fea2a283cd170074fb2e36820303b429595",
+  "worksheet": "ml41081_targets_with_elispot",
+  "records": 232,
+  "patients": 16,
+  "response_labels": {
+    "No response": 200,
+    "De novo response": 23,
+    "No data": 2,
+    "De novo response in pool": 7
+  },
+  "predicted_class_I_pair_present": 232,
+  "predicted_class_II_pair_present": 232,
+  "both_predicted_pairs_present": 232,
+  "individual_outcome_records": 223,
+  "esm_metadata_eligible": 216,
+  "esm_metadata_and_individual_outcome": 207,
+  "esm_metadata_and_individual_outcome_labels": {
+    "No response": 184,
+    "De novo response": 23
+  },
+  "per_patient": {
+    "1": {
+      "No response": 6,
+      "De novo response": 1
+    },
+    "3": {
+      "No response": 20
+    },
+    "4": {
+      "No response": 19
+    },
+    "5": {
+      "No response": 15,
+      "De novo response": 1
+    },
+    "6": {
+      "No response": 9,
+      "De novo response": 1
+    },
+    "9": {
+      "No response": 17
+    },
+    "10": {
+      "No response": 6,
+      "De novo response": 8
+    },
+    "11": {
+      "No response": 10,
+      "De novo response": 3,
+      "No data": 1
+    },
+    "14": {
+      "De novo response": 1,
+      "No response": 9
+    },
+    "18": {
+      "No response": 10
+    },
+    "19": {
+      "No response": 20
+    },
+    "20": {
+      "No response": 19
+    },
+    "23": {
+      "No response": 10
+    },
+    "25": {
+      "De novo response in pool": 7,
+      "No response": 7,
+      "De novo response": 3
+    },
+    "28": {
+      "No response": 9
+    },
+    "29": {
+      "No response": 14,
+      "De novo response": 5,
+      "No data": 1
+    }
+  },
+  "metadata_excluded_targets": [
+    "3:14",
+    "3:19",
+    "3:42",
+    "3:77",
+    "3:81",
+    "4:54",
+    "5:67",
+    "6:27",
+    "9:2",
+    "11:6",
+    "14:10",
+    "28:24",
+    "28:f0",
+    "28:f1",
+    "29:8",
+    "29:96"
+  ],
+  "pool_members": [
+    "25:2",
+    "25:15",
+    "25:36",
+    "25:48",
+    "25:56",
+    "25:85",
+    "25:103"
+  ],
+  "interpretation": [
+    "Predicted pairs cannot assign the class mediating an ELISpot response.",
+    "Pool members and No data records are excluded from binary outcome analysis.",
+    "No response means no response detected under the published assay conditions.",
+    "ESM eligibility here checks metadata only, not protein mapping or model compatibility.",
+    "The paper reports 25 responses including two pool responses; do not convert this into 25 individually identified positives."
+  ]
+}

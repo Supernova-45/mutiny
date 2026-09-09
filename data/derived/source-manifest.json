@@ -1,0 +1,71 @@
+{
+  "retrieved": "2026-09-09",
+  "inputs": [
+    {
+      "path": "data/raw/6UJO.pdb",
+      "sha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "bytes": 562464,
+      "source": "https://files.rcsb.org/download/6UJO.pdb"
+    },
+    {
+      "path": "data/raw/6UJQ.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062,
+      "source": "https://files.rcsb.org/download/6UJQ.pdb"
+    },
+    {
+      "path": "data/raw/6UK2.pdb",
+      "sha256": "1b9d9e1a23b159d8c9a0065cb5f01fb300902365bcea4602faf51454a9a0428b",
+      "bytes": 1144449,
+      "source": "https://files.rcsb.org/download/6UK2.pdb"
+    },
+    {
+      "path": "data/raw/6UK4.pdb",
+      "sha256": "8a1a4ff984f3a528bafaf65f9488c6780d8c0f6ff11617beb81e0768165041f8",
+      "bytes": 1145016,
+      "source": "https://files.rcsb.org/download/6UK4.pdb"
+    },
+    {
+      "path": "data/raw/refseq/batch-00.gb",
+      "sha256": "c7b8b8539b0e6a575f85fc6cbf3401ecbb01ef98357e4fdddd5019e88a63212e",
+      "bytes": 812781,
+      "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi (cached versioned GenBank batch; accessions in file)"
+    },
+    {
+      "path": "data/raw/refseq/batch-01.gb",
+      "sha256": "703e6803208845913e525a4eb31531680e9a38d2a7f6a90775cc3d57fc9043ab",
+      "bytes": 869520,
+      "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi (cached versioned GenBank batch; accessions in file)"
+    },
+    {
+      "path": "data/raw/refseq/batch-02.gb",
+      "sha256": "0d364be7e40cb51f46f3226acdcf74990326c07ff957e49fa69f059b025ab843",
+      "bytes": 1047621,
+      "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi (cached versioned GenBank batch; accessions in file)"
+    },
+    {
+      "path": "data/raw/refseq/batch-03.gb",
+      "sha256": "f517fb04307b70296fc235aadaca3f63fcddf397fc9e18af2547329fbe6a30ad",
+      "bytes": 949503,
+      "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi (cached versioned GenBank batch; accessions in file)"
+    },
+    {
+      "path": "data/raw/refseq/batch-04.gb",
+      "sha256": "c3e5c79e00619f63d4110629f301f46f167bf09949bd9295eb7867711ccb5d2e",
+      "bytes": 922166,
+      "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi (cached versioned GenBank batch; accessions in file)"
+    },
+    {
+      "path": "data/raw/refseq/batch-05.gb",
+      "sha256": "8d287575bab3e7f326eb4ceb397da5ef4926ef9691363869cb8b6912e1c89482",
+      "bytes": 281261,
+      "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi (cached versioned GenBank batch; accessions in file)"
+    },
+    {
+      "path": "data/raw/rojas-2023-table5.xlsx",
+      "sha256": "c9942caa0de461e87c3725ae42377fea2a283cd170074fb2e36820303b429595",
+      "bytes": 49048,
+      "source": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06063-y/MediaObjects/41586_2023_6063_MOESM4_ESM.xlsx"
+    }
+  ]
+}

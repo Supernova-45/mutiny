@@ -1,0 +1,141 @@
+{
+  "mhcflurryBundle": "models_class1_pan",
+  "source": "https://github.com/openvax/mhcflurry/releases/download/pre-2.0/models_class1_pan.selected.20200610.tar.bz2",
+  "files": [
+    {
+      "path": "DOWNLOAD_INFO.csv",
+      "sha256": "3ab615c5c41e76dea3b3b4e28f1f83099489051ed7c27ac25960010d978059ac",
+      "bytes": 111
+    },
+    {
+      "path": "GENERATE.sh",
+      "sha256": "d41ce0044756ea0eca5e4c0ab9930cdd687acbd8c24cc2bbf37064bbdb71d6da",
+      "bytes": 5338
+    },
+    {
+      "path": "LOG.1591723786.txt.bz2",
+      "sha256": "eefbb9a7de093778e3d7b2c7d0d7af96d3037e04b650a80c8d29ede1381bd495",
+      "bytes": 38368
+    },
+    {
+      "path": "additional_alleles.txt",
+      "sha256": "807237cfc7f836537d102e23f7633ebc2b4ac73d3becb6f95b09a5b64d250a65",
+      "bytes": 121
+    },
+    {
+      "path": "generate_hyperparameters.py",
+      "sha256": "ef03bce74c5156b6fd7109e20122e65be0a41d04a2c963631e9a56fad8a6169d",
+      "bytes": 2709
+    },
+    {
+      "path": "hyperparameters.yaml",
+      "sha256": "2948f6f9846c20f55e0b83dd684b157bca8271970a915f2a870b2d34099a27e7",
+      "bytes": 49659
+    },
+    {
+      "path": "models.combined/allele_sequences.csv",
+      "sha256": "077f8ed415f4fe2519e03a9e396c0aa1799879b0e0ce6bc2f1b17232c01f4d48",
+      "bytes": 760514
+    },
+    {
+      "path": "models.combined/frequency_matrices.csv.bz2",
+      "sha256": "4e4662abf64d09c855f31256923e796b73d81fdef1b951f6dbd6c20972cd5fd4",
+      "bytes": 59372077
+    },
+    {
+      "path": "models.combined/info.txt",
+      "sha256": "8df0d64ebbf7d12b1c45383238e64d3a4fcc90aa23e9e48f3204ce4d082cae6b",
+      "bytes": 102
+    },
+    {
+      "path": "models.combined/length_distributions.csv.bz2",
+      "sha256": "1d2c955c92fda7abb6a03803f20a0e3786ceeecdaea4e033ccecf5004e701142",
+      "bytes": 1012279
+    },
+    {
+      "path": "models.combined/manifest.csv",
+      "sha256": "6579337ae5ac8727a9d64ff76550193bddf005307d4e8708e256d3211f96be28",
+      "bytes": 115260
+    },
+    {
+      "path": "models.combined/model_selection_data.csv.bz2",
+      "sha256": "56b6be2a796e7c094b79eb7b2f7eb7da23fd96a6caab3d9c953ed64849d527c3",
+      "bytes": 4483361
+    },
+    {
+      "path": "models.combined/model_selection_summary.csv.bz2",
+      "sha256": "2617750e77036b49e442a0f46bc2cd2aea7f173fcb04b159f088b0d8aa3f0b89",
+      "bytes": 215596
+    },
+    {
+      "path": "models.combined/percent_ranks.csv",
+      "sha256": "7aad696215341060c02ac29aae4bef3e84a6ac31577aae6d063e7cf13e608416",
+      "bytes": 83090609
+    },
+    {
+      "path": "models.combined/train_data.csv.bz2",
+      "sha256": "cc49949a5f8950f2386971d9573c4d13e9aea4d53d6893337e3735ac2c8a136d",
+      "bytes": 4488832
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-05734e73adff1f25.npz",
+      "sha256": "8a1b994010a78adeccf6f1425f938f30381ce2df486c5313712b522ff40ed067",
+      "bytes": 11261512
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-0c7c1570118fd907.npz",
+      "sha256": "15ba1320262356a1a32d4ecab35e949f83e2684747597f9f4925f0fc6ae4b89f",
+      "bytes": 11261512
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-24d9082b2c8d7a60.npz",
+      "sha256": "9824751b57de70664e4cdfd388b4ba7c4a8f9bfe6aa5094d6b6f677bb099a34f",
+      "bytes": 9160264
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-3ed9fb2d2dcc9803.npz",
+      "sha256": "d4f92dcc4e3a3cec625b2279c64f44f9104468659574e8a0a5395e233e532b57",
+      "bytes": 4582984
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-8475f7a9fb788e27.npz",
+      "sha256": "420f50c45ea0c234de754e78257beba13c6d6ead24a69dd0f82eba2ffec78ce7",
+      "bytes": 9160264
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-9e049de50b72dc23.npz",
+      "sha256": "a49b2def22bc7d99217d0d4cc51d3d89ffbf4d3c8f9d3aa05ad1aa367bfaf3fe",
+      "bytes": 5821000
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-9f7dfdd0c2763c42.npz",
+      "sha256": "c4eec9f3c0ea8d8cedddb2a0c4917c2b4ccc492e1beb4a38bb10fb8c561b7f69",
+      "bytes": 7396364
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-b17c8628ffc4b80d.npz",
+      "sha256": "9669f2c9288d5cd64f68951126c75b655451b6c6f3fe74c90113332413fccaf2",
+      "bytes": 4845580
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-ce288787fc2f6872.npz",
+      "sha256": "26883cd1f354f16dc2ab93c30ef20212b453d3704e3330ebdb7be960cf184cd3",
+      "bytes": 9160264
+    },
+    {
+      "path": "models.combined/weights_PAN-CLASS1-1-e33438f875ba4af2.npz",
+      "sha256": "aa446b4e876bcbfe3d572168b7adbabe5239278499d953fa430dfe6c9f1174c9",
+      "bytes": 7396364
+    },
+    {
+      "path": "reassign_mass_spec_training_data.py",
+      "sha256": "e909d30ea84341b59bd43095645ae7972905b31a3569f17dc68c9f2686ca7b6e",
+      "bytes": 1426
+    },
+    {
+      "path": "train_data.csv.bz2",
+      "sha256": "810019b6356eb03edff8ced1f72e6d649326252d628d270fada765d67a5dba15",
+      "bytes": 4977662
+    }
+  ]
+}

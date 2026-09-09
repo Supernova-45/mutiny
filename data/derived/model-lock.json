@@ -1,0 +1,10 @@
+{
+  "esmModel": "facebook/esm2_t33_650M_UR50D",
+  "esmRevision": "08e4846e537177426273712802403f7ba8261b6c",
+  "esmWindow": 511,
+  "esmDefinition": "log P(mutant | masked wild-type context) - log P(wildtype | same context)",
+  "esmOrdering": "ascending; more negative first, exploratory disruption hypothesis",
+  "bindingOrdering": "ascending predicted affinity nM; lower first",
+  "shuffleSeed": 20260909,
+  "shuffleReplicates": 2000
+}

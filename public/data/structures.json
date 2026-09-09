@@ -1,0 +1,532 @@
+{
+  "structures": [
+    {
+      "id": "6UJQ",
+      "state": "normal",
+      "bound": false,
+      "peptide": "KQWLVWLLL",
+      "allele": "HLA-A*02:06",
+      "source": "https://www.rcsb.org/structure/6UJQ",
+      "rawSha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "alignedSha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62",
+      "platformRmsd": 0.0,
+      "alignedCaCount": 180,
+      "receptorLatticeTranslation": [
+        0,
+        0,
+        0
+      ],
+      "receptorTranslationAngstrom": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residues": [
+        {
+          "position": 1,
+          "name": "K",
+          "sasa": 62.2,
+          "contacts": []
+        },
+        {
+          "position": 2,
+          "name": "Q",
+          "sasa": 3.8,
+          "contacts": []
+        },
+        {
+          "position": 3,
+          "name": "W",
+          "sasa": 9.1,
+          "contacts": []
+        },
+        {
+          "position": 4,
+          "name": "L",
+          "sasa": 149.1,
+          "contacts": []
+        },
+        {
+          "position": 5,
+          "name": "V",
+          "sasa": 39.4,
+          "contacts": []
+        },
+        {
+          "position": 6,
+          "name": "W",
+          "sasa": 147.4,
+          "contacts": []
+        },
+        {
+          "position": 7,
+          "name": "L",
+          "sasa": 7.8,
+          "contacts": []
+        },
+        {
+          "position": 8,
+          "name": "L",
+          "sasa": 56.1,
+          "contacts": []
+        },
+        {
+          "position": 9,
+          "name": "L",
+          "sasa": 6.5,
+          "contacts": []
+        }
+      ]
+    },
+    {
+      "id": "6UJO",
+      "state": "mutant",
+      "bound": false,
+      "peptide": "KQWLVWLFL",
+      "allele": "HLA-A*02:06",
+      "source": "https://www.rcsb.org/structure/6UJO",
+      "rawSha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "alignedSha256": "eb36cec705b3f6aadc0956cb8eddb3fcffb9de1b4b845cabb7c4e7c27a9815da",
+      "platformRmsd": 0.2556,
+      "alignedCaCount": 180,
+      "receptorLatticeTranslation": [
+        0,
+        0,
+        0
+      ],
+      "receptorTranslationAngstrom": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "residues": [
+        {
+          "position": 1,
+          "name": "K",
+          "sasa": 38.2,
+          "contacts": []
+        },
+        {
+          "position": 2,
+          "name": "Q",
+          "sasa": 2.7,
+          "contacts": []
+        },
+        {
+          "position": 3,
+          "name": "W",
+          "sasa": 19.4,
+          "contacts": []
+        },
+        {
+          "position": 4,
+          "name": "L",
+          "sasa": 108.9,
+          "contacts": []
+        },
+        {
+          "position": 5,
+          "name": "V",
+          "sasa": 14.4,
+          "contacts": []
+        },
+        {
+          "position": 6,
+          "name": "W",
+          "sasa": 137.4,
+          "contacts": []
+        },
+        {
+          "position": 7,
+          "name": "L",
+          "sasa": 10.9,
+          "contacts": []
+        },
+        {
+          "position": 8,
+          "name": "F",
+          "sasa": 79.9,
+          "contacts": []
+        },
+        {
+          "position": 9,
+          "name": "L",
+          "sasa": 5.1,
+          "contacts": []
+        }
+      ]
+    },
+    {
+      "id": "6UK2",
+      "state": "normal",
+      "bound": true,
+      "peptide": "KQWLVWLLL",
+      "allele": "HLA-A*02:06",
+      "source": "https://www.rcsb.org/structure/6UK2",
+      "rawSha256": "1b9d9e1a23b159d8c9a0065cb5f01fb300902365bcea4602faf51454a9a0428b",
+      "alignedSha256": "4b62cae78cacbd31c24120119fc2a790b609a12db9d84ef2b8fab53cc5cf7b7c",
+      "platformRmsd": 0.5411,
+      "alignedCaCount": 180,
+      "receptorLatticeTranslation": [
+        1,
+        -1,
+        0
+      ],
+      "receptorTranslationAngstrom": [
+        64.357,
+        -85.932,
+        0.0
+      ],
+      "residues": [
+        {
+          "position": 1,
+          "name": "K",
+          "sasa": 15.5,
+          "contacts": [
+            {
+              "residue": "D:SER31",
+              "distance": 2.56,
+              "peptideAtom": "NZ",
+              "receptorAtom": "OG"
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "name": "Q",
+          "sasa": 1.1,
+          "contacts": []
+        },
+        {
+          "position": 3,
+          "name": "W",
+          "sasa": 1.1,
+          "contacts": [
+            {
+              "residue": "D:TYR55",
+              "distance": 3.97,
+              "peptideAtom": "CD1",
+              "receptorAtom": "OH"
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "name": "L",
+          "sasa": 0.0,
+          "contacts": [
+            {
+              "residue": "D:TYR100",
+              "distance": 2.86,
+              "peptideAtom": "O",
+              "receptorAtom": "OH"
+            },
+            {
+              "residue": "D:TYR55",
+              "distance": 3.75,
+              "peptideAtom": "CB",
+              "receptorAtom": "OH"
+            },
+            {
+              "residue": "D:SER98",
+              "distance": 3.83,
+              "peptideAtom": "CD1",
+              "receptorAtom": "CA"
+            },
+            {
+              "residue": "D:ASP32",
+              "distance": 3.63,
+              "peptideAtom": "CD2",
+              "receptorAtom": "O"
+            },
+            {
+              "residue": "D:TYR34",
+              "distance": 3.59,
+              "peptideAtom": "CD2",
+              "receptorAtom": "CE1"
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "name": "V",
+          "sasa": 7.8,
+          "contacts": [
+            {
+              "residue": "E:SER99",
+              "distance": 3.85,
+              "peptideAtom": "CG1",
+              "receptorAtom": "OG"
+            },
+            {
+              "residue": "D:TYR34",
+              "distance": 3.23,
+              "peptideAtom": "CG2",
+              "receptorAtom": "OH"
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "name": "W",
+          "sasa": 13.4,
+          "contacts": [
+            {
+              "residue": "E:SER99",
+              "distance": 3.06,
+              "peptideAtom": "N",
+              "receptorAtom": "OG"
+            },
+            {
+              "residue": "E:PRO100",
+              "distance": 3.68,
+              "peptideAtom": "CD2",
+              "receptorAtom": "CD"
+            },
+            {
+              "residue": "D:TYR100",
+              "distance": 3.13,
+              "peptideAtom": "NE1",
+              "receptorAtom": "CZ"
+            },
+            {
+              "residue": "E:ASN51",
+              "distance": 3.52,
+              "peptideAtom": "CE3",
+              "receptorAtom": "ND2"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "name": "L",
+          "sasa": 5.4,
+          "contacts": []
+        },
+        {
+          "position": 8,
+          "name": "L",
+          "sasa": 14.7,
+          "contacts": [
+            {
+              "residue": "E:ASN52",
+              "distance": 3.59,
+              "peptideAtom": "CD1",
+              "receptorAtom": "ND2"
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "name": "L",
+          "sasa": 5.0,
+          "contacts": []
+        }
+      ]
+    },
+    {
+      "id": "6UK4",
+      "state": "mutant",
+      "bound": true,
+      "peptide": "KQWLVWLFL",
+      "allele": "HLA-A*02:06",
+      "source": "https://www.rcsb.org/structure/6UK4",
+      "rawSha256": "8a1a4ff984f3a528bafaf65f9488c6780d8c0f6ff11617beb81e0768165041f8",
+      "alignedSha256": "9388b2c07fec4dc4dbde6328ae1e9f416415307a4312b9b42de3d7a9c9e1eb84",
+      "platformRmsd": 0.4731,
+      "alignedCaCount": 180,
+      "receptorLatticeTranslation": [
+        0,
+        1,
+        0
+      ],
+      "receptorTranslationAngstrom": [
+        0.0,
+        86.507,
+        0.0
+      ],
+      "residues": [
+        {
+          "position": 1,
+          "name": "K",
+          "sasa": 20.3,
+          "contacts": [
+            {
+              "residue": "D:SER31",
+              "distance": 2.97,
+              "peptideAtom": "NZ",
+              "receptorAtom": "OG"
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "name": "Q",
+          "sasa": 1.1,
+          "contacts": []
+        },
+        {
+          "position": 3,
+          "name": "W",
+          "sasa": 1.8,
+          "contacts": [
+            {
+              "residue": "D:TYR55",
+              "distance": 3.41,
+              "peptideAtom": "CD1",
+              "receptorAtom": "OH"
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "name": "L",
+          "sasa": 4.2,
+          "contacts": [
+            {
+              "residue": "D:TYR55",
+              "distance": 3.53,
+              "peptideAtom": "N",
+              "receptorAtom": "OH"
+            },
+            {
+              "residue": "D:TYR100",
+              "distance": 2.56,
+              "peptideAtom": "O",
+              "receptorAtom": "OH"
+            },
+            {
+              "residue": "E:THR101",
+              "distance": 3.83,
+              "peptideAtom": "O",
+              "receptorAtom": "CG2"
+            },
+            {
+              "residue": "D:SER98",
+              "distance": 3.8,
+              "peptideAtom": "CD1",
+              "receptorAtom": "CA"
+            },
+            {
+              "residue": "D:ASP32",
+              "distance": 3.55,
+              "peptideAtom": "CD2",
+              "receptorAtom": "O"
+            },
+            {
+              "residue": "D:TYR34",
+              "distance": 3.74,
+              "peptideAtom": "CD2",
+              "receptorAtom": "CE1"
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "name": "V",
+          "sasa": 7.2,
+          "contacts": [
+            {
+              "residue": "E:THR101",
+              "distance": 3.83,
+              "peptideAtom": "CG1",
+              "receptorAtom": "OG1"
+            },
+            {
+              "residue": "D:TYR34",
+              "distance": 3.25,
+              "peptideAtom": "CG2",
+              "receptorAtom": "OH"
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "name": "W",
+          "sasa": 8.9,
+          "contacts": [
+            {
+              "residue": "E:SER99",
+              "distance": 3.38,
+              "peptideAtom": "N",
+              "receptorAtom": "OG"
+            },
+            {
+              "residue": "E:PRO100",
+              "distance": 3.52,
+              "peptideAtom": "CD2",
+              "receptorAtom": "CD"
+            },
+            {
+              "residue": "D:TYR100",
+              "distance": 3.28,
+              "peptideAtom": "NE1",
+              "receptorAtom": "CZ"
+            },
+            {
+              "residue": "E:TYR49",
+              "distance": 3.52,
+              "peptideAtom": "CH2",
+              "receptorAtom": "OH"
+            },
+            {
+              "residue": "E:ASN51",
+              "distance": 3.92,
+              "peptideAtom": "CZ3",
+              "receptorAtom": "CG"
+            },
+            {
+              "residue": "E:ILE56",
+              "distance": 3.96,
+              "peptideAtom": "CH2",
+              "receptorAtom": "CG2"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "name": "L",
+          "sasa": 6.0,
+          "contacts": []
+        },
+        {
+          "position": 8,
+          "name": "F",
+          "sasa": 13.4,
+          "contacts": [
+            {
+              "residue": "E:THR98",
+              "distance": 3.15,
+              "peptideAtom": "CD1",
+              "receptorAtom": "OG1"
+            },
+            {
+              "residue": "E:ASN51",
+              "distance": 3.47,
+              "peptideAtom": "CZ",
+              "receptorAtom": "OD1"
+            },
+            {
+              "residue": "E:ASN52",
+              "distance": 3.5,
+              "peptideAtom": "CE2",
+              "receptorAtom": "ND2"
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "name": "L",
+          "sasa": 4.4,
+          "contacts": []
+        }
+      ]
+    }
+  ],
+  "alignment": "Kabsch fit on common HLA chain A CA atoms, residues 1\u2013180; common display rotation",
+  "sasa": "Shrake\u2013Rupley, 1.4 \u00c5 probe, 200 points/atom, protein-only complex",
+  "contacts": "Heavy-atom pairs within 4 \u00c5; unique TCR residues per peptide residue",
+  "receptorAssembly": "TCR chains D/E translated by deposited unit-cell vectors: 6UK2 (+a,-b,0); 6UK4 (0,+b,0). Identity symmetry rotation. Each is the only peptide-contacting mate among identity and deposited symmetry operations with translations -1..1. Checked against the paper's Trp6\u2013Tyr100\u03b1 interface.",
+  "study": "Devlin et al., Nature Chemical Biology 2020",
+  "doi": "10.1038/s41589-020-0610-1"
+}
