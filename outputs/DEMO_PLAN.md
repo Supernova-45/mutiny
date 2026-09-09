@@ -59,7 +59,9 @@ Final words and timings depend on the measured result and approved claim list. D
 - `demo-story.json`: chapter timing, interaction state and evidence-claim IDs; a plain transcript alongside it.
 - Genuine Workbench screenshots and exact plugin credit, used only after the work is complete.
 
-Caption requirements: match the final audio, at most two short lines, phrase-based timing, legible contrast, and no obstruction of the selected residue or measurement. Include meaningful non-speech audio if any. Check the full film muted, caption on/off, keyboard controls, pause/resume, reduced-motion preference and mobile playback. Captions are accessibility content; they should not add scientific claims absent from narration/evidence.
+Caption style: concise, engaging and focused on the biological reveal. Write the narration that way first, then caption it faithfully. Aim for one short thought per cue, usually 4–9 words, with at most two short lines. Use concrete language and active verbs; avoid interface narration, filler and dense jargon. Preserve scientific meaning and necessary qualifiers rather than shortening a claim into something misleading.
+
+Caption requirements: match the final audio, phrase-based timing, comfortable reading time, legible contrast, and no obstruction of the selected residue or measurement. Include meaningful non-speech audio if any. Check the full film muted, caption on/off, keyboard controls, pause/resume, reduced-motion preference and mobile playback. Captions are accessibility content; they should not add scientific claims absent from narration/evidence.
 
 ## Scope and order
 
