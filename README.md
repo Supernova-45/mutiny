@@ -1,6 +1,6 @@
 # Callback
 
-**Which cancer-vaccine targets get an immune response?**
+**Which cancer mutations trigger T cells?**
 
 Cancer vaccines teach T cells what to recognize. Choosing those targets is the hard part.
 
@@ -8,7 +8,7 @@ Inspired by Radical Numerics’ [Omnii cancer-vaccine post](https://www.radicaln
 
 ![Rotate normal and mutant peptide–HLA structures with their T-cell receptors, in linked views](outputs/screenshots/recognition-orbit.gif)
 
-**Drag to rotate. Reveal the receptor. Pick a residue.** Four experimental structures, with synchronized cameras and measurable contacts. This HHAT case is independent of the vaccine trial below.
+**Normal and mutant peptides meet the same T-cell receptor.** Four experimental structures, with synchronized cameras and measurable contacts. This HHAT case is independent of the vaccine trial below.
 
 ### Start with the targets
 
