@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "0.1.0",
+  "checks": [
+    {
+      "check": "Schema and joins: rojas-2023",
+      "status": "pass"
+    },
+    {
+      "check": "JSON lossless roundtrip: rojas-2023",
+      "status": "pass"
+    },
+    {
+      "check": "Schema and joins: hcc1395-pvacseq-filtered",
+      "status": "pass"
+    },
+    {
+      "check": "JSON lossless roundtrip: hcc1395-pvacseq-filtered",
+      "status": "pass"
+    },
+    {
+      "check": "Schema and joins: hhat-structural-case",
+      "status": "pass"
+    },
+    {
+      "check": "JSON lossless roundtrip: hhat-structural-case",
+      "status": "pass"
+    },
+    {
+      "check": "Rojas frozen 188/22/166 and excluded 10:39",
+      "status": "pass"
+    },
+    {
+      "check": "232 labels, two positive pools, seven unresolved members, sequence roles; independent fixture unlabeled",
+      "status": "pass"
+    },
+    {
+      "check": "Reject duplicated outcome across peptide-HLA rows",
+      "status": "pass"
+    },
+    {
+      "check": "Missing score reduces common denominator without relabeling",
+      "status": "pass"
+    },
+    {
+      "check": "Reject missing direction",
+      "status": "pass"
+    },
+    {
+      "check": "Reject negative nM",
+      "status": "pass"
+    },
+    {
+      "check": "Reject infinite score",
+      "status": "pass"
+    },
+    {
+      "check": "Reject duplicate candidate",
+      "status": "pass"
+    },
+    {
+      "check": "Reject unknown schema version",
+      "status": "pass"
+    },
+    {
+      "check": "Exact request/return join and idempotent import; proposed correction unapplied",
+      "status": "pass"
+    },
+    {
+      "check": "Reject evidence fingerprint mismatch",
+      "status": "pass"
+    },
+    {
+      "check": "Reject evidence sequence mismatch",
+      "status": "pass"
+    },
+    {
+      "check": "Reject evidence reference mismatch",
+      "status": "pass"
+    },
+    {
+      "check": "Reject evidence major version mismatch",
+      "status": "pass"
+    },
+    {
+      "check": "HHAT mechanism uses same evidence-pack contract and separate fingerprint",
+      "status": "pass"
+    },
+    {
+      "check": "Independent PDB roundtrip endpoints, previous HLA residuals and whole-residue SASA",
+      "status": "pass"
+    },
+    {
+      "check": "Direction and stable-ID ties; no unmatched L/F sidechain RMSD; HLA sensitivity",
+      "status": "pass"
+    }
+  ],
+  "geometry": [
+    {
+      "id": "6UK2",
+      "NE1ToTyrCentroid": 3.311585643080245,
+      "minimumHeavyAtom": 3.13420297993386
+    },
+    {
+      "id": "6UK4",
+      "NE1ToTyrCentroid": 3.3055045725756025,
+      "minimumHeavyAtom": 3.278436637393912
+    }
+  ],
+  "fixtures": {
+    "rojasCandidates": 232,
+    "rojasEligible": 188,
+    "hcc1395Candidates": 11,
+    "hcc1395Outcomes": 0
+  },
+  "notTested": [
+    "Generic frontend, browser offline behavior, CSV import UI and ZIP safety are original-agent work.",
+    "No live researchers tested these contracts.",
+    "No Rosalind Workbench operations possible."
+  ]
+}

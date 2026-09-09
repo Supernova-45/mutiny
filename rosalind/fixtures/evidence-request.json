@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "0.1.0",
+  "requestId": "rojas-evidence-request-1",
+  "projectId": "rojas-2023",
+  "projectFingerprint": "86d40fbbcd36ee2dc0260df0c56a44749b17628893717503de638b8e94fdd25a",
+  "selectedCandidateIds": [
+    "1:3",
+    "10:39"
+  ],
+  "candidateContexts": [
+    {
+      "candidateId": "1:3",
+      "sequence": "NAQVRKCPPVITVNASRPQPFMGVPVQ",
+      "role": "mutant_source_context",
+      "hla": null,
+      "reference": "NM_006794",
+      "mappingStatus": "verified"
+    },
+    {
+      "candidateId": "10:39",
+      "sequence": "YRDRDWRWVLLRLYKAGARVKIMDYEG",
+      "role": "mutant_source_context",
+      "hla": null,
+      "reference": "NM_152426",
+      "mappingStatus": "unresolved"
+    }
+  ],
+  "questions": [
+    "Confirm sequence role and reference reconciliation without rescoring."
+  ],
+  "permissibleSources": [
+    {
+      "id": "rojas-table5",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06063-y/MediaObjects/41586_2023_6063_MOESM4_ESM.xlsx",
+      "sha256": "c9942caa0de461e87c3725ae42377fea2a283cd170074fb2e36820303b429595",
+      "path": "data/raw/rojas-2023-table5.xlsx",
+      "license": "Existing repository public publication supplement; preserve source terms"
+    },
+    {
+      "id": "frozen-scores",
+      "url": "https://github.com/Supernova-45/mutiny",
+      "sha256": "7dde1c515f3ec9e3a0984b9d59d4b41d9a38a8b515e305d94e0febc20241b59d",
+      "path": "public/data/cohort.json",
+      "license": "Existing repository terms"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "platform": "macOS-26.4-arm64-arm-64bit",
+  "python": "Python 3.9.6",
+  "node": "v24.19.0",
+  "dependencies": "requirements.lock.txt",
+  "execution": "local Codex desktop; no Workbench",
+  "baseCommit": "c2f57baed7b5d11cc3931c744cebc6f9f2d07a05"
+}

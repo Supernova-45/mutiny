@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "0.1.0",
+  "packId": "rojas-evidence-return-1",
+  "projectId": "rojas-2023",
+  "projectFingerprint": "86d40fbbcd36ee2dc0260df0c56a44749b17628893717503de638b8e94fdd25a",
+  "requestId": "rojas-evidence-request-1",
+  "selectedCandidateIds": [
+    "1:3",
+    "10:39"
+  ],
+  "candidateContexts": [
+    {
+      "candidateId": "1:3",
+      "sequence": "NAQVRKCPPVITVNASRPQPFMGVPVQ",
+      "role": "mutant_source_context",
+      "hla": null,
+      "reference": "NM_006794",
+      "mappingStatus": "verified"
+    },
+    {
+      "candidateId": "10:39",
+      "sequence": "YRDRDWRWVLLRLYKAGARVKIMDYEG",
+      "role": "mutant_source_context",
+      "hla": null,
+      "reference": "NM_152426",
+      "mappingStatus": "unresolved"
+    }
+  ],
+  "findings": [
+    {
+      "candidateId": "1:3",
+      "status": "resolved",
+      "claimIds": [
+        "ROJAS-ROLE-1"
+      ]
+    },
+    {
+      "candidateId": "10:39",
+      "status": "unresolved",
+      "claimIds": [],
+      "reason": "Strict current-reference mismatch remains; historical rescue not performed"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ROJAS-ROLE-1",
+      "claim": "Supplied mutant flank is source context; class-I and class-II predicted epitopes are separate fields.",
+      "evidenceType": "computed_validation",
+      "sourceUrl": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-023-06063-y/MediaObjects/41586_2023_6063_MOESM4_ESM.xlsx",
+      "location": "Supplementary Table 5 columns F, J, M; local exact source cross-check",
+      "measurements": [],
+      "limitations": [
+        "Schema evidence type extended below to computed validation; no structural claim."
+      ],
+      "candidateIds": [
+        "1:3"
+      ]
+    }
+  ],
+  "proposedCorrections": [
+    {
+      "id": "proposal-role-label-1",
+      "candidateId": "1:3",
+      "field": "displayLabel for primary sequence",
+      "current": "unspecified",
+      "proposed": "Mutant source context",
+      "reason": "Prevent importer from labeling the flank as an assayed epitope; presentation-only proposal, existing role is already correct",
+      "evidenceIds": [
+        "ROJAS-ROLE-1"
+      ],
+      "applyAutomatically": false
+    }
+  ],
+  "unsupported": [],
+  "provenance": {
+    "execution": "local source cross-check",
+    "script": "rosalind/analysis/contracts.py"
+  }
+}

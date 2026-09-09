@@ -1,0 +1,1 @@
+Authentic Rosalind Workbench screenshots are not available: this session exposes no Workbench connector or enabled Workbench app/browser surface. No scientific plugin operations occurred. Published paper figures were inspected as sources and are not claimed as Workbench screenshots. The showcase's Workbench requirement remains unfinished.

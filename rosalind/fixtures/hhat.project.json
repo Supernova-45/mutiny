@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "0.1.0",
+  "projectId": "hhat-structural-case",
+  "title": "Ovarian HHAT structural comparison",
+  "analysisUnit": "peptide_hla",
+  "groups": [
+    {
+      "id": "HHAT",
+      "label": "Separate structural case"
+    }
+  ],
+  "sources": [
+    {
+      "id": "6UJQ",
+      "url": "https://www.rcsb.org/structure/6UJQ",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "path": "data/raw/6UJQ.pdb",
+      "license": "wwPDB public archive"
+    },
+    {
+      "id": "6UJO",
+      "url": "https://www.rcsb.org/structure/6UJO",
+      "sha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "path": "data/raw/6UJO.pdb",
+      "license": "wwPDB public archive"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "HHAT:L75",
+      "groupId": "HHAT",
+      "sequenceId": "HHAT:L75:peptide",
+      "targetId": null,
+      "variantId": "HHAT:L75",
+      "peptideHlaId": "HHAT:L75",
+      "hla": "HLA-A*02:06",
+      "gene": "HHAT",
+      "sourceId": "6UJQ",
+      "sourceRow": 2,
+      "original": {
+        "sourceLocation": "PDB chain C; row number is adapter entry, not PDB line"
+      }
+    },
+    {
+      "id": "HHAT:L75F",
+      "groupId": "HHAT",
+      "sequenceId": "HHAT:L75F:peptide",
+      "targetId": null,
+      "variantId": "HHAT:L75F",
+      "peptideHlaId": "HHAT:L75F",
+      "hla": "HLA-A*02:06",
+      "gene": "HHAT",
+      "sourceId": "6UJO",
+      "sourceRow": 3,
+      "original": {
+        "sourceLocation": "PDB chain C; row number is adapter entry, not PDB line"
+      }
+    }
+  ],
+  "sequences": [
+    {
+      "id": "HHAT:L75:peptide",
+      "sequence": "KQWLVWLLL",
+      "role": "measured_epitope",
+      "reference": null,
+      "mapping": null
+    },
+    {
+      "id": "HHAT:L75F:peptide",
+      "sequence": "KQWLVWLFL",
+      "role": "measured_epitope",
+      "reference": null,
+      "mapping": null
+    }
+  ],
+  "methods": [],
+  "scores": [],
+  "outcomes": [],
+  "assayMembers": [],
+  "exclusions": [],
+  "annotations": [],
+  "view": {
+    "seed": 20260909,
+    "outcomesVisible": false
+  },
+  "analysisConfig": {
+    "projectionRule": null,
+    "endpoint": null,
+    "timepoint": null,
+    "restriction": null,
+    "trainingSelectionHistory": "Unknown; no independence certification"
+  },
+  "transformation": {
+    "script": "rosalind/analysis/contracts.py",
+    "losses": [],
+    "notes": "Two HHAT peptide-HLA identities, distinct from vaccine cohort; sourceRow is adapter entry."
+  }
+}

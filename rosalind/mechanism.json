@@ -1,0 +1,3668 @@
+{
+  "schemaVersion": "0.1.0",
+  "packId": "hhat-mechanism-v1",
+  "projectId": "hhat-structural-case",
+  "projectFingerprint": "2339dfc839c7a0f3631cacc567a20c8e5662b38724cf1a5b1f5f2a40a23b5fb3",
+  "requestId": null,
+  "selectedCandidateIds": [
+    "HHAT:L75",
+    "HHAT:L75F"
+  ],
+  "findings": [
+    {
+      "candidateId": "HHAT:L75",
+      "status": "resolved",
+      "claimIds": [
+        "HHAT-G1",
+        "HHAT-G2",
+        "HHAT-I1"
+      ]
+    },
+    {
+      "candidateId": "HHAT:L75F",
+      "status": "resolved",
+      "claimIds": [
+        "HHAT-G1",
+        "HHAT-G2",
+        "HHAT-I1"
+      ]
+    }
+  ],
+  "proposedCorrections": [],
+  "unsupported": [
+    {
+      "task": "Rosalind Workbench execution and screenshots",
+      "reason": "No callable Workbench or connected scientific plugin in this session"
+    }
+  ],
+  "provenance": {
+    "execution": "local Python, not Workbench",
+    "script": "rosalind/analysis/structure.py",
+    "python": "3.9.6",
+    "numpy": "1.26.4",
+    "biopython": "1.85"
+  },
+  "coordinateFrame": {
+    "id": "6UJQ-HLA-raw",
+    "reference": "6UJQ",
+    "unit": "angstrom",
+    "convention": "row vector: x_aligned = x_reconstructed @ rotation + translation",
+    "displayRotation": null,
+    "precision": "JSON full float; exported PDB 0.001 angstrom",
+    "uncertainty": "Coordinate differences are static crystal geometry; no statistical coordinate uncertainty estimated"
+  },
+  "atomPolicy": "First deposited model; ATOM records; heavy atoms; blank/A altloc; identical policy in all states; retain chain/residue/insertion numbering; no waters/ligands",
+  "sasaMethod": "Biopython Shrake-Rupley; probe 1.4 angstrom; 200 points; deposited orientation after receptor reconstruction; whole residue; pMHC A/B/C versus complete protein complex",
+  "states": [
+    {
+      "id": "6UJQ",
+      "structureType": "measured",
+      "method": "X-ray crystallography",
+      "sourceUrl": "https://www.rcsb.org/structure/6UJQ",
+      "inputPath": "data/raw/6UJQ.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "peptide": "KQWLVWLLL",
+      "allele": "HLA-A*02:06",
+      "chainRoles": {
+        "A": "HLA heavy chain",
+        "B": "beta-2-microglobulin",
+        "C": "HHAT peptide"
+      },
+      "depositedChainSequences": {
+        "A": "MGSHSMRYFYTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQRTDAPKTHMTHHAVSDHEATLRCWALSFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHVQHEGLPKPLTLRWE",
+        "B": "MIQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM",
+        "C": "KQWLVWLLL"
+      },
+      "crystalMateSearch": {
+        "operators": null,
+        "latticeRange": [
+          -1,
+          1
+        ],
+        "contactingMates": [],
+        "reason": "No receptor in pMHC structure"
+      },
+      "alignment": {
+        "selection": "A CA residues 1-180",
+        "residueIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180
+        ],
+        "count": 180,
+        "rmsd": 9.07557808276031e-15,
+        "rotationRowVector": [
+          [
+            0.9999999999999998,
+            -2.2134784506490747e-17,
+            3.342178221122953e-16
+          ],
+          [
+            2.0744177583829184e-16,
+            0.9999999999999997,
+            -1.4403263583562938e-16
+          ],
+          [
+            -8.259813811576083e-17,
+            -2.6007624191131256e-16,
+            0.9999999999999998
+          ]
+        ],
+        "translation": [
+          1.7763568394002505e-14,
+          0.0,
+          -7.105427357601002e-15
+        ]
+      },
+      "accessibility": [
+        {
+          "position": 6,
+          "wholeResiduePmhcSasa": 147.4305889855511,
+          "wholeResidueComplexSasa": null,
+          "complexMissingReason": "Receptor-free state",
+          "unit": "angstrom^2"
+        },
+        {
+          "position": 8,
+          "wholeResiduePmhcSasa": 56.12193895129386,
+          "wholeResidueComplexSasa": null,
+          "complexMissingReason": "Receptor-free state",
+          "unit": "angstrom^2"
+        }
+      ],
+      "coordinatePath": "rosalind/structures/6UJQ.pdb",
+      "coordinateSha256": "ae8fb9fd21e5c0e653a1e806edcfc1bb56d194e6baad76597df604770b4d2013",
+      "w6Torsions": {
+        "chi1": {
+          "atoms": [
+            "N",
+            "CA",
+            "CB",
+            "CG"
+          ],
+          "value": -177.78723144723537,
+          "unit": "degree"
+        },
+        "chi2": {
+          "atoms": [
+            "CA",
+            "CB",
+            "CG",
+            "CD1"
+          ],
+          "value": -79.92410079459971,
+          "unit": "degree"
+        }
+      },
+      "contacts": [],
+      "sensitivityAlignment": {
+        "selection": "A CA residues 5-175",
+        "residueIds": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "count": 171,
+        "rmsd": 1.0330312204094542e-14,
+        "rotationRowVector": [
+          [
+            0.9999999999999996,
+            -1.4977789755829295e-16,
+            3.1705855970068845e-16
+          ],
+          [
+            -2.5729698847946253e-16,
+            0.9999999999999998,
+            -2.8448923861997487e-16
+          ],
+          [
+            -1.6728473720264291e-16,
+            -4.533581666746457e-16,
+            0.9999999999999999
+          ]
+        ],
+        "translation": [
+          1.0658141036401503e-14,
+          1.4210854715202004e-14,
+          -1.4210854715202004e-14
+        ]
+      }
+    },
+    {
+      "id": "6UJO",
+      "structureType": "measured",
+      "method": "X-ray crystallography",
+      "sourceUrl": "https://www.rcsb.org/structure/6UJO",
+      "inputPath": "data/raw/6UJO.pdb",
+      "sha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "peptide": "KQWLVWLFL",
+      "allele": "HLA-A*02:06",
+      "chainRoles": {
+        "A": "HLA heavy chain",
+        "B": "beta-2-microglobulin",
+        "C": "HHAT peptide"
+      },
+      "depositedChainSequences": {
+        "A": "MGSHSMRYFYTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQRTDAPKTHMTHHAVSDHEATLRCWALSFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHVQHEGLPKPLTLRWE",
+        "B": "MIQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM",
+        "C": "KQWLVWLFL"
+      },
+      "crystalMateSearch": {
+        "operators": null,
+        "latticeRange": [
+          -1,
+          1
+        ],
+        "contactingMates": [],
+        "reason": "No receptor in pMHC structure"
+      },
+      "alignment": {
+        "selection": "A CA residues 1-180",
+        "residueIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180
+        ],
+        "count": 180,
+        "rmsd": 0.2556117967127144,
+        "rotationRowVector": [
+          [
+            0.999924283562561,
+            0.01226520964864187,
+            -0.0009958785945804146
+          ],
+          [
+            -0.012273175119291862,
+            0.9998891405064532,
+            -0.008430650612922105
+          ],
+          [
+            0.000892364494741617,
+            0.008442234866481274,
+            0.9999639655287924
+          ]
+        ],
+        "translation": [
+          -1.051018102663825,
+          -1.1565979532861306,
+          -2.0500223639041764
+        ]
+      },
+      "accessibility": [
+        {
+          "position": 6,
+          "wholeResiduePmhcSasa": 137.36147665471577,
+          "wholeResidueComplexSasa": null,
+          "complexMissingReason": "Receptor-free state",
+          "unit": "angstrom^2"
+        },
+        {
+          "position": 8,
+          "wholeResiduePmhcSasa": 79.87494295203803,
+          "wholeResidueComplexSasa": null,
+          "complexMissingReason": "Receptor-free state",
+          "unit": "angstrom^2"
+        }
+      ],
+      "coordinatePath": "rosalind/structures/6UJO.pdb",
+      "coordinateSha256": "f8a26875b698917e41170f212838c19be8fc61918e2eecfd0736e6cd95683cf7",
+      "w6Torsions": {
+        "chi1": {
+          "atoms": [
+            "N",
+            "CA",
+            "CB",
+            "CG"
+          ],
+          "value": -60.18521542687757,
+          "unit": "degree"
+        },
+        "chi2": {
+          "atoms": [
+            "CA",
+            "CB",
+            "CG",
+            "CD1"
+          ],
+          "value": 78.84859978351024,
+          "unit": "degree"
+        }
+      },
+      "contacts": [],
+      "sensitivityAlignment": {
+        "selection": "A CA residues 5-175",
+        "residueIds": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "count": 171,
+        "rmsd": 0.24371290926015213,
+        "rotationRowVector": [
+          [
+            0.9999283240877063,
+            0.011947510184335847,
+            -0.0007769733235298299
+          ],
+          [
+            -0.011953813049619368,
+            0.9998908025348361,
+            -0.008688461303061128
+          ],
+          [
+            0.000673083000108144,
+            0.008697126343523947,
+            0.9999619527525231
+          ]
+        ],
+        "translation": [
+          -1.0300947394515525,
+          -1.1610611933290045,
+          -2.062892714307253
+        ]
+      }
+    },
+    {
+      "id": "6UK2",
+      "structureType": "measured",
+      "method": "X-ray crystallography",
+      "sourceUrl": "https://www.rcsb.org/structure/6UK2",
+      "inputPath": "data/raw/6UK2.pdb",
+      "sha256": "1b9d9e1a23b159d8c9a0065cb5f01fb300902365bcea4602faf51454a9a0428b",
+      "peptide": "KQWLVWLLL",
+      "allele": "HLA-A*02:06",
+      "chainRoles": {
+        "A": "HLA heavy chain",
+        "B": "beta-2-microglobulin",
+        "C": "HHAT peptide",
+        "D": "302TIL alpha",
+        "E": "302TIL beta"
+      },
+      "depositedChainSequences": {
+        "A": "MGSHSMRYFYTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQRTDAPKTHMTHHAVSDHEATLRCWALSFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHVQHEGLPKPLTLRWE",
+        "B": "MIQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM",
+        "C": "KQWLVWLLL",
+        "D": "MAQTVTQSQPEMSVQEAETVTLSCTYDTSESDYYLFWYKQPPSRQMILVIRQEAYKQQNATENRFSVNFQKAAKSFSLKISDSQLGDAAMYFCAFMDSNYQLIWGAGTKLIIKPNIQNPDPAVYQLRDSKSSDKSVCLFTDFDSQTNVSQSKDSDVYITDKCVLDMRSMDFKSNSAVAWSNKSDFACANAFNNSIIPEDTFFPSPESS",
+        "E": "MDAGVIQSPRHEVTEMGQEVTLRCKPISGHNSLFWYRQTMMRGLELLIYFNNNVPIDDSGMPEDRFSAKMPNASFSTLKIQPSEPRDSAVYFCASSRTSPTDTQYFGPGTRLTVLEDLKNVFPPEVAVFEPSEAEISHTQKATLVCLATGFYPDHVELSWWVNGKEVHSGVCTDPQPLKEQPALNDSRYALSSRLRVSATFWQDPRNHFRCQVQFYGLSENDEWTQDRAKPVTQIVSAEAWGRAD"
+      },
+      "crystalMateSearch": {
+        "operators": 4,
+        "latticeRange": [
+          -1,
+          1
+        ],
+        "contactingMates": [
+          {
+            "operator": 1,
+            "lattice": [
+              1,
+              -1,
+              0
+            ],
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation": [
+              64.357,
+              -85.932,
+              0.0
+            ],
+            "atomPairCount": 46,
+            "minimumDistance": 2.557849993778171
+          }
+        ],
+        "reason": null
+      },
+      "alignment": {
+        "selection": "A CA residues 1-180",
+        "residueIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180
+        ],
+        "count": 180,
+        "rmsd": 0.5410503949677775,
+        "rotationRowVector": [
+          [
+            0.8366961895351994,
+            0.36276754625192636,
+            0.4102915960675214
+          ],
+          [
+            -0.15862080979074963,
+            0.8775696901465978,
+            -0.4524498620149326
+          ],
+          [
+            -0.5241935950759072,
+            0.31348229028505153,
+            0.7918016977495277
+          ]
+        ],
+        "translation": [
+          8.86543669607973,
+          -29.915305672941642,
+          75.28060798500839
+        ]
+      },
+      "accessibility": [
+        {
+          "position": 6,
+          "wholeResiduePmhcSasa": 156.2027010725372,
+          "wholeResidueComplexSasa": 13.41113231253885,
+          "complexMissingReason": null,
+          "unit": "angstrom^2"
+        },
+        {
+          "position": 8,
+          "wholeResiduePmhcSasa": 76.62779278528761,
+          "wholeResidueComplexSasa": 14.663019285882541,
+          "complexMissingReason": null,
+          "unit": "angstrom^2"
+        }
+      ],
+      "coordinatePath": "rosalind/structures/6UK2.pdb",
+      "coordinateSha256": "36c7dbed8f876dc3572c05811c4c85765bebab4fe276372fa710f9129122d595",
+      "w6Torsions": {
+        "chi1": {
+          "atoms": [
+            "N",
+            "CA",
+            "CB",
+            "CG"
+          ],
+          "value": -62.22904641056157,
+          "unit": "degree"
+        },
+        "chi2": {
+          "atoms": [
+            "CA",
+            "CB",
+            "CG",
+            "CD1"
+          ],
+          "value": 27.86240283360506,
+          "unit": "degree"
+        }
+      },
+      "contacts": [
+        {
+          "position": 6,
+          "cutoff": 4,
+          "unit": "angstrom",
+          "uniqueResidues": [
+            {
+              "receptorChain": "D",
+              "receptorResidue": 100,
+              "receptorName": "TYR",
+              "distance": 3.13420297993386,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "NE1",
+                  "xyz": [
+                    27.12642347991918,
+                    -40.68284302951405,
+                    53.694046121116585
+                  ]
+                },
+                {
+                  "chain": "D",
+                  "residue": 100,
+                  "insertionCode": "",
+                  "atom": "CZ",
+                  "xyz": [
+                    28.853773212902965,
+                    -42.79846709378873,
+                    52.15663724965492
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 51,
+              "receptorName": "ASN",
+              "distance": 3.5205161792825383,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "CE3",
+                  "xyz": [
+                    24.809331573614404,
+                    -38.86023315649661,
+                    55.67438973774762
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 51,
+                  "insertionCode": "",
+                  "atom": "ND2",
+                  "xyz": [
+                    24.211765661821445,
+                    -37.87626419563372,
+                    59.00136347279747
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 99,
+              "receptorName": "SER",
+              "distance": 3.064785448381622,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "N",
+                  "xyz": [
+                    29.382614636535646,
+                    -37.01335297304542,
+                    53.131231052265555
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 99,
+                  "insertionCode": "",
+                  "atom": "OG",
+                  "xyz": [
+                    30.290970362895575,
+                    -37.70512277663271,
+                    55.97539248542044
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 100,
+              "receptorName": "PRO",
+              "distance": 3.683306396596147,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "CD2",
+                  "xyz": [
+                    25.88523030640429,
+                    -39.23409383289976,
+                    54.86380543326493
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 100,
+                  "insertionCode": "",
+                  "atom": "CD",
+                  "xyz": [
+                    28.40442266638241,
+                    -39.71277829887191,
+                    57.50790774722158
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "cutoff": 4,
+          "unit": "angstrom",
+          "uniqueResidues": [
+            {
+              "receptorChain": "E",
+              "receptorResidue": 52,
+              "receptorName": "ASN",
+              "distance": 3.5871664680460538,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 8,
+                  "insertionCode": "",
+                  "atom": "CD1",
+                  "xyz": [
+                    24.247496194225782,
+                    -33.149747279119126,
+                    58.16409766584089
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 52,
+                  "insertionCode": "",
+                  "atom": "ND2",
+                  "xyz": [
+                    21.56124137410785,
+                    -34.58700111929044,
+                    60.05779767106347
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "w6Tyr100Alpha": {
+        "minimumHeavyAtom": {
+          "value": 3.13420297993386,
+          "endpoints": [
+            {
+              "chain": "C",
+              "residue": 6,
+              "insertionCode": "",
+              "atom": "NE1",
+              "xyz": [
+                27.12642347991918,
+                -40.68284302951405,
+                53.694046121116585
+              ]
+            },
+            {
+              "chain": "D",
+              "residue": 100,
+              "insertionCode": "",
+              "atom": "CZ",
+              "xyz": [
+                28.853773212902965,
+                -42.79846709378873,
+                52.15663724965492
+              ]
+            }
+          ]
+        },
+        "indoleNitrogenToTyrRingCentroid": {
+          "value": 3.311585643080245,
+          "endpoints": [
+            {
+              "chain": "C",
+              "residue": 6,
+              "insertionCode": "",
+              "atom": "NE1",
+              "xyz": [
+                27.12642347991918,
+                -40.68284302951405,
+                53.694046121116585
+              ]
+            },
+            {
+              "chain": "D",
+              "residue": 100,
+              "atoms": [
+                "CG",
+                "CD1",
+                "CD2",
+                "CE1",
+                "CE2",
+                "CZ"
+              ],
+              "kind": "unweighted ring centroid",
+              "xyz": [
+                28.780943437601177,
+                -43.527391689705475,
+                53.322958394439524
+              ]
+            }
+          ]
+        },
+        "ringCentroidToRingCentroid": {
+          "value": 4.9011167365896116,
+          "atomLists": [
+            [
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ],
+            [
+              "CG",
+              "CD1",
+              "CD2",
+              "CE1",
+              "CE2",
+              "CZ"
+            ]
+          ]
+        },
+        "unit": "angstrom"
+      },
+      "sensitivityAlignment": {
+        "selection": "A CA residues 5-175",
+        "residueIds": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "count": 171,
+        "rmsd": 0.5394167562017049,
+        "rotationRowVector": [
+          [
+            0.8362743440706594,
+            0.3617695118054471,
+            0.41202917588107557
+          ],
+          [
+            -0.1578325453915789,
+            0.8784725011432886,
+            -0.45097112141496415
+          ],
+          [
+            -0.5251039031129027,
+            0.3121039651512038,
+            0.7917430175710374
+          ]
+        ],
+        "translation": [
+          8.834282990651882,
+          -29.9588234861972,
+          75.27092513304206
+        ]
+      }
+    },
+    {
+      "id": "6UK4",
+      "structureType": "measured",
+      "method": "X-ray crystallography",
+      "sourceUrl": "https://www.rcsb.org/structure/6UK4",
+      "inputPath": "data/raw/6UK4.pdb",
+      "sha256": "8a1a4ff984f3a528bafaf65f9488c6780d8c0f6ff11617beb81e0768165041f8",
+      "peptide": "KQWLVWLFL",
+      "allele": "HLA-A*02:06",
+      "chainRoles": {
+        "A": "HLA heavy chain",
+        "B": "beta-2-microglobulin",
+        "C": "HHAT peptide",
+        "D": "302TIL alpha",
+        "E": "302TIL beta"
+      },
+      "depositedChainSequences": {
+        "A": "MGSHSMRYFYTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDGETRKVKAHSQTHRVDLGTLRGYYNQSEAGSHTVQRMYGCDVGSDWRFLRGYHQYAYDGKDYIALKEDLRSWTAADMAAQTTKHKWEAAHVAEQLRAYLEGTCVEWLRRYLENGKETLQRTDAPKTHMTHHAVSDHEATLRCWALSFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHVQHEGLPKPLTLRWE",
+        "B": "MIQRTPKIQVYSRHPAENGKSNFLNCYVSGFHPSDIEVDLLKNGERIEKVEHSDLSFSKDWSFYLLYYTEFTPTEKDEYACRVNHVTLSQPKIVKWDRDM",
+        "C": "KQWLVWLFL",
+        "D": "MAQTVTQSQPEMSVQEAETVTLSCTYDTSESDYYLFWYKQPPSRQMILVIRQEAYKQQNATENRFSVNFQKAAKSFSLKISDSQLGDAAMYFCAFMDSNYQLIWGAGTKLIIKPNIQNPDPAVYQLRDSKSSDKSVCLFTDFDSQTNVSQSKDSDVYITDKCVLDMRSMDFKSNSAVAWSNKSDFACANAFNNSIIPEDTFFPSPESS",
+        "E": "MDAGVIQSPRHEVTEMGQEVTLRCKPISGHNSLFWYRQTMMRGLELLIYFNNNVPIDDSGMPEDRFSAKMPNASFSTLKIQPSEPRDSAVYFCASSRTSPTDTQYFGPGTRLTVLEDLKNVFPPEVAVFEPSEAEISHTQKATLVCLATGFYPDHVELSWWVNGKEVHSGVCTDPQPLKEQPALNDSRYALSSRLRVSATFWQDPRNHFRCQVQFYGLSENDEWTQDRAKPVTQIVSAEAWGRAD"
+      },
+      "crystalMateSearch": {
+        "operators": 4,
+        "latticeRange": [
+          -1,
+          1
+        ],
+        "contactingMates": [
+          {
+            "operator": 1,
+            "lattice": [
+              0,
+              1,
+              0
+            ],
+            "rotation": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "translation": [
+              0.0,
+              86.507,
+              0.0
+            ],
+            "atomPairCount": 65,
+            "minimumDistance": 2.5559827044034114
+          }
+        ],
+        "reason": null
+      },
+      "alignment": {
+        "selection": "A CA residues 1-180",
+        "residueIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180
+        ],
+        "count": 180,
+        "rmsd": 0.4730707431396608,
+        "rotationRowVector": [
+          [
+            0.8465374064061383,
+            0.3906564433973104,
+            0.36161023601017345
+          ],
+          [
+            0.18270088219378425,
+            -0.8512532262804327,
+            0.49192309601478096
+          ],
+          [
+            0.49999480717381667,
+            -0.3503647927222691,
+            -0.7919909752136698
+          ]
+        ],
+        "translation": [
+          54.11017707637076,
+          30.84341947861659,
+          76.98300860712132
+        ]
+      },
+      "accessibility": [
+        {
+          "position": 6,
+          "wholeResiduePmhcSasa": 133.54116804105914,
+          "wholeResidueComplexSasa": 8.85295783233358,
+          "complexMissingReason": null,
+          "unit": "angstrom^2"
+        },
+        {
+          "position": 8,
+          "wholeResiduePmhcSasa": 64.64342105956187,
+          "wholeResidueComplexSasa": 13.43326169119074,
+          "complexMissingReason": null,
+          "unit": "angstrom^2"
+        }
+      ],
+      "coordinatePath": "rosalind/structures/6UK4.pdb",
+      "coordinateSha256": "860ef8230846da163e75b8401d8aac8f65ded428a418a584633fe1169b3e546a",
+      "w6Torsions": {
+        "chi1": {
+          "atoms": [
+            "N",
+            "CA",
+            "CB",
+            "CG"
+          ],
+          "value": -64.27158676063968,
+          "unit": "degree"
+        },
+        "chi2": {
+          "atoms": [
+            "CA",
+            "CB",
+            "CG",
+            "CD1"
+          ],
+          "value": 30.829903942894603,
+          "unit": "degree"
+        }
+      },
+      "contacts": [
+        {
+          "position": 6,
+          "cutoff": 4,
+          "unit": "angstrom",
+          "uniqueResidues": [
+            {
+              "receptorChain": "D",
+              "receptorResidue": 100,
+              "receptorName": "TYR",
+              "distance": 3.278436637393912,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "NE1",
+                  "xyz": [
+                    27.16414349832098,
+                    -40.762917481014675,
+                    53.61337614279044
+                  ]
+                },
+                {
+                  "chain": "D",
+                  "residue": 100,
+                  "insertionCode": "",
+                  "atom": "CZ",
+                  "xyz": [
+                    29.013580563457555,
+                    -42.79148467118046,
+                    51.820991004911704
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 49,
+              "receptorName": "TYR",
+              "distance": 3.518776331153475,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "CH2",
+                  "xyz": [
+                    24.02463611867685,
+                    -41.26712968294583,
+                    55.46809706986009
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 49,
+                  "insertionCode": "",
+                  "atom": "OH",
+                  "xyz": [
+                    25.53018552715737,
+                    -41.47720346987099,
+                    58.641577312646675
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 51,
+              "receptorName": "ASN",
+              "distance": 3.920649903339903,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "CZ3",
+                  "xyz": [
+                    23.8599026244964,
+                    -39.93864341555392,
+                    55.87868064226694
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 51,
+                  "insertionCode": "",
+                  "atom": "CG",
+                  "xyz": [
+                    22.668424726469382,
+                    -38.05276140581433,
+                    59.10285885204581
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 56,
+              "receptorName": "ILE",
+              "distance": 3.9641966677822538,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "CH2",
+                  "xyz": [
+                    24.02463611867685,
+                    -41.26712968294583,
+                    55.46809706986009
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 56,
+                  "insertionCode": "",
+                  "atom": "CG2",
+                  "xyz": [
+                    22.118085601271847,
+                    -44.38000157652191,
+                    57.01404303257117
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 99,
+              "receptorName": "SER",
+              "distance": 3.3829943505087874,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "N",
+                  "xyz": [
+                    29.367831133433103,
+                    -37.04518433712733,
+                    53.06068052682558
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 99,
+                  "insertionCode": "",
+                  "atom": "OG",
+                  "xyz": [
+                    30.491679923053372,
+                    -38.03624439831622,
+                    56.09373420731983
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 100,
+              "receptorName": "PRO",
+              "distance": 3.5199272676029962,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 6,
+                  "insertionCode": "",
+                  "atom": "CD2",
+                  "xyz": [
+                    25.87875441680587,
+                    -39.32831421596719,
+                    54.75187212529072
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 100,
+                  "insertionCode": "",
+                  "atom": "CD",
+                  "xyz": [
+                    28.13467364393053,
+                    -39.809907197192835,
+                    57.410590728365996
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "cutoff": 4,
+          "unit": "angstrom",
+          "uniqueResidues": [
+            {
+              "receptorChain": "E",
+              "receptorResidue": 51,
+              "receptorName": "ASN",
+              "distance": 3.4676045843778085,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 8,
+                  "insertionCode": "",
+                  "atom": "CZ",
+                  "xyz": [
+                    23.663772469372066,
+                    -35.31681201919181,
+                    56.513294256320876
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 51,
+                  "insertionCode": "",
+                  "atom": "OD1",
+                  "xyz": [
+                    21.805390576688552,
+                    -37.58985468521535,
+                    58.35828079637493
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 52,
+              "receptorName": "ASN",
+              "distance": 3.5042247084157374,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 8,
+                  "insertionCode": "",
+                  "atom": "CE2",
+                  "xyz": [
+                    22.677244423208787,
+                    -34.37151652350091,
+                    56.32205871239591
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 52,
+                  "insertionCode": "",
+                  "atom": "ND2",
+                  "xyz": [
+                    21.529378996115618,
+                    -35.08220606008603,
+                    59.5557742457946
+                  ]
+                }
+              ]
+            },
+            {
+              "receptorChain": "E",
+              "receptorResidue": 98,
+              "receptorName": "THR",
+              "distance": 3.147045542932812,
+              "endpoints": [
+                {
+                  "chain": "C",
+                  "residue": 8,
+                  "insertionCode": "",
+                  "atom": "CD1",
+                  "xyz": [
+                    25.325650124356766,
+                    -33.60091954862079,
+                    56.36902749270675
+                  ]
+                },
+                {
+                  "chain": "E",
+                  "residue": 98,
+                  "insertionCode": "",
+                  "atom": "OG1",
+                  "xyz": [
+                    27.122140609057862,
+                    -32.80008900385419,
+                    58.825689460955644
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "w6Tyr100Alpha": {
+        "minimumHeavyAtom": {
+          "value": 3.278436637393912,
+          "endpoints": [
+            {
+              "chain": "C",
+              "residue": 6,
+              "insertionCode": "",
+              "atom": "NE1",
+              "xyz": [
+                27.16414349832098,
+                -40.762917481014675,
+                53.61337614279044
+              ]
+            },
+            {
+              "chain": "D",
+              "residue": 100,
+              "insertionCode": "",
+              "atom": "CZ",
+              "xyz": [
+                29.013580563457555,
+                -42.79148467118046,
+                51.820991004911704
+              ]
+            }
+          ]
+        },
+        "indoleNitrogenToTyrRingCentroid": {
+          "value": 3.3055045725756025,
+          "endpoints": [
+            {
+              "chain": "C",
+              "residue": 6,
+              "insertionCode": "",
+              "atom": "NE1",
+              "xyz": [
+                27.16414349832098,
+                -40.762917481014675,
+                53.61337614279044
+              ]
+            },
+            {
+              "chain": "D",
+              "residue": 100,
+              "atoms": [
+                "CG",
+                "CD1",
+                "CD2",
+                "CE1",
+                "CE2",
+                "CZ"
+              ],
+              "kind": "unweighted ring centroid",
+              "xyz": [
+                28.8048838996187,
+                -43.555542239612244,
+                52.95339252743664
+              ]
+            }
+          ]
+        },
+        "ringCentroidToRingCentroid": {
+          "value": 4.950281045027086,
+          "atomLists": [
+            [
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ],
+            [
+              "CG",
+              "CD1",
+              "CD2",
+              "CE1",
+              "CE2",
+              "CZ"
+            ]
+          ]
+        },
+        "unit": "angstrom"
+      },
+      "sensitivityAlignment": {
+        "selection": "A CA residues 5-175",
+        "residueIds": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "count": 171,
+        "rmsd": 0.4622910133235824,
+        "rotationRowVector": [
+          [
+            0.8462395240472828,
+            0.3897031966480837,
+            0.3633319232636919
+          ],
+          [
+            0.181848892027076,
+            -0.852231811062303,
+            0.4905424759202741
+          ],
+          [
+            0.5008089939375618,
+            -0.3490449236641799,
+            -0.7920593367011807
+          ]
+        ],
+        "translation": [
+          54.09579408172715,
+          30.785446059088812,
+          77.14765920721428
+        ]
+      }
+    }
+  ],
+  "perResidueComparisons": [
+    {
+      "states": [
+        "6UJQ",
+        "6UJO"
+      ],
+      "residues": [
+        {
+          "position": 1,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.3850633602435501,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD",
+              "CE",
+              "CG",
+              "NZ"
+            ],
+            "rmsd": 1.5585988586152513,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 2,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.258195656275739,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD",
+              "CG",
+              "NE2",
+              "OE1"
+            ],
+            "rmsd": 0.28714372123591797,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 3,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.4464948270657975,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CE2",
+              "CE3",
+              "CG",
+              "CH2",
+              "CZ2",
+              "CZ3",
+              "NE1"
+            ],
+            "rmsd": 0.33412717301506634,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 4,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 1.1159177512362122,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CG"
+            ],
+            "rmsd": 2.6158498699903734,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 5,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 1.7364962426046238,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ],
+            "rmsd": 3.8259038662880864,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 6,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.6556431676410432,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CE2",
+              "CE3",
+              "CG",
+              "CH2",
+              "CZ2",
+              "CZ3",
+              "NE1"
+            ],
+            "rmsd": 3.129349642050977,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 7,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.411375184888039,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CG"
+            ],
+            "rmsd": 0.33688368823944054,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 8,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.2796417188999834,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [],
+            "rmsd": null,
+            "unit": "angstrom",
+            "missingReason": "Nonmatching residue identities"
+          }
+        },
+        {
+          "position": 9,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.14013343088635616,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CG"
+            ],
+            "rmsd": 0.16570518854473656,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        }
+      ]
+    },
+    {
+      "states": [
+        "6UK2",
+        "6UK4"
+      ],
+      "residues": [
+        {
+          "position": 1,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.3743036636841573,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD",
+              "CE",
+              "CG",
+              "NZ"
+            ],
+            "rmsd": 0.3574407558537495,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 2,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.2507624736563281,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD",
+              "CG",
+              "NE2",
+              "OE1"
+            ],
+            "rmsd": 0.7868112722525372,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 3,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.08792258733681013,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CE2",
+              "CE3",
+              "CG",
+              "CH2",
+              "CZ2",
+              "CZ3",
+              "NE1"
+            ],
+            "rmsd": 0.17766855313957902,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 4,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.1531255897436936,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CG"
+            ],
+            "rmsd": 0.2425832329900325,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 5,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.11847290960717721,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ],
+            "rmsd": 0.09454337189919688,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 6,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.23760590360038167,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CE2",
+              "CE3",
+              "CG",
+              "CH2",
+              "CZ2",
+              "CZ3",
+              "NE1"
+            ],
+            "rmsd": 0.1574875445815248,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 7,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.3407874754213066,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CG"
+            ],
+            "rmsd": 0.23920329509018778,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        },
+        {
+          "position": 8,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.5319518602363242,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [],
+            "rmsd": null,
+            "unit": "angstrom",
+            "missingReason": "Nonmatching residue identities"
+          }
+        },
+        {
+          "position": 9,
+          "backbone": {
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ],
+            "rmsd": 0.4516451342764245,
+            "unit": "angstrom",
+            "missingReason": null
+          },
+          "sidechain": {
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "CG"
+            ],
+            "rmsd": 0.344361680330253,
+            "unit": "angstrom",
+            "missingReason": null
+          }
+        }
+      ]
+    }
+  ],
+  "w6Comparisons": [
+    {
+      "atoms": [
+        "CG",
+        "CD1",
+        "CD2",
+        "NE1",
+        "CE2",
+        "CE3",
+        "CZ2",
+        "CZ3",
+        "CH2"
+      ],
+      "rmsd": 2.986529294383165,
+      "unit": "angstrom",
+      "missingReason": null,
+      "states": [
+        "6UJQ",
+        "6UK2"
+      ],
+      "sensitivity": {
+        "selection": "A CA residues 5-175",
+        "rmsd": 2.988342403047484,
+        "unit": "angstrom"
+      }
+    },
+    {
+      "atoms": [
+        "CG",
+        "CD1",
+        "CD2",
+        "NE1",
+        "CE2",
+        "CE3",
+        "CZ2",
+        "CZ3",
+        "CH2"
+      ],
+      "rmsd": 1.0210902694853723,
+      "unit": "angstrom",
+      "missingReason": null,
+      "states": [
+        "6UJO",
+        "6UK4"
+      ],
+      "sensitivity": {
+        "selection": "A CA residues 5-175",
+        "rmsd": 1.015145697826444,
+        "unit": "angstrom"
+      }
+    },
+    {
+      "atoms": [
+        "CG",
+        "CD1",
+        "CD2",
+        "NE1",
+        "CE2",
+        "CE3",
+        "CZ2",
+        "CZ3",
+        "CH2"
+      ],
+      "rmsd": 3.2910515155724727,
+      "unit": "angstrom",
+      "missingReason": null,
+      "states": [
+        "6UJQ",
+        "6UJO"
+      ],
+      "sensitivity": {
+        "selection": "A CA residues 5-175",
+        "rmsd": 3.287725225242725,
+        "unit": "angstrom"
+      }
+    },
+    {
+      "atoms": [
+        "CG",
+        "CD1",
+        "CD2",
+        "NE1",
+        "CE2",
+        "CE3",
+        "CZ2",
+        "CZ3",
+        "CH2"
+      ],
+      "rmsd": 0.16075654593513936,
+      "unit": "angstrom",
+      "missingReason": null,
+      "states": [
+        "6UK2",
+        "6UK4"
+      ],
+      "sensitivity": {
+        "selection": "A CA residues 5-175",
+        "rmsd": 0.1548305642977373,
+        "unit": "angstrom"
+      }
+    }
+  ],
+  "displaySelections": {
+    "mutation": {
+      "chain": "C",
+      "residue": 8
+    },
+    "neighbor": {
+      "chain": "C",
+      "residue": 6,
+      "atoms": [
+        "CG",
+        "CD1",
+        "CD2",
+        "NE1",
+        "CE2",
+        "CE3",
+        "CZ2",
+        "CZ3",
+        "CH2"
+      ]
+    },
+    "receptorContact": {
+      "chain": "D",
+      "residue": 100,
+      "atoms": [
+        "CG",
+        "CD1",
+        "CD2",
+        "CE1",
+        "CE2",
+        "CZ"
+      ]
+    }
+  },
+  "candidateContexts": [
+    {
+      "candidateId": "HHAT:L75",
+      "sequence": "KQWLVWLLL",
+      "role": "measured_epitope",
+      "hla": "HLA-A*02:06",
+      "reference": null,
+      "mappingStatus": "verified"
+    },
+    {
+      "candidateId": "HHAT:L75F",
+      "sequence": "KQWLVWLFL",
+      "role": "measured_epitope",
+      "hla": "HLA-A*02:06",
+      "reference": null,
+      "mappingStatus": "verified"
+    }
+  ],
+  "claims": [
+    {
+      "id": "HHAT-E1",
+      "claim": "302TIL binds mutant pMHC more tightly in equilibrium SPR.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Table 1; Figure 2b; Online Methods: Surface plasmon resonance",
+      "measurements": [
+        {
+          "state": "mutant",
+          "endpoint": "SPR equilibrium KD",
+          "value": 9,
+          "unit": "micromolar",
+          "uncertainty": 1,
+          "uncertaintyType": "SD",
+          "n": 9,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "normal",
+          "endpoint": "SPR equilibrium KD",
+          "value": 200,
+          "unit": "micromolar",
+          "uncertainty": 30,
+          "uncertaintyType": "SD",
+          "n": 9,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        }
+      ],
+      "limitations": [
+        "25 C; Biacore T200; immobilized TCR; 1:1 steady-state fit; 10 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P-20; 5-10 microliter/min; 600-2000 RU. This is receptor binding, not peptide-HLA affinity."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-E2",
+      "claim": "The two peptide-HLA complexes have similar measured thermal melting temperatures.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Figure 1a printed inset; Online Methods: Thermal stability",
+      "measurements": [
+        {
+          "state": "normal",
+          "endpoint": "melting temperature",
+          "value": 54.7,
+          "unit": "degree_C",
+          "uncertainty": 0.4,
+          "uncertaintyType": "SD",
+          "n": 6,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "mutant",
+          "endpoint": "melting temperature",
+          "value": 56.1,
+          "unit": "degree_C",
+          "uncertainty": 0.2,
+          "uncertaintyType": "SD",
+          "n": 6,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        }
+      ],
+      "limitations": [
+        "Prometheus NanoDSF backscatter; approximately 10 micromolar protein; 1 C/min; HEPES/NaCl/EDTA/P-20 buffer as E1; derivative scattering fits. Thermal stability is a proxy used by authors; no direct peptide-HLA KD or IC50 measured here. Printed labels, not trace digitization."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-E3",
+      "claim": "At 10 C mutant pMHC dissociates more slowly and has a faster derived association rate.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Figure 2c printed labels and caption; Online Methods: SPR",
+      "measurements": [
+        {
+          "state": "mutant",
+          "endpoint": "SPR koff",
+          "value": 1.35,
+          "unit": "s^-1",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "normal",
+          "endpoint": "SPR koff",
+          "value": 4.87,
+          "unit": "s^-1",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "mutant",
+          "endpoint": "derived kon = koff/KD",
+          "value": 170000,
+          "unit": "M^-1 s^-1",
+          "uncertainty": 50000,
+          "uncertaintyType": "propagated independent KD and koff error",
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "normal",
+          "endpoint": "derived kon = koff/KD",
+          "value": 20000,
+          "unit": "M^-1 s^-1",
+          "uncertainty": 7000,
+          "uncertaintyType": "propagated independent KD and koff error",
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        }
+      ],
+      "limitations": [
+        "10 C; 50 microliter/min; approximately 500 RU; 10 Hz; single-exponential global dissociation fit of three injections. kon is calculated using independent 10 C KD, not directly fitted association. Do not combine with 25 C KD. Replicate uncertainty type for propagated inputs not fully specified in caption."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-E4",
+      "claim": "Functional IL-2 response requires a lower peptide concentration for mutant in this cell assay.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Figure 2a printed labels and caption; Online Methods: T cell functional assays",
+      "measurements": [
+        {
+          "state": "mutant",
+          "endpoint": "IL-2 response EC50",
+          "value": 1.1,
+          "unit": "micromolar",
+          "uncertainty": 0.1,
+          "uncertaintyType": "fit error",
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "normal",
+          "endpoint": "IL-2 response EC50",
+          "value": 200,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "lower_bound",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        }
+      ],
+      "limitations": [
+        "CD8+ Jurkat76 expressing 302TIL and HLA-A*02:06 T2 cells; 2 h peptide pulse, 1:1 co-culture 18-20 h at 37 C; ELISA; two independent experiments with three biological replicates each. WT EC50 >=200, not exact. Not a binding assay."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-E5",
+      "claim": "ITC independently detects mutant receptor binding; normal ITC binding was not measurable.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Extended Data Figure 2 caption; Online Methods: ITC; Results",
+      "measurements": [
+        {
+          "state": "mutant",
+          "endpoint": "ITC KD replicate 1",
+          "value": 1.7,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "mutant",
+          "endpoint": "ITC KD replicate 2",
+          "value": 1.4,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "normal",
+          "endpoint": "ITC KD",
+          "value": null,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "not_measurable",
+          "missingReason": "Authors unable to measure; no numeric detection limit",
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        }
+      ],
+      "limitations": [
+        "25 C; MicroCal ITC200; 20 micromolar TCR, 170-190 micromolar pMHC; 10 mM HEPES pH7.4/150 mM NaCl; single-site fit. Prose says ITC KD higher than SPR, but caption values are lower. Preserve discrepancy; do not average assays."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-G1",
+      "claim": "HLA-aligned structures quantify the change at W6 separately from the position-8 mutation.",
+      "evidenceType": "computed_geometry",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Deposited PDBs 6UJQ,6UJO,6UK2,6UK4; rosalind/mechanism.json w6Comparisons",
+      "measurements": [
+        {
+          "state": "6UJQ/6UK2",
+          "endpoint": "HLA-fixed W6 matching indole atom RMSD",
+          "value": 2.986529294383165,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        },
+        {
+          "state": "6UJO/6UK4",
+          "endpoint": "HLA-fixed W6 matching indole atom RMSD",
+          "value": 1.0210902694853723,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        },
+        {
+          "state": "6UJQ/6UJO",
+          "endpoint": "HLA-fixed W6 matching indole atom RMSD",
+          "value": 3.2910515155724727,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        },
+        {
+          "state": "6UK2/6UK4",
+          "endpoint": "HLA-fixed W6 matching indole atom RMSD",
+          "value": 0.16075654593513936,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        }
+      ],
+      "limitations": [
+        "Fixed atom correspondence can give a large RMSD for indole ring flips; use torsions and endpoints alongside RMSD. No trajectory or conformational population measured."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-G2",
+      "claim": "Recovered crystal mates place W6 next to Tyr100 alpha.",
+      "evidenceType": "computed_geometry",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "rosalind/mechanism.json states[].w6Tyr100Alpha; Figure 3a context",
+      "measurements": [
+        {
+          "state": "6UK2",
+          "endpoint": "W6 NE1 to Tyr100 alpha ring centroid",
+          "value": 3.311585643080245,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        },
+        {
+          "state": "6UK4",
+          "endpoint": "W6 NE1 to Tyr100 alpha ring centroid",
+          "value": 3.3055045725756025,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        }
+      ],
+      "limitations": [
+        "NE1-to-Tyr-ring centroid is not ring-to-ring centroid or minimum heavy-atom distance. Geometric proximity alone is not hydrogen-bond energy."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-I1",
+      "claim": "The paper interprets altered W6 geometry and receptor kinetics as pre-organization for 302TIL recognition.",
+      "evidenceType": "interpretation",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Figures 1-3; Discussion",
+      "measurements": [],
+      "limitations": [
+        "Four static crystals establish conformations, not dynamic populations, transition rates, or mutation causality alone. Published dynamics are author analyses, not reproduced here. Ovarian HHAT case does not explain pancreatic vaccine outcomes."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    }
+  ]
+}

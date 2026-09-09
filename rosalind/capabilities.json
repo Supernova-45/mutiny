@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-09",
+  "scientificPluginsCallable": [],
+  "workbench": "No Rosalind Workbench tool or enabled app/browser surface found",
+  "pluginDiscovery": "Full exposed ALL_TOOLS inspected; search_plugins, suggest_plugins and tool_search not callable",
+  "availablePluginNames": [
+    "Spreadsheets",
+    "Plugin Management",
+    "Sites"
+  ],
+  "nativeUIPlugin": "unified-computer-use"
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-09",
+  "method": "curl HTTPS retrieval; authentic printed figure labels inspected with view_image",
+  "sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "sha256": "10696558735965b10401c84b51aaae139ddf1c9325d0bf8eb3e70ae8633ce3da",
+      "bytes": 240089,
+      "location": "Full text, Table 1 and methods",
+      "redistributed": false
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/7035/8210748/ecfbb5bd1bde/nihms-1699843-f0001.jpg",
+      "sha256": "aa92bb8dcd52ee65f4624f02f53bab73b539e483ed1bd12bc9790caff29de70a",
+      "bytes": 565527,
+      "location": "Figure 1a printed labels",
+      "redistributed": false
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/7035/8210748/e59f822797cf/nihms-1699843-f0002.jpg",
+      "sha256": "9c3957c922efa55cbb44037fb63cff244977bca0631242d5baf0316ebec509c1",
+      "bytes": 237097,
+      "location": "Figure 2a-c printed labels",
+      "redistributed": false
+    },
+    {
+      "path": "rosalind/fixtures/sources/HCC1395.filtered.tsv",
+      "sha256": "e0ccad87c758b40516c55ade12e65e15a6ba29cff6f9a636dc2a3ef628381824",
+      "bytes": 15370,
+      "commit": "c76ea9d26d549d479affe9ce31f551295fadcde7",
+      "redistributed": true
+    },
+    {
+      "path": "rosalind/fixtures/sources/pvactools-LICENSE",
+      "sha256": "4a78a0189326fcca653c2d05d61938df6f5a0e6321631648afd1b081ad758ccc",
+      "bytes": 1692,
+      "commit": "c76ea9d26d549d479affe9ce31f551295fadcde7",
+      "redistributed": true
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "0.1.0"
+    },
+    "packId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "projectId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "projectFingerprint": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "requestId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "selectedCandidateIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidateId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "resolved",
+              "unresolved",
+              "unsupported"
+            ]
+          },
+          "claimIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "candidateId",
+          "status",
+          "claimIds"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "proposedCorrections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "candidateId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "field": {
+            "type": "string",
+            "minLength": 1
+          },
+          "current": {},
+          "proposed": {},
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "applyAutomatically": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "candidateId",
+          "field",
+          "current",
+          "proposed",
+          "reason",
+          "evidenceIds",
+          "applyAutomatically"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "unsupported": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "task": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "task",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "coordinateFrame": {
+      "type": "object"
+    },
+    "atomPolicy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sasaMethod": {
+      "type": "string",
+      "minLength": 1
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "structureType",
+          "sourceUrl",
+          "sha256",
+          "peptide",
+          "allele",
+          "chainRoles",
+          "coordinatePath",
+          "coordinateSha256",
+          "alignment"
+        ],
+        "properties": {
+          "structureType": {
+            "enum": [
+              "measured",
+              "predicted"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "coordinateSha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "alignment": {
+            "type": "object",
+            "required": [
+              "selection",
+              "rotationRowVector",
+              "translation",
+              "rmsd"
+            ],
+            "properties": {
+              "selection": {
+                "type": "string"
+              },
+              "rmsd": {
+                "type": "number",
+                "minimum": 0
+              },
+              "translation": {
+                "$ref": "#/$defs/vec3"
+              },
+              "rotationRowVector": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/vec3"
+                },
+                "minItems": 3,
+                "maxItems": 3
+              }
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "peptide": {
+            "type": "string"
+          },
+          "allele": {
+            "type": "string"
+          },
+          "chainRoles": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "perResidueComparisons": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "w6Comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "displaySelections": {
+      "type": "object"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "claim",
+          "evidenceType",
+          "sourceUrl",
+          "location",
+          "measurements",
+          "limitations",
+          "candidateIds"
+        ],
+        "properties": {
+          "evidenceType": {
+            "enum": [
+              "published_experiment",
+              "computed_geometry",
+              "interpretation",
+              "model_prediction",
+              "computed_validation"
+            ]
+          },
+          "measurements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/measurement"
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "candidateContexts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidateId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sequence": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hla": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reference": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "mappingStatus": {
+            "enum": [
+              "verified",
+              "unresolved",
+              "not_requested"
+            ]
+          }
+        },
+        "required": [
+          "candidateId",
+          "sequence",
+          "role",
+          "hla",
+          "reference",
+          "mappingStatus"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "packId",
+    "projectId",
+    "projectFingerprint",
+    "requestId",
+    "selectedCandidateIds",
+    "findings",
+    "proposedCorrections",
+    "unsupported",
+    "provenance",
+    "candidateContexts",
+    "claims"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Portable evidence return; structural extension optional",
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "states"
+        ]
+      },
+      "then": {
+        "required": [
+          "coordinateFrame"
+        ],
+        "properties": {
+          "coordinateFrame": {
+            "type": "object",
+            "required": [
+              "id",
+              "unit",
+              "reference",
+              "convention",
+              "uncertainty"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "vec3": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "measurement": {
+      "type": "object",
+      "required": [
+        "state",
+        "endpoint",
+        "value",
+        "unit",
+        "uncertainty",
+        "uncertaintyType",
+        "n",
+        "censoring",
+        "missingReason"
+      ],
+      "properties": {
+        "state": {
+          "type": "string"
+        },
+        "endpoint": {
+          "type": "string"
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uncertainty": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "uncertaintyType": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "n": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "censoring": {
+          "enum": [
+            "none",
+            "lower_bound",
+            "upper_bound",
+            "not_measurable"
+          ]
+        },
+        "missingReason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "missingReason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "endpoint": {
+      "type": "object",
+      "required": [
+        "chain",
+        "residue",
+        "xyz"
+      ],
+      "properties": {
+        "chain": {
+          "type": "string"
+        },
+        "residue": {
+          "type": "integer"
+        },
+        "insertionCode": {
+          "type": "string"
+        },
+        "atom": {
+          "type": "string"
+        },
+        "atoms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "xyz": {
+          "$ref": "#/$defs/vec3"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,378 @@
+{
+  "schemaVersion": "0.1.0",
+  "study": "Devlin et al. 2020 ovarian HHAT structural case",
+  "claims": [
+    {
+      "id": "HHAT-E1",
+      "claim": "302TIL binds mutant pMHC more tightly in equilibrium SPR.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Table 1; Figure 2b; Online Methods: Surface plasmon resonance",
+      "measurements": [
+        {
+          "state": "mutant",
+          "endpoint": "SPR equilibrium KD",
+          "value": 9,
+          "unit": "micromolar",
+          "uncertainty": 1,
+          "uncertaintyType": "SD",
+          "n": 9,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "normal",
+          "endpoint": "SPR equilibrium KD",
+          "value": 200,
+          "unit": "micromolar",
+          "uncertainty": 30,
+          "uncertaintyType": "SD",
+          "n": 9,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        }
+      ],
+      "limitations": [
+        "25 C; Biacore T200; immobilized TCR; 1:1 steady-state fit; 10 mM HEPES pH 7.4, 150 mM NaCl, 3 mM EDTA, 0.005% P-20; 5-10 microliter/min; 600-2000 RU. This is receptor binding, not peptide-HLA affinity."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-E2",
+      "claim": "The two peptide-HLA complexes have similar measured thermal melting temperatures.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Figure 1a printed inset; Online Methods: Thermal stability",
+      "measurements": [
+        {
+          "state": "normal",
+          "endpoint": "melting temperature",
+          "value": 54.7,
+          "unit": "degree_C",
+          "uncertainty": 0.4,
+          "uncertaintyType": "SD",
+          "n": 6,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "mutant",
+          "endpoint": "melting temperature",
+          "value": 56.1,
+          "unit": "degree_C",
+          "uncertainty": 0.2,
+          "uncertaintyType": "SD",
+          "n": 6,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        }
+      ],
+      "limitations": [
+        "Prometheus NanoDSF backscatter; approximately 10 micromolar protein; 1 C/min; HEPES/NaCl/EDTA/P-20 buffer as E1; derivative scattering fits. Thermal stability is a proxy used by authors; no direct peptide-HLA KD or IC50 measured here. Printed labels, not trace digitization."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-E3",
+      "claim": "At 10 C mutant pMHC dissociates more slowly and has a faster derived association rate.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Figure 2c printed labels and caption; Online Methods: SPR",
+      "measurements": [
+        {
+          "state": "mutant",
+          "endpoint": "SPR koff",
+          "value": 1.35,
+          "unit": "s^-1",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "normal",
+          "endpoint": "SPR koff",
+          "value": 4.87,
+          "unit": "s^-1",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "mutant",
+          "endpoint": "derived kon = koff/KD",
+          "value": 170000,
+          "unit": "M^-1 s^-1",
+          "uncertainty": 50000,
+          "uncertaintyType": "propagated independent KD and koff error",
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "normal",
+          "endpoint": "derived kon = koff/KD",
+          "value": 20000,
+          "unit": "M^-1 s^-1",
+          "uncertainty": 7000,
+          "uncertaintyType": "propagated independent KD and koff error",
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        }
+      ],
+      "limitations": [
+        "10 C; 50 microliter/min; approximately 500 RU; 10 Hz; single-exponential global dissociation fit of three injections. kon is calculated using independent 10 C KD, not directly fitted association. Do not combine with 25 C KD. Replicate uncertainty type for propagated inputs not fully specified in caption."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-E4",
+      "claim": "Functional IL-2 response requires a lower peptide concentration for mutant in this cell assay.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Figure 2a printed labels and caption; Online Methods: T cell functional assays",
+      "measurements": [
+        {
+          "state": "mutant",
+          "endpoint": "IL-2 response EC50",
+          "value": 1.1,
+          "unit": "micromolar",
+          "uncertainty": 0.1,
+          "uncertaintyType": "fit error",
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "normal",
+          "endpoint": "IL-2 response EC50",
+          "value": 200,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "lower_bound",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        }
+      ],
+      "limitations": [
+        "CD8+ Jurkat76 expressing 302TIL and HLA-A*02:06 T2 cells; 2 h peptide pulse, 1:1 co-culture 18-20 h at 37 C; ELISA; two independent experiments with three biological replicates each. WT EC50 >=200, not exact. Not a binding assay."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-E5",
+      "claim": "ITC independently detects mutant receptor binding; normal ITC binding was not measurable.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Extended Data Figure 2 caption; Online Methods: ITC; Results",
+      "measurements": [
+        {
+          "state": "mutant",
+          "endpoint": "ITC KD replicate 1",
+          "value": 1.7,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "mutant",
+          "endpoint": "ITC KD replicate 2",
+          "value": 1.4,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "normal",
+          "endpoint": "ITC KD",
+          "value": null,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "not_measurable",
+          "missingReason": "Authors unable to measure; no numeric detection limit",
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        }
+      ],
+      "limitations": [
+        "25 C; MicroCal ITC200; 20 micromolar TCR, 170-190 micromolar pMHC; 10 mM HEPES pH7.4/150 mM NaCl; single-site fit. Prose says ITC KD higher than SPR, but caption values are lower. Preserve discrepancy; do not average assays."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-G1",
+      "claim": "HLA-aligned structures quantify the change at W6 separately from the position-8 mutation.",
+      "evidenceType": "computed_geometry",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Deposited PDBs 6UJQ,6UJO,6UK2,6UK4; rosalind/mechanism.json w6Comparisons",
+      "measurements": [
+        {
+          "state": "6UJQ/6UK2",
+          "endpoint": "HLA-fixed W6 matching indole atom RMSD",
+          "value": 2.986529294383165,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        },
+        {
+          "state": "6UJO/6UK4",
+          "endpoint": "HLA-fixed W6 matching indole atom RMSD",
+          "value": 1.0210902694853723,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        },
+        {
+          "state": "6UJQ/6UJO",
+          "endpoint": "HLA-fixed W6 matching indole atom RMSD",
+          "value": 3.2910515155724727,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        },
+        {
+          "state": "6UK2/6UK4",
+          "endpoint": "HLA-fixed W6 matching indole atom RMSD",
+          "value": 0.16075654593513936,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        }
+      ],
+      "limitations": [
+        "Fixed atom correspondence can give a large RMSD for indole ring flips; use torsions and endpoints alongside RMSD. No trajectory or conformational population measured."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-G2",
+      "claim": "Recovered crystal mates place W6 next to Tyr100 alpha.",
+      "evidenceType": "computed_geometry",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "rosalind/mechanism.json states[].w6Tyr100Alpha; Figure 3a context",
+      "measurements": [
+        {
+          "state": "6UK2",
+          "endpoint": "W6 NE1 to Tyr100 alpha ring centroid",
+          "value": 3.311585643080245,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        },
+        {
+          "state": "6UK4",
+          "endpoint": "W6 NE1 to Tyr100 alpha ring centroid",
+          "value": 3.3055045725756025,
+          "unit": "angstrom",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": "Static coordinate precision is not an uncertainty estimate"
+        }
+      ],
+      "limitations": [
+        "NE1-to-Tyr-ring centroid is not ring-to-ring centroid or minimum heavy-atom distance. Geometric proximity alone is not hydrogen-bond energy."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    },
+    {
+      "id": "HHAT-I1",
+      "claim": "The paper interprets altered W6 geometry and receptor kinetics as pre-organization for 302TIL recognition.",
+      "evidenceType": "interpretation",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Figures 1-3; Discussion",
+      "measurements": [],
+      "limitations": [
+        "Four static crystals establish conformations, not dynamic populations, transition rates, or mutation causality alone. Published dynamics are author analyses, not reproduced here. Ovarian HHAT case does not explain pancreatic vaccine outcomes."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
+    }
+  ],
+  "defaultNumericClaimIds": [
+    "HHAT-E1",
+    "HHAT-E2",
+    "HHAT-E3",
+    "HHAT-E4"
+  ],
+  "provenance": {
+    "operation": "Local public full-text retrieval and visual transcription of printed Figure 1/2 labels",
+    "workbench": false,
+    "date": "2026-09-09"
+  },
+  "unsupported": [
+    {
+      "task": "Direct measured peptide-HLA equilibrium affinity",
+      "reason": "This paper reports thermal stability; no direct KD extracted."
+    }
+  ]
+}

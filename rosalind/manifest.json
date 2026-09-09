@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "0.1.0",
+  "scope": "Portable evidence artifacts; input datasets remain in repository or fixtures/sources",
+  "files": [
+    {
+      "path": "rosalind/CONTRACT_VALIDATION.md",
+      "sha256": "2b0465ddecb50935d5199ecdde7f8acb53bc2ac7daed2268e655e5a9bd9b685d",
+      "bytes": 2445
+    },
+    {
+      "path": "rosalind/CONTRIBUTIONS.md",
+      "sha256": "aadbaaaac042c544786cf8601a9decf040bea47a32a722be4e5456ef3ff56852",
+      "bytes": 3986
+    },
+    {
+      "path": "rosalind/PRODUCT_REVIEW.md",
+      "sha256": "1074927c0c40185e3e243e8958c94b22f9dcb692916119638927a18d216b7d41",
+      "bytes": 6292
+    },
+    {
+      "path": "rosalind/REVIEW.md",
+      "sha256": "6220c1080978890ed106dd0e83ff242ca3c3f7a902416e8d03db3e37d5d4caa3",
+      "bytes": 5690
+    },
+    {
+      "path": "rosalind/analysis/contracts.py",
+      "sha256": "970ad49b978e1277c3534b49c134832d1e2b32ed2e244ff1ff24328d6258cc3e",
+      "bytes": 19111
+    },
+    {
+      "path": "rosalind/analysis/evidence.py",
+      "sha256": "463b22d55a6a54440f47e23acf853d7e885a974826720589e97a4bf57954305d",
+      "bytes": 5596
+    },
+    {
+      "path": "rosalind/analysis/manifest.py",
+      "sha256": "e778b5e22ad48d7ca097b7ae9d3d02057d47b215584e00a658359a7338c7cfb5",
+      "bytes": 558
+    },
+    {
+      "path": "rosalind/analysis/refine_contract.py",
+      "sha256": "a698f8bd8d1b917f505e03f7566d1e5958511a85a2a059303b5798c010ebdc9c",
+      "bytes": 3112
+    },
+    {
+      "path": "rosalind/analysis/response-capture.mjs",
+      "sha256": "ae4461d424882f982e670673c371c8a3478e4b4904e8c9f46722e88a980f3f8e",
+      "bytes": 3655
+    },
+    {
+      "path": "rosalind/analysis/run.sh",
+      "sha256": "2af689739a58dd0933f12b9b9b6922e9e596364b02dc370f56765973a0b03f82",
+      "bytes": 518
+    },
+    {
+      "path": "rosalind/analysis/structure.py",
+      "sha256": "868bbd9923e25687b6eee9a9271fcddaf56b080e9dbea111abadf542f9ee2a7f",
+      "bytes": 9834
+    },
+    {
+      "path": "rosalind/analysis/validate.py",
+      "sha256": "219db45855cfbe398293ffbdb96780f486601a1298fee231c62fce7ed1422743",
+      "bytes": 10970
+    },
+    {
+      "path": "rosalind/capabilities.json",
+      "sha256": "2977fe66c0340f5e097b55f03ea009f139c87459ccbc34365eaa94ef8505bf2b",
+      "bytes": 397
+    },
+    {
+      "path": "rosalind/cohort-validation.json",
+      "sha256": "18b8275d7f9e414bda6450e0fde11417f1205a94f1f8cd4ec388000b2628d066",
+      "bytes": 2654
+    },
+    {
+      "path": "rosalind/environment.json",
+      "sha256": "2d2dae89b1ee43c04bd6c40b4b0bff471f6082596644053c5bfc370b318a9eec",
+      "bytes": 252
+    },
+    {
+      "path": "rosalind/evidence-pack.schema.json",
+      "sha256": "b430e0c703af1a4ef640aa872134b6eb1717909b08310be4eb34dc40e58041a9",
+      "bytes": 10343
+    },
+    {
+      "path": "rosalind/evidence-request.schema.json",
+      "sha256": "4e205f0acbb50366955f3ed689aa12841cc98695f2793d0e15b26e75c4572a65",
+      "bytes": 2750
+    },
+    {
+      "path": "rosalind/evidence.json",
+      "sha256": "9257e099e2c720aa75ffa039ab04eb9db26709fb714588bec5ef4c8e104876c6",
+      "bytes": 13577
+    },
+    {
+      "path": "rosalind/fixtures/evidence-request.json",
+      "sha256": "3fbb90084e6805db6fcd457d1d0ceed1fd8e8e065f49ac25a3b2b21c88400939",
+      "bytes": 1531
+    },
+    {
+      "path": "rosalind/fixtures/evidence-return.json",
+      "sha256": "103320d2b38097c3e827775ffe8581e987517a86220c9147542f9e2c7c02f6dc",
+      "bytes": 2358
+    },
+    {
+      "path": "rosalind/fixtures/hcc1395.project.json",
+      "sha256": "fcb363711f0824dc50dc9a4719563754c107adddaea08819292da32d88f2efa0",
+      "bytes": 83289
+    },
+    {
+      "path": "rosalind/fixtures/hhat.project.json",
+      "sha256": "2866825ab5b814037c33352129775baa1d807e64f508297deee7527b766c9e32",
+      "bytes": 2493
+    },
+    {
+      "path": "rosalind/fixtures/rojas.project.json",
+      "sha256": "aee5be60361fdfb69b33eea78e95775c7c2762a6bf6ba9206c565fdc3904bd3c",
+      "bytes": 1560501
+    },
+    {
+      "path": "rosalind/fixtures/sources/HCC1395.filtered.tsv",
+      "sha256": "e0ccad87c758b40516c55ade12e65e15a6ba29cff6f9a636dc2a3ef628381824",
+      "bytes": 15370
+    },
+    {
+      "path": "rosalind/fixtures/sources/pvactools-LICENSE",
+      "sha256": "4a78a0189326fcca653c2d05d61938df6f5a0e6321631648afd1b081ad758ccc",
+      "bytes": 1692
+    },
+    {
+      "path": "rosalind/mechanism.json",
+      "sha256": "ba76f444605ab6af6c34e36b49b3cb6d5ee253bb8d302e62ec9f3858d25d5b47",
+      "bytes": 83222
+    },
+    {
+      "path": "rosalind/project.schema.json",
+      "sha256": "667b801fe07759e41d404f800fd1754328aa13cef9c6b05e48ce3d544d32fd5d",
+      "bytes": 12354
+    },
+    {
+      "path": "rosalind/requirements.lock.txt",
+      "sha256": "8736ca4f09a2bd79f442a2d6dd74fb43bbaf94e38c1ac24e345d12dd6552ec49",
+      "bytes": 209
+    },
+    {
+      "path": "rosalind/response-capture.json",
+      "sha256": "2a2725084883404dcac5a495bc46b59a1dbf4bae41b18a23d87b2362a58570aa",
+      "bytes": 402897
+    },
+    {
+      "path": "rosalind/screenshots/UNSUPPORTED.md",
+      "sha256": "d54a5bf3436e709f79501f22cf2533ddf95560ffde26948a2ef67aac4a7158ba",
+      "bytes": 341
+    },
+    {
+      "path": "rosalind/source-retrieval.json",
+      "sha256": "c2353fb2c1e29ca61053a95fd9c45a53cdce7d87690ad719d8201da2e24b0bb3",
+      "bytes": 1548
+    },
+    {
+      "path": "rosalind/structures/6UJO.pdb",
+      "sha256": "f8a26875b698917e41170f212838c19be8fc61918e2eecfd0736e6cd95683cf7",
+      "bytes": 257347
+    },
+    {
+      "path": "rosalind/structures/6UJQ.pdb",
+      "sha256": "ae8fb9fd21e5c0e653a1e806edcfc1bb56d194e6baad76597df604770b4d2013",
+      "bytes": 257104
+    },
+    {
+      "path": "rosalind/structures/6UK2.pdb",
+      "sha256": "36c7dbed8f876dc3572c05811c4c85765bebab4fe276372fa710f9129122d595",
+      "bytes": 544899
+    },
+    {
+      "path": "rosalind/structures/6UK4.pdb",
+      "sha256": "860ef8230846da163e75b8401d8aac8f65ded428a418a584633fe1169b3e546a",
+      "bytes": 545385
+    },
+    {
+      "path": "rosalind/validation.json",
+      "sha256": "6521ab91de0b64523cf611e5c7122f678363f7fc6081ceeaa58d491af2fe560e",
+      "bytes": 2993
+    }
+  ]
+}
