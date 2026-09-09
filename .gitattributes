@@ -1,0 +1,6 @@
+# Preserve publication inputs and fixed-column coordinate files byte-for-byte.
+data/raw/** -text -whitespace
+*.pdb -text -whitespace
+*.png binary
+*.webm binary
+*.xlsx binary
