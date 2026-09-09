@@ -2,6 +2,8 @@
 
 Status: proposed product extension; not implemented. The existing public example remains the starting experience. This plan broadens the software to user-supplied research projects while preserving the frozen scope and interpretation of the existing studies.
 
+Detailed implementation contract: [RESEARCH_APP_SPEC.md](RESEARCH_APP_SPEC.md), including user flows, proposed data entities, outcome rules, Rosalind exchange, ownership and release checks.
+
 ## Product and user
 
 **A visual review workspace for cancer-vaccine targets.**
@@ -29,7 +31,7 @@ mutiny's proposed focus is a lightweight, browser-based, pipeline-independent re
 
 Load a generic CSV/TSV plus a small project/score manifest. Map columns once and save that mapping in the project. The existing Rojas study is a built-in example, not hardcoded application logic. A schema-defined ZIP reopens a complete saved project.
 
-Minimum candidate fields: stable candidate ID, group/sample ID and mutant peptide. Optional fields include gene, mutation, wild-type peptide, versioned transcript/protein, HLA allele, parent variant/target ID, expression data with units, source URL, assay metadata and measured outcome. Unavailable fields stay unavailable. Explicitly declare whether a row represents an administered target, a peptide, or a peptide–HLA pair; do not conflate these units.
+Minimum candidate fields: stable candidate ID, group/sample ID and mutant sequence with a declared role (such as epitope or source-protein context). The convenient importer may generate stable project-local IDs before confirmation, as specified in RESEARCH_APP_SPEC.md. Optional fields include gene, mutation, wild-type peptide, versioned transcript/protein, HLA allele, parent variant/target ID, expression data with units, source URL, assay metadata and measured outcome. Unavailable fields stay unavailable. Explicitly declare whether a row represents an administered target, a peptide, or a peptide–HLA pair; do not conflate these units.
 
 Predictions live in a separate long-form score table: candidate ID, method ID, value, model version, biological endpoint, units, ordering direction and provenance. Require a manifest for numeric interpretation; never infer direction or treat all values as probabilities. Allow several scores for one candidate only when their contexts and identities remain distinct.
 
