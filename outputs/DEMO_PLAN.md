@@ -1,5 +1,7 @@
 # mutiny — interactive demo and captioned film
 
+Owner: the original Codex agent in the originating account, after the Rosalind-enabled agent updates GitHub and the user returns. The Rosalind handoff does not assign video, narration, caption, storyboard or video-player production.
+
 Status: proposed next build. These interactions and the captioned film are not yet implemented. The current app and uncaptioned walkthrough remain available.
 
 Name: **mutiny — Cancer vaccine explorer**.
