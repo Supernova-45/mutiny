@@ -1,4 +1,4 @@
-# Callback design
+# mutiny design
 
 The atlas and experimental structures lead; explanations live in the evidence drawer. Visible text must identify biology, evidence, measurements, or a meaningful action. Do not narrate camera behavior or interface mechanics. Titles ask a concrete cancer-biology question; avoid slogans, italic word emphasis, numbered navigation, oversized metrics, and rounded card layouts.
 

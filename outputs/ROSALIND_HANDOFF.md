@@ -1,12 +1,12 @@
-# Callback — Rosalind handoff
+# mutiny — Rosalind handoff
 
-Repository: https://github.com/Supernova-45/callback
+Repository: https://github.com/Supernova-45/mutiny
 
-Product: **Callback — Cancer vaccine explorer**.
+Product: **mutiny — Cancer vaccine explorer**.
 
 ## Paste into the Rosalind-enabled account
 
-> Continue Callback from https://github.com/Supernova-45/callback. Read outputs/ROSALIND_HANDOFF.md and docs/SCIENCE.md. Use the actual Rosalind Workbench and connected scientific plugins available in this account to produce the scientific evidence for a new interactive mechanism story: how the HHAT L75F mutation changes the peptide surface encountered by the 302TIL T-cell receptor. The goal is new measured, source-linked artifacts that drive the demo, beyond auditing existing files. First verify available capabilities and report exact plugin names. Independently reconstruct and compare the four experimental HHAT structures; quantify position-6 geometry relative to the HLA scaffold; extract the paper’s experimentally measured receptor-binding and peptide–HLA results without conflating assay types; export mechanism.json, evidence.json, executable analysis, and real Workbench screenshots. Also check a retrospective top-k response-capture dataset for the existing vaccine cohort. Preserve all exclusions and keep the ovarian structural case distinct from the pancreatic vaccine trial. No new model training, simulated molecular trajectories, invented numbers, or app redesign. Return a ZIP or commit for integration in the original account. Complete supported tasks and explicitly mark unsupported ones.
+> Continue mutiny from https://github.com/Supernova-45/mutiny. Read outputs/ROSALIND_HANDOFF.md and docs/SCIENCE.md. Use the actual Rosalind Workbench and connected scientific plugins available in this account to produce the scientific evidence for a new interactive mechanism story: how the HHAT L75F mutation changes the peptide surface encountered by the 302TIL T-cell receptor. The goal is new measured, source-linked artifacts that drive the demo, beyond auditing existing files. First verify available capabilities and report exact plugin names. Independently reconstruct and compare the four experimental HHAT structures; quantify position-6 geometry relative to the HLA scaffold; extract the paper’s experimentally measured receptor-binding and peptide–HLA results without conflating assay types; export mechanism.json, evidence.json, executable analysis, and real Workbench screenshots. Also check a retrospective top-k response-capture dataset for the existing vaccine cohort. Preserve all exclusions and keep the ovarian structural case distinct from the pancreatic vaccine trial. No new model training, simulated molecular trajectories, invented numbers, or app redesign. Return a ZIP or commit for integration in the original account. Complete supported tasks and explicitly mark unsupported ones.
 
 ## What this must add
 

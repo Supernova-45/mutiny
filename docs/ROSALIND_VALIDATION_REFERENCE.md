@@ -2,11 +2,11 @@
 
 The active handoff is [ROSALIND_HANDOFF.md](../outputs/ROSALIND_HANDOFF.md). This document preserves the original audit details.
 
-Repository: https://github.com/Supernova-45/callback
+Repository: https://github.com/Supernova-45/mutiny
 
 ## Paste this instruction into the other account
 
-> Continue Callback using this repository. Read README.md, docs/SCIENCE.md and this handoff. The application and both model runs already exist. First inspect the actual Rosalind Workbench plugins available in this account; do not assume a capability. Use supported Rosalind tools to independently validate the published target records and the experimental HHAT structural preparation. Produce reproducible outputs, record the exact plugins and operations used, and capture the actual Workbench workflow. Preserve the scientific scope and all unresolved outcomes. Do not redesign the project, train models, fabricate missing values, or claim work that the tools did not perform.
+> Continue mutiny using this repository. Read README.md, docs/SCIENCE.md and this handoff. The application and both model runs already exist. First inspect the actual Rosalind Workbench plugins available in this account; do not assume a capability. Use supported Rosalind tools to independently validate the published target records and the experimental HHAT structural preparation. Produce reproducible outputs, record the exact plugins and operations used, and capture the actual Workbench workflow. Preserve the scientific scope and all unresolved outcomes. Do not redesign the project, train models, fabricate missing values, or claim work that the tools did not perform.
 
 ## Start without Astra
 

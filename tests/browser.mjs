@@ -70,6 +70,6 @@ try {
  console.log('PASS: 232 identities, four outcome states, matched model orderings, chance reference, evidence, four PDB states, residue contacts, synchronized rotation, mobile, no browser errors.');
 } finally {
  const video=page.video();await context.close();
- if(record&&video)await video.saveAs('outputs/callback-demo.webm');
+ if(record&&video)await video.saveAs('outputs/mutiny-demo.webm');
  await browser.close();
 }

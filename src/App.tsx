@@ -65,9 +65,9 @@ export default function App() {
   const selectPatient=(p:number)=>{setPatient(p);setTargetId(ordered.get(p)![0].id)};
   return <div className="app-shell">
     <header className="topbar">
-      <button className="wordmark" onClick={()=>setScene('atlas')} aria-label="Callback home"><span className="brand-mark"/>callback</button>
+      <button className="wordmark" onClick={()=>setScene('atlas')} aria-label="mutiny home">mutiny</button>
       <nav aria-label="Explore"><button className={scene==='atlas'?'active':''} onClick={()=>setScene('atlas')}>The vaccines</button><button className={scene==='molecule'?'active':''} onClick={()=>setScene('molecule')}>Recognition</button></nav>
-      <div className="header-actions"><button className="icon-button" title="Evidence and methods" aria-label="Evidence and methods" onClick={()=>setEvidence(true)}><BookOpen size={18}/></button><a className="icon-button github" href="https://github.com/Supernova-45/callback" target="_blank" rel="noreferrer" aria-label="GitHub repository"><Github size={18}/></a></div>
+      <div className="header-actions"><button className="icon-button" title="Evidence and methods" aria-label="Evidence and methods" onClick={()=>setEvidence(true)}><BookOpen size={18}/></button><a className="icon-button github" href="https://github.com/Supernova-45/mutiny" target="_blank" rel="noreferrer" aria-label="GitHub repository"><Github size={18}/></a></div>
     </header>
     {scene==='atlas'?<main className="atlas-page">
       <section className="intro-bar"><div><h1>Which cancer mutations trigger T cells?</h1><p className="study-context">Pancreatic cancer vaccine trial · 16 patients · 232 targets</p></div></section>

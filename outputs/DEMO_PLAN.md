@@ -1,8 +1,8 @@
-# Callback — interactive demo and captioned film
+# mutiny — interactive demo and captioned film
 
 Status: proposed next build. These interactions and the captioned film are not yet implemented. The current app and uncaptioned walkthrough remain available.
 
-Name: **Callback — Cancer vaccine explorer**.
+Name: **mutiny — Cancer vaccine explorer**.
 
 Central question: **What makes a cancer mutation a target for T cells?**
 
@@ -50,10 +50,10 @@ Final words and timings depend on the measured result and approved claim list. D
 
 ## Deliverables
 
-- `callback-demo.mp4`: approximately 75 seconds, 1920×1080, real app capture and clear narration.
-- `callback-demo.en.vtt`: switchable English closed captions for the web player.
-- `callback-demo.en.srt`: uploadable captions for supporting platforms.
-- `callback-demo-social.mp4`: separate open-caption version for feeds that strip caption tracks.
+- `mutiny-demo.mp4`: approximately 75 seconds, 1920×1080, real app capture and clear narration.
+- `mutiny-demo.en.vtt`: switchable English closed captions for the web player.
+- `mutiny-demo.en.srt`: uploadable captions for supporting platforms.
+- `mutiny-demo-social.mp4`: separate open-caption version for feeds that strip caption tracks.
 - `demo-story.json`: chapter timing, interaction state and evidence-claim IDs; a plain transcript alongside it.
 - Genuine Workbench screenshots and exact plugin credit, used only after the work is complete.
 

@@ -36,4 +36,4 @@ With the app running, run `npx playwright install chromium` and `npm run test:br
 - RefSeq transcript/CDS records via NCBI; returned versions and checksums are retained.
 - ESM-2 [checkpoint](https://huggingface.co/facebook/esm2_t33_650M_UR50D) and [MHCflurry](https://github.com/openvax/mhcflurry).
 
-Original Callback code is MIT licensed. Third-party data, model weights and dependencies retain their own terms. Model weights are not redistributed in this repository.
+Original mutiny code is MIT licensed. Third-party data, model weights and dependencies retain their own terms. Model weights are not redistributed in this repository.

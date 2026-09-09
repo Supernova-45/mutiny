@@ -1,10 +1,10 @@
-# Callback
+# mutiny
 
 **Which cancer mutations trigger T cells?**
 
 Cancer vaccines teach T cells what to recognize. Choosing those targets is the hard part.
 
-Inspired by Radical Numerics’ [Omnii cancer-vaccine post](https://www.radicalnumerics.ai/blog/omnii-cancer-vaccines), Callback lets you explore real vaccine outcomes, protein-language-model scores, and the molecular encounter in 3D.
+Inspired by Radical Numerics’ [Omnii cancer-vaccine post](https://www.radicalnumerics.ai/blog/omnii-cancer-vaccines), mutiny lets you explore real vaccine outcomes, protein-language-model scores, and the molecular encounter in 3D.
 
 ![Rotate normal and mutant peptide–HLA structures with their T-cell receptors, in linked views](outputs/screenshots/recognition-orbit.gif)
 

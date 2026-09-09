@@ -1,4 +1,4 @@
-name: Check Callback
+name: Check mutiny
 on: [push, pull_request]
 jobs:
   validate:

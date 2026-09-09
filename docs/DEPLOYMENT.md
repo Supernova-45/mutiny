@@ -1,8 +1,8 @@
-# Deploy Callback to Vercel
+# Deploy mutiny to Vercel
 
 The app is a static Vite/React application. All scientific outputs and coordinates are served locally from `public/`; no backend or model API is required.
 
-1. Import the GitHub repository `Supernova-45/callback` into Vercel.
+1. Import the GitHub repository `Supernova-45/mutiny` into Vercel.
 2. Framework preset: Vite. Root directory: repository root.
 3. Install: `npm ci`. Build: `npm run build`. Output: `dist`.
 4. Use Node.js 22. No environment variables are required.
