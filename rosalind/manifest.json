@@ -14,8 +14,8 @@
     },
     {
       "path": "rosalind/PLUGIN_EXECUTION.md",
-      "sha256": "a6858118c19904dccec839610eaa6a3cb75f226e3a291721389d4863b4879fe0",
-      "bytes": 8068
+      "sha256": "637cffc630d0a333fb3a3db80e54095434b36dcb2464a1122d4cbb0acd0231f4",
+      "bytes": 9162
     },
     {
       "path": "rosalind/PRODUCT_REVIEW.md",
@@ -181,6 +181,11 @@
       "path": "rosalind/plugin-results/devlin-pubmed.raw.json",
       "sha256": "714499fa493e9c6cc83144292ee3f9349c38dd265dc7c189c7ac49875dda5067",
       "bytes": 2499
+    },
+    {
+      "path": "rosalind/plugin-results/hhat-density-discovery.json",
+      "sha256": "21216e95f7e07a64c3de19b7fbd83e65e4a79073d2f7dbdcbc3959a5e4dff853",
+      "bytes": 6613
     },
     {
       "path": "rosalind/plugin-results/hhat-native-atom-identities.json",

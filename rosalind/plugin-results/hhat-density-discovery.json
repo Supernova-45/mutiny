@@ -1,0 +1,241 @@
+{
+  "publisher": "Codex retained native Molecular Structure Viewer discovery responses",
+  "scope": "Availability only; maps not downloaded or inspected, no local density fit claimed",
+  "entries": [
+    {
+      "id": "6UJQ",
+      "publicPdbId": "6UJQ",
+      "status": "available",
+      "experimentalMethods": [
+        "X-RAY DIFFRACTION"
+      ],
+      "maps": [
+        {
+          "source": "x-ray",
+          "mapId": "6UJQ",
+          "status": "available",
+          "channels": [
+            "2Fo-Fc",
+            "Fo-Fc"
+          ],
+          "availablePrecisions": [
+            {
+              "detail": 0,
+              "maxVoxels": 524288,
+              "supported": true
+            },
+            {
+              "detail": 1,
+              "maxVoxels": 1048576,
+              "supported": true
+            }
+          ],
+          "recommendedDetail": 1,
+          "recommendedContour": null,
+          "warnings": []
+        }
+      ],
+      "provenance": [
+        {
+          "byteLength": 14345,
+          "retrievedAt": "2026-09-10T07:28:24.774Z",
+          "sha256": "26cc3b005bf020df2ec8dee2245e06537f9b93abc1c610fe0216679dedaebd8f",
+          "sourceUrl": "https://data.rcsb.org/rest/v1/core/entry/6UJQ",
+          "kind": "entry"
+        },
+        {
+          "byteLength": 1680,
+          "retrievedAt": "2026-09-10T07:28:25.671Z",
+          "sha256": "b18ef54aa7b9d5585ec6fa79847b668ad500a606352d2878aeb7f196e026411d",
+          "sourceUrl": "https://www.ebi.ac.uk/pdbe/densities/x-ray/6ujq",
+          "kind": "volume-header"
+        }
+      ],
+      "warnings": [],
+      "limits": {
+        "maxDownloadBytes": 16777216,
+        "maxVoxelsPerChannel": 2097152
+      }
+    },
+    {
+      "id": "6UJO",
+      "publicPdbId": "6UJO",
+      "status": "available",
+      "experimentalMethods": [
+        "X-RAY DIFFRACTION"
+      ],
+      "maps": [
+        {
+          "source": "x-ray",
+          "mapId": "6UJO",
+          "status": "available",
+          "channels": [
+            "2Fo-Fc",
+            "Fo-Fc"
+          ],
+          "availablePrecisions": [
+            {
+              "detail": 0,
+              "maxVoxels": 524288,
+              "supported": true
+            },
+            {
+              "detail": 1,
+              "maxVoxels": 1048576,
+              "supported": true
+            },
+            {
+              "detail": 2,
+              "maxVoxels": 2097152,
+              "supported": true
+            }
+          ],
+          "recommendedDetail": 2,
+          "recommendedContour": null,
+          "warnings": []
+        }
+      ],
+      "provenance": [
+        {
+          "byteLength": 14461,
+          "retrievedAt": "2026-09-10T07:28:40.031Z",
+          "sha256": "a3c2ced35f77ef63a1df9b184d8e469542621d9e2dfcae9bed81173dc504f471",
+          "sourceUrl": "https://data.rcsb.org/rest/v1/core/entry/6UJO",
+          "kind": "entry"
+        },
+        {
+          "byteLength": 1745,
+          "retrievedAt": "2026-09-10T07:28:40.774Z",
+          "sha256": "7f76b40c79058b90a33468328d0980b7226848c9ca5fe11a596f0bb75a754444",
+          "sourceUrl": "https://www.ebi.ac.uk/pdbe/densities/x-ray/6ujo",
+          "kind": "volume-header"
+        }
+      ],
+      "warnings": [],
+      "limits": {
+        "maxDownloadBytes": 16777216,
+        "maxVoxelsPerChannel": 2097152
+      }
+    },
+    {
+      "id": "6UK2",
+      "publicPdbId": "6UK2",
+      "status": "available",
+      "experimentalMethods": [
+        "X-RAY DIFFRACTION"
+      ],
+      "maps": [
+        {
+          "source": "x-ray",
+          "mapId": "6UK2",
+          "status": "available",
+          "channels": [
+            "2Fo-Fc",
+            "Fo-Fc"
+          ],
+          "availablePrecisions": [
+            {
+              "detail": 0,
+              "maxVoxels": 524288,
+              "supported": true
+            },
+            {
+              "detail": 1,
+              "maxVoxels": 1048576,
+              "supported": true
+            },
+            {
+              "detail": 2,
+              "maxVoxels": 2097152,
+              "supported": true
+            }
+          ],
+          "recommendedDetail": 2,
+          "recommendedContour": null,
+          "warnings": []
+        }
+      ],
+      "provenance": [
+        {
+          "byteLength": 14734,
+          "retrievedAt": "2026-09-10T07:28:30.066Z",
+          "sha256": "becb8ded4bed4ca3cca8ba660d5a52b6e3578c095ed49b21d13209150a3de117",
+          "sourceUrl": "https://data.rcsb.org/rest/v1/core/entry/6UK2",
+          "kind": "entry"
+        },
+        {
+          "byteLength": 2254,
+          "retrievedAt": "2026-09-10T07:28:30.804Z",
+          "sha256": "574dea0b070025009252c25ee960e4d1c1e82cfb9929be986b3de5c3509b3b33",
+          "sourceUrl": "https://www.ebi.ac.uk/pdbe/densities/x-ray/6uk2",
+          "kind": "volume-header"
+        }
+      ],
+      "warnings": [],
+      "limits": {
+        "maxDownloadBytes": 16777216,
+        "maxVoxelsPerChannel": 2097152
+      }
+    },
+    {
+      "id": "6UK4",
+      "publicPdbId": "6UK4",
+      "status": "available",
+      "experimentalMethods": [
+        "X-RAY DIFFRACTION"
+      ],
+      "maps": [
+        {
+          "source": "x-ray",
+          "mapId": "6UK4",
+          "status": "available",
+          "channels": [
+            "2Fo-Fc",
+            "Fo-Fc"
+          ],
+          "availablePrecisions": [
+            {
+              "detail": 0,
+              "maxVoxels": 524288,
+              "supported": true
+            },
+            {
+              "detail": 1,
+              "maxVoxels": 1048576,
+              "supported": true
+            },
+            {
+              "detail": 2,
+              "maxVoxels": 2097152,
+              "supported": true
+            }
+          ],
+          "recommendedDetail": 2,
+          "recommendedContour": null,
+          "warnings": []
+        }
+      ],
+      "provenance": [
+        {
+          "byteLength": 14611,
+          "retrievedAt": "2026-09-10T07:28:46.031Z",
+          "sha256": "fc7c8ef58a9df8db57d340968fd31a9b866f315dec01978f4c15dd73ed3cd2ea",
+          "sourceUrl": "https://data.rcsb.org/rest/v1/core/entry/6UK4",
+          "kind": "entry"
+        },
+        {
+          "byteLength": 2253,
+          "retrievedAt": "2026-09-10T07:28:46.840Z",
+          "sha256": "8571257417ef618a8e3dee917acb1ffa35676a2076d0686147b538bc635b34f7",
+          "sourceUrl": "https://www.ebi.ac.uk/pdbe/densities/x-ray/6uk4",
+          "kind": "volume-header"
+        }
+      ],
+      "warnings": [],
+      "limits": {
+        "maxDownloadBytes": 16777216,
+        "maxVoxelsPerChannel": 2097152
+      }
+    }
+  ]
+}

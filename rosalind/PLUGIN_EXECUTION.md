@@ -39,3 +39,9 @@ Biological Sequence & Alignment Viewer mounted `plugin-results/hhat-peptides.afa
 ## Validation and remaining limits
 
 Seven published ligand-table rows, four native fixed-frame distances, eight native contacts, two native image hashes, and the 23 existing semantic/geometry checks pass. The 188-target cohort comparison, exclusions, independent unlabeled fixture, and assay separation are unchanged. Whole-Workbench UI screenshots remain unsupported because Computer Use access to the Codex host was denied; native rendering did not bypass that denial. Full-complex native SASA was not attempted because the advertised 2,000-atom budget is below the required occluder context; the separately attributed whole-complex local SASA remains available. No frontend, video, model training, new prediction, or simulated trajectory was created.
+
+## Additional native capability discovery — 2026-09-10
+
+Molecular Structure Viewer `discover_density` returned available 2Fo–Fc and Fo–Fc channels for all four public accessions (6UJQ, 6UJO, 6UK2, 6UK4). Exact responses, source URLs, retrieval timestamps, precision budgets and metadata hashes are retained in `plugin-results/hhat-density-discovery.json`. This establishes availability only; no maps were downloaded, visually interpreted, or fitted in this check.
+
+A wwPDB validation load for the prepared 6UK4 object correctly refused attachment because the loaded model metadata did not identify the explicit deposited accession. Future validation/density work must load authentic deposited coordinates with their metadata and maintain the appropriate map/coordinate frame; do not attach original maps directly to transformed comparison coordinates. Potential extensions include experimental density support at W6/P8, native HLA-only alignment, systematic contact differences and saved interactive molecular scenes. These are capabilities and proposed analyses, not completed results.
