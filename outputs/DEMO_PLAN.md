@@ -13,3 +13,10 @@ Reproduce with `node scripts/capture_hero.mjs` against a running app (`APP_URL` 
 A longer narrated/captioned film is optional. If made, start with the visual question, show a short interaction, reveal the corresponding experiment, and finish on the reusable local comparison. Captions should be concise and engaging. Keep HHAT independent of the pancreatic vaccine cohort and any future engineered-TCR case. Do not imply clinical predictions, atom trajectories, or completed Rosalind operations that lack receipts.
 
 Deployment and the public README link belong to this account's packaging work. Use a verified public production URL, not a protected deployment-preview URL.
+
+
+## New visual material, 2026-09-10
+
+The focused 3D view is ready for the later recording: normal/mutant superposition, exact-structure switching, experimental HHAT density, and a shareable view. Lead with HHAT W6 rather than a tour of controls. One possible short sequence is superposition → normal/mutant switch → density on → return to the measured binding experiment → share the observation. Capture the real browser interaction, not invented atom motion. Keep KRAS as an optional contrasting beat if the film remains clear and concise.
+
+Density was prepared directly from public PDBe data with Gemmi by the original account; it is not a new Rosalind operation. If independent Workbench review returns later, credit only the operations actually recorded. Do not wait for that review to gather app screenshots; do review any scientific corrections before recording the final film.

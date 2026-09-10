@@ -206,8 +206,9 @@ function Evidence({ data, onClose }: { data: Cohort; onClose: () => void }) {
             Life Sciences Literature 0.1.5 retrieved the source used to verify
             seven published ligand measurements. The Recognition view
             incorporates those experiments and the returned geometry; the
-            fixed-HLA ring RMSD is a local calculation. Experimental density
-            maps are not yet displayed. The second return independently verified
+            fixed-HLA ring RMSD is a local calculation. Experimental HHAT
+            density is available in the superimposed view, prepared locally from
+            PDBe maps with Gemmi. The second return independently verified
             HHAT/KRAS alignment and KRAS contacts with Molecular Structure
             Viewer, peptide identities with Biological Sequence & Alignment
             Viewer, and the KRAS paper with Life Sciences Literature.

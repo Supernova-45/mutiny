@@ -11,6 +11,7 @@ import {
   RotateCcw,
 } from "lucide-react";
 import CuratedCases from "./CuratedCases";
+import FocusComparison from "./FocusComparison";
 import { downloadFile, exportFigure, hashText } from "../lib/investigation";
 import {
   animateView,
@@ -185,13 +186,11 @@ function Stage({
             (c) => c.pdb === data.structures[index].id,
           )) {
             const point = (a: typeof contact.peptideAtom) =>
-              v
-                .getModel(0)
-                .selectedAtoms({
-                  chain: a.chain,
-                  resi: a.residue,
-                  atom: a.name,
-                })[0];
+              v.getModel(0).selectedAtoms({
+                chain: a.chain,
+                resi: a.residue,
+                atom: a.name,
+              })[0];
             const a = point(contact.peptideAtom),
               b = point(contact.hlaAtom);
             if (!a || !b)
@@ -511,6 +510,11 @@ export default function KrasComparison({
         </a>
       </section>
       <div className="pair-actions">
+        <FocusComparison
+          caseId="kras"
+          initialStep={scene === "peptide" ? 0 : scene === "contacts" ? 1 : 2}
+          initialResidue={residue}
+        />
         <button
           className="project-action"
           onClick={() => onOwnPair(snapshot())}

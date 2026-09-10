@@ -1,54 +1,30 @@
-# Rosalind handoff: one focused structural-comparison tool
+# Rosalind handoff: independent review of the new 3D evidence view
 
-**Status, 2026-09-10:** [The structural return](../rosalind/STRUCTURAL_RETURN.md) delivered independent validation and the curated KRAS case. Both are reviewed; KRAS now has a dedicated frontend comparison using the explicit shared-HLA mapping. Generic uploaded-pair rules remain unchanged. Experimental density remains blocked by unavailable Workbench read roots. The tasks below retain the original scientific request; do not repeat completed work.
+**Updated 2026-09-10.** The earlier independent comparison review and curated KRAS return are complete and integrated. Do not repeat them or find another cancer case. Keep the accepted scientific receipts in `rosalind/`.
 
-Current product direction: **compare a normal and cancer-mutant peptide structure; inspect what changes beyond the mutation.** This supersedes the broad dashboard expansion in earlier handoffs. Keep existing scientific returns; prioritize the tasks below. These are documented requests for a later Rosalind session, not operations executed by this account.
+The app now adds **Superimpose in 3D** to HHAT and KRAS: normal/mutant switching in one HLA-aligned scene, a residue selector, source-captioned figure export, and shareable curated views. HHAT also has locally processed PDBe 2Fo-Fc density for all four experimental states. The original account handles the app, public-data analysis, rendering, deployment and the later video.
 
-## What the app now does
+## The useful remaining Rosalind task
 
-- Opens with the curated HHAT example. Visitors can predict normal/mutant receptor binding, reveal the published measurements, inspect mutation → W6 → receptor contact, and save a source-captioned figure or reopenable investigation. The finding text box has been removed; preserve compatibility with notes in older saved files. Predictions belong to the visitor; experimental evidence remains fixed.
-- Accepts two local PDB files with assigned HLA and peptide chains. The first release requires identical observed HLA sequences, equal-length 8–14-residue peptides, and exactly one peptide substitution. It fits matched Cα atoms over the entire assigned HLA chain using a proper quaternion rotation. It never fits the peptide.
-- Displays per-residue common-atom side-chain or backbone RMSD. Side-chain RMSD at the mutation is unavailable because amino acids differ. Symmetric atom names are not remapped. Author residue identities are retained separately from normalized display chains A/C and positions.
-- Marks uploaded coordinate provenance and receptor state as supplied by the user, without claiming independent biological validation. Saved files embed original inputs and hashes. No uploaded structure receives HHAT assays or a receptor-binding prediction.
+**Independently check one unbound HHAT map pair around W6/P8.** Start with 6UJQ and 6UJO. Read [the processing method](../docs/EXPERIMENTAL_DENSITY.md) and [the exact manifest](../public/density/manifest.json), plus `scripts/prepare_density.py`.
 
-The upload engine is new local code (`src/lib/structure-pair.mjs`), not a previously verified Workbench operation. Its whole-HLA HHAT fit (275 Cα, approximately 1.027003 Å) agrees with a separate NumPy Kabsch calculation. The curated HHAT view continues to use the independently reviewed platform alignment and fixed-ring measurements; those metrics must not be substituted for the generic whole-chain/common-atom results.
+Use live Molecular Structure Viewer capabilities if they can load an authentic deposited map. The previous workspace-read-root failure was a Workbench limitation, not a global public-data access restriction. Do not work around denied capabilities. If native map loading remains unavailable, report it once; the application no longer depends on that operation.
 
-## Priority 1 — independently check the reusable comparison
+Check and return:
 
-Use Molecular Structure Viewer and Biological Sequence & Alignment Viewer where their live capabilities support it. Validate one actual normal/mutant pair, starting with 6UJQ/6UJO and then one independent pair. Verify chain assignment, observed sequence mapping, alternate-location handling, proper rigid alignment and source-to-display residue identities. Check the whole-chain fit and the residue-wise measurements against independent calculations; identify where a platform-only fit would be more defensible.
+- Correct deposited structure and map channel; original-coordinate W6/P8 appearance at a stated threshold and normalization convention.
+- Agreement with the app's display-frame crop, including CCP4 axis order, non-orthogonal cell handling, proper rigid transform and inverse sampling. The app uses full-unit-cell mean/SD before cropping, 0.35 Å resampling and a 2 Å display mask around the selected peptide residue.
+- Whether the chosen 1.0 σ default is useful and whether the available 0.7–1.6 σ range risks a misleading impression. Keep visual judgment separate from numeric coordinate checks and whole-residue RSCC/RSRZ.
+- Any concrete scientific issue in the HHAT/KRAS superposition labels. Context is from the normal structure in Superimpose mode and from the selected structure in Normal/Mutant modes; atom coordinates are never interpolated. Both KRAS structures contain the engineered JDIa41b1 receptor.
 
-Return fixtures and exact expectations for: different author chain names; shifted residue numbering/insertion codes; missing HLA residues; predicted versus experimental coordinates; different receptor-bound states; missing peptide side-chain atoms; and symmetric aromatic atom naming. Some are expected to be rejected by this deliberately narrow release. Do not broaden accepted inputs by silently inventing missing residues or atom correspondences. Propose explicit versioned rules and explain their biological consequences.
+Return a short `rosalind/density-review/README.md`, exact source URLs and hashes, operation receipts, and native images if supported. Clearly separate native plugin output from local calculations. Review the existing assets; do not replace them or claim this account's Gemmi processing was performed by Rosalind.
 
-Return source-linked findings, files, hashes, exact plugin operations and limitations. Keep native measured atom distances, locally computed residue RMSD, and source-reported validation separate. Do not call a generic common-side-chain RMSD the HHAT fixed-indole-ring RMSD.
+## Optional showcase evidence
 
-## Priority 2 — inspect experimental density
+One genuine Workbench screenshot showing the molecular analysis and the plugin name would help document the tool contribution. A native component render is useful too, but must be labeled as a component render rather than a Workbench UI screenshot. Do not manufacture plugin UI or imply operations executed when they did not.
 
-Continue the existing four-state density task in `outputs/ROSALIND_FOLLOWUP.md`, section 1. First resolve the supported workspace binding for an authentic deposited structure. Inspect and, where supported, export a small local map around W6/P8, including channel, contour units, grid/map transforms, source coordinate hashes and attribution. Native renders are useful but are not interactive volume assets. Never attach deposited-frame maps to transformed comparison PDBs without the matching verified transform.
+## Keep the scope tight
 
-Start with one usable map pair and document its limits. If blocked, return completed checks and a precise status. Map availability alone does not constitute an inspected or usable overlay. Report whole-residue validation metrics accurately; they are not side-chain certainty scores.
+No new datasets, new cases, model training, candidate dashboards, receptor docking, automatic vaccine selection or generic importer changes. The question stays: **how can a cancer mutation change what a T-cell receptor recognizes, even beyond the mutated position?** The app supports structural investigation, not a vaccine-response prediction.
 
-## Priority 3 — one additional accessible cancer case
-
-Look for one public, experimentally grounded normal/cancer-mutant peptide–HLA case with a coherent question different from HHAT. Prefer a direct change in receptor contact or an HLA-anchor mechanism, supported by compatible deposited structures and comparable experiments. Return one strong case, not a large catalog. If no case meets the requirements, document the search and stop.
-
-### Verified leads from the external critique (2026-09-10)
-
-Prioritize **KRAS G12D as a contrasting second case**, pending the checks below. [Poole et al., Nature Communications 2022](https://www.nature.com/articles/s41467-022-32811-1) reports the same affinity-enhanced JDIa41b1 TCR bound to wild-type [7OW5](https://www.rcsb.org/structure/7OW5) and mutant [7OW6](https://www.rcsb.org/structure/7OW6) peptide–HLA-A*11:01. The reported affinities are 3.0 μM versus 743 ± 18 pM, respectively: over 4,000-fold selectivity despite similar bound structures. Preserve the engineered-TCR identity; do not substitute the parent TCR's affinities or imply vaccine efficacy. The accessible question is: **similar-looking structures, very different binding—what can a structure comparison actually tell us?** The paper's thermodynamic and simulation interpretation is separate from what our static viewer measures.
-
-The local importer was tested on unmodified public PDB downloads. 7OW5 has 275 observed HLA A residues, 7OW6 has 276; A/C assignments fail the current identical-observed-sequence requirement. This is not a drop-in preset. Independently establish correspondence and propose an explicit versioned missing-residue/platform-fit rule, preserving the originals and reporting excluded positions. Do not silently delete residues to pass validation. The paper also reports free pHLA structures 7OW3/7OW4 with incomplete central peptide density: those require separate coverage checks and do not justify displaying an invented complete pose. The generic importer currently omits TCR chains from its display, so presenting receptor contacts requires a curated viewer integration as well.
-
-A possible p53 alternative uses wild-type [6VR1](https://www.rcsb.org/structure/6VR1) and mutant [6VR5](https://www.rcsb.org/structure/6VR5), described in [Wu et al., 2020](https://pmc.ncbi.nlm.nih.gov/articles/PMC7283474/). A/P assignments fail observed-HLA equality (275 versus 274 residues); D/Q assignments pass the current numerical checks with 275 Cα and whole-HLA RMSD 0.205583 Å. This is a numerical acceptance check only: independently verify chain pairing, assembly, residue mapping, source-quality and selection justification before curating the case. The critique's 6VRM/6VRN entries are different TCRs bound to mutant peptide, not a normal/mutant pair. Its `6QVO` is unrelated MTH1; the p53 TCR accession is `6VQO`.
-
-These observations came from local public-coordinate checks and paper/database research, not a new Rosalind execution. Source copies are in ignored `work/preset-review/`; retrieve and hash originals in the scientific return. Add one complete contrast, not a broad atlas. Do not claim HHAT is unique among cancer neoantigens without an explicit current search and completeness definition.
-
-Required package: cancer context; exact gene/variant and peptide/HLA identities; normal and mutant coordinates; receptor-bound states; primary paper and precise assay locations; measured versus predicted evidence; data/asset redistribution terms; one concise visitor question and an answer the experiments actually support. Include a predeclared choice/reveal mapping without overstating vaccine efficacy. A gene match alone is insufficient.
-
-Do not add a cancer-type selector until another complete case is ready. Do not imply visitors are receiving personalized medical predictions. The current personalization is their hypothesis and saved molecular scene.
-
-## Deferred
-
-General HCC1395 evidence enrichment, dashboard expansion, CSV/ZIP project adapters, automatic vaccine selection, arbitrary TCR docking, new model training and RNA cassette design. The existing candidate reviewer remains available as a secondary tool. Retain previous schema findings for later; they need not delay this narrower comparison release.
-
-No video, narration, captions, storyboard or player work. Those remain with the original account after the completed app is ready.
-
-Work in `rosalind/` and return the commit SHA when eventually executed. Leave frontend code and generated `public/` projections to the original account. Do not relabel local work as plugin execution, and do not bypass denied capabilities.
+Do not generate video, narration, captions or a storyboard. That remains with the original account after review. Work only in `rosalind/density-review/`, preserve earlier outputs, push the scientific return and report the commit SHA. Frontend and `public/` assets remain owned by the original account.

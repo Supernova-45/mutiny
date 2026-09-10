@@ -7,3 +7,4 @@ mhcflurry==2.1.4
 tensorflow==2.16.2
 tf-keras==2.16.0
 setuptools==75.8.2
+gemmi==0.7.3

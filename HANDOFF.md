@@ -1,11 +1,7 @@
 # Rosalind handoff
 
-**Return received, 2026-09-10:** [structural review and KRAS case](rosalind/STRUCTURAL_RETURN.md). Independent validation and the second cancer case are delivered. The original account has integrated the KRAS comparison; density loading remains blocked by unavailable workspace-read roots. Do not repeat completed analysis or generate video.
+The independent structure-comparison review and KRAS case are complete and integrated. The original account has now added a single-scene 3D superposition, shareable curated views, and experimental HHAT density prepared directly from public PDBe maps with Gemmi.
 
-Use [the current structural-comparison handoff](outputs/ROSALIND_STRUCTURAL_COMPARISON.md). Mutiny now centers on comparing a normal and cancer-mutant peptide, with local PDB input, residue differences, personal investigations and figure export.
+**Give the other account [the current handoff](outputs/ROSALIND_STRUCTURAL_COMPARISON.md).** The useful remaining task is an independent check of one unbound HHAT density pair around W6/P8, plus an optional genuine Workbench screenshot for the showcase. This review can strengthen the work; Workbench access no longer blocks the density feature.
 
-The next scientific work is independent comparison validation, experimental density around W6/P8, and one additional complete cancer case. The document defines scope, expected files, checks and ownership. These are requests for a later Rosalind session; this account has not executed them.
-
-Keep the accepted scientific artifacts. The older [follow-up](outputs/ROSALIND_FOLLOWUP.md) contains supporting detail for the density task; its broader candidate-evidence work is deferred. Earlier dashboard and application specifications are background, not the current work queue.
-
-Push scientific returns to GitHub and report the commit SHA. This account handles all frontend work, rendering, reveal interactions, source formatting, deployment links, README media and the later video with concise captions. Do not generate video or narration in the Rosalind handoff.
+Do not repeat completed work, broaden the project or make a video. Return scientific review under `rosalind/density-review/` and report the pushed commit. This account handles the app, public-data processing, screenshots and later video with concise captions.

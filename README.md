@@ -6,7 +6,11 @@
 
 ![Explore the mutation, neighboring W6 and receptor contact in mutiny’s interactive 3D comparison](outputs/screenshots/mutiny-hero.gif)
 
-[Still image](outputs/screenshots/16-hhat-export.png)
+**Superimpose. Switch. Inspect the evidence.** Compare both peptides in one 3D scene, reveal experimental density around a residue, and share the exact view.
+
+![Experimental electron density around the mutant HHAT peptide’s W6 residue](outputs/screenshots/30-hhat-density.png)
+
+[How the maps are aligned](docs/EXPERIMENTAL_DENSITY.md)
 
 **Bring your pair.** Open compatible PDBs, inspect neighboring residues in linked 3D, and compare backbone or side-chain differences. Save your view or export a figure. Files stay in your browser. Or start with the published HHAT case: inspect the structures, make a prediction, then reveal the binding experiment.
 
@@ -29,7 +33,7 @@ npm run dev
 
 No API keys or model-compute setup needed. The interactive viewer uses WebGL. Experimental structures and completed model scores are included.
 
-Built with **Molecular Structure Viewer**, **Biological Sequence & Alignment Viewer** and **Life Sciences Literature** in the Rosalind environment. The reusable comparison engine runs locally. [Latest scientific return](rosalind/STRUCTURAL_RETURN.md) · [Earlier plugin contributions](rosalind/PLUGIN_EXECUTION.md) · [Next Rosalind work](outputs/ROSALIND_STRUCTURAL_COMPARISON.md)
+Built with **Molecular Structure Viewer**, **Biological Sequence & Alignment Viewer** and **Life Sciences Literature** in the Rosalind environment. The reusable comparison engine and PDBe density processing run locally. [Latest scientific return](rosalind/STRUCTURAL_RETURN.md) · [Earlier plugin contributions](rosalind/PLUGIN_EXECUTION.md) · [Next Rosalind work](outputs/ROSALIND_STRUCTURAL_COMPARISON.md)
 
 Source tables and reference sequences are committed to preserve the exact bytes used in the analysis.
 

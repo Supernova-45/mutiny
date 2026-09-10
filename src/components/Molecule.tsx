@@ -18,6 +18,7 @@ import BindingExperiment, { type HhatEvidence } from "./BindingExperiment";
 import { downloadFile, exportFigure, validView } from "../lib/investigation";
 import PairWorkbench from "./PairWorkbench";
 import CuratedCases from "./CuratedCases";
+import FocusComparison from "./FocusComparison";
 import KrasComparison from "./KrasComparison";
 import type { KrasInvestigation } from "../lib/kras-investigation";
 import {
@@ -690,6 +691,13 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
         </a>
       </section>
       <div className="pair-actions">
+        <FocusComparison
+          caseId="hhat"
+          initialStep={
+            mechanism === "mutation" ? 0 : mechanism === "shape" ? 1 : 2
+          }
+          initialResidue={residue}
+        />
         <button
           className="project-action"
           onClick={() => {
