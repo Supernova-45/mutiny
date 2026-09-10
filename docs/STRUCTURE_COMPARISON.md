@@ -1,6 +1,6 @@
 # Structural comparisons
 
-Mutiny opens with the published HHAT normal/mutant example. Choose a binding prediction, inspect mutation → neighboring W6 → receptor contact, and reveal the published SPR measurements. **Save investigation** preserves your prediction, notes, controls, camera and source versions. **Save figure** captures the displayed structures with source and measurement captions. These are static crystal comparisons, not molecular trajectories or vaccine-response predictions.
+Mutiny opens with the published HHAT normal/mutant example. Choose a binding prediction, inspect mutation → neighboring W6 → receptor contact, and reveal the published SPR measurements. **Save investigation** preserves your prediction, controls, camera and source versions. **Save figure** captures the displayed structures with source and measurement captions. The opening view focuses on W6, with dashed connectors between matching ring atoms and a shared 0–4 Å RMSD scale. The connectors are geometric differences, not chemical bonds or a simulated path. These are static crystal comparisons, not molecular trajectories or vaccine-response predictions.
 
 ## Compare your pair
 
@@ -32,7 +32,7 @@ The version-1 JSON formats are deliberately distinct:
 | `mutiny-hhat-investigation` | Prediction, reveal state, note, mechanism, residue, experiment selection, camera; structure and evidence hashes | Open investigation in the HHAT example; requires the same bundled source versions |
 | `mutiny-structure-pair` | Original PDB text, filenames, SHA-256 hashes, chain roles, declared source types/receptor states, note, view and alignment summary | Open investigation in Compare your pair; revalidates hashes and recomputes geometry from inputs |
 
-Notes are capped at 2,000 characters. Files with invalid metadata, hashes, views or comparisons do not replace the current investigation. SHA-256 detects a changed input relative to the saved hash; it does not authenticate the source. No server, database or account is involved. Save before leaving or reloading the app. Share these files only when you intend to share their original coordinates and notes.
+The finding editor has been removed. Notes in previously saved files are retained for compatibility and remain capped at 2,000 characters. Files with invalid metadata, hashes, views or comparisons do not replace the current investigation. SHA-256 detects a changed input relative to the saved hash; it does not authenticate the source. No server, database or account is involved. Save before leaving or reloading the app. Share these files only when you intend to share their original coordinates and notes.
 
 PNG exports preserve the currently displayed orientation; zoom and select a residue before exporting. Exported notes are shortened to 240 characters. Predicted/uploaded geometry never receives the curated HHAT assays.
 

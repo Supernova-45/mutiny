@@ -4,7 +4,7 @@ Current product direction: **compare a normal and cancer-mutant peptide structur
 
 ## What the app now does
 
-- Opens with the curated HHAT example. Visitors can predict normal/mutant receptor binding, reveal the published measurements, inspect mutation → W6 → receptor contact, and save an annotated figure or reopenable investigation. Predictions and notes belong to the visitor; experimental evidence remains fixed.
+- Opens with the curated HHAT example. Visitors can predict normal/mutant receptor binding, reveal the published measurements, inspect mutation → W6 → receptor contact, and save a source-captioned figure or reopenable investigation. The finding text box has been removed; preserve compatibility with notes in older saved files. Predictions belong to the visitor; experimental evidence remains fixed.
 - Accepts two local PDB files with assigned HLA and peptide chains. The first release requires identical observed HLA sequences, equal-length 8–14-residue peptides, and exactly one peptide substitution. It fits matched Cα atoms over the entire assigned HLA chain using a proper quaternion rotation. It never fits the peptide.
 - Displays per-residue common-atom side-chain or backbone RMSD. Side-chain RMSD at the mutation is unavailable because amino acids differ. Symmetric atom names are not remapped. Author residue identities are retained separately from normalized display chains A/C and positions.
 - Marks uploaded coordinate provenance and receptor state as supplied by the user, without claiming independent biological validation. Saved files embed original inputs and hashes. No uploaded structure receives HHAT assays or a receptor-binding prediction.

@@ -66,6 +66,13 @@ function Viewer({structure,surface,residue,bound,onReady,onPick,resetKey,focus,g
       if(ghostText){
         const reference=v.addModel(ghostText.split('\n').filter(l=>l.startsWith('ATOM')&&l[21]==='C'&&Number(l.slice(22,26))===6).join('\n'),'pdb');
         reference.setStyle({},{stick:{radius:.11,color:'#9a959f',opacity:.6}});
+        // Join corresponding deposited ring atoms; these are differences, not bonds or trajectories.
+        const comparison=evidence?.comparisons.find(c=>c.states[0]===structure.id&&c.states[1]===ghostId);
+        for(const atom of comparison?.atoms??[]){
+          const a=v.getModel(0).selectedAtoms({chain:'C',resi:6,atom})[0];
+          const b=reference.selectedAtoms({atom})[0];
+          if(a&&b&&[a.x,a.y,a.z,b.x,b.y,b.z].every(Number.isFinite))v.addLine({start:{x:a.x!,y:a.y!,z:a.z!},end:{x:b.x!,y:b.y!,z:b.z!},color:'#b49b86',dashed:true,linewidth:1});
+        }
       }
       if(camera.current && resetKey===lastReset.current) v.setView(camera.current);
       else {
@@ -88,9 +95,9 @@ function Viewer({structure,surface,residue,bound,onReady,onPick,resetKey,focus,g
 
 export default function Molecule({onEvidence}:{onEvidence:()=>void}) {
   const [data,setData]=useState<StructureData|null>(null),[error,setError]=useState('');
-  const [bound,setBound]=useState(false),[surface,setSurface]=useState(true),[residue,setResidue]=useState(8),[resetKey,setResetKey]=useState(0);
+  const [bound,setBound]=useState(false),[surface,setSurface]=useState(false),[residue,setResidue]=useState(6),[resetKey,setResetKey]=useState(0);
   const [orbit,setOrbit]=useState(false),[expanded,setExpanded]=useState(false);
-  const [mechanism,setMechanism]=useState<'mutation'|'shape'|'contact'>('mutation');
+  const [mechanism,setMechanism]=useState<'mutation'|'shape'|'contact'>('shape');
   const [experiment,setExperiment]=useState('original'),[evidence,setEvidence]=useState<HhatEvidence|null>(null),[evidenceError,setEvidenceError]=useState('');
   const [prediction,setPrediction]=useState<string|null>(null),[revealed,setRevealed]=useState(false),[note,setNote]=useState(''),[saveError,setSaveError]=useState(''),[restore,setRestore]=useState<number[]|null>(null);
   const investigationFile=useRef<HTMLInputElement>(null);
@@ -123,7 +130,7 @@ export default function Molecule({onEvidence}:{onEvidence:()=>void}) {
     const contact=(id:string)=>evidence?.contacts.find(c=>c.state===id)?.value.toFixed(2)??'unavailable';
     await exportFigure(viewers.current.map(v=>v!.pngURI()),structures.map(s=>`${s.state==='normal'?'Normal':'Mutant'} HHAT · ${s.id}`),[
       `HHAT L75F · HLA-A*02:06 · ${bound?'302TIL receptor-bound':'peptide–HLA, unbound'} · selected peptide position ${residue}`,
-      mechanism==='shape'?`Gray: measured receptor-bound W6 reference. HLA-fixed W6 ring RMSD: normal ${ring('6UJQ')} Å; mutant ${ring('6UJO')} Å.`:mechanism==='contact'?`W6 NE1 → Tyr100α ring centroid: normal ${contact('6UK2')} Å; mutant ${contact('6UK4')} Å. Static crystal geometry.`:'Orange: mutation at peptide position 8. Structures aligned on HLA platform Cα atoms.',
+      mechanism==='shape'?`Gray: receptor-bound W6; dashed lines join matching atoms. HLA-fixed W6 ring RMSD: normal ${ring('6UJQ')} Å; mutant ${ring('6UJO')} Å.`:mechanism==='contact'?`W6 NE1 → Tyr100α ring centroid: normal ${contact('6UK2')} Å; mutant ${contact('6UK4')} Å. Static crystal geometry.`:'Orange: mutation at peptide position 8. Structures aligned on HLA platform Cα atoms.',
       `Devlin et al., 2020 · doi:10.1038/s41589-020-0610-1${prediction?` · Your binding prediction: ${prediction}`:''}`
     ],note,'mutiny-hhat-comparison.png');
   }catch(e){setSaveError((e as Error).message)}};
@@ -152,7 +159,11 @@ export default function Molecule({onEvidence}:{onEvidence:()=>void}) {
           <div className="peptide-strip">{s.peptide.split('').map((aa,j)=><button key={j} aria-label={`Inspect peptide position ${j+1}, ${aa}`} aria-pressed={residue===j+1} onClick={()=>setResidue(j+1)} className={`${j===7?'mutation':''} ${residue===j+1?'active':''}`}><span>{aa}</span><small>{j+1}</small></button>)}</div>
           <div className="structure-caption"><span>{s.bound?'RECEPTOR BOUND':'PEPTIDE–HLA'}</span><span>HLA-A*02:06</span></div>
         </article>)}</div>
-        {mechanism==='shape'&&evidence&&<div className="geometry-strip"><span><i/>Gray: measured receptor-bound W6</span>{structures.map(s=>{const other=s.state==='normal'?'6UK2':'6UK4';const comparison=evidence.comparisons.find(c=>c.states[0]===s.id&&c.states[1]===other);return <span key={s.id}>{s.state==='normal'?'Normal':'Mutant'} <strong>{comparison?.rmsd.toFixed(2)} Å</strong> W6 ring RMSD</span>})}<span>HLA-aligned crystal structures</span></div>}
+        {mechanism==='shape'&&evidence&&<section className="geometry-strip pose-comparison" aria-label="W6 ring pose differences">
+          <div className="pose-heading"><h2>Same residue. Different poses.</h2><span>Unbound / receptor-bound · HLA-aligned</span></div>
+          <div className="pose-measurements">{structures.map(s=>{const other=s.state==='normal'?'6UK2':'6UK4';const comparison=evidence.comparisons.find(c=>c.states[0]===s.id&&c.states[1]===other);return <div className={`pose-measure ${s.state}`} key={s.id}><div className="pose-reading"><span>{s.state==='normal'?'Normal':'Mutant'}</span><strong>{comparison?.rmsd.toFixed(2)??'—'} <small>Å</small></strong></div><div className="pose-track" role="img" aria-label={`${s.state} W6 ring RMSD: ${comparison?.rmsd.toFixed(2)??'unavailable'} angstroms on a shared 0 to 4 angstrom scale`}>{comparison&&<i style={{width:`${100*comparison.rmsd/4}%`}}/>}</div><div className="pose-axis"><span>0</span><span>W6 ring RMSD</span><span>4 Å</span></div></div>})}</div>
+          <div className="pose-key"><span><i/>Gray: receptor-bound W6</span><span>Dashed lines join matching atoms</span></div>
+        </section>}
         {mechanism==='contact'&&<div className="geometry-strip"><span>Distance: W6 nitrogen → Tyr100α ring center</span><span>Static crystal geometry</span></div>}
         <div className="residue-inspector"><div className="residue-heading"><span className="eyebrow">POSITION</span><strong>{String(residue).padStart(2,'0')}</strong><span>{residue===8?'Mutation':residue===6?'Tryptophan':'Residue'}</span></div>
           <div className="residue-values">{structures.map(s=>{const r=s.residues.find(r=>r.position===residue)!;return <div key={s.id}><span>{s.state==='normal'?'NORMAL':'MUTANT'} · {r.name}{residue}</span><strong>{r.sasa.toFixed(1)} <small>Å²</small></strong><p>Accessible area</p>{bound&&<div className="contact-list"><span>{r.contacts.length} contacts ≤ 4 Å</span>{r.contacts.slice(0,3).map(c=><small key={c.residue}>{c.residue} <b>{c.distance.toFixed(2)} Å</b></small>)}</div>}</div>})}</div>
@@ -160,7 +171,6 @@ export default function Molecule({onEvidence}:{onEvidence:()=>void}) {
         </div>
       </section>
     </div>
-    <label className="investigation-note hhat-note">Your finding<textarea rows={2} maxLength={2000} value={note} onChange={e=>setNote(e.target.value)} placeholder="What changed your mind—or needs another look?"/></label>
     {evidence&&revealed&&<BindingExperiment data={evidence} group={experiment} onSelect={group=>{setExperiment(group);if(group==='original'||group==='position8')chooseMechanism('mutation');else chooseMechanism('contact')}}/>}
     {evidenceError&&<p className="evidence-load-error" role="status">{evidenceError}. <a href="https://github.com/Supernova-45/mutiny/blob/main/rosalind/evidence.json">View source records</a></p>}
     <footer className="page-footer"><span>DEVLIN ET AL. / NATURE CHEMICAL BIOLOGY 2020</span><span>X-ray structures</span><button onClick={onEvidence}>Evidence <BookOpen size={14}/></button></footer>

@@ -17,19 +17,19 @@ fs.mkdirSync('outputs/screenshots',{recursive:true});
 try{
  await page.goto(process.env.APP_URL??'http://127.0.0.1:5173',{waitUntil:'networkidle'});await loaded();
  assert.equal(await page.locator('.binding-experiment').count(),0);
+ assert.equal(await page.locator('textarea').count(),0);
  assert.equal(await page.getByRole('button',{name:'Reveal result',exact:true}).isDisabled(),true);
+ assert.equal(await page.locator('.pose-measure').count(),2);
+ assert.match(await page.locator('.pose-comparison').innerText(),/2.99[\s\S]*1.02/);
  await page.screenshot({path:'outputs/screenshots/15-compare-start.png'});
  await page.getByRole('button',{name:'Normal',exact:true}).click();
  await page.getByRole('button',{name:'Reveal result',exact:true}).click();
  assert.match(await page.locator('.binding-reveal').innerText(),/200 μM[\s\S]*9 μM/);
  assert.equal(await page.locator('.binding-experiment').count(),1);
  await page.getByRole('button',{name:'The neighboring shape W6',exact:true}).click();await loaded();
- await page.getByRole('textbox',{name:'Your finding',exact:true}).fill('The neighboring W6 pose deserves a closer look.');
  const hhat=await save();assert.equal(hhat.kind,'mutiny-hhat-investigation');assert.equal(hhat.prediction,'normal');assert.equal(hhat.view.mechanism,'shape');assert.equal(hhat.view.camera.length,8);assert.equal(hhat.sources.length,4);
- await page.getByRole('textbox',{name:'Your finding',exact:true}).fill('Discard this change');
  await page.getByRole('button',{name:'The mutation L8 → F8',exact:true}).click();await loaded();
  await upload('Open HHAT investigation',hhat);await loaded();
- assert.equal(await page.getByRole('textbox',{name:'Your finding',exact:true}).inputValue(),hhat.note);
  const hhatAgain=await save();assert.deepEqual(hhatAgain.view,hhat.view);
  const hhatFigure=await download('Save figure');await hhatFigure.saveAs('outputs/screenshots/16-hhat-export.png');
  await page.getByRole('button',{name:'Compare your pair',exact:true}).click();
@@ -61,12 +61,9 @@ try{
  const before=await right.screenshot();const box=await left.boundingBox();
  await page.mouse.move(box.x+box.width*.5,box.y+box.height*.5);await page.mouse.down();await page.mouse.move(box.x+box.width*.56,box.y+box.height*.55,{steps:8});await page.mouse.up();
  assert.notDeepEqual(await right.screenshot(),before);
- await page.getByRole('textbox',{name:'Your finding',exact:true}).fill('Compare the W6 side chain with its backbone.');
  const pair=await save();assert.equal(pair.kind,'mutiny-structure-pair');assert.equal(pair.view.position,6);assert.equal(pair.inputs[0].text,fs.readFileSync('data/raw/6UJQ.pdb','utf8'));assert.equal(pair.inputs[0].hash.length,64);
  await page.getByRole('button',{name:'Inspect supplied position 4, L',exact:true}).first().click();await pairLoaded();
- await page.getByRole('textbox',{name:'Your finding',exact:true}).fill('Another temporary note');
  await upload('Open structure-pair investigation',pair);await pairLoaded();
- assert.equal(await page.getByRole('textbox',{name:'Your finding',exact:true}).inputValue(),pair.note);
  assert.deepEqual((await save()).view,pair.view);
  await page.locator('.imported-pair').screenshot({path:'outputs/screenshots/17-your-pair.png'});
  await page.locator('.difference-figure').screenshot({path:'outputs/screenshots/18-residue-differences.png'});
@@ -80,6 +77,6 @@ try{
  await page.setViewportSize({width:390,height:844});await page.waitForTimeout(300);await noOverflow();
  await page.screenshot({path:'outputs/screenshots/20-mobile-pair.png',fullPage:true});
  assert.equal(await page.locator('.viewer-error').count(),0);assert.deepEqual(errors,[]);
- console.log('PASS: prediction/reveal, HHAT notes and camera round trip, compatible local PDB input, alignment and residue differences, linked rotation, source declarations, pair save/reopen, invalid import retention, PNG exports, no import requests, mobile, no browser errors.');
+ console.log('PASS: prediction/reveal, HHAT camera round trip; no finding boxes, compatible local PDB input, alignment and residue differences, linked rotation, source declarations, pair save/reopen, invalid import retention, PNG exports, no import requests, mobile, no browser errors.');
 }catch(e){await page.screenshot({path:'work/comparison-browser-failure.png',fullPage:true});console.error('Page errors:',errors,'UI:',await page.locator('[role=alert],.viewer-error').allTextContents());throw e}
 finally{await context.close();await browser.close()}

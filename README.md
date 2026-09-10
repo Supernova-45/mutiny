@@ -6,7 +6,7 @@ One changed amino acid can reshape a neighboring residue—and change how a T-ce
 
 ![Normal and mutant HHAT with the receptor-bound W6 reference in gray, exported directly from mutiny](outputs/screenshots/16-hhat-export.png)
 
-**Bring your pair.** Open compatible PDBs, inspect neighboring residues in linked 3D, and compare backbone or side-chain differences. Save your view and notes, or export a figure. Files stay in your browser.
+**Bring your pair.** Open compatible PDBs, inspect neighboring residues in linked 3D, and compare backbone or side-chain differences. Save your view or export a figure. Files stay in your browser.
 
 ![Per-residue structural differences from locally supplied normal and mutant coordinates](outputs/screenshots/18-residue-differences.png)
 

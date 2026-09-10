@@ -15,10 +15,6 @@
 .binding-reveal strong{font:18px var(--mono);font-weight:400;color:var(--ink);display:block;margin-top:4px}
 .binding-reveal>span:nth-child(2) strong{color:var(--accent)}
 .binding-reveal small{grid-column:1/-1;font-size:10px;margin-top:5px}
-.investigation-note{display:flex;flex-direction:column;gap:10px;font-size:12px;color:var(--muted);margin:25px 0}
-.investigation-note textarea{font:13px/1.6 'DM Sans Variable',sans-serif;color:var(--ink);resize:vertical;background:transparent;border:1px solid var(--line);padding:12px;border-radius:0;max-width:750px;min-height:70px;width:100%}
-.investigation-note textarea:focus-visible,.pair-page select:focus-visible,.coordinate-drop:focus-within{outline:2px solid var(--accent);outline-offset:3px}
-.hhat-note{margin-inline:52px;padding-top:22px;border-top:1px solid var(--line)}
 .secondary-tools{margin:28px 52px;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:18px;font-size:10px;color:var(--muted)}
 .secondary-tools button{padding:0;font-size:10px}
 .secondary-tools a{display:flex;gap:5px;align-items:center}
@@ -62,6 +58,30 @@
 .difference-bars small{font:10px var(--mono);color:var(--muted)}
 .difference-reading{display:flex;gap:20px;justify-content:space-between;align-items:baseline;margin-top:24px;font-size:11px;color:var(--muted)}
 .difference-reading strong{font:16px var(--mono);color:var(--ink)}
-@media(max-width:1150px){.pair-actions,.prediction-strip,.hhat-note,.pair-setup,.pair-analysis,.secondary-tools{margin-inline:30px}.prediction-strip{gap:18px}.prediction-strip h2{font-size:16px}.prediction-options>button{font-size:11px;padding:8px 11px}.pair-inputs{gap:30px}}
+@media(max-width:1150px){.pair-actions,.prediction-strip,.pair-setup,.pair-analysis,.secondary-tools{margin-inline:30px}.prediction-strip{gap:18px}.prediction-strip h2{font-size:16px}.prediction-options>button{font-size:11px;padding:8px 11px}.pair-inputs{gap:30px}}
 @media(max-width:850px){.pair-actions{align-items:start;gap:12px}.pair-actions>div{justify-content:end;gap:14px}.prediction-options{margin-left:0}.prediction-strip h2{font-size:18px}.prediction-strip.revealed{justify-content:space-between}.binding-reveal{margin-left:0}.pair-stage{height:360px}.pair-inputs{gap:24px}.chain-assignments{gap:15px}.imported-pair .structure-title>span{font-size:9px}}
-@media(max-width:600px){.pair-actions,.prediction-strip,.hhat-note,.pair-setup,.pair-analysis,.secondary-tools{margin-inline:20px}.pair-actions{flex-direction:column;padding:14px 0;gap:16px}.pair-actions>div{justify-content:start;gap:18px}.pair-actions .project-action{font-size:10px}.prediction-strip{gap:16px;margin-bottom:20px}.prediction-strip h2{font-size:17px;line-height:1.4}.prediction-options{gap:5px;width:100%}.prediction-options>button{flex:1;padding:9px 7px;font-size:10px;white-space:nowrap}.prediction-options .reveal-experiment{margin-left:4px}.prediction-strip.revealed>div:first-child{width:100%}.binding-reveal{gap:7px 32px}.binding-reveal strong{font-size:18px}.pair-inputs{grid-template-columns:1fr;gap:30px}.coordinate-drop{min-height:110px}.chain-assignments{margin-top:17px}.pair-analysis-header{gap:12px;flex-wrap:wrap}.pair-analysis-header>span:first-child{font-size:18px}.pair-stage{height:320px}.imported-pair .structure-title{gap:10px}.imported-pair .structure-title>span{font-size:8px}.difference-heading h2{font-size:22px}.difference-heading{align-items:start;flex-direction:column;gap:12px}.difference-bars{gap:3px}.difference-bars>button{padding-inline:1px}.difference-bars strong{font-size:10px}.difference-bars small{font-size:9px}.difference-reading{flex-wrap:wrap;font-size:10px;gap:10px}.difference-reading strong{font-size:14px}.investigation-note textarea{font-size:12px}.secondary-tools{margin-top:30px}}
+@media(max-width:600px){.pair-actions,.prediction-strip,.pair-setup,.pair-analysis,.secondary-tools{margin-inline:20px}.pair-actions{flex-direction:column;padding:14px 0;gap:16px}.pair-actions>div{justify-content:start;gap:18px}.pair-actions .project-action{font-size:10px}.prediction-strip{gap:16px;margin-bottom:20px}.prediction-strip h2{font-size:17px;line-height:1.4}.prediction-options{gap:5px;width:100%}.prediction-options>button{flex:1;padding:9px 7px;font-size:10px;white-space:nowrap}.prediction-options .reveal-experiment{margin-left:4px}.prediction-strip.revealed>div:first-child{width:100%}.binding-reveal{gap:7px 32px}.binding-reveal strong{font-size:18px}.pair-inputs{grid-template-columns:1fr;gap:30px}.coordinate-drop{min-height:110px}.chain-assignments{margin-top:17px}.pair-analysis-header{gap:12px;flex-wrap:wrap}.pair-analysis-header>span:first-child{font-size:18px}.pair-stage{height:320px}.imported-pair .structure-title{gap:10px}.imported-pair .structure-title>span{font-size:8px}.difference-heading h2{font-size:22px}.difference-heading{align-items:start;flex-direction:column;gap:12px}.difference-bars{gap:3px}.difference-bars>button{padding-inline:1px}.difference-bars strong{font-size:10px}.difference-bars small{font-size:9px}.difference-reading{flex-wrap:wrap;font-size:10px;gap:10px}.difference-reading strong{font-size:14px}.secondary-tools{margin-top:30px}}
+
+.pair-page select:focus-visible,.coordinate-drop:focus-within{outline:2px solid var(--accent);outline-offset:3px}
+.molecular-intro{padding-block:28px 22px}
+.molecular-intro>.study-link{bottom:22px}
+.molecule-page>.pair-actions{margin-bottom:18px}
+.molecule-page>.prediction-strip{margin-bottom:16px}
+.pose-comparison.geometry-strip{display:block;padding:26px 0 20px}
+.pose-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:23px}
+.pose-heading h2{font-size:23px;font-weight:500;letter-spacing:-.025em;color:var(--ink)}
+.pose-heading>span{font-size:10px}
+.pose-measurements{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.pose-reading{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:13px}
+.pose-reading>span{font-size:12px;color:#496887}
+.pose-reading strong{font:32px var(--mono);letter-spacing:-.045em;color:#496887}
+.pose-reading strong small{font-size:15px;letter-spacing:0}
+.pose-measure.mutant .pose-reading>span,.pose-measure.mutant strong{color:#aa502e}
+.pose-track{height:8px;background:repeating-linear-gradient(to right,#d8d7d1 0,#d8d7d1 1px,transparent 1px,transparent 25%),#e9e6df;position:relative}
+.pose-track>i{display:block;width:0;height:100%;border:0;background:#607f91}
+.pose-measure.mutant .pose-track>i{background:#b67551}
+.pose-axis{display:flex;justify-content:space-between;margin-top:9px;font:9px var(--mono)}
+.pose-axis>span:nth-child(2){font:10px 'DM Sans Variable',sans-serif}
+.pose-key{display:flex;gap:25px;justify-content:space-between;margin-top:22px;font-size:10px}
+.pose-key i{display:inline-block;width:15px;border-top:2px solid #9a959f}
+@media(max-width:600px){.molecular-intro{padding-block:24px 20px}.pose-heading{display:block;margin-bottom:20px}.pose-heading h2{font-size:22px;margin-bottom:10px}.pose-measurements{gap:24px}.pose-reading strong{font-size:26px}.pose-reading>span{font-size:10px}.pose-reading strong small{font-size:12px}.pose-key{gap:12px;flex-wrap:wrap;font-size:9px}}
