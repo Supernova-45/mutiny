@@ -1,5 +1,7 @@
 # Rosalind handoff
 
+**Next round:** send [outputs/ROSALIND_FOLLOWUP.md](outputs/ROSALIND_FOLLOWUP.md). The first scientific return is complete through `0f02bf9`; the original account is integrating it. The follow-up requests density assets, one real evidence round trip and a versioned identity-contract refinement.
+
 Send [outputs/ROSALIND_HANDOFF.md](outputs/ROSALIND_HANDOFF.md) to the other account. It assigns a new structural mechanism analysis, experimental evidence extraction, and a retrospective response-capture dataset.
 
 The other agent should push its scientific artifacts to GitHub and report the commit SHA. Video, narration and captions will be created afterward by the original agent in this account; they are not part of the handoff. [Video plan for that later work](outputs/DEMO_PLAN.md).
