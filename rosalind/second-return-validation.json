@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "checks": [
+    "Pinned TSV hash and all original fields for three rows",
+    "Six exact native sequence responses match source",
+    "Seven actual PubMed search receipts agree with raw counts/IDs",
+    "Related protocol abstract supports only workflow context",
+    "Four deposited coordinate hashes and 36 peptide-residue metric triplets",
+    "No maps, outcomes or experimental epitope matches fabricated"
+  ],
+  "limitations": [
+    "Validation report metrics were imported natively; no independent map inspection or refinement.",
+    "Search absence is scoped to the returned PubMed queries."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "profile": "mutiny-canonical-json-1",
+  "vectors": [
+    {
+      "input": {
+        "b": 0,
+        "a": 1.5
+      },
+      "canonicalText": "{\"a\":1.5,\"b\":0}",
+      "sha256": "a6c603cee3ace7e39205de62e76fb8047e55127c42995aa9229924f12d9287b2"
+    },
+    {
+      "input": {
+        "small": 1e-7,
+        "large": 1000000000000000
+      },
+      "canonicalText": "{\"large\":1000000000000000,\"small\":1e-7}",
+      "sha256": "203f4e853cbf049efffb6f85b528a2de632a39a843beb8f10a2791658ad38250"
+    },
+    {
+      "input": [
+        "é",
+        "é",
+        "😀"
+      ],
+      "canonicalText": "[\"é\",\"é\",\"😀\"]",
+      "sha256": "730aa31bfbf760e290ce2a9d28fc9df6fb3ae8b4cf0fb8aa38ada96ed1a38d6c"
+    },
+    {
+      "input": {
+        "z": [
+          3,
+          2,
+          1
+        ],
+        "a": {
+          "x": null,
+          "y": true
+        }
+      },
+      "canonicalText": "{\"a\":{\"x\":null,\"y\":true},\"z\":[3,2,1]}",
+      "sha256": "ac47b872b8fce6af8630603275aeec6362f52f9feeafd9ea4de2c83b0599cbbe"
+    },
+    {
+      "input": {},
+      "canonicalText": "{}",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  ],
+  "rejected": [
+    "NaN",
+    "Infinity",
+    "integers outside ±9007199254740991",
+    "duplicate JSON object keys",
+    "lone surrogate strings"
+  ]
+}

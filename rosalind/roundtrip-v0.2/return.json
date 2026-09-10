@@ -1,0 +1,382 @@
+{
+  "schemaVersion": "0.2.0",
+  "identityProfile": "mutiny-canonical-json-1",
+  "returnId": "hcc1395-evidence-return-20260910",
+  "requestId": "hcc1395-evidence-request-20260910",
+  "requestDigest": "becdc00e4af8e7b9006eb77d5ba0c36d6d9fcca9bbe4df804627bab241e30b70",
+  "projectId": "hcc1395-pvacseq-filtered",
+  "scientificDigest": "961c798ded5901a8dba9d8e7e8de60dc54822d568d769371acbc0bc2c558b18d",
+  "contextDigest": "229b6acb07ab4d1a0ea5275fc38615523f2dad1cc07bc41b75e71f13ae333c90",
+  "selectedCandidateIds": [
+    "hcc:138796478968c649e08b",
+    "hcc:42e51094667970cdfb8f",
+    "hcc:a671e7e3c48458cd828b"
+  ],
+  "findings": [
+    {
+      "candidateId": "hcc:138796478968c649e08b",
+      "status": "no_exact_match",
+      "claimIds": [
+        "HCC-CONTEXT-1",
+        "HCC-RELATED-PROTOCOL"
+      ],
+      "reason": "No exact experimental epitope match identified within these dated PubMed queries; zero indexed results are not proof that evidence does not exist.",
+      "searchScope": {
+        "database": "PubMed via Life Sciences Literature 0.1.5",
+        "queries": [
+          {
+            "name": "candidate-1-peptide",
+            "candidateId": "hcc:138796478968c649e08b",
+            "scope": "exact_peptide",
+            "query": "\"VENYSQNVA\"[All Fields]",
+            "queriedAt": "2026-09-10T08:00:27.639896+00:00",
+            "database": "PubMed",
+            "retmax": 10,
+            "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+            "exitCode": 0,
+            "ok": true,
+            "receipt": "rosalind/roundtrip-v0.2/candidate-1-peptide.plugin.json",
+            "raw": "rosalind/roundtrip-v0.2/candidate-1-peptide.raw.json",
+            "count": "0",
+            "ids": [],
+            "queryTranslation": "\"VENYSQNVA\"[All Fields]",
+            "warnings": {
+              "phrasesignored": [],
+              "quotedphrasesnotfound": [
+                "\"VENYSQNVA\"[All Fields]"
+              ],
+              "outputmessages": [
+                "No items found."
+              ]
+            },
+            "errors": null
+          },
+          {
+            "name": "candidate-1-variant",
+            "candidateId": "hcc:138796478968c649e08b",
+            "scope": "variant_context",
+            "query": "MSH6[All Fields] AND (\"p.Asp1255Asn\"[All Fields] OR \"c.3763G>A\"[All Fields])",
+            "queriedAt": "2026-09-10T08:00:28.417096+00:00",
+            "database": "PubMed",
+            "retmax": 10,
+            "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+            "exitCode": 0,
+            "ok": true,
+            "receipt": "rosalind/roundtrip-v0.2/candidate-1-variant.plugin.json",
+            "raw": "rosalind/roundtrip-v0.2/candidate-1-variant.raw.json",
+            "count": "0",
+            "ids": [],
+            "queryTranslation": "MSH6[All Fields] AND (\"p.Asp1255Asn\"[All Fields] OR \"c.3763G>A\"[All Fields])",
+            "warnings": {
+              "phrasesignored": [],
+              "quotedphrasesnotfound": [
+                "\"p.Asp1255Asn\"[All Fields]",
+                "\"c.3763G&gt;A\"[All Fields]"
+              ],
+              "outputmessages": [
+                "No items found."
+              ]
+            },
+            "errors": null
+          }
+        ],
+        "scopeLimitations": [
+          "Indexed PubMed fields, not an exhaustive full-text or supplement search.",
+          "No IEDB, patent, unpublished or exhaustive structure-database search performed.",
+          "Quoted-phrase-not-found warnings retained.",
+          "No clinical outcomes, experimental binding values or structures inferred."
+        ]
+      }
+    },
+    {
+      "candidateId": "hcc:a671e7e3c48458cd828b",
+      "status": "no_exact_match",
+      "claimIds": [
+        "HCC-CONTEXT-2",
+        "HCC-RELATED-PROTOCOL"
+      ],
+      "reason": "No exact experimental epitope match identified within these dated PubMed queries; zero indexed results are not proof that evidence does not exist.",
+      "searchScope": {
+        "database": "PubMed via Life Sciences Literature 0.1.5",
+        "queries": [
+          {
+            "name": "candidate-2-peptide",
+            "candidateId": "hcc:a671e7e3c48458cd828b",
+            "scope": "exact_peptide",
+            "query": "\"VVFEYVAIY\"[All Fields]",
+            "queriedAt": "2026-09-10T08:00:29.238884+00:00",
+            "database": "PubMed",
+            "retmax": 10,
+            "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+            "exitCode": 0,
+            "ok": true,
+            "receipt": "rosalind/roundtrip-v0.2/candidate-2-peptide.plugin.json",
+            "raw": "rosalind/roundtrip-v0.2/candidate-2-peptide.raw.json",
+            "count": "0",
+            "ids": [],
+            "queryTranslation": "\"VVFEYVAIY\"[All Fields]",
+            "warnings": {
+              "phrasesignored": [],
+              "quotedphrasesnotfound": [
+                "\"VVFEYVAIY\"[All Fields]"
+              ],
+              "outputmessages": [
+                "No items found."
+              ]
+            },
+            "errors": null
+          },
+          {
+            "name": "candidate-2-variant",
+            "candidateId": "hcc:a671e7e3c48458cd828b",
+            "scope": "variant_context",
+            "query": "ZNF548[All Fields] AND (\"p.Asp24Tyr\"[All Fields] OR \"c.70G>T\"[All Fields])",
+            "queriedAt": "2026-09-10T08:00:29.981214+00:00",
+            "database": "PubMed",
+            "retmax": 10,
+            "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+            "exitCode": 0,
+            "ok": true,
+            "receipt": "rosalind/roundtrip-v0.2/candidate-2-variant.plugin.json",
+            "raw": "rosalind/roundtrip-v0.2/candidate-2-variant.raw.json",
+            "count": "0",
+            "ids": [],
+            "queryTranslation": "ZNF548[All Fields] AND (\"p.Asp24Tyr\"[All Fields] OR \"c.70G>T\"[All Fields])",
+            "warnings": {
+              "phrasesignored": [],
+              "quotedphrasesnotfound": [
+                "\"p.Asp24Tyr\"[All Fields]",
+                "\"c.70G&gt;T\"[All Fields]"
+              ],
+              "outputmessages": [
+                "No items found."
+              ]
+            },
+            "errors": null
+          }
+        ],
+        "scopeLimitations": [
+          "Indexed PubMed fields, not an exhaustive full-text or supplement search.",
+          "No IEDB, patent, unpublished or exhaustive structure-database search performed.",
+          "Quoted-phrase-not-found warnings retained.",
+          "No clinical outcomes, experimental binding values or structures inferred."
+        ]
+      }
+    },
+    {
+      "candidateId": "hcc:42e51094667970cdfb8f",
+      "status": "no_exact_match",
+      "claimIds": [
+        "HCC-CONTEXT-3",
+        "HCC-RELATED-PROTOCOL"
+      ],
+      "reason": "No exact experimental epitope match identified within these dated PubMed queries; zero indexed results are not proof that evidence does not exist.",
+      "searchScope": {
+        "database": "PubMed via Life Sciences Literature 0.1.5",
+        "queries": [
+          {
+            "name": "candidate-3-peptide",
+            "candidateId": "hcc:42e51094667970cdfb8f",
+            "scope": "exact_peptide",
+            "query": "\"APRLIKKTL\"[All Fields]",
+            "queriedAt": "2026-09-10T08:00:30.895277+00:00",
+            "database": "PubMed",
+            "retmax": 10,
+            "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+            "exitCode": 0,
+            "ok": true,
+            "receipt": "rosalind/roundtrip-v0.2/candidate-3-peptide.plugin.json",
+            "raw": "rosalind/roundtrip-v0.2/candidate-3-peptide.raw.json",
+            "count": "0",
+            "ids": [],
+            "queryTranslation": "\"APRLIKKTL\"[All Fields]",
+            "warnings": {
+              "phrasesignored": [],
+              "quotedphrasesnotfound": [
+                "\"APRLIKKTL\"[All Fields]"
+              ],
+              "outputmessages": [
+                "No items found."
+              ]
+            },
+            "errors": null
+          },
+          {
+            "name": "candidate-3-variant",
+            "candidateId": "hcc:42e51094667970cdfb8f",
+            "scope": "variant_context",
+            "query": "ABL2[All Fields] AND (\"p.Thr753Ala\"[All Fields] OR \"c.2257A>G\"[All Fields])",
+            "queriedAt": "2026-09-10T08:00:31.718363+00:00",
+            "database": "PubMed",
+            "retmax": 10,
+            "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+            "exitCode": 0,
+            "ok": true,
+            "receipt": "rosalind/roundtrip-v0.2/candidate-3-variant.plugin.json",
+            "raw": "rosalind/roundtrip-v0.2/candidate-3-variant.raw.json",
+            "count": "0",
+            "ids": [],
+            "queryTranslation": "ABL2[All Fields] AND (\"p.Thr753Ala\"[All Fields] OR \"c.2257A>G\"[All Fields])",
+            "warnings": {
+              "phrasesignored": [],
+              "quotedphrasesnotfound": [
+                "\"p.Thr753Ala\"[All Fields]",
+                "\"c.2257A&gt;G\"[All Fields]"
+              ],
+              "outputmessages": [
+                "No items found."
+              ]
+            },
+            "errors": null
+          }
+        ],
+        "scopeLimitations": [
+          "Indexed PubMed fields, not an exhaustive full-text or supplement search.",
+          "No IEDB, patent, unpublished or exhaustive structure-database search performed.",
+          "Quoted-phrase-not-found warnings retained.",
+          "No clinical outcomes, experimental binding values or structures inferred."
+        ]
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "HCC-CONTEXT-1",
+      "candidateIds": [
+        "hcc:138796478968c649e08b"
+      ],
+      "evidenceLevel": "fixture_identity",
+      "claim": "Mutant/normal peptide, HLA, variant and versioned transcript match the pinned public source row; native Sequence Viewer returned both exact peptide strings.",
+      "sources": [
+        {
+          "path": "rosalind/fixtures/sources/HCC1395.filtered.tsv",
+          "url": "https://raw.githubusercontent.com/griffithlab/pVACtools/c76ea9d26d549d479affe9ce31f551295fadcde7/pvactools/tools/pvacseq/example_data/results/MHC_Class_I/HCC1395_TUMOR_DNA.MHC_I.filtered.tsv",
+          "location": "TSV physical line 2, columns MT Epitope Seq, WT Epitope Seq, HLA Allele, Transcript, HGVSc, HGVSp, Reference, Variant",
+          "sha256": "e0ccad87c758b40516c55ade12e65e15a6ba29cff6f9a636dc2a3ef628381824"
+        },
+        {
+          "path": "rosalind/roundtrip-v0.2/sequence-viewer-receipts.json",
+          "location": "candidate_1_mutant and candidate_1_normal, 1-based inclusive 1–9"
+        }
+      ],
+      "details": {
+        "mutant": "VENYSQNVA",
+        "normal": "VEDYSQNVA",
+        "hla": "HLA-B*45:01",
+        "variantId": "chr2:47806319:47806320:G:A",
+        "transcript": "ENST00000234420.11",
+        "hgvsc": "ENST00000234420.11:c.3763G>A",
+        "hgvsp": "ENSP00000234420.5:p.Asp1255Asn",
+        "genomicReference": "G",
+        "genomicAlternate": "A",
+        "genomeBuild": null,
+        "mutationPeptidePosition": 3
+      },
+      "limitations": [
+        "Identity is verified against the pinned fixture, not a new genome/transcript-reference reconciliation.",
+        "Genome assembly and predictor/model versions are not certified by this table.",
+        "Supplied scores are predictions, not binding measurements or response labels."
+      ]
+    },
+    {
+      "id": "HCC-CONTEXT-2",
+      "candidateIds": [
+        "hcc:a671e7e3c48458cd828b"
+      ],
+      "evidenceLevel": "fixture_identity",
+      "claim": "Mutant/normal peptide, HLA, variant and versioned transcript match the pinned public source row; native Sequence Viewer returned both exact peptide strings.",
+      "sources": [
+        {
+          "path": "rosalind/fixtures/sources/HCC1395.filtered.tsv",
+          "url": "https://raw.githubusercontent.com/griffithlab/pVACtools/c76ea9d26d549d479affe9ce31f551295fadcde7/pvactools/tools/pvacseq/example_data/results/MHC_Class_I/HCC1395_TUMOR_DNA.MHC_I.filtered.tsv",
+          "location": "TSV physical line 3, columns MT Epitope Seq, WT Epitope Seq, HLA Allele, Transcript, HGVSc, HGVSp, Reference, Variant",
+          "sha256": "e0ccad87c758b40516c55ade12e65e15a6ba29cff6f9a636dc2a3ef628381824"
+        },
+        {
+          "path": "rosalind/roundtrip-v0.2/sequence-viewer-receipts.json",
+          "location": "candidate_2_mutant and candidate_2_normal, 1-based inclusive 1–9"
+        }
+      ],
+      "details": {
+        "mutant": "VVFEYVAIY",
+        "normal": "VVFEDVAIY",
+        "hla": "HLA-A*29:02",
+        "variantId": "chr19:57397065:57397066:G:T",
+        "transcript": "ENST00000336128.12",
+        "hgvsc": "ENST00000336128.12:c.70G>T",
+        "hgvsp": "ENSP00000337555.6:p.Asp24Tyr",
+        "genomicReference": "G",
+        "genomicAlternate": "T",
+        "genomeBuild": null,
+        "mutationPeptidePosition": 5
+      },
+      "limitations": [
+        "Identity is verified against the pinned fixture, not a new genome/transcript-reference reconciliation.",
+        "Genome assembly and predictor/model versions are not certified by this table.",
+        "Supplied scores are predictions, not binding measurements or response labels."
+      ]
+    },
+    {
+      "id": "HCC-CONTEXT-3",
+      "candidateIds": [
+        "hcc:42e51094667970cdfb8f"
+      ],
+      "evidenceLevel": "fixture_identity",
+      "claim": "Mutant/normal peptide, HLA, variant and versioned transcript match the pinned public source row; native Sequence Viewer returned both exact peptide strings.",
+      "sources": [
+        {
+          "path": "rosalind/fixtures/sources/HCC1395.filtered.tsv",
+          "url": "https://raw.githubusercontent.com/griffithlab/pVACtools/c76ea9d26d549d479affe9ce31f551295fadcde7/pvactools/tools/pvacseq/example_data/results/MHC_Class_I/HCC1395_TUMOR_DNA.MHC_I.filtered.tsv",
+          "location": "TSV physical line 4, columns MT Epitope Seq, WT Epitope Seq, HLA Allele, Transcript, HGVSc, HGVSp, Reference, Variant",
+          "sha256": "e0ccad87c758b40516c55ade12e65e15a6ba29cff6f9a636dc2a3ef628381824"
+        },
+        {
+          "path": "rosalind/roundtrip-v0.2/sequence-viewer-receipts.json",
+          "location": "candidate_3_mutant and candidate_3_normal, 1-based inclusive 1–9"
+        }
+      ],
+      "details": {
+        "mutant": "APRLIKKTL",
+        "normal": "TPRLIKKTL",
+        "hla": "HLA-B*82:02",
+        "variantId": "chr1:179109009:179109010:T:C",
+        "transcript": "ENST00000502732.6",
+        "hgvsc": "ENST00000502732.6:c.2257A>G",
+        "hgvsp": "ENSP00000427562.1:p.Thr753Ala",
+        "genomicReference": "T",
+        "genomicAlternate": "C",
+        "genomeBuild": null,
+        "mutationPeptidePosition": 1
+      },
+      "limitations": [
+        "Identity is verified against the pinned fixture, not a new genome/transcript-reference reconciliation.",
+        "Genome assembly and predictor/model versions are not certified by this table.",
+        "Supplied scores are predictions, not binding measurements or response labels."
+      ]
+    },
+    {
+      "id": "HCC-RELATED-PROTOCOL",
+      "candidateIds": [
+        "hcc:138796478968c649e08b",
+        "hcc:a671e7e3c48458cd828b",
+        "hcc:42e51094667970cdfb8f"
+      ],
+      "evidenceLevel": "related_context",
+      "claim": "The ImmunoNX preprint describes a pVACtools/pVACview workflow demonstrated using HCC1395. This is related workflow context; its abstract does not establish an experimental match for any selected peptide/HLA pair.",
+      "sources": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41415611/",
+          "path": "rosalind/roundtrip-v0.2/related-context.raw.xml",
+          "location": "PubmedArticle PMID 41415611, Abstract; retrieved through related-context.plugin.json"
+        }
+      ],
+      "limitations": [
+        "PubMed records this item as an ArXiv preprint; peer-reviewed status is not claimed.",
+        "The abstract alone does not establish exact candidate membership or experimental epitope recognition.",
+        "Other returned HCC1395 cell-line papers (PMIDs 24606732 and 20526721) were screened as unrelated to these epitope identities."
+      ]
+    }
+  ],
+  "proposedCorrections": [],
+  "returnDigest": "2340c1472b481a184f4be12839dc44802813698f38459948293fdf367d151dca"
+}

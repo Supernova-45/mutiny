@@ -1,0 +1,155 @@
+{
+  "publisher": "Codex retained exact model-visible Biological Sequence & Alignment Viewer results",
+  "receipts": [
+    {
+      "record": "candidate_1_mutant",
+      "result": {
+        "applied": true,
+        "message": "Returned sequence-range from the live Sequence viewer.",
+        "result": {
+          "coordinateSystem": {
+            "basis": 1,
+            "end": "inclusive",
+            "referenceRecordId": "candidate_1_mutant",
+            "space": "sequence",
+            "strand": "+"
+          },
+          "result": {
+            "end": 9,
+            "length": 9,
+            "recordId": "candidate_1_mutant",
+            "sequence": "VENYSQNVA",
+            "start": 1
+          },
+          "target": "sequence-range"
+        },
+        "schemaVersion": 1
+      }
+    },
+    {
+      "record": "candidate_1_normal",
+      "result": {
+        "applied": true,
+        "message": "Returned sequence-range from the live Sequence viewer.",
+        "result": {
+          "coordinateSystem": {
+            "basis": 1,
+            "end": "inclusive",
+            "referenceRecordId": "candidate_1_normal",
+            "space": "sequence",
+            "strand": "+"
+          },
+          "result": {
+            "end": 9,
+            "length": 9,
+            "recordId": "candidate_1_normal",
+            "sequence": "VEDYSQNVA",
+            "start": 1
+          },
+          "target": "sequence-range"
+        },
+        "schemaVersion": 1
+      }
+    },
+    {
+      "record": "candidate_2_mutant",
+      "result": {
+        "applied": true,
+        "message": "Returned sequence-range from the live Sequence viewer.",
+        "result": {
+          "coordinateSystem": {
+            "basis": 1,
+            "end": "inclusive",
+            "referenceRecordId": "candidate_2_mutant",
+            "space": "sequence",
+            "strand": "+"
+          },
+          "result": {
+            "end": 9,
+            "length": 9,
+            "recordId": "candidate_2_mutant",
+            "sequence": "VVFEYVAIY",
+            "start": 1
+          },
+          "target": "sequence-range"
+        },
+        "schemaVersion": 1
+      }
+    },
+    {
+      "record": "candidate_2_normal",
+      "result": {
+        "applied": true,
+        "message": "Returned sequence-range from the live Sequence viewer.",
+        "result": {
+          "coordinateSystem": {
+            "basis": 1,
+            "end": "inclusive",
+            "referenceRecordId": "candidate_2_normal",
+            "space": "sequence",
+            "strand": "+"
+          },
+          "result": {
+            "end": 9,
+            "length": 9,
+            "recordId": "candidate_2_normal",
+            "sequence": "VVFEDVAIY",
+            "start": 1
+          },
+          "target": "sequence-range"
+        },
+        "schemaVersion": 1
+      }
+    },
+    {
+      "record": "candidate_3_mutant",
+      "result": {
+        "applied": true,
+        "message": "Returned sequence-range from the live Sequence viewer.",
+        "result": {
+          "coordinateSystem": {
+            "basis": 1,
+            "end": "inclusive",
+            "referenceRecordId": "candidate_3_mutant",
+            "space": "sequence",
+            "strand": "+"
+          },
+          "result": {
+            "end": 9,
+            "length": 9,
+            "recordId": "candidate_3_mutant",
+            "sequence": "APRLIKKTL",
+            "start": 1
+          },
+          "target": "sequence-range"
+        },
+        "schemaVersion": 1
+      }
+    },
+    {
+      "record": "candidate_3_normal",
+      "result": {
+        "applied": true,
+        "message": "Returned sequence-range from the live Sequence viewer.",
+        "result": {
+          "coordinateSystem": {
+            "basis": 1,
+            "end": "inclusive",
+            "referenceRecordId": "candidate_3_normal",
+            "space": "sequence",
+            "strand": "+"
+          },
+          "result": {
+            "end": 9,
+            "length": 9,
+            "recordId": "candidate_3_normal",
+            "sequence": "TPRLIKKTL",
+            "start": 1
+          },
+          "target": "sequence-range"
+        },
+        "schemaVersion": 1
+      }
+    }
+  ]
+}

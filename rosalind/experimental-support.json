@@ -1,0 +1,3834 @@
+{
+  "schemaVersion": "0.1.0",
+  "states": [
+    {
+      "entry": "6UJQ",
+      "coordinatePath": "data/raw/6UJQ.pdb",
+      "coordinateSha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "coordinateFrame": "deposited Cartesian angstrom; no HLA fit applied",
+      "validationProvenance": {
+        "description": "wwPDB validation of the explicitly requested deposited public structure; not a new validation of edited or derived coordinates.",
+        "parser": "Mol* 5.11.0",
+        "retrievedAt": "2026-09-10T07:57:25.733Z",
+        "sha256": "e58b44f0d0560184a7d9d5a5e6ff3ee947c678d4941b2f168e1655b759a7788e",
+        "sourceUrl": "https://files.rcsb.org/validation/view/6ujq_validation.xml"
+      },
+      "peptideResidues": [
+        {
+          "chain": "C",
+          "position": 1,
+          "metrics": {
+            "rscc": {
+              "value": 0.945,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.636,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [
+                "clash"
+              ],
+              "value": 1,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NZ",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 2,
+          "metrics": {
+            "rscc": {
+              "value": 0.946,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.634,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [
+                "clash"
+              ],
+              "value": 1,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "OE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 3,
+          "metrics": {
+            "rscc": {
+              "value": 0.938,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.429,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [
+                "clash"
+              ],
+              "value": 1,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 14,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CH2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 4,
+          "metrics": {
+            "rscc": {
+              "value": 0.697,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 3.211,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [
+                "clash"
+              ],
+              "value": 1,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 5,
+          "metrics": {
+            "rscc": {
+              "value": 0.879,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 1.531,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 7,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 6,
+          "metrics": {
+            "rscc": {
+              "value": 0.892,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.627,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 14,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CH2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 7,
+          "metrics": {
+            "rscc": {
+              "value": 0.946,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.221,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 8,
+          "metrics": {
+            "rscc": {
+              "value": 0.951,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.346,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 9,
+          "metrics": {
+            "rscc": {
+              "value": 0.912,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.823,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [
+                "clash"
+              ],
+              "value": 1,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "OXT",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "6UJO",
+      "coordinatePath": "data/raw/6UJO.pdb",
+      "coordinateSha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "coordinateFrame": "deposited Cartesian angstrom; no HLA fit applied",
+      "validationProvenance": {
+        "description": "wwPDB validation of the explicitly requested deposited public structure; not a new validation of edited or derived coordinates.",
+        "parser": "Mol* 5.11.0",
+        "retrievedAt": "2026-09-10T07:59:32.604Z",
+        "sha256": "62efc56c8e62a011335d819e371b66a772dab919555458859a2bcdbac2640d88",
+        "sourceUrl": "https://files.rcsb.org/validation/view/6ujo_validation.xml"
+      },
+      "peptideResidues": [
+        {
+          "chain": "C",
+          "position": 1,
+          "metrics": {
+            "rscc": {
+              "value": 0.962,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.661,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NZ",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 2,
+          "metrics": {
+            "rscc": {
+              "value": 0.963,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -1.11,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "OE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 3,
+          "metrics": {
+            "rscc": {
+              "value": 0.97,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.772,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 14,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CH2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 4,
+          "metrics": {
+            "rscc": {
+              "value": 0.897,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.105,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 5,
+          "metrics": {
+            "rscc": {
+              "value": 0.792,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 1.972,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 7,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 6,
+          "metrics": {
+            "rscc": {
+              "value": 0.918,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 1.03,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 14,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CH2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 7,
+          "metrics": {
+            "rscc": {
+              "value": 0.935,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.029,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 8,
+          "metrics": {
+            "rscc": {
+              "value": 0.958,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "PHE",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.44,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "PHE",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "PHE",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 11,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 9,
+          "metrics": {
+            "rscc": {
+              "value": 0.9,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.748,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [
+                "clash"
+              ],
+              "value": 1,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "OXT",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "6UK2",
+      "coordinatePath": "data/raw/6UK2.pdb",
+      "coordinateSha256": "1b9d9e1a23b159d8c9a0065cb5f01fb300902365bcea4602faf51454a9a0428b",
+      "coordinateFrame": "deposited Cartesian angstrom; no HLA fit applied",
+      "validationProvenance": {
+        "description": "wwPDB validation of the explicitly requested deposited public structure; not a new validation of edited or derived coordinates.",
+        "parser": "Mol* 5.11.0",
+        "retrievedAt": "2026-09-10T08:00:14.076Z",
+        "sha256": "39598b90b3dcea608dc39fa77c6020d9b5ceb5f5a4b929885618ab9eb3da393a",
+        "sourceUrl": "https://files.rcsb.org/validation/view/6uk2_validation.xml"
+      },
+      "peptideResidues": [
+        {
+          "chain": "C",
+          "position": 1,
+          "metrics": {
+            "rscc": {
+              "value": 0.901,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.817,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NZ",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 2,
+          "metrics": {
+            "rscc": {
+              "value": 0.929,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.429,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [
+                "clash"
+              ],
+              "value": 1,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "OE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 3,
+          "metrics": {
+            "rscc": {
+              "value": 0.948,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.784,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 14,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CH2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 4,
+          "metrics": {
+            "rscc": {
+              "value": 0.923,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 1.161,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 5,
+          "metrics": {
+            "rscc": {
+              "value": 0.943,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 1.038,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 7,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 6,
+          "metrics": {
+            "rscc": {
+              "value": 0.949,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.519,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 14,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CH2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 7,
+          "metrics": {
+            "rscc": {
+              "value": 0.927,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 1.122,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 8,
+          "metrics": {
+            "rscc": {
+              "value": 0.946,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.65,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 9,
+          "metrics": {
+            "rscc": {
+              "value": 0.942,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 1.318,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "OXT",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry": "6UK4",
+      "coordinatePath": "data/raw/6UK4.pdb",
+      "coordinateSha256": "8a1a4ff984f3a528bafaf65f9488c6780d8c0f6ff11617beb81e0768165041f8",
+      "coordinateFrame": "deposited Cartesian angstrom; no HLA fit applied",
+      "validationProvenance": {
+        "description": "wwPDB validation of the explicitly requested deposited public structure; not a new validation of edited or derived coordinates.",
+        "parser": "Mol* 5.11.0",
+        "retrievedAt": "2026-09-10T08:00:56.525Z",
+        "sha256": "7d006a115af66229f72c5a178dfc7dbfe285e5f05a8367f28af6318ae9f31ec8",
+        "sourceUrl": "https://files.rcsb.org/validation/view/6uk4_validation.xml"
+      },
+      "peptideResidues": [
+        {
+          "chain": "C",
+          "position": 1,
+          "metrics": {
+            "rscc": {
+              "value": 0.969,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -1.056,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NZ",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 2,
+          "metrics": {
+            "rscc": {
+              "value": 0.985,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -1.46,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "OE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 3,
+          "metrics": {
+            "rscc": {
+              "value": 0.957,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.021,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 14,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CH2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 4,
+          "metrics": {
+            "rscc": {
+              "value": 0.958,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.041,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 5,
+          "metrics": {
+            "rscc": {
+              "value": 0.952,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.223,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 7,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 6,
+          "metrics": {
+            "rscc": {
+              "value": 0.971,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.404,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 14,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "NE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ3",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CH2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 7,
+          "metrics": {
+            "rscc": {
+              "value": 0.929,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.882,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 8,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 8,
+          "metrics": {
+            "rscc": {
+              "value": 0.959,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "PHE",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": -0.431,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "PHE",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "PHE",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 11,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CE2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CZ",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        },
+        {
+          "chain": "C",
+          "position": 9,
+          "metrics": {
+            "rscc": {
+              "value": 0.93,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            },
+            "rsrz": {
+              "value": 0.618,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            },
+            "geometry": {
+              "issues": [],
+              "value": 0,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            }
+          },
+          "depositedAtomCount": 9,
+          "alternateLocationLabels": [
+            " "
+          ],
+          "occupancies": [
+            1.0
+          ],
+          "atomNameAndAltloc": [
+            {
+              "name": "N",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CA",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "C",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "O",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CB",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CG",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD1",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "CD2",
+              "altloc": "",
+              "occupancy": 1.0
+            },
+            {
+              "name": "OXT",
+              "altloc": "",
+              "occupancy": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "density": {
+    "available": true,
+    "loaded": false,
+    "visuallyInspected": false,
+    "exported": false,
+    "assets": [],
+    "gridTransforms": null,
+    "contours": null,
+    "clipping": null,
+    "downsampling": null,
+    "reason": "Fresh native session and related-data probe report missing bound active workspace-read roots; no supported root-binding tool exposed; no bypass attempted.",
+    "receipt": "rosalind/plugin-results/hhat-validation-all-states.native.json",
+    "availableChannels": [
+      "2Fo-Fc",
+      "Fo-Fc"
+    ],
+    "license": "No map asset exported; no map redistribution/license assertion made."
+  },
+  "caveats": [
+    "RSCC/RSRZ describe whole residues, not side-chain certainty.",
+    "Absence of deposited alternate conformers does not rule out disorder or alternative conformations.",
+    "Per-structure resolution, refinement and crystallization differ; do not treat metric differences as mutation effects.",
+    "No density map inspected; validation metrics cannot substitute for viewing maps.",
+    "Geometry issue count zero only means no reported mapped issue types."
+  ]
+}

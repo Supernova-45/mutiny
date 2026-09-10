@@ -1,0 +1,653 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "0.2.0"
+    },
+    "identityProfile": {
+      "const": "mutiny-canonical-json-1"
+    },
+    "projectId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scientificDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "scientificData": {
+      "type": "object",
+      "properties": {
+        "projectId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "analysisUnit": {
+          "enum": [
+            "administered_target",
+            "peptide",
+            "peptide_hla",
+            "variant"
+          ]
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "label"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "url": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "path": {
+                "type": "string",
+                "minLength": 1
+              },
+              "license": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "url",
+              "sha256",
+              "path",
+              "license"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "groupId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sequenceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "targetId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "variantId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "peptideHlaId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hla": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "gene": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sourceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceRow": {
+                "type": "integer",
+                "minimum": 2
+              },
+              "original": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "id",
+              "groupId",
+              "sequenceId",
+              "targetId",
+              "variantId",
+              "peptideHlaId",
+              "hla",
+              "gene",
+              "sourceId",
+              "sourceRow",
+              "original"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "sequences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sequence": {
+                "type": "string",
+                "pattern": "^[ACDEFGHIKLMNPQRSTVWYXBZUO*]+$"
+              },
+              "role": {
+                "enum": [
+                  "mutant_source_context",
+                  "wildtype_source_context",
+                  "predicted_epitope",
+                  "measured_epitope",
+                  "reference_protein"
+                ]
+              },
+              "reference": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "mapping": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "sequence",
+              "role",
+              "reference",
+              "mapping"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "methods": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "endpoint": {
+                "type": "string",
+                "minLength": 1
+              },
+              "unit": {
+                "type": "string",
+                "minLength": 1
+              },
+              "direction": {
+                "enum": [
+                  "ascending",
+                  "descending"
+                ]
+              },
+              "version": {
+                "type": "string",
+                "minLength": 1
+              },
+              "versionStatus": {
+                "enum": [
+                  "known",
+                  "not_reported"
+                ]
+              },
+              "sourceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "semantics": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "id",
+              "endpoint",
+              "unit",
+              "direction",
+              "version",
+              "versionStatus",
+              "sourceId",
+              "semantics"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "scores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "candidateId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "methodId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "available",
+                  "missing",
+                  "unresolved"
+                ]
+              },
+              "missingReason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sequenceId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hla": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "context": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "candidateId",
+              "methodId",
+              "value",
+              "status",
+              "missingReason",
+              "sequenceId",
+              "hla",
+              "context"
+            ],
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "const": "available"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "value": {
+                      "type": "number"
+                    },
+                    "missingReason": {
+                      "type": "null"
+                    }
+                  }
+                },
+                "else": {
+                  "properties": {
+                    "value": {
+                      "type": "null"
+                    },
+                    "missingReason": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "outcomes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "assayId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "experimentalUnitId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "groupId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "state": {
+                "enum": [
+                  "detected",
+                  "not_detected",
+                  "pooled_unresolved",
+                  "not_tested",
+                  "missing",
+                  "unresolved"
+                ]
+              },
+              "unitType": {
+                "enum": [
+                  "individual",
+                  "pool",
+                  "unresolved_pool_set"
+                ]
+              },
+              "endpoint": {
+                "type": "string",
+                "minLength": 1
+              },
+              "timepoint": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "restriction": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sourceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceLocation": {
+                "type": "string",
+                "minLength": 1
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "assayId",
+              "experimentalUnitId",
+              "groupId",
+              "state",
+              "unitType",
+              "endpoint",
+              "timepoint",
+              "restriction",
+              "sourceId",
+              "sourceLocation",
+              "notes"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "assayMembers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "assayId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "candidateId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "membership": {
+                "enum": [
+                  "exact_individual",
+                  "known_pool_member",
+                  "unresolved_pool_set"
+                ]
+              }
+            },
+            "required": [
+              "assayId",
+              "candidateId",
+              "membership"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "candidateId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "scope": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "candidateId",
+              "scope",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "analysisConfig": {
+          "type": "object",
+          "properties": {
+            "projectionRule": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "endpoint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "timepoint": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "restriction": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "trainingSelectionHistory": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "projectionRule",
+            "endpoint",
+            "timepoint",
+            "restriction",
+            "trainingSelectionHistory"
+          ],
+          "additionalProperties": false
+        },
+        "transformation": {
+          "type": "object",
+          "properties": {
+            "script": {
+              "type": "string",
+              "minLength": 1
+            },
+            "losses": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "notes": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "script",
+            "losses",
+            "notes"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "projectId",
+        "analysisUnit",
+        "groups",
+        "sources",
+        "candidates",
+        "sequences",
+        "methods",
+        "scores",
+        "outcomes",
+        "assayMembers",
+        "exclusions",
+        "analysisConfig",
+        "transformation"
+      ],
+      "additionalProperties": false
+    },
+    "reviewState": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "annotations": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "view": {
+          "type": "object"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "proposedCorrections": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      },
+      "required": [
+        "title",
+        "annotations",
+        "view",
+        "notes",
+        "proposedCorrections"
+      ],
+      "additionalProperties": false
+    },
+    "migration": {
+      "type": "object",
+      "properties": {
+        "fromVersion": {
+          "const": "0.1.0"
+        },
+        "originalCanonicalDigest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "policy": {
+          "const": "explicit-copy-v1"
+        }
+      },
+      "required": [
+        "fromVersion",
+        "originalCanonicalDigest",
+        "policy"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "identityProfile",
+    "projectId",
+    "scientificDigest",
+    "scientificData",
+    "reviewState",
+    "migration"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://supernova-45.github.io/mutiny/proposals/exchange/0.2.0/project",
+  "title": "Proposed 0.2.0 project; not a reinterpretation of 0.1.0"
+}

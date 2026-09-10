@@ -28,6 +28,11 @@
       "bytes": 6781
     },
     {
+      "path": "rosalind/SECOND_RETURN.md",
+      "sha256": "28bfe7397a4a81fa0847067fef1781ad6ed58c7d9466eae4c0a60597b8cc19e3",
+      "bytes": 6637
+    },
+    {
       "path": "rosalind/analysis/contracts.py",
       "sha256": "970ad49b978e1277c3534b49c134832d1e2b32ed2e244ff1ff24328d6258cc3e",
       "bytes": 19111
@@ -73,9 +78,24 @@
       "bytes": 1889
     },
     {
+      "path": "rosalind/analysis/run_second_return.sh",
+      "sha256": "eb129279ebff238430084139cf4e23a57ec483ba4140dd48cb792783064ea277",
+      "bytes": 481
+    },
+    {
+      "path": "rosalind/analysis/search_hcc_evidence.py",
+      "sha256": "58fdb8e18873d3dbf0d16d81927ed50149ae28c855edc0239338414055b7f9a1",
+      "bytes": 2792
+    },
+    {
       "path": "rosalind/analysis/structure.py",
       "sha256": "76320e418e55a3a28e396fce2b10f4e7594016d2eeb9dd049df97227ad007afe",
       "bytes": 9857
+    },
+    {
+      "path": "rosalind/analysis/summarize_validation.py",
+      "sha256": "cacbd019d2f053d4e3ba226d4bcaf2eea1705efe16e7721bde627de58066df9f",
+      "bytes": 3060
     },
     {
       "path": "rosalind/analysis/validate.py",
@@ -86,6 +106,11 @@
       "path": "rosalind/analysis/verify_native.py",
       "sha256": "90d05b4707c0547397032e990bf87cea69b6851b6dac4a34cc1008d31cb1eb5e",
       "bytes": 4571
+    },
+    {
+      "path": "rosalind/analysis/verify_second_return.py",
+      "sha256": "9739777eca34925b066684c59ec308cc6431f42214a6b02564805012ea099410",
+      "bytes": 2945
     },
     {
       "path": "rosalind/capabilities.json",
@@ -116,6 +141,66 @@
       "path": "rosalind/evidence.json",
       "sha256": "73ec4c91e09031eb37a4771581c51001ba6f9b1d478e741a6ca41fc04a464c41",
       "bytes": 17902
+    },
+    {
+      "path": "rosalind/exchange-v0.2/README.md",
+      "sha256": "84929c1b3b812aecfe55d462190a69ab70c61ccaf1157c7f4399bc06a2c94de9",
+      "bytes": 8444
+    },
+    {
+      "path": "rosalind/exchange-v0.2/build-roundtrip.mjs",
+      "sha256": "7e7e75adbe7ba3ed62a180943fc6137698ff11a65a22377889b1af3b6a31e04e",
+      "bytes": 5000
+    },
+    {
+      "path": "rosalind/exchange-v0.2/build_schemas.py",
+      "sha256": "83f065e4a8634530b50843e48f1a4d9d88928d1dc8d1454efd1b35512ffdc47f",
+      "bytes": 2845
+    },
+    {
+      "path": "rosalind/exchange-v0.2/canonical-vectors.json",
+      "sha256": "13bb972c6ee37b0946831f8cf1243110a08c00b8c5fc0e6429def5c25b2f812a",
+      "bytes": 1352
+    },
+    {
+      "path": "rosalind/exchange-v0.2/exchange.mjs",
+      "sha256": "4c0c7fb21d3bd3470bc75c512a122ff442a5cca4eb09446f60e9bc0e6a989380",
+      "bytes": 9659
+    },
+    {
+      "path": "rosalind/exchange-v0.2/project.schema.json",
+      "sha256": "87f389b98826b433c602d1d4d1a9bc015c591e20d3c22b54b834abcb68005178",
+      "bytes": 16051
+    },
+    {
+      "path": "rosalind/exchange-v0.2/request.schema.json",
+      "sha256": "e6045eadced4ba1d56e40eb3fec288a37e953e92a804bdd04f9620e04b7a3931",
+      "bytes": 10030
+    },
+    {
+      "path": "rosalind/exchange-v0.2/return.schema.json",
+      "sha256": "fede6497e7a73283fd6c7cd4d8a721ceaebc1724fe7d68968eebcf134cb3d616",
+      "bytes": 4727
+    },
+    {
+      "path": "rosalind/exchange-v0.2/test-exchange.mjs",
+      "sha256": "646ae4a572c8107f58bb8e9265e4229cd7d02e387efef1a370c3adcb632b5a8b",
+      "bytes": 7809
+    },
+    {
+      "path": "rosalind/exchange-v0.2/test-results.json",
+      "sha256": "160f62d3cd09cd1a7fe998a6bea60c32523d227227a62dd1abef5588b710bc20",
+      "bytes": 2579
+    },
+    {
+      "path": "rosalind/exchange-v0.2/validate_schemas.py",
+      "sha256": "164a184dfde22c28939edc86a65e71da5a39586071ec9f0ea58fdf96e4a6077e",
+      "bytes": 692
+    },
+    {
+      "path": "rosalind/experimental-support.json",
+      "sha256": "6ba314a80da8339a98f7d959eaaa30fce8975e526009581b7bd0438d57e275d1",
+      "bytes": 98570
     },
     {
       "path": "rosalind/fixtures/evidence-request.json",
@@ -258,6 +343,11 @@
       "bytes": 1336
     },
     {
+      "path": "rosalind/plugin-results/hhat-validation-all-states.native.json",
+      "sha256": "a4e59c056c1d3b420a4d69d6cd2f0b3ea33a79ea1220524717751d0f6e57dc40",
+      "bytes": 872316
+    },
+    {
       "path": "rosalind/plugin-results/sequence-viewer-startup.json",
       "sha256": "6641ec52e58c7b1c336d9b2da7f6e901a607b898df49bad47a43efb580b0f558",
       "bytes": 1714
@@ -283,9 +373,129 @@
       "bytes": 402897
     },
     {
+      "path": "rosalind/roundtrip-v0.2/candidate-1-peptide.plugin.json",
+      "sha256": "a5a0d9ad2c0728564a414b3cd3678028019924d077a6f79eaaaa003ab6ea9cb8",
+      "bytes": 806
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-1-peptide.raw.json",
+      "sha256": "eb68fd39b40bb53e6b2454f2d298c7d591682878fbc2376e5c6d04a57b947b8d",
+      "bytes": 310
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-1-variant.plugin.json",
+      "sha256": "52618700f8f1a6d75a7da5204641d8ee7209566d8cd620f926e9034a94cc074b",
+      "bytes": 806
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-1-variant.raw.json",
+      "sha256": "1c1c7af6f72442bf17619f435f2e57497bcb05ae6b0a1d83f8fb8a00519ef65c",
+      "bytes": 399
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-2-peptide.plugin.json",
+      "sha256": "dc36d132fd7c31022e4a824e4abdd1e26c5b84f198bda7f61a1099315d526b52",
+      "bytes": 806
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-2-peptide.raw.json",
+      "sha256": "ec189abc51a00653ede67077e22c6ecd261e7c42232412d0254d831b8e65cbdc",
+      "bytes": 310
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-2-variant.plugin.json",
+      "sha256": "00b5c3fa6540107693c738b5eb863ea89cc1af79a78f1df1097d7c3eb8747fab",
+      "bytes": 806
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-2-variant.raw.json",
+      "sha256": "b5a6542326ce066aaf8045299b17399a27bff7eddea09cd18a9c728163dc6e8c",
+      "bytes": 393
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-3-peptide.plugin.json",
+      "sha256": "0cb801feb43ad9dc782d67c77fe55c3105b60fd7caec8f42b2ac0a98d33f7166",
+      "bytes": 806
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-3-peptide.raw.json",
+      "sha256": "0f1405a941498f4ccf0d47e05dd17ffde8c028700934d58a02ecefd19e607685",
+      "bytes": 310
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-3-variant.plugin.json",
+      "sha256": "74c585678158113c4b6a8d0c728217a3d267d0be8a73e8febfbd31a3eda2ee08",
+      "bytes": 806
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/candidate-3-variant.raw.json",
+      "sha256": "b28afc18a5e2b235a65263cb827e450e793fff293ed417cae7a44180bcb47f90",
+      "bytes": 397
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/hcc1395-context.plugin.json",
+      "sha256": "e5dbed73645ffc880534d9016f2105e3121e7912716d877cb80ba31a7e27e493",
+      "bytes": 964
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/hcc1395-context.raw.json",
+      "sha256": "81f40646ac7ce76db8353e27e32e43d6ad59aa0cc875f51a46b927ff92026ae0",
+      "bytes": 908
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/import-result.json",
+      "sha256": "7f7641955d10fb252719ee24405422a014843b7518e8d829bafc19c4dd96d41d",
+      "bytes": 1482
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/project.json",
+      "sha256": "19a3880ecf8e43670752ff640ae2bae58662bb1c0a758b8c057b218e7d3ed74b",
+      "bytes": 87803
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/related-context.plugin.json",
+      "sha256": "23e50fb3c1c7b09695251ed1b0789cfc52cd69878823389b83b97abd1ba9b3ad",
+      "bytes": 788
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/related-context.raw.xml",
+      "sha256": "e7e6d9a217a20aedaf3e645a7f30919726018bb855a2fbd4871034ac66d72d0a",
+      "bytes": 84551
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/request.json",
+      "sha256": "e02696f95b94e75566b2bd7aa5c569a9ab5761ebbba9d4aa33220923506622de",
+      "bytes": 28672
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/return.json",
+      "sha256": "83cde2d3fad0f150c68a99510111c31396629b0f478f92118da62b1ed6a32fa6",
+      "bytes": 16474
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/search-log.json",
+      "sha256": "42bb7a2f7084543cb4d3bc85f473ca3da17b12521f21f183bd2692cb2fb09410",
+      "bytes": 6293
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/sequence-viewer-receipts.json",
+      "sha256": "17a826d1ecb6220ac28af7f38927f784a1025d5953190d2cc7590676bceb720a",
+      "bytes": 4185
+    },
+    {
+      "path": "rosalind/roundtrip-v0.2/three-candidates.fasta",
+      "sha256": "48bf86fb6726931f320c6f94f9f06028b9c2678838741362833f2b5c0c1c99b7",
+      "bytes": 494
+    },
+    {
       "path": "rosalind/screenshots/UNSUPPORTED.md",
       "sha256": "9b462ecb2563d2d19051655d4da41c292799a410c16090e94d648aef89a842ec",
       "bytes": 565
+    },
+    {
+      "path": "rosalind/second-return-validation.json",
+      "sha256": "1b275bbfd4237a64e873fc9fe3d776476986c84038fb9f2a79cd0c1db0831f8c",
+      "bytes": 628
     },
     {
       "path": "rosalind/source-retrieval.json",

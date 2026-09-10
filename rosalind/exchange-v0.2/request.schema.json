@@ -1,0 +1,390 @@
+{
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "0.2.0"
+    },
+    "identityProfile": {
+      "const": "mutiny-canonical-json-1"
+    },
+    "projectId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scientificDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contextDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "selectedCandidateIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "contexts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "candidateId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "candidate": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "groupId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sequenceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "targetId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "variantId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "peptideHlaId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hla": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "gene": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sourceId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sourceRow": {
+                "type": "integer",
+                "minimum": 2
+              },
+              "original": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "id",
+              "groupId",
+              "sequenceId",
+              "targetId",
+              "variantId",
+              "peptideHlaId",
+              "hla",
+              "gene",
+              "sourceId",
+              "sourceRow",
+              "original"
+            ],
+            "additionalProperties": false
+          },
+          "sequences": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sequence": {
+                  "type": "string",
+                  "pattern": "^[ACDEFGHIKLMNPQRSTVWYXBZUO*]+$"
+                },
+                "role": {
+                  "enum": [
+                    "mutant_source_context",
+                    "wildtype_source_context",
+                    "predicted_epitope",
+                    "measured_epitope",
+                    "reference_protein"
+                  ]
+                },
+                "reference": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "mapping": {
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "sequence",
+                "role",
+                "reference",
+                "mapping"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "methods": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "endpoint": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "direction": {
+                  "enum": [
+                    "ascending",
+                    "descending"
+                  ]
+                },
+                "version": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "versionStatus": {
+                  "enum": [
+                    "known",
+                    "not_reported"
+                  ]
+                },
+                "sourceId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "semantics": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "id",
+                "endpoint",
+                "unit",
+                "direction",
+                "version",
+                "versionStatus",
+                "sourceId",
+                "semantics"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "candidateId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "methodId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "value": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "status": {
+                  "enum": [
+                    "available",
+                    "missing",
+                    "unresolved"
+                  ]
+                },
+                "missingReason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "sequenceId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "hla": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "context": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "candidateId",
+                "methodId",
+                "value",
+                "status",
+                "missingReason",
+                "sequenceId",
+                "hla",
+                "context"
+              ],
+              "additionalProperties": false,
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "status": {
+                        "const": "available"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "value": {
+                        "type": "number"
+                      },
+                      "missingReason": {
+                        "type": "null"
+                      }
+                    }
+                  },
+                  "else": {
+                    "properties": {
+                      "value": {
+                        "type": "null"
+                      },
+                      "missingReason": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "path": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "license": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "url",
+                "sha256",
+                "path",
+                "license"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "candidateId",
+          "candidate",
+          "sequences",
+          "methods",
+          "scores",
+          "sources"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "requestDigest": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "identityProfile",
+    "projectId",
+    "scientificDigest",
+    "requestId",
+    "contextDigest",
+    "selectedCandidateIds",
+    "contexts",
+    "questions",
+    "requestDigest"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://supernova-45.github.io/mutiny/proposals/exchange/0.2.0/request",
+  "title": "Proposed 0.2.0 request; not a reinterpretation of 0.1.0"
+}

@@ -1,0 +1,12 @@
+>candidate_1_mutant MSH6; HLA-B*45:01; ENST00000234420.11; source row 2
+VENYSQNVA
+>candidate_1_normal MSH6; HLA-B*45:01; ENST00000234420.11; source row 2
+VEDYSQNVA
+>candidate_2_mutant ZNF548; HLA-A*29:02; ENST00000336128.12; source row 3
+VVFEYVAIY
+>candidate_2_normal ZNF548; HLA-A*29:02; ENST00000336128.12; source row 3
+VVFEDVAIY
+>candidate_3_mutant ABL2; HLA-B*82:02; ENST00000502732.6; source row 4
+APRLIKKTL
+>candidate_3_normal ABL2; HLA-B*82:02; ENST00000502732.6; source row 4
+TPRLIKKTL

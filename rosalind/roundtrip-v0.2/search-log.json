@@ -1,0 +1,190 @@
+[
+  {
+    "name": "candidate-1-peptide",
+    "candidateId": "hcc:138796478968c649e08b",
+    "scope": "exact_peptide",
+    "query": "\"VENYSQNVA\"[All Fields]",
+    "queriedAt": "2026-09-10T08:00:27.639896+00:00",
+    "database": "PubMed",
+    "retmax": 10,
+    "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+    "exitCode": 0,
+    "ok": true,
+    "receipt": "rosalind/roundtrip-v0.2/candidate-1-peptide.plugin.json",
+    "raw": "rosalind/roundtrip-v0.2/candidate-1-peptide.raw.json",
+    "count": "0",
+    "ids": [],
+    "queryTranslation": "\"VENYSQNVA\"[All Fields]",
+    "warnings": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"VENYSQNVA\"[All Fields]"
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    },
+    "errors": null
+  },
+  {
+    "name": "candidate-1-variant",
+    "candidateId": "hcc:138796478968c649e08b",
+    "scope": "variant_context",
+    "query": "MSH6[All Fields] AND (\"p.Asp1255Asn\"[All Fields] OR \"c.3763G>A\"[All Fields])",
+    "queriedAt": "2026-09-10T08:00:28.417096+00:00",
+    "database": "PubMed",
+    "retmax": 10,
+    "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+    "exitCode": 0,
+    "ok": true,
+    "receipt": "rosalind/roundtrip-v0.2/candidate-1-variant.plugin.json",
+    "raw": "rosalind/roundtrip-v0.2/candidate-1-variant.raw.json",
+    "count": "0",
+    "ids": [],
+    "queryTranslation": "MSH6[All Fields] AND (\"p.Asp1255Asn\"[All Fields] OR \"c.3763G>A\"[All Fields])",
+    "warnings": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"p.Asp1255Asn\"[All Fields]",
+        "\"c.3763G&gt;A\"[All Fields]"
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    },
+    "errors": null
+  },
+  {
+    "name": "candidate-2-peptide",
+    "candidateId": "hcc:a671e7e3c48458cd828b",
+    "scope": "exact_peptide",
+    "query": "\"VVFEYVAIY\"[All Fields]",
+    "queriedAt": "2026-09-10T08:00:29.238884+00:00",
+    "database": "PubMed",
+    "retmax": 10,
+    "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+    "exitCode": 0,
+    "ok": true,
+    "receipt": "rosalind/roundtrip-v0.2/candidate-2-peptide.plugin.json",
+    "raw": "rosalind/roundtrip-v0.2/candidate-2-peptide.raw.json",
+    "count": "0",
+    "ids": [],
+    "queryTranslation": "\"VVFEYVAIY\"[All Fields]",
+    "warnings": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"VVFEYVAIY\"[All Fields]"
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    },
+    "errors": null
+  },
+  {
+    "name": "candidate-2-variant",
+    "candidateId": "hcc:a671e7e3c48458cd828b",
+    "scope": "variant_context",
+    "query": "ZNF548[All Fields] AND (\"p.Asp24Tyr\"[All Fields] OR \"c.70G>T\"[All Fields])",
+    "queriedAt": "2026-09-10T08:00:29.981214+00:00",
+    "database": "PubMed",
+    "retmax": 10,
+    "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+    "exitCode": 0,
+    "ok": true,
+    "receipt": "rosalind/roundtrip-v0.2/candidate-2-variant.plugin.json",
+    "raw": "rosalind/roundtrip-v0.2/candidate-2-variant.raw.json",
+    "count": "0",
+    "ids": [],
+    "queryTranslation": "ZNF548[All Fields] AND (\"p.Asp24Tyr\"[All Fields] OR \"c.70G>T\"[All Fields])",
+    "warnings": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"p.Asp24Tyr\"[All Fields]",
+        "\"c.70G&gt;T\"[All Fields]"
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    },
+    "errors": null
+  },
+  {
+    "name": "candidate-3-peptide",
+    "candidateId": "hcc:42e51094667970cdfb8f",
+    "scope": "exact_peptide",
+    "query": "\"APRLIKKTL\"[All Fields]",
+    "queriedAt": "2026-09-10T08:00:30.895277+00:00",
+    "database": "PubMed",
+    "retmax": 10,
+    "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+    "exitCode": 0,
+    "ok": true,
+    "receipt": "rosalind/roundtrip-v0.2/candidate-3-peptide.plugin.json",
+    "raw": "rosalind/roundtrip-v0.2/candidate-3-peptide.raw.json",
+    "count": "0",
+    "ids": [],
+    "queryTranslation": "\"APRLIKKTL\"[All Fields]",
+    "warnings": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"APRLIKKTL\"[All Fields]"
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    },
+    "errors": null
+  },
+  {
+    "name": "candidate-3-variant",
+    "candidateId": "hcc:42e51094667970cdfb8f",
+    "scope": "variant_context",
+    "query": "ABL2[All Fields] AND (\"p.Thr753Ala\"[All Fields] OR \"c.2257A>G\"[All Fields])",
+    "queriedAt": "2026-09-10T08:00:31.718363+00:00",
+    "database": "PubMed",
+    "retmax": 10,
+    "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+    "exitCode": 0,
+    "ok": true,
+    "receipt": "rosalind/roundtrip-v0.2/candidate-3-variant.plugin.json",
+    "raw": "rosalind/roundtrip-v0.2/candidate-3-variant.raw.json",
+    "count": "0",
+    "ids": [],
+    "queryTranslation": "ABL2[All Fields] AND (\"p.Thr753Ala\"[All Fields] OR \"c.2257A>G\"[All Fields])",
+    "warnings": {
+      "phrasesignored": [],
+      "quotedphrasesnotfound": [
+        "\"p.Thr753Ala\"[All Fields]",
+        "\"c.2257A&gt;G\"[All Fields]"
+      ],
+      "outputmessages": [
+        "No items found."
+      ]
+    },
+    "errors": null
+  },
+  {
+    "name": "hcc1395-context",
+    "candidateId": null,
+    "scope": "related_cell_line_context",
+    "query": "HCC1395[All Fields] AND (neoantigen[All Fields] OR pVACtools[All Fields])",
+    "queriedAt": "2026-09-10T08:00:32.670981+00:00",
+    "database": "PubMed",
+    "retmax": 10,
+    "plugin": "Life Sciences Literature 0.1.5 / ncbi_entrez.py",
+    "exitCode": 0,
+    "ok": true,
+    "receipt": "rosalind/roundtrip-v0.2/hcc1395-context.plugin.json",
+    "raw": "rosalind/roundtrip-v0.2/hcc1395-context.raw.json",
+    "count": "3",
+    "ids": [
+      "41415611",
+      "24606732",
+      "20526721"
+    ],
+    "queryTranslation": "\"HCC1395\"[All Fields] AND (\"antigens neoplasm\"[Supplementary Concept] OR \"antigens neoplasm\"[All Fields] OR \"neoantigen\"[All Fields] OR \"antigens, neoplasm\"[MeSH Terms] OR (\"antigens\"[All Fields] AND \"neoplasm\"[All Fields]) OR \"neoplasm antigens\"[All Fields] OR \"neoantigens\"[All Fields] OR \"neoantigenic\"[All Fields] OR \"pVACtools\"[All Fields])",
+    "warnings": null,
+    "errors": null
+  }
+]

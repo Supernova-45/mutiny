@@ -1,0 +1,19 @@
+{
+  "status": "imported",
+  "ledger": {
+    "returns": {
+      "[\"hcc1395-pvacseq-filtered\",\"961c798ded5901a8dba9d8e7e8de60dc54822d568d769371acbc0bc2c558b18d\",\"hcc1395-evidence-return-20260910\"]": "2340c1472b481a184f4be12839dc44802813698f38459948293fdf367d151dca"
+    },
+    "claims": {
+      "[\"hcc1395-pvacseq-filtered\",\"961c798ded5901a8dba9d8e7e8de60dc54822d568d769371acbc0bc2c558b18d\",\"HCC-CONTEXT-1\"]": "de455c90b647f44b05ad4d6df82f279282ad76919d2c058a150765ccf5ca3bfb",
+      "[\"hcc1395-pvacseq-filtered\",\"961c798ded5901a8dba9d8e7e8de60dc54822d568d769371acbc0bc2c558b18d\",\"HCC-CONTEXT-2\"]": "fd0ead36284b2bb18ee7f7d5a3dd49f5b8d38d77ed105cb36d58e44308d82b22",
+      "[\"hcc1395-pvacseq-filtered\",\"961c798ded5901a8dba9d8e7e8de60dc54822d568d769371acbc0bc2c558b18d\",\"HCC-CONTEXT-3\"]": "2050ff461eb180e3a933b638ee0803aaffaa753ce644dc18e0a1bb66aa664fb1",
+      "[\"hcc1395-pvacseq-filtered\",\"961c798ded5901a8dba9d8e7e8de60dc54822d568d769371acbc0bc2c558b18d\",\"HCC-RELATED-PROTOCOL\"]": "e22572b4854695eb47fb8388659973ed28041f4586a7bcefec8cac610741edb3"
+    }
+  },
+  "scientificDigest": "961c798ded5901a8dba9d8e7e8de60dc54822d568d769371acbc0bc2c558b18d",
+  "contextDigest": "229b6acb07ab4d1a0ea5275fc38615523f2dad1cc07bc41b75e71f13ae333c90",
+  "reviewStateDigestBefore": "eafc72017807cf95adb1c5a543451902b58aab12f510dbca55a7af7eb15274d7",
+  "reviewStateDigestAfter": "eafc72017807cf95adb1c5a543451902b58aab12f510dbca55a7af7eb15274d7",
+  "outcomeCount": 0
+}

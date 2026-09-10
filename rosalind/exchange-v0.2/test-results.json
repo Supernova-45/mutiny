@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "0.2.0",
+  "checks": [
+    {
+      "name": "Real return attaches and leaves scientific/review state unchanged",
+      "status": "pass"
+    },
+    {
+      "name": "Note edit and JSON reopen preserve pending request",
+      "status": "pass"
+    },
+    {
+      "name": "View, camera, selection and title edits preserve pending request",
+      "status": "pass"
+    },
+    {
+      "name": "changed peptide rejects stale evidence with and without rehash",
+      "status": "pass"
+    },
+    {
+      "name": "changed allele rejects stale evidence with and without rehash",
+      "status": "pass"
+    },
+    {
+      "name": "changed reference rejects stale evidence with and without rehash",
+      "status": "pass"
+    },
+    {
+      "name": "changed predictor metadata rejects stale evidence with and without rehash",
+      "status": "pass"
+    },
+    {
+      "name": "changed score rejects stale evidence with and without rehash",
+      "status": "pass"
+    },
+    {
+      "name": "Foreign project rejects even if candidate IDs match",
+      "status": "pass"
+    },
+    {
+      "name": "Duplicate import idempotent across serialized ledger",
+      "status": "pass"
+    },
+    {
+      "name": "Duplicate claim ID within one return rejects",
+      "status": "pass"
+    },
+    {
+      "name": "Identical claim across returns deduplicates; changed content rejects",
+      "status": "pass"
+    },
+    {
+      "name": "Unresolved findings retained without inferred outcomes",
+      "status": "pass"
+    },
+    {
+      "name": "Proposed corrections remain separate, human notes preserved",
+      "status": "pass"
+    },
+    {
+      "name": "Scientific table row reordering does not change identities",
+      "status": "pass"
+    },
+    {
+      "name": "Candidate order canonicalizes; request ID and question edits invalidate digest",
+      "status": "pass"
+    },
+    {
+      "name": "0.1.0 remains unsupported for attachment without explicit migration",
+      "status": "pass"
+    },
+    {
+      "name": "Existing 0.1.0 note/view save and reopen migrates to the same science",
+      "status": "pass"
+    },
+    {
+      "name": "Foreign finding claim and same-ID changed return reject atomically",
+      "status": "pass"
+    },
+    {
+      "name": "Rojas explicit migration preserves assays, pool units, exclusions and notes",
+      "status": "pass"
+    },
+    {
+      "name": "Canonical strings, numbers and duplicate JSON keys are explicit",
+      "status": "pass"
+    }
+  ],
+  "scope": "Scientific exchange reference implementation only; no frontend importer tested"
+}
