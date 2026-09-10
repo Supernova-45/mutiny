@@ -1,0 +1,62 @@
+[
+  {
+    "pdb": "7OW5",
+    "distanceAngstrom": 4.717539401001331,
+    "peptideAtom": {
+      "chain": "C",
+      "residue": 6,
+      "name": "N"
+    },
+    "hlaAtom": {
+      "chain": "A",
+      "residue": 70,
+      "name": "OE1"
+    },
+    "method": "Local closest heavy-atom Euclidean distance in original deposited frame; no fit needed for intra-object measurement."
+  },
+  {
+    "pdb": "7OW5",
+    "distanceAngstrom": 6.596538865192867,
+    "peptideAtom": {
+      "chain": "C",
+      "residue": 6,
+      "name": "N"
+    },
+    "hlaAtom": {
+      "chain": "A",
+      "residue": 114,
+      "name": "NH2"
+    },
+    "method": "Local closest heavy-atom Euclidean distance in original deposited frame; no fit needed for intra-object measurement."
+  },
+  {
+    "pdb": "7OW6",
+    "distanceAngstrom": 3.023948742951836,
+    "peptideAtom": {
+      "chain": "C",
+      "residue": 6,
+      "name": "N"
+    },
+    "hlaAtom": {
+      "chain": "A",
+      "residue": 70,
+      "name": "OE1"
+    },
+    "method": "Local closest heavy-atom Euclidean distance in original deposited frame; no fit needed for intra-object measurement."
+  },
+  {
+    "pdb": "7OW6",
+    "distanceAngstrom": 2.9513258037702337,
+    "peptideAtom": {
+      "chain": "C",
+      "residue": 6,
+      "name": "OD2"
+    },
+    "hlaAtom": {
+      "chain": "A",
+      "residue": 114,
+      "name": "NH2"
+    },
+    "method": "Local closest heavy-atom Euclidean distance in original deposited frame; no fit needed for intra-object measurement."
+  }
+]

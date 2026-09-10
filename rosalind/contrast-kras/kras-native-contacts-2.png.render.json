@@ -1,0 +1,354 @@
+{
+  "artifact": {
+    "byteLength": 229569,
+    "mediaType": "image/png",
+    "outputPath": "../kras-native-contacts-2.png",
+    "sha256": "f69c696866cece30bde6cf9105286b361c1ea1b18c54e2966266a1f0c2ecd4f5"
+  },
+  "createdAt": "2026-09-10T18:18:08.387Z",
+  "provenance": {
+    "canonicalSpec": "{\"autoCrop\":true,\"cropPadding\":50,\"destination\":{\"base\":\"opened-source\",\"collisionPolicy\":\"versioned\",\"kind\":\"workspace\",\"relativePath\":\"../kras-native-contacts.png\"},\"format\":\"png\",\"height\":900,\"kind\":\"image\",\"outputPath\":\"../kras-native-contacts.png\",\"overwrite\":false,\"scene\":{\"antialiasing\":\"quality\",\"background\":\"#FFFFFF\",\"camera\":{\"focus\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"kras_mutant\"},\"kind\":\"expression\"},\"orientation\":\"front\",\"zoom\":1.65},\"clearExisting\":true,\"density\":[],\"layers\":[{\"color\":{\"kind\":\"uniform\",\"value\":\"#2596BE\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"primary\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#E49B35\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"kras_mutant\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#778899\"},\"labels\":true,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"expressions\":[{\"chain\":\"A\",\"kind\":\"residue\",\"objectId\":\"kras_mutant\",\"residue\":70},{\"chain\":\"A\",\"kind\":\"residue\",\"objectId\":\"kras_mutant\",\"residue\":114}],\"kind\":\"anyOf\"},\"kind\":\"expression\"},\"visible\":true}],\"lighting\":\"studio\",\"measurements\":[{\"from\":{\"expression\":{\"atomIds\":[\"kras_mutant|ASM-1|3109\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"},\"to\":{\"expression\":{\"atomIds\":[\"kras_mutant|ASM-1|576\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"}},{\"from\":{\"expression\":{\"atomIds\":[\"kras_mutant|ASM-1|3116\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"},\"to\":{\"expression\":{\"atomIds\":[\"kras_mutant|ASM-1|927\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"}}],\"scientificAnnotations\":{\"guides\":[],\"quality\":[],\"symmetry\":[]}},\"transparent\":false,\"width\":1200}",
+    "density": {
+      "initial": [],
+      "sceneTransitions": []
+    },
+    "generatedAt": "2026-09-10T18:18:07.970Z",
+    "output": {
+      "autoCrop": true,
+      "crop": {
+        "applied": true,
+        "empty": false,
+        "height": 756,
+        "padding": 50,
+        "width": 800,
+        "x": 233,
+        "y": 22
+      },
+      "format": "png",
+      "height": 756,
+      "sourceHeight": 900,
+      "sourceWidth": 1200,
+      "transparent": false,
+      "width": 800
+    },
+    "renderer": "Mol* 5.11.0",
+    "replay": {
+      "autoCrop": true,
+      "cropPadding": 50,
+      "destination": {
+        "base": "opened-source",
+        "collisionPolicy": "versioned",
+        "kind": "workspace",
+        "relativePath": "../kras-native-contacts.png"
+      },
+      "format": "png",
+      "height": 900,
+      "kind": "image",
+      "outputPath": "../kras-native-contacts.png",
+      "overwrite": false,
+      "scene": {
+        "antialiasing": "quality",
+        "background": "#FFFFFF",
+        "camera": {
+          "focus": {
+            "expression": {
+              "chain": "C",
+              "kind": "chain",
+              "objectId": "kras_mutant"
+            },
+            "kind": "expression"
+          },
+          "orientation": "front",
+          "zoom": 1.65
+        },
+        "clearExisting": true,
+        "density": [],
+        "layers": [
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#2596BE"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#E49B35"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "kras_mutant"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#778899"
+            },
+            "labels": true,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "expressions": [
+                  {
+                    "chain": "A",
+                    "kind": "residue",
+                    "objectId": "kras_mutant",
+                    "residue": 70
+                  },
+                  {
+                    "chain": "A",
+                    "kind": "residue",
+                    "objectId": "kras_mutant",
+                    "residue": 114
+                  }
+                ],
+                "kind": "anyOf"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          }
+        ],
+        "lighting": "studio",
+        "measurements": [
+          {
+            "from": {
+              "expression": {
+                "atomIds": [
+                  "kras_mutant|ASM-1|3109"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            },
+            "to": {
+              "expression": {
+                "atomIds": [
+                  "kras_mutant|ASM-1|576"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            }
+          },
+          {
+            "from": {
+              "expression": {
+                "atomIds": [
+                  "kras_mutant|ASM-1|3116"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            },
+            "to": {
+              "expression": {
+                "atomIds": [
+                  "kras_mutant|ASM-1|927"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            }
+          }
+        ],
+        "scientificAnnotations": {
+          "guides": [],
+          "quality": [],
+          "symmetry": []
+        }
+      },
+      "transparent": false,
+      "width": 1200
+    },
+    "schemaVersion": 1,
+    "source": {
+      "fileName": "7OW5.pdb",
+      "name": "7OW5.pdb",
+      "resourceUri": "[opaque-local-viewer-source-redacted]",
+      "sha256": "443ec1f07ef19667495274bb89517b6bfb990993bc1c7b4b375ccb1625b953bf"
+    },
+    "structureObjects": [
+      {
+        "construction": {
+          "assemblyId": "1",
+          "dynamicBonds": false,
+          "kind": "assembly",
+          "modelIndex": 0
+        },
+        "fileName": "7OW5.pdb",
+        "frameCount": 1,
+        "id": "primary",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": true,
+        "resourceUri": "[opaque-local-viewer-source-redacted]",
+        "visible": true
+      },
+      {
+        "construction": {
+          "assemblyId": "1",
+          "dynamicBonds": false,
+          "kind": "assembly",
+          "modelIndex": 0
+        },
+        "fileName": "7OW6.pdb",
+        "frameCount": 1,
+        "id": "kras_mutant",
+        "matrix": [
+          0.9999504174502297,
+          -0.008391653945135538,
+          0.00536122962594867,
+          0,
+          0.008390774712911551,
+          0.9999647794434391,
+          0.0001864701845613176,
+          0,
+          -0.0053626055935636525,
+          -0.0001414760676407864,
+          0.9999856111189875,
+          0,
+          -0.6718251883935338,
+          0.02573253905801126,
+          0.4079945619160166,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[opaque-local-viewer-source-redacted]",
+        "visible": true
+      },
+      {
+        "construction": {
+          "assemblyId": "1",
+          "dynamicBonds": false,
+          "kind": "assembly",
+          "modelIndex": 0
+        },
+        "fileName": "6UJQ.pdb",
+        "frameCount": 1,
+        "id": "hhat_normal",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[opaque-local-viewer-source-redacted]",
+        "visible": true
+      },
+      {
+        "construction": {
+          "assemblyId": "1",
+          "dynamicBonds": false,
+          "kind": "assembly",
+          "modelIndex": 0
+        },
+        "fileName": "6UJO.pdb",
+        "frameCount": 1,
+        "id": "hhat_mutant",
+        "matrix": [
+          0.9997791626984346,
+          -0.014997318047991131,
+          0.014720946971694697,
+          0,
+          0.014237451439403543,
+          0.9986260174125398,
+          0.0504318578696328,
+          0,
+          -0.01545706326850847,
+          -0.05021113186375723,
+          0.9986190071277419,
+          0,
+          0.6305970047356055,
+          2.135794796321946,
+          -0.07743165593840473,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[opaque-local-viewer-source-redacted]",
+        "visible": true
+      }
+    ],
+    "encodingDurationMs": 2273.7000000476837,
+    "jobId": "e9bbf0f3-cbfa-4468-8fc4-6f66c8b7a3eb",
+    "workspacePublication": {
+      "destination": {
+        "base": "opened-source",
+        "relativePath": "../kras-native-contacts-2.png"
+      },
+      "artifact": {
+        "kind": "render",
+        "mediaType": "image/png"
+      },
+      "output": {
+        "workspacePath": "rosalind/contrast-kras/kras-native-contacts-2.png"
+      },
+      "plugin": {
+        "name": "structure-viewer",
+        "version": "0.1.80"
+      },
+      "schemaVersion": 1,
+      "source": {
+        "sha256": "443ec1f07ef19667495274bb89517b6bfb990993bc1c7b4b375ccb1625b953bf",
+        "workspacePath": "rosalind/contrast-kras/sources/7OW5.pdb"
+      }
+    }
+  },
+  "renderer": "Mol* 5.11.0",
+  "schemaVersion": 1,
+  "publicationRedactions": {
+    "originalSidecarSha256": "4df0c56d7c9638de4ccbc7b1ed7c452c2a5f2f21383d753ab18408441a077225",
+    "removed": "Opaque local viewer-file URLs; use sources/7OW5.pdb and sources/7OW6.pdb plus hashes and object transforms for replay. PNG bytes unchanged."
+  }
+}

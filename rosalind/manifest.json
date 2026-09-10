@@ -33,6 +33,11 @@
       "bytes": 6637
     },
     {
+      "path": "rosalind/STRUCTURAL_RETURN.md",
+      "sha256": "46deb561b4ba6dfb4e5be7e6e94aa3f6bff347c8c776bbea92da338add028d5a",
+      "bytes": 2920
+    },
+    {
       "path": "rosalind/analysis/contracts.py",
       "sha256": "970ad49b978e1277c3534b49c134832d1e2b32ed2e244ff1ff24328d6258cc3e",
       "bytes": 19111
@@ -68,6 +73,11 @@
       "bytes": 3655
     },
     {
+      "path": "rosalind/analysis/retrieve_kras.py",
+      "sha256": "1d3ea6d8cfefa8332fc7c4a673560609d0568d4c58843ac656011290aee4ac2b",
+      "bytes": 1667
+    },
+    {
       "path": "rosalind/analysis/run.sh",
       "sha256": "6fd6db7084bf31e138ac89bad8f68c0c806a0dfca0230e2601a0a9737c7b836d",
       "bytes": 610
@@ -81,6 +91,11 @@
       "path": "rosalind/analysis/run_second_return.sh",
       "sha256": "eb129279ebff238430084139cf4e23a57ec483ba4140dd48cb792783064ea277",
       "bytes": 481
+    },
+    {
+      "path": "rosalind/analysis/run_structural_review.sh",
+      "sha256": "d416b34a0bee33bf71e6006a3c0a9d090a02be266b20fc51eac67f569a73160e",
+      "bytes": 360
     },
     {
       "path": "rosalind/analysis/search_hcc_evidence.py",
@@ -121,6 +136,306 @@
       "path": "rosalind/cohort-validation.json",
       "sha256": "18b8275d7f9e414bda6450e0fde11417f1205a94f1f8cd4ec388000b2628d066",
       "bytes": 2654
+    },
+    {
+      "path": "rosalind/comparison-review/README.md",
+      "sha256": "fedea86632663a7c5a1b2a75121f41eb03157c37ccf05c9fbb0af941ec0585ff",
+      "bytes": 9273
+    },
+    {
+      "path": "rosalind/comparison-review/build_fixtures.py",
+      "sha256": "5aad1b0d85bd138980b18a513ebabd7b4dac147278aca41a122a491e6797db4d",
+      "bytes": 4450
+    },
+    {
+      "path": "rosalind/comparison-review/check-engine.mjs",
+      "sha256": "5043afb9636d2f0dadd85e5bd546a555d88d1d6c9dd6b0aefbbb2d2996b6d527",
+      "bytes": 3906
+    },
+    {
+      "path": "rosalind/comparison-review/engine-provenance.json",
+      "sha256": "08b50140eac55be56bbaa0d120f2c81b5f9f785bf3b00f0791a9d56acdaaf5f7",
+      "bytes": 286
+    },
+    {
+      "path": "rosalind/comparison-review/engine-results.json",
+      "sha256": "4ca318d55f5854da8666af04a264621ba3075ad11ea7964618c8aa9a57ac8824",
+      "bytes": 90615
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/altloc-blank-preferred-mutant.pdb",
+      "sha256": "a489044f9fd9f55a174501c00da79f1fa84c516df64ee96c4f6fe29d1cc20b03",
+      "bytes": 562545
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/altloc-blank-preferred-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/declared-predicted-mutant.pdb",
+      "sha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "bytes": 562464
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/declared-predicted-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/different-bound-states-mutant.pdb",
+      "sha256": "8a1a4ff984f3a528bafaf65f9488c6780d8c0f6ff11617beb81e0768165041f8",
+      "bytes": 1145016
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/different-bound-states-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/different-chains-mutant.pdb",
+      "sha256": "b339d6ea228ffd024fa0498043e6cad9a7341c0103c14a3113aaf0ab1efa6ee7",
+      "bytes": 562464
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/different-chains-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/hhat-original-mutant.pdb",
+      "sha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "bytes": 562464
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/hhat-original-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/missing-hla-ca-mutant.pdb",
+      "sha256": "3fdb371b995454b26dd34e146ad5e6ed91b7d9fc5c45a6ccd17e3beba725e427",
+      "bytes": 562383
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/missing-hla-ca-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/missing-hla-residue-mutant.pdb",
+      "sha256": "c800dc4fae13c791dcf0d61ee366cefd751c6b8ee381cbb6cb7471741e127712",
+      "bytes": 562140
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/missing-hla-residue-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/missing-w6-cg-mutant.pdb",
+      "sha256": "8f39bda1421c9f26b6f40e5c2ba55ed7c5aaf71de315805a11e1a3129bb4e9b6",
+      "bytes": 562383
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/missing-w6-cg-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/missing-w6-sidechain-mutant.pdb",
+      "sha256": "508b30f1289b3f2af0fb6f1e29ead72fa2850fcb671094e793939d6297c7e3b5",
+      "bytes": 561654
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/missing-w6-sidechain-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/renumber-insertion-mutant.pdb",
+      "sha256": "b6363bed41d23185cda9356ad7a2abaa4e8c1bde80f3a1c7aa6331d54b0aa493",
+      "bytes": 562464
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/renumber-insertion-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/symmetric-phenyl-labels-mutant.pdb",
+      "sha256": "6762ae4ea3305be77fa9e13f1f49abcab3fef7be818f4b4579591332fc8288d6",
+      "bytes": 562140
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/symmetric-phenyl-labels-normal.pdb",
+      "sha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "bytes": 562464
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/zero-occupancy-mutant.pdb",
+      "sha256": "88179b90122527d615e96a5bec71300fa22c42f6699b0e9fb226c2a97c15f9c5",
+      "bytes": 562464
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures/zero-occupancy-normal.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "bytes": 559062
+    },
+    {
+      "path": "rosalind/comparison-review/fixtures.json",
+      "sha256": "194aa1dfcfe65fc1dbf842c1b5df11cd92a1ee8ca120aa4e9df9421cf69c965b",
+      "bytes": 1630439
+    },
+    {
+      "path": "rosalind/comparison-review/hhat-independent.json",
+      "sha256": "1539ca05d7ec804f10647de721dfae0c68a4f5afd56bcd450ef258687d7c598d",
+      "bytes": 121374
+    },
+    {
+      "path": "rosalind/comparison-review/independent.py",
+      "sha256": "f03cec2d127ab9c9bdc730695569d95c6a115a8f121501eea5c91315fb2fc936",
+      "bytes": 5398
+    },
+    {
+      "path": "rosalind/comparison-review/native-comparisons.json",
+      "sha256": "bb8ae0c0604dace0d87de55c7da446602f614bb21d5e27ebf2791e44e52fdbe7",
+      "bytes": 261356
+    },
+    {
+      "path": "rosalind/comparison-review/sources/structure-pair.mjs",
+      "sha256": "a078b9e28478b13a848ab890fc0a359482aacac3fc01534017d1bf9ead6ff5a6",
+      "bytes": 12360
+    },
+    {
+      "path": "rosalind/contrast-kras/README.md",
+      "sha256": "855a60db9c914d809ebf25127b7f65aa298a3bcbd71510bb30bbc4f4cf8b5806",
+      "bytes": 4443
+    },
+    {
+      "path": "rosalind/contrast-kras/assay-source-extracts.json",
+      "sha256": "ca2bbf39004e7164832b2e6840b7fae017b3924a528ddce0734ccd7cd1f108db",
+      "bytes": 5577
+    },
+    {
+      "path": "rosalind/contrast-kras/build_case.py",
+      "sha256": "09125c8c8d0eeba86de039ad669561d15940874095ec8030df8aaaf48fb9975d",
+      "bytes": 11171
+    },
+    {
+      "path": "rosalind/contrast-kras/case.json",
+      "sha256": "f29fd23cff1edf654d51f9278f21f0a2c6ab6fc9593612fb9ebd60d50d738a88",
+      "bytes": 7175
+    },
+    {
+      "path": "rosalind/contrast-kras/contacts.json",
+      "sha256": "8711596ed60d88e505c3380944c3dad66686ce7b750d732274988a1e7c88ad04",
+      "bytes": 1508
+    },
+    {
+      "path": "rosalind/contrast-kras/coverage.json",
+      "sha256": "9b36da03018bdde6699566bb391d33e025542054d5c91a0dc2130888fb18602d",
+      "bytes": 126964
+    },
+    {
+      "path": "rosalind/contrast-kras/independent-comparison.json",
+      "sha256": "171f764f4d77ea4e6018d9ccc3bd36dffff2bd0e1454c5f067c1639bfdfc2182",
+      "bytes": 263890
+    },
+    {
+      "path": "rosalind/contrast-kras/kras-native-contacts-2.png",
+      "sha256": "f69c696866cece30bde6cf9105286b361c1ea1b18c54e2966266a1f0c2ecd4f5",
+      "bytes": 229569
+    },
+    {
+      "path": "rosalind/contrast-kras/kras-native-contacts-2.png.render.json",
+      "sha256": "672eb9a2b805241d9ef337dda53739b5006e136430f33770d1c0d3bb21a164b9",
+      "bytes": 11095
+    },
+    {
+      "path": "rosalind/contrast-kras/kras-native-contacts.png",
+      "sha256": "d8f9f0746895c99d1755330c9f21950712e3f483ab98f8337e112b3f79152f01",
+      "bytes": 77970
+    },
+    {
+      "path": "rosalind/contrast-kras/kras-native-contacts.png.render.json",
+      "sha256": "51aa7afafa088d5d0ae861dfa9d5bd237f065f5e1c81d4a0401178bc5ad07b19",
+      "bytes": 11079
+    },
+    {
+      "path": "rosalind/contrast-kras/native-contacts.json",
+      "sha256": "504d5f7ab295f994f680c643f541db2811d0999f96a3595d09140bd71d56eb25",
+      "bytes": 6475
+    },
+    {
+      "path": "rosalind/contrast-kras/native-sequences.json",
+      "sha256": "06029ddb76086fcdb92c8086a99098d9eb2d86ce59da6d2dc15c78bf8b5e6cde",
+      "bytes": 2185
+    },
+    {
+      "path": "rosalind/contrast-kras/peptides.afa",
+      "sha256": "52a44aeff850d8c96285ad2de962744a98bb991955dbba7cf6176e168bb4d7b3",
+      "bytes": 159
+    },
+    {
+      "path": "rosalind/contrast-kras/retrieval.json",
+      "sha256": "49abd9c438c23a3ae29c2f8d15a35c8851535dcb736c72d04d2a775fe579d3b0",
+      "bytes": 2603
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/7OW3.entry.json",
+      "sha256": "23fe99a2070512b95ad4b94fbe9a867849b851c735c708b947c3d2b29be22480",
+      "bytes": 17028
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/7OW3.pdb",
+      "sha256": "839ef9de6d05d40e77ec7526b97928d98d07d69ff27d4949fea2af512a01ea62",
+      "bytes": 2122200
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/7OW4.entry.json",
+      "sha256": "a98dba433b026f15cfc1e485854b89ac28a605572fb05a7cdc07fc9cee368fbe",
+      "bytes": 17571
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/7OW4.pdb",
+      "sha256": "a6966f470b97330da71068c2d3aab9ecad113e9b4635c2863f57890c2a1a8d31",
+      "bytes": 2200122
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/7OW5.entry.json",
+      "sha256": "7441fcf3f176682715a8def475d929ff86396ec7cd29af49d2e7d0e79040be02",
+      "bytes": 16383
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/7OW5.pdb",
+      "sha256": "443ec1f07ef19667495274bb89517b6bfb990993bc1c7b4b375ccb1625b953bf",
+      "bytes": 1130598
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/7OW6.entry.json",
+      "sha256": "0b6bc5e837ca825351a97a8070737103443558cbf61a59caebbc7a58a760e962",
+      "bytes": 16337
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/7OW6.pdb",
+      "sha256": "816c5e5d259205873879977e7714b173bf70c358430daea6bd4f695ca0cefc2c",
+      "bytes": 1114560
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/poole-pmc.plugin.json",
+      "sha256": "8ce5beebd5771df3ca06df445395fe29f000e0d6b7596e60f351d8b94d04067a",
+      "bytes": 2158
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/poole-pmc.raw.json",
+      "sha256": "37901a8cd1d93848e5c6011b1eb032cfccd7a21ba6ca75f96c5909f307aa58a7",
+      "bytes": 1677
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/poole.xml",
+      "sha256": "410585b9c6b4aae3827e3cead2eb68b11cf95da9d54a65f664ce1048f49c3224",
+      "bytes": 159837
     },
     {
       "path": "rosalind/environment.json",

@@ -1,0 +1,83 @@
+{
+  "plugin": "Biological Sequence & Alignment Viewer",
+  "operations": [
+    {
+      "request": {
+        "sessionId": "590f26ed-a820-4fc9-b284-7e4586b3eafd",
+        "target": "sequence-range",
+        "record": "7OW5_C",
+        "start": 1,
+        "end": 10
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Returned sequence-range from the live Sequence viewer."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Returned sequence-range from the live Sequence viewer.",
+          "result": {
+            "coordinateSystem": {
+              "basis": 1,
+              "end": "inclusive",
+              "referenceRecordId": "7OW5_C",
+              "space": "sequence",
+              "strand": "+"
+            },
+            "result": {
+              "end": 10,
+              "length": 10,
+              "recordId": "7OW5_C",
+              "sequence": "VVVGAGGVGK",
+              "start": 1
+            },
+            "target": "sequence-range"
+          },
+          "schemaVersion": 1
+        }
+      }
+    },
+    {
+      "request": {
+        "sessionId": "590f26ed-a820-4fc9-b284-7e4586b3eafd",
+        "target": "sequence-range",
+        "record": "7OW6_C",
+        "start": 1,
+        "end": 10
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Returned sequence-range from the live Sequence viewer."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Returned sequence-range from the live Sequence viewer.",
+          "result": {
+            "coordinateSystem": {
+              "basis": 1,
+              "end": "inclusive",
+              "referenceRecordId": "7OW6_C",
+              "space": "sequence",
+              "strand": "+"
+            },
+            "result": {
+              "end": 10,
+              "length": 10,
+              "recordId": "7OW6_C",
+              "sequence": "VVVGADGVGK",
+              "start": 1
+            },
+            "target": "sequence-range"
+          },
+          "schemaVersion": 1
+        }
+      }
+    }
+  ]
+}

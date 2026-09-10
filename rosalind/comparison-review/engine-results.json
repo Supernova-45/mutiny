@@ -1,0 +1,4096 @@
+{
+  "engine": {
+    "sourcePath": "src/lib/structure-pair.mjs",
+    "sourceCommit": "106c8fe82516524306caa8ecce46f43805bb4cab",
+    "sha256": "a078b9e28478b13a848ab890fc0a359482aacac3fc01534017d1bf9ead6ff5a6",
+    "scope": "Unmodified snapshot for independent scientific verification; frontend not edited"
+  },
+  "results": [
+    {
+      "id": "hhat-original",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 1.027003233409552,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997791626120398,
+            0.014237459001646335,
+            -0.015457062073528835
+          ],
+          [
+            -0.014997325414291865,
+            0.9986260177200672,
+            -0.05021112389678029
+          ],
+          [
+            0.014720945526232992,
+            0.050431849993198004,
+            0.9986190075644852
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36958837471534695,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7397120884323418,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3189924295493919,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.332677794068957,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.4511115402229971,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9293461347002178,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1990421743685717,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.1171839200127707,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.1368254303877947,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.794123822846206,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0719515143392286,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.5026838599870325,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7302219952165818,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0603832168245233,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9668312678241182,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8323986791876763,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7775242676951261,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "different-chains",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 1.027003233409552,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997791626120398,
+            0.014237459001646335,
+            -0.015457062073528835
+          ],
+          [
+            -0.014997325414291865,
+            0.9986260177200672,
+            -0.05021112389678029
+          ],
+          [
+            0.014720945526232992,
+            0.050431849993198004,
+            0.9986190075644852
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36958837471534695,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7397120884323418,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3189924295493919,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.332677794068957,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.4511115402229971,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9293461347002178,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1990421743685717,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.1171839200127707,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.1368254303877947,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.794123822846206,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0719515143392286,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.5026838599870325,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7302219952165818,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0603832168245233,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9668312678241182,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8323986791876763,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7775242676951261,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "P",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "renumber-insertion",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 1.027003233409552,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997791626120398,
+            0.014237459001646335,
+            -0.015457062073528835
+          ],
+          [
+            -0.014997325414291865,
+            0.9986260177200672,
+            -0.05021112389678029
+          ],
+          [
+            0.014720945526232992,
+            0.050431849993198004,
+            0.9986190075644852
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36958837471534695,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7397120884323418,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 201,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3189924295493919,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.332677794068957,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 202,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.4511115402229971,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9293461347002178,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 203,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1990421743685717,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.1171839200127707,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 204,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.1368254303877947,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.794123822846206,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 205,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0719515143392286,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.5026838599870325,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 205,
+              "insertion": "A"
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7302219952165818,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0603832168245233,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 207,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9668312678241182,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 208,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8323986791876763,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7775242676951261,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 209,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "missing-hla-residue",
+      "status": "rejected",
+      "reason": "This first version requires identical observed HLA sequences. Resolve missing residues or HLA differences before comparing."
+    },
+    {
+      "id": "missing-hla-ca",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 274,
+        "rmsd": 1.028439210913047,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997790316820667,
+            0.014221384312561034,
+            -0.015480311272819082
+          ],
+          [
+            -0.01498230864103745,
+            0.9986266973187753,
+            -0.050202089896535636
+          ],
+          [
+            0.014745108906129555,
+            0.050422927626523166,
+            0.9986191016262992
+          ]
+        ],
+        "movingCenter": [
+          25.656295620437945,
+          -29.859923357664226,
+          32.51136496350365
+        ],
+        "referenceCenter": [
+          25.35397810218978,
+          -29.70026277372261,
+          31.26258759124089
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36926990891431616,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7381947551841084,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3180366452334913,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.3325499518633053,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.450884888393735,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9301348751026103,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1984418530399006,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.116631184011005,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.13648991919523,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.793263574269968,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0722782503067647,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.502031452979557,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7313462033048671,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0616185140796106,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9679015390389646,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8334222250601443,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7786274941990512,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "missing-w6-sidechain",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 1.027003233409552,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997791626120398,
+            0.014237459001646335,
+            -0.015457062073528835
+          ],
+          [
+            -0.014997325414291865,
+            0.9986260177200672,
+            -0.05021112389678029
+          ],
+          [
+            0.014720945526232992,
+            0.050431849993198004,
+            0.9986190075644852
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36958837471534695,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7397120884323418,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3189924295493919,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.332677794068957,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.4511115402229971,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9293461347002178,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1990421743685717,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.1171839200127707,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.1368254303877947,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.794123822846206,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0719515143392286,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7302219952165818,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0603832168245233,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9668312678241182,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8323986791876763,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7775242676951261,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "missing-w6-cg",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 1.027003233409552,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997791626120398,
+            0.014237459001646335,
+            -0.015457062073528835
+          ],
+          [
+            -0.014997325414291865,
+            0.9986260177200672,
+            -0.05021112389678029
+          ],
+          [
+            0.014720945526232992,
+            0.050431849993198004,
+            0.9986190075644852
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36958837471534695,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7397120884323418,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3189924295493919,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.332677794068957,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.4511115402229971,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9293461347002178,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1990421743685717,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.1171839200127707,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.1368254303877947,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.794123822846206,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0719515143392286,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.6157065063545444,
+            "atoms": [
+              "CB",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7302219952165818,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0603832168245233,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9668312678241182,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8323986791876763,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7775242676951261,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "different-bound-states",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 0.7499955120353184,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.8468921987692999,
+            0.15124811909442748,
+            0.5098015399487319
+          ],
+          [
+            0.3738817545372326,
+            -0.8510858408733681,
+            -0.3685991387524286
+          ],
+          [
+            0.3781349458696738,
+            0.5027692293043295,
+            -0.7773268712561461
+          ]
+        ],
+        "movingCenter": [
+          -64.76671999999999,
+          23.739374545454535,
+          42.679570909090884
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.35003541533852756,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7716391469017796,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.47078819937094696,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.21051194048132127,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.27417105070807596,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.4615332396519881,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.5928319913158965,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.5953591705928296,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 0.5389201908585829,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.5699273105936902,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.8861336594238558,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 2.7900221682803217,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.9553735425745178,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.8593146144787446,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.8950057189310701,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.597526440079318,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.5505688603337449,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "declared-predicted",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 1.027003233409552,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997791626120398,
+            0.014237459001646335,
+            -0.015457062073528835
+          ],
+          [
+            -0.014997325414291865,
+            0.9986260177200672,
+            -0.05021112389678029
+          ],
+          [
+            0.014720945526232992,
+            0.050431849993198004,
+            0.9986190075644852
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36958837471534695,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7397120884323418,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3189924295493919,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.332677794068957,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.4511115402229971,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9293461347002178,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1990421743685717,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.1171839200127707,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.1368254303877947,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.794123822846206,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0719515143392286,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.5026838599870325,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7302219952165818,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0603832168245233,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9668312678241182,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8323986791876763,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7775242676951261,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "altloc-blank-preferred",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 1.027003233409552,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997791626120398,
+            0.014237459001646335,
+            -0.015457062073528835
+          ],
+          [
+            -0.014997325414291865,
+            0.9986260177200672,
+            -0.05021112389678029
+          ],
+          [
+            0.014720945526232992,
+            0.050431849993198004,
+            0.9986190075644852
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36958837471534695,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7397120884323418,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3189924295493919,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.332677794068957,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.4511115402229971,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9293461347002178,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1990421743685717,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.1171839200127707,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.1368254303877947,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.794123822846206,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0719515143392286,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.5026838599870325,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7302219952165818,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0603832168245233,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9668312678241182,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8323986791876763,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7775242676951261,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "zero-occupancy",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 1.027003233409552,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            0.9997791626120398,
+            0.014237459001646335,
+            -0.015457062073528835
+          ],
+          [
+            -0.014997325414291865,
+            0.9986260177200672,
+            -0.05021112389678029
+          ],
+          [
+            0.014720945526232992,
+            0.050431849993198004,
+            0.9986190075644852
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.379723636363632,
+          -29.70920363636362,
+          31.289887272727288
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "K",
+          "changed": false,
+          "backbone": {
+            "value": 0.36958837471534695,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.7397120884323418,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "CE",
+              "NZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0.3189924295493919,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.332677794068957,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0.4511115402229971,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.9293461347002178,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 1.1990421743685717,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.1171839200127707,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 2.1368254303877947,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.794123822846206,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 1.0719515143392286,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 3.5026838599870325,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.7302219952165818,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.0603832168245233,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "L",
+          "mutant": "F",
+          "changed": true,
+          "backbone": {
+            "value": 0.9668312678241182,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0.8323986791876763,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0.7775242676951261,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    },
+    {
+      "id": "symmetric-phenyl-labels",
+      "status": "accepted",
+      "alignment": {
+        "atomCount": 275,
+        "rmsd": 7.730576710426229e-16,
+        "method": "Whole assigned HLA chain; matched observed-sequence positions; Cα fit; proper Horn rotation",
+        "rotation": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "movingCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ],
+        "referenceCenter": [
+          25.68300727272726,
+          -29.866967272727262,
+          32.540425454545456
+        ]
+      },
+      "differences": [
+        {
+          "position": 1,
+          "normal": "K",
+          "mutant": "A",
+          "changed": true,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": null,
+            "atoms": []
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 1,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "normal": "Q",
+          "mutant": "Q",
+          "changed": false,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD",
+              "OE1",
+              "NE2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 2,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 3,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 4,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "normal": "V",
+          "mutant": "V",
+          "changed": false,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0,
+            "atoms": [
+              "CB",
+              "CG1",
+              "CG2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 5,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 6,
+          "normal": "W",
+          "mutant": "W",
+          "changed": false,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "NE1",
+              "CE2",
+              "CE3",
+              "CZ2",
+              "CZ3",
+              "CH2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 6,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 7,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 7,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 8,
+          "normal": "F",
+          "mutant": "F",
+          "changed": false,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 1.8053745159542784,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2",
+              "CE1",
+              "CE2",
+              "CZ"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 8,
+              "insertion": ""
+            }
+          ]
+        },
+        {
+          "position": 9,
+          "normal": "L",
+          "mutant": "L",
+          "changed": false,
+          "backbone": {
+            "value": 0,
+            "atoms": [
+              "N",
+              "CA",
+              "C",
+              "O"
+            ]
+          },
+          "sidechain": {
+            "value": 0,
+            "atoms": [
+              "CB",
+              "CG",
+              "CD1",
+              "CD2"
+            ]
+          },
+          "sourceResidues": [
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            },
+            {
+              "chain": "C",
+              "number": 9,
+              "insertion": ""
+            }
+          ]
+        }
+      ],
+      "displayRoundingToleranceAngstrom": 0.002
+    }
+  ],
+  "additionalChecks": [
+    "Original KRAS pair correctly rejected",
+    "Proper rotation does not accept a mirror reflection as exact fit",
+    "Collinear fit rejected",
+    "All peptide source identities and rounded display distances verified"
+  ],
+  "limitations": [
+    "Numerical acceptance is not biological provenance verification.",
+    "Controlled fixtures are not experimental mutations or predictions."
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "path": "rosalind/contrast-kras/sources/7OW3.pdb",
+    "url": "https://files.rcsb.org/download/7OW3.pdb",
+    "sha256": "839ef9de6d05d40e77ec7526b97928d98d07d69ff27d4949fea2af512a01ea62",
+    "bytes": 2122200,
+    "retrievedAt": "2026-09-10T18:03:28.296121+00:00"
+  },
+  {
+    "path": "rosalind/contrast-kras/sources/7OW3.entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/7OW3",
+    "sha256": "23fe99a2070512b95ad4b94fbe9a867849b851c735c708b947c3d2b29be22480",
+    "bytes": 17028,
+    "retrievedAt": "2026-09-10T18:03:28.459022+00:00"
+  },
+  {
+    "path": "rosalind/contrast-kras/sources/7OW4.pdb",
+    "url": "https://files.rcsb.org/download/7OW4.pdb",
+    "sha256": "a6966f470b97330da71068c2d3aab9ecad113e9b4635c2863f57890c2a1a8d31",
+    "bytes": 2200122,
+    "retrievedAt": "2026-09-10T18:03:28.790173+00:00"
+  },
+  {
+    "path": "rosalind/contrast-kras/sources/7OW4.entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/7OW4",
+    "sha256": "a98dba433b026f15cfc1e485854b89ac28a605572fb05a7cdc07fc9cee368fbe",
+    "bytes": 17571,
+    "retrievedAt": "2026-09-10T18:03:28.906888+00:00"
+  },
+  {
+    "path": "rosalind/contrast-kras/sources/7OW5.pdb",
+    "url": "https://files.rcsb.org/download/7OW5.pdb",
+    "sha256": "443ec1f07ef19667495274bb89517b6bfb990993bc1c7b4b375ccb1625b953bf",
+    "bytes": 1130598,
+    "retrievedAt": "2026-09-10T18:03:29.295498+00:00"
+  },
+  {
+    "path": "rosalind/contrast-kras/sources/7OW5.entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/7OW5",
+    "sha256": "7441fcf3f176682715a8def475d929ff86396ec7cd29af49d2e7d0e79040be02",
+    "bytes": 16383,
+    "retrievedAt": "2026-09-10T18:03:29.398574+00:00"
+  },
+  {
+    "path": "rosalind/contrast-kras/sources/7OW6.pdb",
+    "url": "https://files.rcsb.org/download/7OW6.pdb",
+    "sha256": "816c5e5d259205873879977e7714b173bf70c358430daea6bd4f695ca0cefc2c",
+    "bytes": 1114560,
+    "retrievedAt": "2026-09-10T18:03:29.714265+00:00"
+  },
+  {
+    "path": "rosalind/contrast-kras/sources/7OW6.entry.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/7OW6",
+    "sha256": "0b6bc5e837ca825351a97a8070737103443558cbf61a59caebbc7a58a760e962",
+    "bytes": 16337,
+    "retrievedAt": "2026-09-10T18:03:29.835312+00:00"
+  },
+  {
+    "path": "rosalind/contrast-kras/sources/poole.xml",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC9464187.1/PMC9464187.1.xml?md5=3914e1b79284fcce830165ea32780198",
+    "sha256": "410585b9c6b4aae3827e3cead2eb68b11cf95da9d54a65f664ce1048f49c3224",
+    "bytes": 159837,
+    "retrievedAt": "2026-09-10T18:03:32.896777+00:00"
+  }
+]

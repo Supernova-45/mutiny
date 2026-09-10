@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "0.1.0",
+  "status": "scientific-curation-complete; not compatible with current strict generic importer",
+  "id": "kras-g12d-jdia41b1",
+  "title": "Similar structures, different receptor binding",
+  "cancerContext": {
+    "gene": "KRAS",
+    "proteinVariant": "p.Gly12Asp",
+    "scope": "Cancer-associated KRAS G12D neoantigen studied with an engineered soluble TCR; not a patient vaccine cohort or clinical efficacy result."
+  },
+  "identity": {
+    "normalPeptide": "VVVGAGGVGK",
+    "mutantPeptide": "VVVGADGVGK",
+    "mutationPeptidePosition": 6,
+    "hla": "HLA-A*11:01",
+    "receptor": "JDIa41b1, second-generation affinity-enhanced JDI TCR",
+    "receptorState": "bound in both deposits",
+    "normalPdb": "7OW5",
+    "mutantPdb": "7OW6",
+    "authorChains": {
+      "hla": "A",
+      "beta2Microglobulin": "B",
+      "peptide": "C",
+      "tcrAlpha": "D",
+      "tcrBeta": "E"
+    },
+    "constructVerification": "Declared SEQRES A/D/E identical between deposits; observed counts differ. Source receipts and full observed identity lists in coverage.json."
+  },
+  "question": "These bound peptide structures look similar. Which peptide binds this engineered receptor more tightly?",
+  "choices": [
+    {
+      "id": "normal",
+      "label": "Normal peptide",
+      "matchesMeasuredDirection": false
+    },
+    {
+      "id": "mutant",
+      "label": "G12D mutant peptide",
+      "matchesMeasuredDirection": true
+    },
+    {
+      "id": "similar",
+      "label": "Similar binding",
+      "matchesMeasuredDirection": false
+    },
+    {
+      "id": "cannot-infer",
+      "label": "The structural similarity alone cannot determine affinity",
+      "matchesMeasuredDirection": null,
+      "scientificallyValidCaution": true
+    }
+  ],
+  "reveal": {
+    "answerChoice": "mutant",
+    "text": "Published SPR shows over 4,000-fold selectivity for mutant pHLA. A small structural difference is compatible with a large affinity difference; static RMSD alone does not predict binding affinity.",
+    "source": "https://www.nature.com/articles/s41467-022-32811-1#Tab2"
+  },
+  "assays": [
+    {
+      "id": "engineered-tcr-binding",
+      "type": "surface-plasmon-resonance TCR-to-pHLA affinity",
+      "endpoint": "KD",
+      "unit": "M",
+      "normal": {
+        "value": 3e-06,
+        "standardDeviation": null,
+        "uncertaintyNote": "No uncertainty printed for this WT table cell."
+      },
+      "mutant": {
+        "value": 7.43e-10,
+        "standardDeviation": 1.8e-11
+      },
+      "n": 2,
+      "nMeaning": "Table 2 footnote \u00b1SD, n=2; methods state minimum two measurements.",
+      "reportedAffinityWindow": ">4000",
+      "derivedRatioFromRoundedValues": 4037.6850605652758,
+      "ratioCaveat": "Ratio of rounded reported values, not an independent measurement or confidence bound.",
+      "sourceLocation": "Table 2 JDIa41b1 row and Methods: Binding affinity and thermodynamic parameter measurement",
+      "sourceUrl": "https://www.nature.com/articles/s41467-022-32811-1#Tab2",
+      "methodScope": "Biotinylated pHLA on streptavidin-coated CM5; weak-affinity multicycle steady-state Biacore T200, strong-affinity single-cycle kinetic Biacore 8K. Method describes both regimes; per-cell instrument assignment is not explicitly tabulated. Baseline assay temperature not specified in extracted methods. Thermodynamic temperature series is a separate experiment.",
+      "notAssays": [
+        "peptide\u2013HLA KD",
+        "peptide\u2013HLA thermal stability",
+        "cell killing",
+        "clinical or vaccine efficacy"
+      ]
+    }
+  ],
+  "geometry": {
+    "evidenceType": "local static deposited-coordinate analysis, independently checked with native Molecular Structure Viewer",
+    "comparisonFile": "independent-comparison.json",
+    "wholeHla": {
+      "sharedCaCount": 275,
+      "rmsdAngstrom": 0.33725183991222696,
+      "excludedFromMutant": [
+        {
+          "chain": "A",
+          "authorNumber": 1,
+          "reason": "not observed in normal"
+        }
+      ]
+    },
+    "platform": {
+      "sharedCaCount": 179,
+      "rmsdAngstrom": 0.2761543023325009,
+      "declaredRegion": "HLA author positions 1\u2013180; observed shared 2\u2013180",
+      "purpose": "Sensitivity analysis isolating the peptide-binding platform; not a silently substituted whole-chain fit."
+    },
+    "mutationSidechainRmsd": null,
+    "mutationSidechainReason": "Gly and Asp do not have identical side-chain atom sets.",
+    "nativeContactsFile": "native-contacts.json",
+    "localContactsFile": "contacts.json",
+    "causalLimit": "Short contacts are geometric observations, not binding energies. Paper thermodynamics and simulations are separate source interpretations; no simulations performed here."
+  },
+  "quality": {
+    "normalResolutionAngstrom": 2.58,
+    "mutantResolutionAngstrom": 2.64,
+    "source": "RCSB entry metadata and paper Table 3",
+    "sourceDiscrepancy": "Results prose reverses the two bound-entry resolution values; use deposition metadata and Table 3, which agree.",
+    "normalRworkRfreePercent": [
+      20.6,
+      27.4
+    ],
+    "mutantRworkRfreePercent": [
+      21.1,
+      26.8
+    ],
+    "peptideMeanBfactorAngstromSquared": [
+      78.11,
+      78.89
+    ],
+    "metricsSource": "Table 3; these are global/refinement averages, not side-chain certainty.",
+    "coverageFile": "coverage.json",
+    "boundPeptideExpectedHeavyAtomCoverage": "Complete for all ten residues under declared parser policy. Blank altloc and occupancy 1 throughout retained peptide atoms.",
+    "mapsInspected": false,
+    "freeStates": "7OW3 copies C/L have all ten modeled residues, F lacks 5\u20137 and I lacks 4\u20137; every 7OW4 peptide copy lacks 5\u20136. Do not fill or display an invented complete mutant free pose."
+  },
+  "displayRequirements": [
+    "Keep original deposits unchanged and retain hashes.",
+    "Current generic importer must reject observed HLA mismatch; explicit versioned common-reference rule required.",
+    "Generic display omits receptor chains; receptor contacts require a curated full-complex integration.",
+    "Do not compare free and bound states as mutation-only effects.",
+    "Keep native renders distinct from experimental density images."
+  ],
+  "sources": {
+    "paper": "https://www.nature.com/articles/s41467-022-32811-1",
+    "paperXml": "sources/poole.xml",
+    "retrievalManifest": "retrieval.json",
+    "primaryAssayExtracts": "assay-source-extracts.json"
+  },
+  "redistribution": {
+    "pdbCoordinates": {
+      "license": "CC0-1.0",
+      "policy": "https://www.wwpdb.org/about/usage-policies",
+      "attribution": "Poole et al.; wwPDB and PDB entries 7OW3, 7OW4, 7OW5, 7OW6"
+    },
+    "paperXmlAndExtracts": {
+      "license": "CC-BY-4.0",
+      "attribution": "Poole et al., Nature Communications 13, 5333 (2022), DOI 10.1038/s41467-022-32811-1. Extracted and reformatted; numerical analyses are new."
+    },
+    "nativeRender": {
+      "kind": "new Molecular Structure Viewer render of public coordinates, not a paper figure or density map",
+      "attribution": "Coordinates: Poole et al., PDB 7OW5/7OW6; rendered with Molecular Structure Viewer."
+    }
+  }
+}

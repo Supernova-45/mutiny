@@ -1,0 +1,220 @@
+{
+  "plugin": "Molecular Structure Viewer",
+  "sessionId": "8a2a3761-fb43-41fd-b7a5-7db6b115135a",
+  "operations": [
+    {
+      "operation": "structure.measure",
+      "request": {
+        "kind": "distance",
+        "targets": [
+          {
+            "kind": "residue",
+            "objectId": "kras_mutant",
+            "chain": "C",
+            "residue": 6
+          },
+          {
+            "kind": "residue",
+            "objectId": "kras_mutant",
+            "chain": "A",
+            "residue": 70
+          }
+        ]
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "distance = 3.024 Å."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "distance = 3.024 Å.",
+          "state": {
+            "appliedRevision": 17,
+            "measurement": {
+              "atomIds": [
+                "kras_mutant|ASM-1|3109",
+                "kras_mutant|ASM-1|576"
+              ],
+              "kind": "distance",
+              "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+              "unit": "angstrom",
+              "value": 3.0239477451975136,
+              "resolvedTargets": [
+                {
+                  "atomId": "kras_mutant|ASM-1|3109",
+                  "sourceAtomCount": 8
+                },
+                {
+                  "atomId": "kras_mutant|ASM-1|576",
+                  "sourceAtomCount": 9
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.measure",
+      "request": {
+        "kind": "distance",
+        "targets": [
+          {
+            "kind": "residue",
+            "objectId": "kras_mutant",
+            "chain": "C",
+            "residue": 6
+          },
+          {
+            "kind": "residue",
+            "objectId": "kras_mutant",
+            "chain": "A",
+            "residue": 114
+          }
+        ]
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "distance = 2.951 Å."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "distance = 2.951 Å.",
+          "state": {
+            "appliedRevision": 16,
+            "measurement": {
+              "atomIds": [
+                "kras_mutant|ASM-1|3116",
+                "kras_mutant|ASM-1|927"
+              ],
+              "kind": "distance",
+              "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+              "unit": "angstrom",
+              "value": 2.9513274496115467,
+              "resolvedTargets": [
+                {
+                  "atomId": "kras_mutant|ASM-1|3116",
+                  "sourceAtomCount": 8
+                },
+                {
+                  "atomId": "kras_mutant|ASM-1|927",
+                  "sourceAtomCount": 11
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.query",
+      "purpose": "Verify exact resolved atom identities",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Query matched 4 atoms and 4 atom rows."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Query matched 4 atoms and 4 atom rows.",
+          "state": {
+            "query": {
+              "matchedAtomCount": 4,
+              "nextCursor": null,
+              "queryHash": "7ff7ef03",
+              "revision": 16,
+              "rows": [
+                {
+                  "authAsymId": "C",
+                  "atomCount": 1,
+                  "atomName": "N",
+                  "chain": "C",
+                  "compId": "ASP",
+                  "element": "N",
+                  "entityId": "3",
+                  "id": "kras_mutant|ASM-1|3109",
+                  "insertionCode": "",
+                  "instanceId": "ASM-1",
+                  "labelAsymId": "C",
+                  "objectId": "kras_mutant",
+                  "occupancy": 1,
+                  "operatorName": "ASM_1",
+                  "residueNumber": 6,
+                  "unitId": 2
+                },
+                {
+                  "authAsymId": "A",
+                  "atomCount": 1,
+                  "atomName": "OE1",
+                  "chain": "A",
+                  "compId": "GLN",
+                  "element": "O",
+                  "entityId": "1",
+                  "id": "kras_mutant|ASM-1|576",
+                  "insertionCode": "",
+                  "instanceId": "ASM-1",
+                  "labelAsymId": "A",
+                  "objectId": "kras_mutant",
+                  "occupancy": 1,
+                  "operatorName": "ASM_1",
+                  "residueNumber": 70,
+                  "unitId": 0
+                },
+                {
+                  "authAsymId": "C",
+                  "atomCount": 1,
+                  "atomName": "OD2",
+                  "chain": "C",
+                  "compId": "ASP",
+                  "element": "O",
+                  "entityId": "3",
+                  "id": "kras_mutant|ASM-1|3116",
+                  "insertionCode": "",
+                  "instanceId": "ASM-1",
+                  "labelAsymId": "C",
+                  "objectId": "kras_mutant",
+                  "occupancy": 1,
+                  "operatorName": "ASM_1",
+                  "residueNumber": 6,
+                  "unitId": 2
+                },
+                {
+                  "authAsymId": "A",
+                  "atomCount": 1,
+                  "atomName": "NH2",
+                  "chain": "A",
+                  "compId": "ARG",
+                  "element": "N",
+                  "entityId": "1",
+                  "id": "kras_mutant|ASM-1|927",
+                  "insertionCode": "",
+                  "instanceId": "ASM-1",
+                  "labelAsymId": "A",
+                  "objectId": "kras_mutant",
+                  "occupancy": 1,
+                  "operatorName": "ASM_1",
+                  "residueNumber": 114,
+                  "unitId": 0
+                }
+              ],
+              "totalRowCount": 4,
+              "truncated": false
+            },
+            "sceneRevision": 16
+          }
+        }
+      }
+    }
+  ],
+  "redactions": [
+    "Opaque modelId keys removed; atom IDs and scientific identities retained."
+  ]
+}
