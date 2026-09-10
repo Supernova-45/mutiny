@@ -55,21 +55,16 @@ try {
       .locator(".molecule-canvas canvas")
       .first()
       .boundingBox();
-    if (stage === 0) {
-      await page.mouse.move(box.x + box.width * 0.5, box.y + box.height * 0.5);
-      await page.mouse.wheel(0, 150);
-      await page.waitForTimeout(250);
-    }
-    for (let i = 0; i < 18; i++) {
+    for (let i = 0; i < 9; i++) {
       const name = `${String(frames.length).padStart(3, "0")}.png`;
       await pair.screenshot({ path: `${root}/${name}` });
       frames.push({
         file: name,
         stage,
         title: stages[stage][1],
-        duration: i === 0 || i === 17 ? 650 : 240,
+        duration: i === 0 || i === 8 ? 600 : 340,
       });
-      const dx = i < 9 ? 2.5 : -2.5;
+      const dx = i < 4 ? 5 : -5;
       await page.mouse.move(box.x + box.width * 0.5, box.y + box.height * 0.5);
       await page.mouse.down();
       await page.mouse.move(

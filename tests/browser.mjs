@@ -37,11 +37,11 @@ try {
  await page.locator('nav button').filter({hasText:'Compare structures'}).click();
  await page.locator('.molecule-canvas canvas').first().waitFor({timeout:30000});
  await page.waitForFunction(()=>document.querySelectorAll('.viewer-loading').length===0);
- await step(3500);await screen('03-molecule');
+ await step(3500);await page.locator('.viewer-pair').screenshot({path:'outputs/screenshots/03-molecule.png'});
  assert.equal(await page.locator('.viewer-error').count(),0);
  await page.getByRole('button',{name:'302TIL receptor',exact:true}).click();
  await page.waitForFunction(()=>document.querySelectorAll('.viewer-loading').length===0);
- await step(2500);await screen('04-receptor');
+ await step(2500);await page.locator('.viewer-pair').screenshot({path:'outputs/screenshots/04-receptor.png'});
  await page.getByRole('button',{name:'Inspect peptide position 6, W',exact:true}).first().click();await step(1200);
  assert.match(await page.locator('.contact-list').first().innerText(),/TYR100/);
  // Real pointer-driven rotation, mirrored by the paired viewer.

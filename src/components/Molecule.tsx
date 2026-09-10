@@ -33,6 +33,15 @@ const color = {
   tcr: stage.receptor,
 };
 
+// Fit the biological feature first; these factors leave room for its immediate context.
+// Overview deliberately crops peripheral HLA, while close-ups preserve the W6/contact detail.
+const framing = {
+  peptide: 1.15,
+  receptorOverview: 1,
+  neighboringShape: 1.5,
+  contact: 1.1,
+};
+
 function Viewer({
   structure,
   surface,
@@ -298,12 +307,7 @@ function Viewer({
           v.setView(camera.current);
         else {
           if (initialView.current) v.setView(initialView.current, true);
-          v.zoomTo({ model: 0, chain: "C" });
-          v.zoom(0.66);
-          if (bound) {
-            v.rotate(62, "x");
-            v.zoom(0.7);
-          }
+          if (bound) v.rotate(62, "x");
           if (focus) {
             if (bound) {
               v.zoomTo({
@@ -313,12 +317,15 @@ function Viewer({
                   { chain: "D", resi: 100 },
                 ],
               });
-              v.zoom(1.1);
+              v.zoom(framing.contact);
             } else {
               v.zoomTo({ model: 0, chain: "C", resi: [6, 7, 8] });
-              v.zoom(1.5);
+              v.zoom(framing.neighboringShape);
             }
             v.rotate(20, "y");
+          } else {
+            v.zoomTo({ model: 0, chain: "C" });
+            v.zoom(bound ? framing.receptorOverview : framing.peptide);
           }
           if (restore) v.setView(restore);
         }

@@ -1,7 +1,7 @@
 {
   "description": "Actual app captures with paired camera rotation. Three discrete experimental views; no atom interpolation. Caption bands added from the frame manifest and bundled experimental evidence.",
-  "frames": 54,
-  "durationMs": 15420,
+  "frames": 27,
+  "durationMs": 10740,
   "sources": [
     {
       "path": "public/data/structures.json",
@@ -28,5 +28,14 @@
       "sha256": "9388b2c07fec4dc4dbde6328ae1e9f416415307a4312b9b42de3d7a9c9e1eb84"
     }
   ],
-  "paper": "https://doi.org/10.1038/s41589-020-0610-1"
+  "paper": "https://doi.org/10.1038/s41589-020-0610-1",
+  "encoded": {
+    "path": "outputs/screenshots/mutiny-hero.gif",
+    "width": 720,
+    "height": 478,
+    "frames": 27,
+    "durationMs": 10740,
+    "bytes": 1276054,
+    "sha256": "8269a4cd9a6404049d6b5a32253f46b9d4989bceb135a08c12fd7e0d41c60a6d"
+  }
 }
