@@ -6,6 +6,9 @@ let server,
   serverLog = "";
 const browser = await chromium.launch({
   headless: true,
+  // Full Chromium's current headless mode exercises the real browser graphics path.
+  // This also avoids the legacy shell's graphics-capture stalls observed in Linux CI.
+  channel: process.env.CHROME_EXECUTABLE ? undefined : "chromium",
   ...(process.env.CHROME_EXECUTABLE
     ? { executablePath: process.env.CHROME_EXECUTABLE }
     : {}),
@@ -25,6 +28,54 @@ const page = await context.newPage();
 page.setDefaultTimeout(45000);
 const errors = [];
 page.on("pageerror", (e) => errors.push(e.message));
+const exportTrace = [];
+await page.exposeFunction("__traceExport", (event) => {
+  exportTrace.push(event);
+  fs.mkdirSync("work/focus-check", { recursive: true });
+  fs.writeFileSync(
+    "work/focus-check/export-trace.json",
+    JSON.stringify(exportTrace, null, 2),
+  );
+});
+await page.addInitScript(() => {
+  const report = (event) =>
+    void window.__traceExport({ event, at: performance.now() });
+  document.addEventListener(
+    "click",
+    (e) => {
+      if (e.target.closest?.('[aria-label="Save superposition figure"]'))
+        report("export button clicked");
+    },
+    true,
+  );
+  const draw = CanvasRenderingContext2D.prototype.drawImage;
+  CanvasRenderingContext2D.prototype.drawImage = function (...args) {
+    const track =
+      this.canvas.width > 500 && args[0] instanceof HTMLCanvasElement;
+    if (track) report("canvas copy start");
+    const result = draw.apply(this, args);
+    if (track) report("canvas copy end");
+    return result;
+  };
+  const toBlob = HTMLCanvasElement.prototype.toBlob;
+  HTMLCanvasElement.prototype.toBlob = function (callback, ...args) {
+    report("PNG encode start");
+    return toBlob.call(
+      this,
+      (blob) => {
+        report("PNG encode end");
+        callback(blob);
+      },
+      ...args,
+    );
+  };
+  const click = HTMLAnchorElement.prototype.click;
+  HTMLAnchorElement.prototype.click = function () {
+    if (this.download) report("download anchor clicked");
+    return click.call(this);
+  };
+});
+
 const ready = () =>
   page.waitForFunction(
     () =>
@@ -246,7 +297,9 @@ try {
       2,
     ),
   );
-  await page.screenshot({ path: "work/focus-check/failure.png" });
+  await page
+    .screenshot({ path: "work/focus-check/failure.png", timeout: 10000 })
+    .catch(() => {});
   throw e;
 } finally {
   await browser.close();
