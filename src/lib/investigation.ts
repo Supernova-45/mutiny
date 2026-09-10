@@ -9,8 +9,14 @@ export function downloadFile(
   const link = document.createElement("a");
   link.href = url;
   link.download = name;
+  link.hidden = true;
+  // Keep the download in the active modal's DOM: the surrounding document is inert.
+  const dialogs = document.querySelectorAll("dialog[open]");
+  (dialogs.item(dialogs.length - 1) ?? document.body).appendChild(link);
   link.click();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  link.remove();
+  // Give the browser's download process time to consume the blob on slower hosts.
+  setTimeout(() => URL.revokeObjectURL(url), 30000);
 }
 export async function hashText(text: string) {
   const bytes = await crypto.subtle.digest(

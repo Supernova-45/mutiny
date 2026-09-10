@@ -18,6 +18,7 @@ const browser = await chromium.launch({
 const context = await browser.newContext({
   viewport: { width: 1440, height: 1000 },
   reducedMotion: "reduce",
+  acceptDownloads: true,
   permissions: ["clipboard-read", "clipboard-write"],
 });
 const page = await context.newPage();
@@ -229,8 +230,8 @@ try {
         pageErrors: errors,
         url: page.url(),
         dialog: await page
-          .getByRole("dialog")
-          .textContent()
+          .locator(".focus-dialog")
+          .textContent({ timeout: 1000 })
           .catch(() => null),
         stage: await page
           .locator(".focus-stage")
