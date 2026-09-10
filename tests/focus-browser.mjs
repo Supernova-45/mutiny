@@ -1,4 +1,4 @@
-import { chromium } from "@playwright/test";
+import { chromium, expect } from "@playwright/test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { spawn } from "node:child_process";
@@ -152,9 +152,14 @@ try {
     .click();
   await ready();
   await density();
-  const downloading = page.waitForEvent("download");
-  await page.getByRole("button", { name: "Save superposition figure" }).click();
-  const download = await downloading;
+  const exportButton = page.getByRole("button", {
+    name: "Save superposition figure",
+  });
+  await expect(exportButton).toBeEnabled();
+  const [download] = await Promise.all([
+    page.waitForEvent("download"),
+    exportButton.click(),
+  ]);
   await download.saveAs("work/focus-check/export.png");
   await page.keyboard.press("Escape");
   assert.equal(await page.getByRole("dialog").count(), 0);
@@ -216,6 +221,30 @@ try {
     "Verified HHAT/KRAS superposition, four density maps, source-bound links, exported figure, invalid-link recovery, and mobile layout.",
   );
 } catch (e) {
+  fs.writeFileSync(
+    "work/focus-check/failure.json",
+    JSON.stringify(
+      {
+        error: String(e),
+        pageErrors: errors,
+        url: page.url(),
+        dialog: await page
+          .getByRole("dialog")
+          .textContent()
+          .catch(() => null),
+        stage: await page
+          .locator(".focus-stage")
+          .evaluate((el) => ({
+            ready: el.dataset.ready,
+            density: el.dataset.density,
+            busy: el.getAttribute("aria-busy"),
+          }))
+          .catch(() => null),
+      },
+      null,
+      2,
+    ),
+  );
   await page.screenshot({ path: "work/focus-check/failure.png" });
   throw e;
 } finally {
