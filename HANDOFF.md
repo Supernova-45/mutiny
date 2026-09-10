@@ -2,6 +2,6 @@
 
 The independent structure-comparison review and KRAS case are complete and integrated. The original account has now added a single-scene 3D superposition, shareable curated views, and experimental HHAT density prepared directly from public PDBe maps with Gemmi.
 
-**Give the other account [the current handoff](outputs/ROSALIND_STRUCTURAL_COMPARISON.md).** The useful remaining task is an independent check of one unbound HHAT density pair around W6/P8, plus an optional genuine Workbench screenshot for the showcase. This review can strengthen the work; Workbench access no longer blocks the density feature.
+**Give the other account [the current handoff](outputs/ROSALIND_STRUCTURAL_COMPARISON.md).** First, return the [required Workbench screenshot package](outputs/ROSALIND_SHOWCASE_CAPTURES.md) so the video can show exactly how Rosalind contributed. Then independently check one unbound HHAT density pair around W6/P8 if native map loading is available.
 
-Do not repeat completed work, broaden the project or make a video. Return scientific review under `rosalind/density-review/` and report the pushed commit. This account handles the app, public-data processing, screenshots and later video with concise captions.
+Do not repeat completed analysis, broaden the project or make a video. Return captures under `rosalind/showcase-captures/`, scientific review under `rosalind/density-review/`, and report the pushed commit. This account handles app screenshots and the later video with concise captions. The final video waits for genuine Workbench captures and a check of their attribution; density review does not block the app.

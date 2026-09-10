@@ -2,6 +2,16 @@
 
 Owner: this account. Rosalind supplies scientific evidence, never video, captions, narration or player implementation.
 
+## Required Workbench evidence before the final video
+
+The user explicitly wants the film to show how Rosalind was used. The [capture brief](ROSALIND_SHOWCASE_CAPTURES.md) requests three genuine Workbench views: HHAT structural comparison, verified KRAS contact measurements, and peptide sequence inspection. Literature retrieval and a successful new density review are supporting captures when available. Existing native molecular PNGs are component renders, not screenshots of Workbench.
+
+App footage can be prepared now. Do not finalize the showcase film until the genuine Workbench captures have been received, visually inspected, and matched to their operation receipts. If capture permissions remain unavailable, obtain manual screenshots from the account owner; do not create a substitute UI.
+
+Make Rosalind part of the explanation: show the unchanged W6 in mutiny, briefly show the real Workbench scene used to inspect the structures, then return to the interactive comparison and measured binding result. Use the sequence/contact captures only where they explain the corresponding case; do not cut from KRAS evidence into an HHAT claim. A compact on-screen credit can name each plugin at the moment its actual contribution appears.
+
+Keep attribution exact: Molecular Structure Viewer inspected/measured structures; Biological Sequence & Alignment Viewer queried peptide identities; Life Sciences Literature retrieved primary-source metadata through plugin scripts. Local code prepared structures, extracted assay tables, calculated the app's metrics and processed PDBe density with Gemmi. Only credit independent native density inspection if a successful new receipt and capture return. None of these operations predicts vaccine benefit.
+
 ## Short loop first
 
 The README loop shows three discrete HHAT views: mutation, neighboring W6, receptor contact. It captures the actual browser viewer with a small synchronized camera rotation. The atom coordinates are never interpolated. Brief caption bands identify each feature; the final view includes the source-backed normal/mutant SPR values. The scientific source hashes are recorded in `outputs/hero-loop.provenance.json`.

@@ -4,7 +4,11 @@
 
 The app now adds **Superimpose in 3D** to HHAT and KRAS: normal/mutant switching in one HLA-aligned scene, a residue selector, source-captioned figure export, and shareable curated views. HHAT also has locally processed PDBe 2Fo-Fc density for all four experimental states. The original account handles the app, public-data analysis, rendering, deployment and the later video.
 
-## The useful remaining Rosalind task
+## First: capture the actual Workbench contribution
+
+**Screenshots are a required deliverable for the showcase video.** Follow [the capture brief](ROSALIND_SHOWCASE_CAPTURES.md): reopen the verified molecular and sequence scenes, capture genuine Workbench context, and link each image to its operation receipts. Existing native renders are useful but do not show the surrounding Workbench interface. Capture this package before spending time on the density loading issue.
+
+## Then: independent density review
 
 **Independently check one unbound HHAT map pair around W6/P8.** Start with 6UJQ and 6UJO. Read [the processing method](../docs/EXPERIMENTAL_DENSITY.md) and [the exact manifest](../public/density/manifest.json), plus `scripts/prepare_density.py`.
 
@@ -19,12 +23,8 @@ Check and return:
 
 Return a short `rosalind/density-review/README.md`, exact source URLs and hashes, operation receipts, and native images if supported. Clearly separate native plugin output from local calculations. Review the existing assets; do not replace them or claim this account's Gemmi processing was performed by Rosalind.
 
-## Optional showcase evidence
-
-One genuine Workbench screenshot showing the molecular analysis and the plugin name would help document the tool contribution. A native component render is useful too, but must be labeled as a component render rather than a Workbench UI screenshot. Do not manufacture plugin UI or imply operations executed when they did not.
-
 ## Keep the scope tight
 
 No new datasets, new cases, model training, candidate dashboards, receptor docking, automatic vaccine selection or generic importer changes. The question stays: **how can a cancer mutation change what a T-cell receptor recognizes, even beyond the mutated position?** The app supports structural investigation, not a vaccine-response prediction.
 
-Do not generate video, narration, captions or a storyboard. That remains with the original account after review. Work only in `rosalind/density-review/`, preserve earlier outputs, push the scientific return and report the commit SHA. Frontend and `public/` assets remain owned by the original account.
+Do not generate video, narration, captions or a storyboard. That remains with the original account after review. Work only in `rosalind/density-review/` and `rosalind/showcase-captures/`, preserve earlier outputs, push the return and report the commit SHA. Frontend and `public/` assets remain owned by the original account.
