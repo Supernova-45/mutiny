@@ -14,7 +14,8 @@
     "test:comparison-browser": "node tests/comparison-browser.mjs",
     "test:rendering-browser": "node tests/rendering-browser.mjs",
     "prepare:kras": "node scripts/prepare_kras.mjs",
-    "test:kras-browser": "node tests/kras-browser.mjs"
+    "test:kras-browser": "node tests/kras-browser.mjs",
+    "test:deployment": "node tests/deployment-browser.mjs"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.3.0",

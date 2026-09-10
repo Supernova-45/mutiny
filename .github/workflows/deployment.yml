@@ -1,0 +1,37 @@
+name: Verify deployed mutiny
+on:
+  deployment_status:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: production-parity
+  cancel-in-progress: true
+jobs:
+  production:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment.environment == 'Production' &&
+       github.event.deployment.creator.login == 'vercel[bot]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:deployment
+        env:
+          APP_URL: https://callback-psi-liard.vercel.app/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: production-parity
+          path: work/deployment-check/

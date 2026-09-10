@@ -12,3 +12,10 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:deployment
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: preview-parity-failure
+          path: work/deployment-check/
