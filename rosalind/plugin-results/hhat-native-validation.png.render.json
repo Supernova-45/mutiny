@@ -1,0 +1,287 @@
+{
+  "artifact": {
+    "byteLength": 572250,
+    "mediaType": "image/png",
+    "outputPath": "../../rosalind/plugin-results/hhat-native-validation.png",
+    "sha256": "90368f1a6ec172827769a72f7a44d77c95daefa1ca6a4d320b79d862e541e922"
+  },
+  "createdAt": "2026-09-10T07:45:03.516Z",
+  "provenance": {
+    "canonicalSpec": "{\"autoCrop\":false,\"cropPadding\":16,\"destination\":{\"base\":\"opened-source\",\"collisionPolicy\":\"versioned\",\"kind\":\"workspace\",\"relativePath\":\"../../rosalind/plugin-results/hhat-native-validation.png\"},\"format\":\"png\",\"height\":1000,\"kind\":\"image\",\"outputPath\":\"../../rosalind/plugin-results/hhat-native-validation.png\",\"overwrite\":false,\"scene\":{\"annotations\":[{\"anchor\":\"top_left\",\"bold\":false,\"color\":\"#FFFFFF\",\"font\":\"sans\",\"fontSize\":16,\"id\":\"w6\",\"italic\":false,\"kind\":\"selection\",\"opacity\":1,\"padding\":8,\"position\":{\"x\":0.04,\"y\":0.06},\"shadow\":true,\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"residue\",\"objectId\":\"primary\",\"residue\":6},\"kind\":\"expression\"},\"text\":\"W6 \u00b7 neighboring recognition surface\"},{\"anchor\":\"top_left\",\"bold\":false,\"color\":\"#FFFFFF\",\"font\":\"sans\",\"fontSize\":16,\"id\":\"f8\",\"italic\":false,\"kind\":\"selection\",\"opacity\":1,\"padding\":8,\"position\":{\"x\":0.04,\"y\":0.06},\"shadow\":true,\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"residue\",\"objectId\":\"primary\",\"residue\":8},\"kind\":\"expression\"},\"text\":\"F8 \u00b7 HHAT L75F\"}],\"antialiasing\":\"quality\",\"background\":\"#FFFFFF\",\"camera\":{\"clippingRadius\":18.68373320988818,\"fovDegrees\":45,\"mode\":\"perspective\",\"nearClip\":1,\"orientation\":\"current\",\"position\":[-58.336663,39.564581,82.255407],\"target\":[-58.336663,39.564581,33.432459],\"up\":[0,1,0]},\"clearExisting\":true,\"density\":[],\"layers\":[{\"color\":{\"kind\":\"uniform\",\"value\":\"#AFC0CD\"},\"labels\":false,\"opacity\":0.45,\"representation\":\"cartoon\",\"target\":{\"expression\":{\"kind\":\"all\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"element\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"primary\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"element\"},\"labels\":false,\"opacity\":1,\"representation\":\"ball_and_stick\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"residue\",\"objectId\":\"primary\",\"residue\":6},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#ED9A35\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"residue\",\"objectId\":\"primary\",\"residue\":8},\"kind\":\"expression\"},\"visible\":true}],\"lighting\":\"studio\",\"scientificAnnotations\":{\"guides\":[],\"quality\":[],\"symmetry\":[]}},\"transparent\":false,\"width\":1400}",
+    "density": {
+      "initial": [],
+      "sceneTransitions": []
+    },
+    "generatedAt": "2026-09-10T07:45:03.123Z",
+    "output": {
+      "autoCrop": false,
+      "crop": {
+        "applied": false,
+        "empty": false,
+        "height": 1000,
+        "padding": 16,
+        "width": 1400,
+        "x": 0,
+        "y": 0
+      },
+      "format": "png",
+      "height": 1000,
+      "sourceHeight": 1000,
+      "sourceWidth": 1400,
+      "transparent": false,
+      "width": 1400
+    },
+    "renderer": "Mol* 5.11.0",
+    "replay": {
+      "autoCrop": false,
+      "cropPadding": 16,
+      "destination": {
+        "base": "opened-source",
+        "collisionPolicy": "versioned",
+        "kind": "workspace",
+        "relativePath": "../../rosalind/plugin-results/hhat-native-validation.png"
+      },
+      "format": "png",
+      "height": 1000,
+      "kind": "image",
+      "outputPath": "../../rosalind/plugin-results/hhat-native-validation.png",
+      "overwrite": false,
+      "scene": {
+        "annotations": [
+          {
+            "anchor": "top_left",
+            "bold": false,
+            "color": "#FFFFFF",
+            "font": "sans",
+            "fontSize": 16,
+            "id": "w6",
+            "italic": false,
+            "kind": "selection",
+            "opacity": 1,
+            "padding": 8,
+            "position": {
+              "x": 0.04,
+              "y": 0.06
+            },
+            "shadow": true,
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "objectId": "primary",
+                "residue": 6
+              },
+              "kind": "expression"
+            },
+            "text": "W6 \u00b7 neighboring recognition surface"
+          },
+          {
+            "anchor": "top_left",
+            "bold": false,
+            "color": "#FFFFFF",
+            "font": "sans",
+            "fontSize": 16,
+            "id": "f8",
+            "italic": false,
+            "kind": "selection",
+            "opacity": 1,
+            "padding": 8,
+            "position": {
+              "x": 0.04,
+              "y": 0.06
+            },
+            "shadow": true,
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "objectId": "primary",
+                "residue": 8
+              },
+              "kind": "expression"
+            },
+            "text": "F8 \u00b7 HHAT L75F"
+          }
+        ],
+        "antialiasing": "quality",
+        "background": "#FFFFFF",
+        "camera": {
+          "clippingRadius": 18.68373320988818,
+          "fovDegrees": 45,
+          "mode": "perspective",
+          "nearClip": 1,
+          "orientation": "current",
+          "position": [
+            -58.336663,
+            39.564581,
+            82.255407
+          ],
+          "target": [
+            -58.336663,
+            39.564581,
+            33.432459
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "clearExisting": true,
+        "density": [],
+        "layers": [
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#AFC0CD"
+            },
+            "labels": false,
+            "opacity": 0.45,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "kind": "all"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "element"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "element"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "ball_and_stick",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "objectId": "primary",
+                "residue": 6
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#ED9A35"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "objectId": "primary",
+                "residue": 8
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          }
+        ],
+        "lighting": "studio",
+        "scientificAnnotations": {
+          "guides": [],
+          "quality": [],
+          "symmetry": []
+        }
+      },
+      "transparent": false,
+      "width": 1400
+    },
+    "schemaVersion": 1,
+    "source": {
+      "fileName": "6UK4.pdb",
+      "name": "6UK4.pdb",
+      "resourceUri": "[redacted local viewer resource URI]",
+      "sha256": "8a1a4ff984f3a528bafaf65f9488c6780d8c0f6ff11617beb81e0768165041f8"
+    },
+    "structureObjects": [
+      {
+        "construction": {
+          "assemblyId": "1",
+          "dynamicBonds": false,
+          "kind": "assembly",
+          "modelIndex": 0
+        },
+        "fileName": "6UK4.pdb",
+        "frameCount": 1,
+        "id": "primary",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": true,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": true
+      }
+    ],
+    "encodingDurationMs": 1312.0999999046326,
+    "jobId": "f7ecefe2-e278-45a9-8c16-044bd963fc31",
+    "workspacePublication": {
+      "destination": {
+        "base": "opened-source",
+        "relativePath": "../../rosalind/plugin-results/hhat-native-validation.png"
+      },
+      "artifact": {
+        "kind": "render",
+        "mediaType": "image/png"
+      },
+      "output": {
+        "workspacePath": "rosalind/plugin-results/hhat-native-validation.png"
+      },
+      "plugin": {
+        "name": "structure-viewer",
+        "version": "0.1.80"
+      },
+      "schemaVersion": 1,
+      "source": {
+        "sha256": "8a1a4ff984f3a528bafaf65f9488c6780d8c0f6ff11617beb81e0768165041f8",
+        "workspacePath": "data/raw/6UK4.pdb"
+      }
+    }
+  },
+  "renderer": "Mol* 5.11.0",
+  "schemaVersion": 1,
+  "publication": {
+    "publisher": "Codex",
+    "change": "Opaque local viewer resource URIs redacted; native image and numerical provenance unchanged",
+    "originalSidecarSha256": "2cb466fb3d900c8fd8c7bcb66552396af13644f16df23c1b080414b4733696ad"
+  }
+}

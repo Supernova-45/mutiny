@@ -1,0 +1,300 @@
+{
+  "publisher": "Codex retained native Molecular Structure Viewer response",
+  "scope": "Deposited 6UK4 assembly 1, mapped HLA/peptide residues; no new refinement or density sampling",
+  "result": {
+    "applied": true,
+    "message": "Read retained molecular quality metrics without changing the scene.",
+    "state": {
+      "qualityAssessment": {
+        "activeMetricId": null,
+        "displayClashes": false,
+        "ignoreIssues": [],
+        "objectId": "primary",
+        "provenance": {
+          "description": "wwPDB validation of the explicitly requested deposited public structure; not a new validation of edited or derived coordinates.",
+          "parser": "Mol* 5.11.0",
+          "retrievedAt": "2026-09-10T07:43:40.022Z",
+          "sha256": "7d006a115af66229f72c5a178dfc7dbfe285e5f05a8367f28af6318ae9f31ec8",
+          "sourceUrl": "https://files.rcsb.org/validation/view/6uk4_validation.xml"
+        },
+        "reason": null,
+        "source": {
+          "kind": "wwpdb",
+          "entryId": "6UK4"
+        },
+        "status": "available",
+        "totalResidueCount": 384,
+        "totalClashCount": 8,
+        "truncatedClashes": false,
+        "clashMetricId": "clashes",
+        "retainedClashCount": 8,
+        "metrics": [
+          {
+            "description": "Number of distinct geometry issue types reported by wwPDB for each mapped residue. Zero means a mapped report row without these issues, not proof of correctness.",
+            "domain": [
+              0,
+              3
+            ],
+            "id": "wwpdb:6UK4:1:geometry",
+            "kind": "geometry",
+            "label": "Geometry quality · model 1",
+            "totalValueCount": 384,
+            "truncated": false,
+            "unit": "count",
+            "retainedValueCount": 384
+          },
+          {
+            "description": "Reported real-space R Z-score for mapped polymer residues; lower values indicate better agreement with the experimental electron density.",
+            "domain": [
+              2,
+              0
+            ],
+            "id": "wwpdb:6UK4:1:rsrz",
+            "kind": "rsrz",
+            "label": "Density fit (RSRZ) · model 1",
+            "totalValueCount": 384,
+            "truncated": false,
+            "unit": "z-score",
+            "retainedValueCount": 384
+          },
+          {
+            "description": "Reported real-space correlation coefficient for mapped residues. This is the validation report metric, not atom-center density sampling.",
+            "domain": [
+              0.678,
+              1
+            ],
+            "id": "wwpdb:6UK4:1:rscc",
+            "kind": "rscc",
+            "label": "Density fit (RSCC) · model 1",
+            "totalValueCount": 384,
+            "truncated": false,
+            "unit": "score",
+            "retainedValueCount": 384
+          },
+          {
+            "description": "Reported NMR random coil index where a chemical-shift-derived value is present.",
+            "domain": [
+              0,
+              0.6
+            ],
+            "id": "wwpdb:6UK4:1:rci",
+            "kind": "rci",
+            "label": "Random coil index · model 1",
+            "totalValueCount": 0,
+            "truncated": false,
+            "unit": "score",
+            "retainedValueCount": 0
+          }
+        ],
+        "pairwiseMetrics": [],
+        "page": {
+          "metricId": "wwpdb:6UK4:1:rscc",
+          "nextOffset": null,
+          "offset": 370,
+          "retainedValueCount": 384,
+          "rows": [
+            {
+              "value": 0.924,
+              "residueIndex": 370,
+              "residue": {
+                "authAsymId": "B",
+                "authSeqId": 95,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "B",
+                "labelSeqId": 96,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.83,
+              "residueIndex": 371,
+              "residue": {
+                "authAsymId": "B",
+                "authSeqId": 96,
+                "compId": "ASP",
+                "insertionCode": "",
+                "labelAsymId": "B",
+                "labelSeqId": 97,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.824,
+              "residueIndex": 372,
+              "residue": {
+                "authAsymId": "B",
+                "authSeqId": 97,
+                "compId": "ARG",
+                "insertionCode": "",
+                "labelAsymId": "B",
+                "labelSeqId": 98,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.755,
+              "residueIndex": 373,
+              "residue": {
+                "authAsymId": "B",
+                "authSeqId": 98,
+                "compId": "ASP",
+                "insertionCode": "",
+                "labelAsymId": "B",
+                "labelSeqId": 99,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.823,
+              "residueIndex": 374,
+              "residue": {
+                "authAsymId": "B",
+                "authSeqId": 99,
+                "compId": "MET",
+                "insertionCode": "",
+                "labelAsymId": "B",
+                "labelSeqId": 100,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.969,
+              "residueIndex": 375,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 1,
+                "compId": "LYS",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 1,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.985,
+              "residueIndex": 376,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 2,
+                "compId": "GLN",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 2,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.957,
+              "residueIndex": 377,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 3,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 3,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.958,
+              "residueIndex": 378,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 4,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 4,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.952,
+              "residueIndex": 379,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 5,
+                "compId": "VAL",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 5,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.971,
+              "residueIndex": 380,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 6,
+                "compId": "TRP",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 6,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.929,
+              "residueIndex": 381,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 7,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 7,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.959,
+              "residueIndex": 382,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 8,
+                "compId": "PHE",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 8,
+                "modelNumber": 1
+              }
+            },
+            {
+              "value": 0.93,
+              "residueIndex": 383,
+              "residue": {
+                "authAsymId": "C",
+                "authSeqId": 9,
+                "compId": "LEU",
+                "insertionCode": "",
+                "labelAsymId": "C",
+                "labelSeqId": 9,
+                "modelNumber": 1
+              }
+            }
+          ],
+          "totalValueCount": 384,
+          "truncated": false
+        },
+        "retainedResidueCount": 384
+      },
+      "sceneRevision": 2
+    }
+  },
+  "densityDownload": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Workspace read access is unavailable because active workspace roots were not bound to this viewer session."
+      }
+    ],
+    "isError": true
+  },
+  "limitations": [
+    "Native density download failed: active workspace-read roots not bound to viewer session. No map loaded.",
+    "RSCC is the published residue-level validation metric, not a side-chain-only assessment or statistical certainty."
+  ]
+}

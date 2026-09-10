@@ -14,8 +14,8 @@
     },
     {
       "path": "rosalind/PLUGIN_EXECUTION.md",
-      "sha256": "637cffc630d0a333fb3a3db80e54095434b36dcb2464a1122d4cbb0acd0231f4",
-      "bytes": 9162
+      "sha256": "ad5cc517239e8eae5bcdcf3eef46fa3f9746cf2effa5be89c15465806be1dd70",
+      "bytes": 10363
     },
     {
       "path": "rosalind/PRODUCT_REVIEW.md",
@@ -183,6 +183,11 @@
       "bytes": 2499
     },
     {
+      "path": "rosalind/plugin-results/hhat-6uk4-native-validation.json",
+      "sha256": "19464eb27d412aa4ecd7d7249a048ebf64015c1694b291f6e8062838426c6a95",
+      "bytes": 9459
+    },
+    {
       "path": "rosalind/plugin-results/hhat-density-discovery.json",
       "sha256": "21216e95f7e07a64c3de19b7fbd83e65e4a79073d2f7dbdcbc3959a5e4dff853",
       "bytes": 6613
@@ -226,6 +231,16 @@
       "path": "rosalind/plugin-results/hhat-native-results.csv.provenance.json",
       "sha256": "2d20fefb8b5504982cbd092642f3ff695f28c6709a8ae91fc99938f22beb49f4",
       "bytes": 2073
+    },
+    {
+      "path": "rosalind/plugin-results/hhat-native-validation.png",
+      "sha256": "90368f1a6ec172827769a72f7a44d77c95daefa1ca6a4d320b79d862e541e922",
+      "bytes": 572250
+    },
+    {
+      "path": "rosalind/plugin-results/hhat-native-validation.png.render.json",
+      "sha256": "dfbc47ade77795e73127c1b263390ba65eeb3ac176bc659f95886794cb806509",
+      "bytes": 10104
     },
     {
       "path": "rosalind/plugin-results/hhat-native-verification.json",
