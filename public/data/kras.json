@@ -1,0 +1,3815 @@
+{
+  "id": "kras-g12d-jdia41b1",
+  "identity": {
+    "normalPeptide": "VVVGAGGVGK",
+    "mutantPeptide": "VVVGADGVGK",
+    "mutationPeptidePosition": 6,
+    "hla": "HLA-A*11:01",
+    "receptor": "JDIa41b1, second-generation affinity-enhanced JDI TCR",
+    "receptorState": "bound in both deposits",
+    "normalPdb": "7OW5",
+    "mutantPdb": "7OW6",
+    "authorChains": {
+      "hla": "A",
+      "beta2Microglobulin": "B",
+      "peptide": "C",
+      "tcrAlpha": "D",
+      "tcrBeta": "E"
+    },
+    "constructVerification": "Declared SEQRES A/D/E identical between deposits; observed counts differ. Source receipts and full observed identity lists in coverage.json."
+  },
+  "assay": {
+    "id": "engineered-tcr-binding",
+    "type": "surface-plasmon-resonance TCR-to-pHLA affinity",
+    "endpoint": "KD",
+    "unit": "M",
+    "normal": {
+      "value": 0.000003,
+      "standardDeviation": null,
+      "uncertaintyNote": "No uncertainty printed for this WT table cell."
+    },
+    "mutant": {
+      "value": 7.43e-10,
+      "standardDeviation": 1.8e-11
+    },
+    "n": 2,
+    "nMeaning": "Table 2 footnote ±SD, n=2; methods state minimum two measurements.",
+    "reportedAffinityWindow": ">4000",
+    "derivedRatioFromRoundedValues": 4037.6850605652758,
+    "ratioCaveat": "Ratio of rounded reported values, not an independent measurement or confidence bound.",
+    "sourceLocation": "Table 2 JDIa41b1 row and Methods: Binding affinity and thermodynamic parameter measurement",
+    "sourceUrl": "https://www.nature.com/articles/s41467-022-32811-1#Tab2",
+    "methodScope": "Biotinylated pHLA on streptavidin-coated CM5; weak-affinity multicycle steady-state Biacore T200, strong-affinity single-cycle kinetic Biacore 8K. Method describes both regimes; per-cell instrument assignment is not explicitly tabulated. Baseline assay temperature not specified in extracted methods. Thermodynamic temperature series is a separate experiment.",
+    "notAssays": [
+      "peptide–HLA KD",
+      "peptide–HLA thermal stability",
+      "cell killing",
+      "clinical or vaccine efficacy"
+    ]
+  },
+  "quality": {
+    "normalResolutionAngstrom": 2.58,
+    "mutantResolutionAngstrom": 2.64,
+    "source": "RCSB entry metadata and paper Table 3",
+    "sourceDiscrepancy": "Results prose reverses the two bound-entry resolution values; use deposition metadata and Table 3, which agree.",
+    "normalRworkRfreePercent": [
+      20.6,
+      27.4
+    ],
+    "mutantRworkRfreePercent": [
+      21.1,
+      26.8
+    ],
+    "peptideMeanBfactorAngstromSquared": [
+      78.11,
+      78.89
+    ],
+    "metricsSource": "Table 3; these are global/refinement averages, not side-chain certainty.",
+    "coverageFile": "coverage.json",
+    "boundPeptideExpectedHeavyAtomCoverage": "Complete for all ten residues under declared parser policy. Blank altloc and occupancy 1 throughout retained peptide atoms.",
+    "mapsInspected": false,
+    "freeStates": "7OW3 copies C/L have all ten modeled residues, F lacks 5–7 and I lacks 4–7; every 7OW4 peptide copy lacks 5–6. Do not fill or display an invented complete mutant free pose."
+  },
+  "sources": [
+    {
+      "path": "rosalind/contrast-kras/case.json",
+      "sha256": "f29fd23cff1edf654d51f9278f21f0a2c6ab6fc9593612fb9ebd60d50d738a88"
+    },
+    {
+      "path": "rosalind/contrast-kras/independent-comparison.json",
+      "sha256": "171f764f4d77ea4e6018d9ccc3bd36dffff2bd0e1454c5f067c1639bfdfc2182"
+    },
+    {
+      "path": "rosalind/contrast-kras/contacts.json",
+      "sha256": "8711596ed60d88e505c3380944c3dad66686ce7b750d732274988a1e7c88ad04"
+    },
+    {
+      "path": "rosalind/contrast-kras/coverage.json",
+      "sha256": "9b36da03018bdde6699566bb391d33e025542054d5c91a0dc2130888fb18602d"
+    },
+    {
+      "path": "rosalind/contrast-kras/native-contacts.json",
+      "sha256": "504d5f7ab295f994f680c643f541db2811d0999f96a3595d09140bd71d56eb25"
+    },
+    {
+      "path": "rosalind/contrast-kras/native-sequences.json",
+      "sha256": "06029ddb76086fcdb92c8086a99098d9eb2d86ce59da6d2dc15c78bf8b5e6cde"
+    },
+    {
+      "path": "rosalind/contrast-kras/retrieval.json",
+      "sha256": "49abd9c438c23a3ae29c2f8d15a35c8851535dcb736c72d04d2a775fe579d3b0"
+    },
+    {
+      "path": "rosalind/contrast-kras/sources/poole.xml",
+      "sha256": "410585b9c6b4aae3827e3cead2eb68b11cf95da9d54a65f664ce1048f49c3224"
+    }
+  ],
+  "structures": [
+    {
+      "id": "7OW5",
+      "state": "normal",
+      "peptide": "VVVGAGGVGK",
+      "path": "/structures/kras/7OW5.pdb",
+      "sourcePath": "rosalind/contrast-kras/sources/7OW5.pdb",
+      "sourceSha256": "443ec1f07ef19667495274bb89517b6bfb990993bc1c7b4b375ccb1625b953bf",
+      "alignedSha256": "d69dfea13eb35dd821212aa9c3cb01b84e457c21c8ce732792226aa48c66f8ba"
+    },
+    {
+      "id": "7OW6",
+      "state": "mutant",
+      "peptide": "VVVGADGVGK",
+      "path": "/structures/kras/7OW6.pdb",
+      "sourcePath": "rosalind/contrast-kras/sources/7OW6.pdb",
+      "sourceSha256": "816c5e5d259205873879977e7714b173bf70c358430daea6bd4f695ca0cefc2c",
+      "alignedSha256": "bc8e3d9ebc570f0ee853858508ba082c80011def61d3007359944f724212ee3e"
+    }
+  ],
+  "alignment": {
+    "policy": "curated-kras-shared-hla-v1",
+    "description": "Mutant fitted to normal on 275 shared HLA A Cα atoms, author positions 2–276. Identical SEQRES constructs and observed identities verified for these deposits only. Peptide never fitted.",
+    "rotation": [
+      [
+        0.9999504174482737,
+        0.008390772131511362,
+        -0.005362610190953084
+      ],
+      [
+        -0.008391651358808868,
+        0.999964779465905,
+        -0.00014147500169984595
+      ],
+      [
+        0.005361234232456447,
+        0.0001864691421039299,
+        0.9999856110948616
+      ]
+    ],
+    "movingCenter": [
+      -49.487687272727285,
+      0.7364581818181825,
+      -2.1005745454545455
+    ],
+    "referenceCenter": [
+      -50.139614545454556,
+      1.1777454545454564,
+      -1.9577272727272732
+    ],
+    "rmsd": 0.3372518399122258,
+    "atomCount": 275,
+    "matchedResidues": [
+      {
+        "normal": {
+          "chain": "A",
+          "number": 2,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 2,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 3,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 3,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 4,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 4,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 5,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 5,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 6,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 6,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 7,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 7,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 8,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 8,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 9,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 9,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 10,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 10,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 11,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 11,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 12,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 12,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 13,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 13,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 14,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 14,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 15,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 15,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 16,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 16,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 17,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 17,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 18,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 18,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 19,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 19,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 20,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 20,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 21,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 21,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 22,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 22,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 23,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 23,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 24,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 24,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 25,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 25,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 26,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 26,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 27,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 27,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 28,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 28,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 29,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 29,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 30,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 30,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 31,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 31,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 32,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 32,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 33,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 33,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 34,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 34,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 35,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 35,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 36,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 36,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 37,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 37,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 38,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 38,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 39,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 39,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 40,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 40,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 41,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 41,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 42,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 42,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 43,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 43,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 44,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 44,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 45,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 45,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 46,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 46,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 47,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 47,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 48,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 48,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 49,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 49,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 50,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 50,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 51,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 51,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 52,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 52,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 53,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 53,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 54,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 54,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 55,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 55,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 56,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 56,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 57,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 57,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 58,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 58,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 59,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 59,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 60,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 60,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 61,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 61,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 62,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 62,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 63,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 63,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 64,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 64,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 65,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 65,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 66,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 66,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 67,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 67,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 68,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 68,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 69,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 69,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 70,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 70,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 71,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 71,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 72,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 72,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 73,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 73,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 74,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 74,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 75,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 75,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 76,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 76,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 77,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 77,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 78,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 78,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 79,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 79,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 80,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 80,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 81,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 81,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 82,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 82,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 83,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 83,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 84,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 84,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 85,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 85,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 86,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 86,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 87,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 87,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 88,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 88,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 89,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 89,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 90,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 90,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 91,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 91,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 92,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 92,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 93,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 93,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 94,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 94,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 95,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 95,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 96,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 96,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 97,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 97,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 98,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 98,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 99,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 99,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 100,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 100,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 101,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 101,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 102,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 102,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 103,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 103,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 104,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 104,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 105,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 105,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 106,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 106,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 107,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 107,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 108,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 108,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 109,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 109,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 110,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 110,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 111,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 111,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 112,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 112,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 113,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 113,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 114,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 114,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 115,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 115,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 116,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 116,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 117,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 117,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 118,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 118,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 119,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 119,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 120,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 120,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 121,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 121,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 122,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 122,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 123,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 123,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 124,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 124,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 125,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 125,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 126,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 126,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 127,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 127,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 128,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 128,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 129,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 129,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 130,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 130,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 131,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 131,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 132,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 132,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 133,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 133,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 134,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 134,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 135,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 135,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 136,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 136,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 137,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 137,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 138,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 138,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 139,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 139,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 140,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 140,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 141,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 141,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 142,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 142,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 143,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 143,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 144,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 144,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 145,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 145,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 146,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 146,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 147,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 147,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 148,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 148,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 149,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 149,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 150,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 150,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 151,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 151,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 152,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 152,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 153,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 153,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 154,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 154,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 155,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 155,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 156,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 156,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 157,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 157,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 158,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 158,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 159,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 159,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 160,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 160,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 161,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 161,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 162,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 162,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 163,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 163,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 164,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 164,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 165,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 165,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 166,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 166,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 167,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 167,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 168,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 168,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 169,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 169,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 170,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 170,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 171,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 171,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 172,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 172,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 173,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 173,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 174,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 174,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 175,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 175,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 176,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 176,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 177,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 177,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 178,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 178,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 179,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 179,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 180,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 180,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 181,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 181,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 182,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 182,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 183,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 183,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 184,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 184,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 185,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 185,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 186,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 186,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 187,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 187,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 188,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 188,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 189,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 189,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 190,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 190,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 191,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 191,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 192,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 192,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 193,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 193,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 194,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 194,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 195,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 195,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 196,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 196,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 197,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 197,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 198,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 198,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 199,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 199,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 200,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 200,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 201,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 201,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 202,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 202,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 203,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 203,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 204,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 204,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 205,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 205,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 206,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 206,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 207,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 207,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 208,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 208,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 209,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 209,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 210,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 210,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 211,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 211,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 212,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 212,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 213,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 213,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 214,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 214,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 215,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 215,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 216,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 216,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 217,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 217,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 218,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 218,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 219,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 219,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 220,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 220,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 221,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 221,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 222,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 222,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 223,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 223,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 224,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 224,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 225,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 225,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 226,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 226,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 227,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 227,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 228,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 228,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 229,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 229,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 230,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 230,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 231,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 231,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 232,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 232,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 233,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 233,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 234,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 234,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 235,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 235,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 236,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 236,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 237,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 237,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 238,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 238,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 239,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 239,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 240,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 240,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 241,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 241,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 242,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 242,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 243,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 243,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 244,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 244,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 245,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 245,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 246,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 246,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 247,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 247,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 248,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 248,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 249,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 249,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 250,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 250,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 251,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 251,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 252,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 252,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 253,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 253,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 254,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 254,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 255,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 255,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 256,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 256,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 257,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 257,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 258,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 258,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 259,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 259,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 260,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 260,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 261,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 261,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 262,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 262,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 263,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 263,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 264,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 264,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 265,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 265,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 266,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 266,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 267,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 267,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 268,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 268,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 269,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 269,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 270,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 270,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 271,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 271,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 272,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 272,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 273,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 273,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 274,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 274,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 275,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 275,
+          "insertion": ""
+        }
+      },
+      {
+        "normal": {
+          "chain": "A",
+          "number": 276,
+          "insertion": ""
+        },
+        "mutant": {
+          "chain": "A",
+          "number": 276,
+          "insertion": ""
+        }
+      }
+    ],
+    "excluded": [
+      {
+        "state": "mutant",
+        "chain": "A",
+        "number": 1,
+        "reason": "Not observed in normal deposit"
+      }
+    ]
+  },
+  "differences": [
+    {
+      "position": 1,
+      "normal": "V",
+      "mutant": "V",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 1,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 1,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.2947774300429573,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 2,
+      "normal": "V",
+      "mutant": "V",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 2,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 2,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.1133779121116078,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 3,
+      "normal": "V",
+      "mutant": "V",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 3,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 3,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.15862194619215278,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 4,
+      "normal": "G",
+      "mutant": "G",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 4,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 4,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.16959367511845144,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 5,
+      "normal": "A",
+      "mutant": "A",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 5,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 5,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.3426457882312636,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 6,
+      "normal": "G",
+      "mutant": "D",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 6,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 6,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.6553190729774415,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 7,
+      "normal": "G",
+      "mutant": "G",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 7,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 7,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.663412228615395,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 8,
+      "normal": "V",
+      "mutant": "V",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 8,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 8,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.5900226307514789,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 9,
+      "normal": "G",
+      "mutant": "G",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 9,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 9,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.43116030769177893,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    },
+    {
+      "position": 10,
+      "normal": "K",
+      "mutant": "K",
+      "sourceResidues": [
+        {
+          "chain": "C",
+          "number": 10,
+          "insertion": ""
+        },
+        {
+          "chain": "C",
+          "number": 10,
+          "insertion": ""
+        }
+      ],
+      "backbone": {
+        "value": 0.2800840842151371,
+        "atoms": [
+          "N",
+          "CA",
+          "C",
+          "O"
+        ],
+        "missingNormal": [],
+        "missingMutant": []
+      }
+    }
+  ],
+  "contacts": [
+    {
+      "pdb": "7OW5",
+      "distanceAngstrom": 4.717539401001331,
+      "peptideAtom": {
+        "chain": "C",
+        "residue": 6,
+        "name": "N"
+      },
+      "hlaAtom": {
+        "chain": "A",
+        "residue": 70,
+        "name": "OE1"
+      },
+      "method": "Local closest heavy-atom Euclidean distance in original deposited frame; no fit needed for intra-object measurement."
+    },
+    {
+      "pdb": "7OW5",
+      "distanceAngstrom": 6.596538865192867,
+      "peptideAtom": {
+        "chain": "C",
+        "residue": 6,
+        "name": "N"
+      },
+      "hlaAtom": {
+        "chain": "A",
+        "residue": 114,
+        "name": "NH2"
+      },
+      "method": "Local closest heavy-atom Euclidean distance in original deposited frame; no fit needed for intra-object measurement."
+    },
+    {
+      "pdb": "7OW6",
+      "distanceAngstrom": 3.023948742951836,
+      "peptideAtom": {
+        "chain": "C",
+        "residue": 6,
+        "name": "N"
+      },
+      "hlaAtom": {
+        "chain": "A",
+        "residue": 70,
+        "name": "OE1"
+      },
+      "method": "Local closest heavy-atom Euclidean distance in original deposited frame; no fit needed for intra-object measurement."
+    },
+    {
+      "pdb": "7OW6",
+      "distanceAngstrom": 2.9513258037702337,
+      "peptideAtom": {
+        "chain": "C",
+        "residue": 6,
+        "name": "OD2"
+      },
+      "hlaAtom": {
+        "chain": "A",
+        "residue": 114,
+        "name": "NH2"
+      },
+      "method": "Local closest heavy-atom Euclidean distance in original deposited frame; no fit needed for intra-object measurement."
+    }
+  ],
+  "paper": "https://www.nature.com/articles/s41467-022-32811-1"
+}

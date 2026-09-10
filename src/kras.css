@@ -1,0 +1,211 @@
+.curated-cases {
+  display: flex;
+  gap: 28px;
+  margin: 24px 52px 0;
+  border-bottom: 1px solid var(--line);
+}
+.curated-cases button {
+  padding: 10px 0 14px;
+  margin-bottom: -1px;
+  border-bottom: 2px solid transparent;
+  font-size: 13px;
+  color: var(--muted);
+}
+.curated-cases button span {
+  font: 11px var(--mono);
+  margin-left: 6px;
+}
+.curated-cases button[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+.kras-page .molecular-intro {
+  padding-top: 28px;
+}
+.kras-page .prediction-options {
+  flex-wrap: wrap;
+}
+.kras-page .molecular-rail {
+  justify-content: space-between;
+}
+.kras-page .view-tools {
+  display: flex;
+  gap: 18px;
+}
+.kras-page .molecular-rail button[aria-pressed="true"] {
+  color: var(--accent);
+}
+.kras-differences {
+  padding: 8px 0 20px;
+  border-bottom: 1px solid var(--line);
+}
+.kras-differences > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.kras-differences h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.kras-differences > div > span,
+.kras-differences p {
+  color: var(--muted);
+  font-size: 11px;
+}
+.kras-bars {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  margin-top: 24px;
+}
+.kras-bars button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+}
+.kras-bars button[aria-pressed="true"] {
+  border-color: var(--accent);
+}
+.kras-bars button > strong {
+  font: 11px var(--mono);
+  color: var(--muted);
+}
+.kras-bars button > div {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(
+    to bottom,
+    transparent calc(50% - 1px),
+    var(--line) 50%,
+    transparent calc(50% + 1px)
+  );
+}
+.kras-bars i {
+  width: min(44px, 60%);
+  background: #7c9c99;
+  transform-origin: bottom;
+  animation: kras-bar-grow 0.6s ease-out both;
+}
+.kras-bars button:nth-child(6) i {
+  background: var(--accent);
+}
+.kras-bars button > span {
+  font: 12px var(--mono);
+}
+.kras-bars small {
+  display: block;
+  font-size: 9px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+.kras-differences p {
+  margin-top: 18px;
+}
+.kras-evidence {
+  margin: 28px 52px 40px;
+  max-width: 1000px;
+  font-size: 12px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.kras-evidence summary {
+  cursor: pointer;
+  color: var(--ink);
+}
+.kras-evidence p {
+  margin-top: 14px;
+}
+.kras-evidence a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.kras-evidence table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+.kras-evidence td,
+.kras-evidence th {
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.kras-evidence caption {
+  text-align: left;
+  margin-bottom: 8px;
+}
+.kras-page .expanded .kras-differences {
+  display: none;
+}
+@media (max-width: 800px) {
+  .curated-cases {
+    margin-inline: 24px;
+  }
+  .kras-evidence {
+    margin-inline: 24px;
+  }
+  .kras-page .prediction-options {
+    margin-left: 0;
+  }
+  .kras-page .prediction-strip {
+    gap: 16px;
+  }
+  .kras-page .mechanism-path button {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+@media (max-width: 520px) {
+  .curated-cases {
+    margin: 12px 20px 0;
+  }
+  .kras-evidence {
+    margin-inline: 20px;
+  }
+  .kras-page .prediction-options > button {
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+  .kras-page .prediction-options .reveal-experiment {
+    margin-left: 0;
+  }
+  .kras-page .mechanism-path strong {
+    font-size: 10px;
+  }
+  .kras-differences > div:first-child {
+    flex-direction: column;
+  }
+  .kras-bars {
+    gap: 2px;
+  }
+  .kras-bars button > strong {
+    font-size: 9px;
+  }
+  .kras-bars button > span {
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .kras-bars i {
+    animation: none;
+  }
+}
+
+@keyframes kras-bar-grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}

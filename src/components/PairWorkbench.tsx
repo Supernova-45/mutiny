@@ -190,7 +190,13 @@ function PairCanvas({
   );
 }
 
-export default function PairWorkbench({ onBack }: { onBack: () => void }) {
+export default function PairWorkbench({
+  onBack,
+  backLabel = "HHAT example",
+}: {
+  onBack: () => void;
+  backLabel?: string;
+}) {
   const [inputs, setInputs] = useState<(Input | null)[]>([null, null]),
     [pair, setPair] = useState<PairComparison | null>(null),
     [error, setError] = useState(""),
@@ -398,7 +404,7 @@ export default function PairWorkbench({ onBack }: { onBack: () => void }) {
       </section>
       <div className="pair-actions">
         <button className="text-button" onClick={onBack}>
-          <ArrowLeft size={14} /> HHAT example
+          <ArrowLeft size={14} /> {backLabel}
         </button>
         <div>
           <button

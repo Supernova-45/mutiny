@@ -17,6 +17,9 @@ import type { Structure, StructureData } from "../types";
 import BindingExperiment, { type HhatEvidence } from "./BindingExperiment";
 import { downloadFile, exportFigure, validView } from "../lib/investigation";
 import PairWorkbench from "./PairWorkbench";
+import CuratedCases from "./CuratedCases";
+import KrasComparison from "./KrasComparison";
+import type { KrasInvestigation } from "../lib/kras-investigation";
 import {
   molecularStyle as stage,
   styleViewer,
@@ -441,6 +444,20 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
     [restore, setRestore] = useState<number[] | null>(null);
   const investigationFile = useRef<HTMLInputElement>(null);
   const [ownPair, setOwnPair] = useState(false);
+  const [selectedCase, setSelectedCase] = useState<"hhat" | "kras">(() =>
+    new URLSearchParams(location.search).get("case") === "kras"
+      ? "kras"
+      : "hhat",
+  );
+  useEffect(() => {
+    const url = new URL(location.href);
+    if (selectedCase === "kras") url.searchParams.set("case", "kras");
+    else url.searchParams.delete("case");
+    history.replaceState(history.state, "", url);
+  }, [selectedCase]);
+  const [krasSession, setKrasSession] = useState<KrasInvestigation | null>(
+    null,
+  );
   const viewers = useRef<(mol.GLViewer | null)[]>([null, null]);
   useEffect(() => {
     fetch("/data/structures.json")
@@ -487,7 +504,27 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
       viewers.current[1].linkViewer(viewers.current[0]);
     }
   };
-  if (ownPair) return <PairWorkbench onBack={() => setOwnPair(false)} />;
+  if (ownPair)
+    return (
+      <PairWorkbench
+        onBack={() => setOwnPair(false)}
+        backLabel={selectedCase === "kras" ? "KRAS example" : "HHAT example"}
+      />
+    );
+  if (selectedCase === "kras")
+    return (
+      <KrasComparison
+        initialSession={krasSession}
+        onHhat={(session) => {
+          setKrasSession(session);
+          setSelectedCase("hhat");
+        }}
+        onOwnPair={(session) => {
+          setKrasSession(session);
+          setOwnPair(true);
+        }}
+      />
+    );
   if (error) return <main className="loading">{error}</main>;
   if (!data)
     return <main className="loading">Opening molecular evidence…</main>;
@@ -626,6 +663,18 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
   };
   return (
     <main className="molecule-page">
+      <CuratedCases
+        selected="hhat"
+        onSelect={(id) => {
+          if (id === "kras") {
+            setRestore(viewers.current[0]?.getView() ?? null);
+            setOrbit(false);
+            setExpanded(false);
+            viewers.current = [null, null];
+            setSelectedCase(id);
+          }
+        }}
+      />
       <section className="intro-bar molecular-intro">
         <div>
           <h1>What changes beyond a cancer mutation?</h1>

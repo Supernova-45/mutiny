@@ -51,3 +51,7 @@ Original mutiny code is MIT licensed. Third-party data, model weights and depend
 The short README loop uses real browser captures: `node scripts/capture_hero.mjs`, then `python scripts/make_hero.py` with Pillow 12.3.0. Set `APP_URL` and `CHROME_EXECUTABLE` as in the browser checks. Frames stay in ignored `work/hero-frames/`; the final GIF and scientific source-hash manifest are committed. The GIF moves the camera around three discrete experimental views. It is not a molecular trajectory or a recording of a Rosalind UI.
 
 `npm run test:rendering-browser` checks that camera transitions remain visible, reduced-motion settings are honored, rapidly changed selections settle on the correct experimental structures, and the new stages fit mobile.
+
+## Curated KRAS build
+
+Run `npm run prepare:kras` to regenerate `public/data/kras.json` and `public/structures/kras/` from the committed Rosalind return. The build verifies original retrieval hashes, constructs, the explicit HLA correspondence, independent alignment and contact distances. It does not modify the generic importer. `npm test` checks derived display geometry against the independently calculated metrics after coordinate rounding. `npm run test:kras-browser` checks both case identities, linked cameras, all KRAS scenes, experiment reveal, save/reopen and source mismatch rejection, exports, case switching and mobile rendering.

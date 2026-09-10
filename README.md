@@ -10,6 +10,10 @@
 
 **Bring your pair.** Open compatible PDBs, inspect neighboring residues in linked 3D, and compare backbone or side-chain differences. Save your view or export a figure. Files stay in your browser. Or start with the published HHAT case: inspect the structures, make a prediction, then reveal the binding experiment.
 
+**Two cancer mutations, two experiments.** HHAT reveals a neighboring residue’s change in pose. KRAS asks whether similar structures mean similar receptor binding—then reveals the measured difference for an engineered receptor. [Try KRAS →](https://callback-psi-liard.vercel.app/?case=kras)
+
+![KRAS normal and G12D mutant peptides, with measured local HLA contacts](outputs/screenshots/26-kras-contacts.png)
+
 ![Per-residue structural differences from locally supplied normal and mutant coordinates](outputs/screenshots/18-residue-differences.png)
 
 [Supported structures & file format](docs/STRUCTURE_COMPARISON.md) · [Example coordinates: normal](data/raw/6UJQ.pdb) / [mutant](data/raw/6UJO.pdb)
@@ -25,7 +29,7 @@ npm run dev
 
 No API keys or model-compute setup needed. The interactive viewer uses WebGL. Experimental structures and completed model scores are included.
 
-Built with evidence from **Molecular Structure Viewer** and **Life Sciences Literature** in the Rosalind environment. The reusable comparison engine runs locally. [Actual plugin contributions](rosalind/PLUGIN_EXECUTION.md) · [Next Rosalind work](outputs/ROSALIND_STRUCTURAL_COMPARISON.md)
+Built with **Molecular Structure Viewer**, **Biological Sequence & Alignment Viewer** and **Life Sciences Literature** in the Rosalind environment. The reusable comparison engine runs locally. [Latest scientific return](rosalind/STRUCTURAL_RETURN.md) · [Earlier plugin contributions](rosalind/PLUGIN_EXECUTION.md) · [Next Rosalind work](outputs/ROSALIND_STRUCTURAL_COMPARISON.md)
 
 Source tables and reference sequences are committed to preserve the exact bytes used in the analysis.
 

@@ -1,5 +1,7 @@
 # Rosalind handoff: one focused structural-comparison tool
 
+**Status, 2026-09-10:** [The structural return](../rosalind/STRUCTURAL_RETURN.md) delivered independent validation and the curated KRAS case. Both are reviewed; KRAS now has a dedicated frontend comparison using the explicit shared-HLA mapping. Generic uploaded-pair rules remain unchanged. Experimental density remains blocked by unavailable Workbench read roots. The tasks below retain the original scientific request; do not repeat completed work.
+
 Current product direction: **compare a normal and cancer-mutant peptide structure; inspect what changes beyond the mutation.** This supersedes the broad dashboard expansion in earlier handoffs. Keep existing scientific returns; prioritize the tasks below. These are documented requests for a later Rosalind session, not operations executed by this account.
 
 ## What the app now does

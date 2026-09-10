@@ -181,6 +181,24 @@ function Evidence({ data, onClose }: { data: Cohort; onClose: () => void }) {
           </a>
         </div>
         <div className="evidence-block">
+          <h3>A contrasting KRAS example</h3>
+          <p>
+            KRAS G12D, HLA-A*11:01, engineered receptor JDIa41b1. Both
+            structures are receptor-bound: normal 7OW5 and mutant 7OW6. A
+            reviewed mapping fits 275 shared HLA Cα atoms; the mutant-only HLA
+            residue 1 is excluded. Similar bound geometry accompanies over
+            4,000-fold measured mutant selectivity. This is receptor affinity,
+            not vaccine efficacy.
+          </p>
+          <a
+            href="https://www.nature.com/articles/s41467-022-32811-1"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Poole et al. · Nature Communications 2022 <ArrowUpRight size={14} />
+          </a>
+        </div>
+        <div className="evidence-block">
           <h3>Rosalind contribution</h3>
           <p>
             Molecular Structure Viewer 0.1.80 verified atom displacements and
@@ -189,7 +207,10 @@ function Evidence({ data, onClose }: { data: Cohort; onClose: () => void }) {
             seven published ligand measurements. The Recognition view
             incorporates those experiments and the returned geometry; the
             fixed-HLA ring RMSD is a local calculation. Experimental density
-            maps are not yet displayed.
+            maps are not yet displayed. The second return independently verified
+            HHAT/KRAS alignment and KRAS contacts with Molecular Structure
+            Viewer, peptide identities with Biological Sequence & Alignment
+            Viewer, and the KRAS paper with Life Sciences Literature.
           </p>
           <a
             href="https://github.com/Supernova-45/mutiny/blob/main/rosalind/PLUGIN_EXECUTION.md"
