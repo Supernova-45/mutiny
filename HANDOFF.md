@@ -1,11 +1,9 @@
 # Rosalind handoff
 
-**Next round:** send [outputs/ROSALIND_FOLLOWUP.md](outputs/ROSALIND_FOLLOWUP.md). The first scientific return is complete through `0f02bf9`; the original account is integrating it. The follow-up requests density assets, one real evidence round trip and a versioned identity-contract refinement.
+Use [the current structural-comparison handoff](outputs/ROSALIND_STRUCTURAL_COMPARISON.md). Mutiny now centers on comparing a normal and cancer-mutant peptide, with local PDB input, residue differences, personal investigations and figure export.
 
-Send [outputs/ROSALIND_HANDOFF.md](outputs/ROSALIND_HANDOFF.md) to the other account. It assigns a new structural mechanism analysis, experimental evidence extraction, and a retrospective response-capture dataset.
+The next scientific work is independent comparison validation, experimental density around W6/P8, and one additional complete cancer case. The document defines scope, expected files, checks and ownership. These are requests for a later Rosalind session; this account has not executed them.
 
-The other agent should push its scientific artifacts to GitHub and report the commit SHA. Video, narration and captions will be created afterward by the original agent in this account; they are not part of the handoff. [Video plan for that later work](outputs/DEMO_PLAN.md).
+Keep the accepted scientific artifacts. The older [follow-up](outputs/ROSALIND_FOLLOWUP.md) contains supporting detail for the density task; its broader candidate-evidence work is deferred. Earlier dashboard and application specifications are background, not the current work queue.
 
-The reusable research-tool direction is in [outputs/RESEARCH_TOOL_PLAN.md](outputs/RESEARCH_TOOL_PLAN.md); section 6 of the handoff assigns its scientific schemas and example validation.
-
-The detailed [application specification](outputs/RESEARCH_APP_SPEC.md) defines the complete user session, data contract, scientific edge cases, Rosalind exchange, owners and acceptance checks. The other agent validates the scientific contracts; the original agent implements the reusable app and later video.
+Push scientific returns to GitHub and report the commit SHA. The original account handles frontend integration and the later video with concise captions. Do not generate video or narration in the Rosalind handoff.

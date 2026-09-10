@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import * as mol from '3dmol';
-import { ArrowUpRight, BookOpen, CircleHelp, Maximize2, Minimize2, Pause, Play, RotateCcw } from 'lucide-react';
+import { ArrowUpRight, BookOpen, CircleHelp, Download, FileUp, ImageDown, Maximize2, Minimize2, Pause, Play, RotateCcw } from 'lucide-react';
 import type { Structure, StructureData } from '../types';
 import BindingExperiment, { type HhatEvidence } from './BindingExperiment';
+import {downloadFile,exportFigure,validView} from '../lib/investigation';
+import PairWorkbench from './PairWorkbench';
 
 const color={hla:'#a7b2bd',normal:'#496887',mutant:'#637dac',mutation:'#e27747',tcr:'#8d72a9'};
 
-function Viewer({structure,surface,residue,bound,onReady,onPick,resetKey,focus,ghost,evidence}:{structure:Structure;surface:boolean;residue:number;bound:boolean;onReady:(v:mol.GLViewer)=>void;onPick:(n:number)=>void;resetKey:number;focus:boolean;ghost:boolean;evidence:HhatEvidence|null}) {
+function Viewer({structure,surface,residue,bound,onReady,onPick,resetKey,focus,ghost,evidence,restore}:{structure:Structure;surface:boolean;residue:number;bound:boolean;onReady:(v:mol.GLViewer)=>void;onPick:(n:number)=>void;resetKey:number;focus:boolean;ghost:boolean;evidence:HhatEvidence|null;restore:number[]|null}) {
   const div=useRef<HTMLDivElement>(null),viewer=useRef<mol.GLViewer|null>(null),camera=useRef<unknown[]>(null),lastReset=useRef(resetKey),initialView=useRef<unknown[]>(null);
   const [error,setError]=useState(''),[loading,setLoading]=useState(true);
   const signature=`${structure.id}/${surface}/${residue}/${bound}/${resetKey}/${focus}/${ghost}`;
@@ -29,7 +31,7 @@ function Viewer({structure,surface,residue,bound,onReady,onPick,resetKey,focus,g
     setLoading(true);setError('');
     const load=(id:string)=>fetch(`/structures/${id}.pdb`).then(r=>{if(!r.ok)throw Error('Structure download failed');return r.text()});
     const ghostId=structure.state==='normal'?'6UK2':'6UK4';
-    Promise.all([load(structure.id),ghost&&!bound?load(ghostId):Promise.resolve(null)]).then(([text,ghostText])=>{
+    Promise.all([load(structure.id),ghost&&!bound?load(ghostId):Promise.resolve(null)]).then(async([text,ghostText])=>{
       if(cancelled)return;
       v.clear();v.addModel(text,'pdb');
       v.setStyle({},{});
@@ -53,11 +55,13 @@ function Viewer({structure,surface,residue,bound,onReady,onPick,resetKey,focus,g
           }
         }
       }
+      const surfaces:Promise<unknown>[]=[];
       if(surface){
-        v.addSurface(mol.SurfaceType.VDW,{opacity:.72,color:color.hla},{chain:'A',resi:Array.from({length:180},(_,i)=>i+1)});
-        v.addSurface(mol.SurfaceType.VDW,{opacity:.62,color:base},{chain:'C',resi:[1,2,3,4,5,6,7,9]});
-        v.addSurface(mol.SurfaceType.VDW,{opacity:.85,color:color.mutation},{chain:'C',resi:8});
+        surfaces.push(v.addSurface(mol.SurfaceType.VDW,{opacity:.72,color:color.hla},{chain:'A',resi:Array.from({length:180},(_,i)=>i+1)}));
+        surfaces.push(v.addSurface(mol.SurfaceType.VDW,{opacity:.62,color:base},{chain:'C',resi:[1,2,3,4,5,6,7,9]}));
+        surfaces.push(v.addSurface(mol.SurfaceType.VDW,{opacity:.85,color:color.mutation},{chain:'C',resi:8}));
       }
+      await Promise.all(surfaces);if(cancelled)return;
       v.setClickable({chain:'C'},true,(atom:mol.AtomSpec)=>{if(atom.resi)pick.current(atom.resi)});
       if(ghostText){
         const reference=v.addModel(ghostText.split('\n').filter(l=>l.startsWith('ATOM')&&l[21]==='C'&&Number(l.slice(22,26))===6).join('\n'),'pdb');
@@ -73,11 +77,12 @@ function Viewer({structure,surface,residue,bound,onReady,onPick,resetKey,focus,g
           else {v.zoomTo({model:0,chain:'C',resi:[6,7,8]});v.zoom(1.5)}
           v.rotate(20,'y');
         }
+        if(restore)v.setView(restore);
       }
       lastReset.current=resetKey;v.setSlab(-100,100);v.render();setRenderedSignature(signature);setLoading(false);
     }).catch(e=>{if(!cancelled){setError(e instanceof Error?e.message:String(e));setLoading(false)}});
     return()=>{cancelled=true};
-  },[structure.id,surface,residue,bound,resetKey,focus,ghost,evidence]);
+  },[structure.id,surface,residue,bound,resetKey,focus,ghost,evidence,restore]);
   return <div className="structure-stage" aria-busy={loading||renderedSignature!==signature} data-ready={!loading&&renderedSignature===signature&&!error}><div ref={div} className="molecule-canvas" aria-label={`Interactive ${structure.state} HHAT structure ${structure.id}`}/>{(loading||renderedSignature!==signature)&&!error&&<div className="viewer-loading">Loading {structure.id}…</div>}{error&&<div className="viewer-error">{error}<a href={`https://www.rcsb.org/structure/${structure.id}`} target="_blank" rel="noreferrer">Open experimental structure</a></div>}</div>;
 }
 
@@ -87,32 +92,63 @@ export default function Molecule({onEvidence}:{onEvidence:()=>void}) {
   const [orbit,setOrbit]=useState(false),[expanded,setExpanded]=useState(false);
   const [mechanism,setMechanism]=useState<'mutation'|'shape'|'contact'>('mutation');
   const [experiment,setExperiment]=useState('original'),[evidence,setEvidence]=useState<HhatEvidence|null>(null),[evidenceError,setEvidenceError]=useState('');
+  const [prediction,setPrediction]=useState<string|null>(null),[revealed,setRevealed]=useState(false),[note,setNote]=useState(''),[saveError,setSaveError]=useState(''),[restore,setRestore]=useState<number[]|null>(null);
+  const investigationFile=useRef<HTMLInputElement>(null);
+  const [ownPair,setOwnPair]=useState(false);
   const viewers=useRef<(mol.GLViewer|null)[]>([null,null]);
   useEffect(()=>{fetch('/data/structures.json').then(r=>{if(!r.ok)throw Error('Structure data unavailable');return r.json()}).then(setData).catch(e=>setError(e.message))},[]);
   useEffect(()=>{fetch('/data/hhat-evidence.json').then(r=>{if(!r.ok)throw Error('Experimental measurements unavailable');return r.json()}).then(setEvidence).catch(e=>setEvidenceError(e.message))},[]);
   useEffect(()=>{const v=viewers.current[0];if(v)v.spin(orbit?'vy':false,.3,true);return()=>{v?.spin(false)}},[orbit]);
   useEffect(()=>{if(!expanded)return;const prior=document.body.style.overflow;document.body.style.overflow='hidden';const escape=(e:KeyboardEvent)=>{if(e.key==='Escape')setExpanded(false)};document.addEventListener('keydown',escape);return()=>{document.body.style.overflow=prior;document.removeEventListener('keydown',escape)}},[expanded]);
   const register=(i:number)=>(v:mol.GLViewer)=>{viewers.current[i]=v;if(viewers.current[0]&&viewers.current[1]){viewers.current[0].linkViewer(viewers.current[1]);viewers.current[1].linkViewer(viewers.current[0]);}};
+  if(ownPair)return <PairWorkbench onBack={()=>setOwnPair(false)}/>;
   if(error)return <main className="loading">{error}</main>;
   if(!data)return <main className="loading">Opening molecular evidence…</main>;
   const structures=[data.structures.find(s=>s.state==='normal'&&s.bound===bound)!,data.structures.find(s=>s.state==='mutant'&&s.bound===bound)!];
-  const chooseMechanism=(step:'mutation'|'shape'|'contact')=>{setMechanism(step);setResidue(step==='mutation'?8:6);setBound(step==='contact');setSurface(step==='mutation');setOrbit(false);setResetKey(k=>k+1)};
+  const chooseMechanism=(step:'mutation'|'shape'|'contact')=>{setMechanism(step);setResidue(step==='mutation'?8:6);setBound(step==='contact');setSurface(step==='mutation');setOrbit(false);setRestore(null);setResetKey(k=>k+1)};
+  const sources=data.structures.map(s=>({id:s.id,sha256:s.alignedSha256}));
+  const save=()=>downloadFile(JSON.stringify({kind:'mutiny-hhat-investigation',version:1,sources,evidenceSources:evidence?.provenance.inputs??[],prediction,revealed,note,view:{mechanism,bound,surface,residue,experiment,camera:viewers.current[0]?.getView()??null}},null,2),'mutiny-hhat-investigation.json');
+  const reopen=async(file:File)=>{setSaveError('');try{
+    if(file.size>100000)throw Error('HHAT investigation exceeds 100 KB.');const saved=JSON.parse(await file.text()),v=saved.view;
+    if(saved.kind!=='mutiny-hhat-investigation'||saved.version!==1)throw Error('Open a saved HHAT investigation. For your own structures, choose Compare your pair.');
+    if(JSON.stringify(saved.sources)!==JSON.stringify(sources)||JSON.stringify(saved.evidenceSources)!==JSON.stringify(evidence?.provenance.inputs??[]))throw Error('The saved source versions differ from this build. Reconcile the evidence before reopening.');
+    if(!v||!['mutation','shape','contact'].includes(v.mechanism)||typeof v.bound!=='boolean'||typeof v.surface!=='boolean'||!Number.isInteger(v.residue)||v.residue<1||v.residue>9||!['original','analogue','alanine','position8'].includes(v.experiment)||!['normal','mutant','similar',null].includes(saved.prediction)||typeof saved.revealed!=='boolean'||typeof saved.note!=='string'||saved.note.length>2000||(v.camera!==null&&!validView(v.camera)))throw Error('Invalid investigation or molecular view.');
+    if(v.bound!==(v.mechanism==='contact'))throw Error('The saved structural state is inconsistent.');
+    setPrediction(saved.prediction);setRevealed(saved.revealed);setNote(saved.note);setMechanism(v.mechanism);setBound(v.bound);setSurface(v.surface);setResidue(v.residue);setExperiment(v.experiment);setRestore(v.camera);setOrbit(false);setResetKey(k=>k+1);
+  }catch(e){setSaveError((e as Error).message)}};
+  const figure=async()=>{setSaveError('');try{
+    if(document.querySelectorAll('.structure-stage[data-ready=true]').length!==2)throw Error('Wait for both structures to finish rendering.');
+    setOrbit(false);viewers.current.forEach(v=>v?.spin(false));
+    const ring=(id:string)=>evidence?.comparisons.find(c=>c.states[0]===id)?.rmsd.toFixed(2)??'unavailable';
+    const contact=(id:string)=>evidence?.contacts.find(c=>c.state===id)?.value.toFixed(2)??'unavailable';
+    await exportFigure(viewers.current.map(v=>v!.pngURI()),structures.map(s=>`${s.state==='normal'?'Normal':'Mutant'} HHAT · ${s.id}`),[
+      `HHAT L75F · HLA-A*02:06 · ${bound?'302TIL receptor-bound':'peptide–HLA, unbound'} · selected peptide position ${residue}`,
+      mechanism==='shape'?`Gray: measured receptor-bound W6 reference. HLA-fixed W6 ring RMSD: normal ${ring('6UJQ')} Å; mutant ${ring('6UJO')} Å.`:mechanism==='contact'?`W6 NE1 → Tyr100α ring centroid: normal ${contact('6UK2')} Å; mutant ${contact('6UK4')} Å. Static crystal geometry.`:'Orange: mutation at peptide position 8. Structures aligned on HLA platform Cα atoms.',
+      `Devlin et al., 2020 · doi:10.1038/s41589-020-0610-1${prediction?` · Your binding prediction: ${prediction}`:''}`
+    ],note,'mutiny-hhat-comparison.png');
+  }catch(e){setSaveError((e as Error).message)}};
   return <main className="molecule-page">
-    <section className="intro-bar molecular-intro"><div><h1>How a cancer mutation changes T-cell recognition</h1><p className="study-context">Ovarian cancer · HHAT L75F</p></div><a className="study-link" href="https://www.nature.com/articles/s41589-020-0610-1" target="_blank" rel="noreferrer">Devlin et al., 2020 <ArrowUpRight size={13}/></a></section>
+    <section className="intro-bar molecular-intro"><div><h1>What changes beyond a cancer mutation?</h1><p className="study-context">Ovarian cancer · HHAT L75F</p></div><a className="study-link" href="https://www.nature.com/articles/s41589-020-0610-1" target="_blank" rel="noreferrer">Devlin et al., 2020 <ArrowUpRight size={13}/></a></section>
+    <div className="pair-actions"><button className="project-action" onClick={()=>{setOrbit(false);setOwnPair(true)}}><FileUp size={15}/> Compare your pair</button><div><button className="project-action" onClick={()=>investigationFile.current?.click()}>Open investigation</button><button className="project-action" disabled={!evidence} onClick={save}><Download size={15}/> Save investigation</button><button className="project-action" onClick={figure}><ImageDown size={15}/> Save figure</button></div></div>
+    <input className="file-input" ref={investigationFile} type="file" accept=".json" aria-label="Open HHAT investigation" onChange={e=>{const f=e.target.files?.[0];e.target.value='';if(f)void reopen(f)}}/>
+    {saveError&&<p className="project-error" role="alert">{saveError}</p>}
+    <section className={`prediction-strip ${revealed?'revealed':''}`} aria-label="Your binding prediction">
+      {!revealed?<><div><h2>Which peptide binds the T-cell receptor more tightly?</h2><p>Make a prediction, then reveal the experiment.</p></div><div className="prediction-options">{(['normal','mutant','similar'] as const).map(value=><button key={value} className={prediction===value?'selected':''} aria-pressed={prediction===value} onClick={()=>setPrediction(value)}>{value==='normal'?'Normal':value==='mutant'?'Mutant':'Similar'}</button>)}<button className="reveal-experiment" disabled={!prediction||!evidence} onClick={()=>setRevealed(true)}>Reveal result</button></div><button className="skip-prediction" disabled={!evidence} onClick={()=>setRevealed(true)}>Skip to evidence</button></>:<><div><h2>The mutant bound more tightly.</h2><p>{prediction?`Your prediction: ${prediction==='similar'?'similar binding':prediction}. `:''}The measured structures help explain why.</p></div><div className="binding-reveal"><span>Normal <strong>{evidence?.experiments.find(r=>r.id==='normal')?.value} μM</strong></span><span>Mutant <strong>{evidence?.experiments.find(r=>r.id==='mutant')?.value} μM</strong></span><small>Kᴅ · lower means tighter binding</small></div></>}
+    </section>
     <div className={`molecular-workspace ${expanded?'expanded':''}`}>
       <div className="mechanism-path" aria-label="Inspect the recognition mechanism">{([{id:'mutation',title:'The mutation',detail:'L8 → F8'},{id:'shape',title:'The neighboring shape',detail:'W6'},{id:'contact',title:'The receptor contact',detail:'W6 · Tyr100α'}] as const).map((step,i)=><button key={step.id} className={mechanism===step.id?'selected':''} aria-pressed={mechanism===step.id} onClick={()=>chooseMechanism(step.id)}><span>{step.title}</span><strong>{step.detail}</strong>{i<2&&<span className="path-arrow" aria-hidden="true">→</span>}</button>)}</div>
       <aside className="molecular-rail">
         <div className="segmented"><button className={surface?'selected':''} onClick={()=>setSurface(true)}>Surface</button><button className={!surface?'selected':''} onClick={()=>setSurface(false)}>Atoms</button></div>
         <button className={`receptor-toggle ${bound?'selected':''}`} aria-pressed={bound} onClick={()=>chooseMechanism(bound?'shape':'contact')}><span className="toggle-track"><i/></span><span>302TIL receptor</span></button>
         <div className="molecule-legend"><span><i style={{background:color.hla}}/>HLA platform</span><span><i style={{background:color.normal}}/>Peptide</span><span><i style={{background:color.mutation}}/>Position 8</span>{mechanism!=='mutation'&&<span><i style={{background:'#497775'}}/>W6</span>}{bound&&<span><i style={{background:color.tcr}}/>T-cell receptor</span>}</div>
-        <div className="camera-controls"><button className="icon-button" title={orbit?'Pause rotation':'Rotate automatically'} aria-label={orbit?'Pause rotation':'Rotate automatically'} aria-pressed={orbit} onClick={()=>setOrbit(!orbit)}>{orbit?<Pause size={16}/>:<Play size={16}/>}</button><button className="icon-button" title="Reset cameras" aria-label="Reset cameras" onClick={()=>{setOrbit(false);setResetKey(k=>k+1)}}><RotateCcw size={16}/></button><button className="icon-button" title={expanded?'Exit expanded view':'Expand 3D'} aria-label={expanded?'Exit expanded view':'Expand 3D'} aria-pressed={expanded} onClick={()=>setExpanded(!expanded)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}</button></div>
+        <div className="camera-controls"><button className="icon-button" title={orbit?'Pause rotation':'Rotate automatically'} aria-label={orbit?'Pause rotation':'Rotate automatically'} aria-pressed={orbit} onClick={()=>setOrbit(!orbit)}>{orbit?<Pause size={16}/>:<Play size={16}/>}</button><button className="icon-button" title="Reset cameras" aria-label="Reset cameras" onClick={()=>{setOrbit(false);setRestore(null);setResetKey(k=>k+1)}}><RotateCcw size={16}/></button><button className="icon-button" title={expanded?'Exit expanded view':'Expand 3D'} aria-label={expanded?'Exit expanded view':'Expand 3D'} aria-pressed={expanded} onClick={()=>setExpanded(!expanded)}>{expanded?<Minimize2 size={16}/>:<Maximize2 size={16}/>}</button></div>
 
       </aside>
       <section className="structure-comparison">
 
         <div className="viewer-pair">{structures.map((s,i)=><article className={`structure-card ${s.state}`} key={s.state}>
           <div className="structure-title"><h3>{i===0?'Normal peptide':'Mutant peptide'}</h3><a href={`https://www.rcsb.org/structure/${s.id}`} target="_blank" rel="noreferrer">{s.id}<ArrowUpRight size={12}/></a></div>
-          <Viewer structure={s} surface={surface} residue={residue} bound={bound} resetKey={resetKey} onReady={register(i)} onPick={setResidue} focus={mechanism!=='mutation'} ghost={mechanism==='shape'} evidence={evidence}/>
+          <Viewer structure={s} surface={surface} residue={residue} bound={bound} resetKey={resetKey} onReady={register(i)} onPick={setResidue} focus={mechanism!=='mutation'} ghost={mechanism==='shape'} evidence={evidence} restore={restore}/>
           <div className="peptide-strip">{s.peptide.split('').map((aa,j)=><button key={j} aria-label={`Inspect peptide position ${j+1}, ${aa}`} aria-pressed={residue===j+1} onClick={()=>setResidue(j+1)} className={`${j===7?'mutation':''} ${residue===j+1?'active':''}`}><span>{aa}</span><small>{j+1}</small></button>)}</div>
           <div className="structure-caption"><span>{s.bound?'RECEPTOR BOUND':'PEPTIDE–HLA'}</span><span>HLA-A*02:06</span></div>
         </article>)}</div>
@@ -124,7 +160,8 @@ export default function Molecule({onEvidence}:{onEvidence:()=>void}) {
         </div>
       </section>
     </div>
-    {evidence&&<BindingExperiment data={evidence} group={experiment} onSelect={group=>{setExperiment(group);if(group==='original'||group==='position8')chooseMechanism('mutation');else chooseMechanism('contact')}}/>}
+    <label className="investigation-note hhat-note">Your finding<textarea rows={2} maxLength={2000} value={note} onChange={e=>setNote(e.target.value)} placeholder="What changed your mind—or needs another look?"/></label>
+    {evidence&&revealed&&<BindingExperiment data={evidence} group={experiment} onSelect={group=>{setExperiment(group);if(group==='original'||group==='position8')chooseMechanism('mutation');else chooseMechanism('contact')}}/>}
     {evidenceError&&<p className="evidence-load-error" role="status">{evidenceError}. <a href="https://github.com/Supernova-45/mutiny/blob/main/rosalind/evidence.json">View source records</a></p>}
     <footer className="page-footer"><span>DEVLIN ET AL. / NATURE CHEMICAL BIOLOGY 2020</span><span>X-ray structures</span><button onClick={onEvidence}>Evidence <BookOpen size={14}/></button></footer>
   </main>;

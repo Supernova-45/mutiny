@@ -6,6 +6,7 @@ export interface Ligand {
 }
 export interface HhatEvidence {
   sourceUrl:string; experiments:Ligand[];
+  provenance:{inputs:{path:string;sha256:string}[]};
   comparisons:{states:string[];rmsd:number;atoms:string[]}[];
   contacts:{state:string;start:number[];end:number[];value:number;endpoint:string;displaySha256:string}[];
 }

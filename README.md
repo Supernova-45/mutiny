@@ -1,54 +1,28 @@
 # mutiny
 
-**Which cancer mutations trigger T cells?**
+**Compare a normal and cancer-mutant peptide structure. See what changes beyond the mutation.**
 
-Cancer vaccines teach T cells what to recognize. Choosing those targets is the hard part.
+One changed amino acid can reshape a neighboring residue—and change how a T-cell receptor binds. Explore the published HHAT case, make a prediction, then reveal the experiment.
 
-Inspired by Radical Numerics’ [Omnii cancer-vaccine post](https://www.radicalnumerics.ai/blog/omnii-cancer-vaccines), mutiny lets you explore real vaccine outcomes, protein-language-model scores, and the molecular encounter in 3D.
+![Normal and mutant HHAT with the receptor-bound W6 reference in gray, exported directly from mutiny](outputs/screenshots/16-hhat-export.png)
 
-![Rotate normal and mutant peptide–HLA structures with their T-cell receptors, in linked views](outputs/screenshots/recognition-orbit.gif)
+**Bring your pair.** Open compatible PDBs, inspect neighboring residues in linked 3D, and compare backbone or side-chain differences. Save your view and notes, or export a figure. Files stay in your browser.
 
-**Normal and mutant peptides meet the same T-cell receptor.** Four experimental structures, with synchronized cameras and measurable contacts. This HHAT case is independent of the vaccine trial below.
+![Per-residue structural differences from locally supplied normal and mutant coordinates](outputs/screenshots/18-residue-differences.png)
 
-### Start with the targets
+[Supported structures & file format](docs/STRUCTURE_COMPARISON.md) · [Example coordinates: normal](data/raw/6UJQ.pdb) / [mutant](data/raw/6UJO.pdb)
 
-232 vaccine targets. 16 patients. Each mark is a target. Start with the labels hidden.
+Inspired by Radical Numerics’ [Omnii cancer-vaccine post](https://www.radicalnumerics.ai/blog/omnii-cancer-vaccines). The **Vaccine study** view also compares ESM-2 and predicted HLA binding against 232 administered targets from 16 patients. HHAT is a separate structural case; geometry alone does not predict vaccine effectiveness.
 
-![Pancreatic cancer vaccine targets before revealing measured responses](outputs/screenshots/01-atlas.png)
-
-### Reveal responses. Compare models.
-
-Copper marks detected T-cell responses. Switch between ESM-2 sequence preference, predicted HLA binding, and chance; follow the same targets as their order changes.
-
-![ESM-2 ordering with measured responses and a within-patient shuffle reference](outputs/screenshots/02-responses.png)
-
-### Test the contact
-
-Follow the mutation → neighboring W6 → receptor contact. Compare measured crystal poses, then explore what happened when researchers altered that contact residue.
-
-![W6 in normal and mutant peptides, with the measured receptor-bound pose overlaid in gray](outputs/screenshots/14-w6-detail.png)
-
-![Published experiments compare receptor binding for normal, mutant and altered HHAT peptides](outputs/screenshots/12-binding-experiment.png)
-
-The comparison is exploratory: sequence preference and binding scores are not immune-response probabilities. [Biology, sources & limitations →](docs/SCIENCE.md)
-
-### Bring your candidates
-
-Open a project, compare rankings, follow a candidate, and save your notes. Includes an independent 11-candidate HCC1395 example. Project files stay in your browser.
-
-![Two prediction methods rank the same candidates, with a saved review alongside](outputs/screenshots/08-research-review.png)
-
-The first reusable release opens **normalized project JSON**. [Example file](public/research/hcc1395.project.json) · [Format and scope](docs/PROJECTS.md)
-
-### Try it
+![Vaccine targets ordered by ESM-2, with measured T-cell responses revealed](outputs/screenshots/02-responses.png)
 
 ```sh
 npm ci
 npm run dev
 ```
 
-No API keys or GPU needed. Results and structures are included.
+No API keys or GPU needed to run the app. Experimental structures and completed model scores are included.
 
-[Development](docs/DEVELOPMENT.md) · [Deploy](docs/DEPLOYMENT.md) · [Next Rosalind tasks](outputs/ROSALIND_FOLLOWUP.md) · [MIT license](LICENSE)
+Built with evidence from **Molecular Structure Viewer** and **Life Sciences Literature** in the Rosalind environment. The reusable comparison engine runs locally. [Actual plugin contributions](rosalind/PLUGIN_EXECUTION.md) · [Next Rosalind work](outputs/ROSALIND_STRUCTURAL_COMPARISON.md)
 
-Built with results from **Molecular Structure Viewer** and **Life Sciences Literature** in the Rosalind environment. [Actual plugin contributions](rosalind/PLUGIN_EXECUTION.md).
+[Science](docs/SCIENCE.md) · [Development](docs/DEVELOPMENT.md) · [Deploy](docs/DEPLOYMENT.md) · [MIT license](LICENSE)

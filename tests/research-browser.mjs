@@ -11,7 +11,7 @@ const screen=async name=>page.screenshot({path:`outputs/screenshots/${name}.png`
 const loaded=()=>page.waitForFunction(()=>document.querySelectorAll('.molecule-canvas canvas').length===2&&document.querySelectorAll('.structure-stage[data-ready=true]').length===2);
 try{
  await page.goto(process.env.APP_URL??'http://127.0.0.1:5173',{waitUntil:'networkidle'});
- await page.getByRole('button',{name:'Your candidates',exact:true}).click();
+ await page.getByRole('button',{name:'Candidate review',exact:true}).click();
  await page.getByRole('button',{name:'Explore 11 published candidates',exact:true}).click();
  await page.locator('.rank-entry').first().waitFor();assert.equal(await page.locator('.rank-entry').count(),22);
  assert.match(await page.locator('.review-scope').innerText(),/No response outcomes/);
@@ -21,8 +21,8 @@ try{
  await page.getByRole('combobox',{name:'Review status'}).selectOption('investigate');
  await page.getByRole('slider').fill('3');
  // Navigating away and back must preserve unsaved review state.
- await page.getByRole('button',{name:'The vaccines',exact:true}).click();
- await page.getByRole('button',{name:'Your candidates',exact:true}).click();
+ await page.getByRole('button',{name:'Vaccine study',exact:true}).click();
+ await page.getByRole('button',{name:'Candidate review',exact:true}).click();
  assert.equal(await page.getByRole('textbox',{name:'Candidate notes'}).inputValue(),'Check the allele against the paper.');
  const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Save project',exact:true}).click();
  const download=await downloadPromise;const text=fs.readFileSync(await download.path(),'utf8'),saved=JSON.parse(text);
@@ -43,10 +43,11 @@ try{
  await page.setViewportSize({width:390,height:844});await page.waitForTimeout(300);await screen('09-mobile-research');
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
  await page.setViewportSize({width:1440,height:1080});
- await page.getByRole('button',{name:'Recognition',exact:true}).click();await loaded();
+ await page.getByRole('button',{name:'Compare structures',exact:true}).click();await loaded();
  await page.getByRole('button',{name:'The neighboring shape W6',exact:true}).click();await loaded();
  assert.match(await page.locator('.geometry-strip').innerText(),/2.99 Å/);assert.match(await page.locator('.geometry-strip').innerText(),/1.02 Å/);
  await page.waitForTimeout(600);await screen('10-w6-comparison');
+ await page.getByRole('button',{name:'Skip to evidence',exact:true}).click();
  await page.getByRole('button',{name:'W6 analogue',exact:true}).click();await loaded();
  assert.match(await page.locator('.experiment-result').innerText(),/weakens binding/);
  assert.equal(await page.locator('.binding-row.selected').count(),2);

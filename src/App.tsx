@@ -51,7 +51,7 @@ function Evidence({data,onClose}:{data:Cohort;onClose:()=>void}) {
 
 export default function App() {
   const [data,setData]=useState<Cohort|null>(null),[error,setError]=useState('');
-  const [scene,setScene]=useState<'atlas'|'molecule'|'research'>('atlas');
+  const [scene,setScene]=useState<'atlas'|'molecule'|'research'>('molecule');
   const [researchOpened,setResearchOpened]=useState(false);
   const [reveal,setReveal]=useState(false),[lens,setLens]=useState<Lens>('published'),[seed,setSeed]=useState(20260909);
   const [patient,setPatient]=useState(10),[targetId,setTargetId]=useState('10:1'),[evidence,setEvidence]=useState(false);
@@ -67,8 +67,8 @@ export default function App() {
   const selectPatient=(p:number)=>{setPatient(p);setTargetId(ordered.get(p)![0].id)};
   return <div className="app-shell">
     <header className="topbar">
-      <button className="wordmark" onClick={()=>setScene('atlas')} aria-label="mutiny home">mutiny</button>
-      <nav aria-label="Explore"><button className={scene==='atlas'?'active':''} onClick={()=>setScene('atlas')}>The vaccines</button><button className={scene==='molecule'?'active':''} onClick={()=>setScene('molecule')}>Recognition</button><button className={scene==='research'?'active':''} onClick={()=>{setResearchOpened(true);setScene('research')}}>Your candidates</button></nav>
+      <button className="wordmark" onClick={()=>setScene('molecule')} aria-label="mutiny home">mutiny</button>
+      <nav aria-label="Explore"><button className={scene==='molecule'?'active':''} onClick={()=>setScene('molecule')}>Compare structures</button><button className={scene==='atlas'?'active':''} onClick={()=>setScene('atlas')}>Vaccine study</button></nav>
       <div className="header-actions">{scene==='research'?<a className="icon-button" title="Project format and methods" aria-label="Project format and methods" href="https://github.com/Supernova-45/mutiny/blob/main/docs/PROJECTS.md" target="_blank" rel="noreferrer"><BookOpen size={18}/></a>:<button className="icon-button" title="Evidence and methods" aria-label="Evidence and methods" onClick={()=>setEvidence(true)}><BookOpen size={18}/></button>}<a className="icon-button github" href="https://github.com/Supernova-45/mutiny" target="_blank" rel="noreferrer" aria-label="GitHub repository"><Github size={18}/></a></div>
     </header>
     {scene==='atlas'?<main className="atlas-page">
@@ -108,6 +108,7 @@ export default function App() {
 
     </main>:scene==='molecule'?<Suspense fallback={<div className="loading"><Atom size={30}/><span>Loading experimental structures…</span></div>}><Molecule onEvidence={()=>setEvidence(true)}/></Suspense>:null}
     {researchOpened&&<div hidden={scene!=='research'}><Suspense fallback={<div className="loading">Opening project review…</div>}><Research/></Suspense></div>}
+    <div className="secondary-tools"><button onClick={()=>{setResearchOpened(true);setScene('research')}}>Candidate review</button><a href="https://www.radicalnumerics.ai/blog/omnii-cancer-vaccines" target="_blank" rel="noreferrer">Inspired by Omnii <ArrowUpRight size={11}/></a></div>
     {evidence&&<Evidence data={data} onClose={()=>setEvidence(false)}/>}
   </div>;
 }

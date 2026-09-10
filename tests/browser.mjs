@@ -15,6 +15,7 @@ const step=async(ms=700)=>page.waitForTimeout(record?Math.max(ms,1600):ms);
 const screen=async(name)=>page.screenshot({path:`outputs/screenshots/${name}.png`,fullPage:true});
 try {
  await page.goto(process.env.APP_URL??'http://127.0.0.1:5173',{waitUntil:'networkidle'});
+ await page.getByRole('button',{name:'Vaccine study',exact:true}).click();
  await page.locator('.target-mark').first().waitFor();
  assert.equal(await page.locator('.target-mark').count(),232);
  assert.equal(await page.locator('.target-mark.response').count(),0);
@@ -33,7 +34,7 @@ try {
  assert.ok(await page.getByRole('dialog').isVisible());
  await page.keyboard.press('Escape');
  assert.equal(await page.getByRole('dialog').count(),0);
- await page.locator('nav button').filter({hasText:'Recognition'}).click();
+ await page.locator('nav button').filter({hasText:'Compare structures'}).click();
  await page.locator('.molecule-canvas canvas').first().waitFor({timeout:30000});
  await page.waitForFunction(()=>document.querySelectorAll('.viewer-loading').length===0);
  await step(3500);await screen('03-molecule');
@@ -63,7 +64,7 @@ try {
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
  await page.setViewportSize({width:390,height:844});await step(1200);await screen('05-mobile-molecule');
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
- await page.locator('nav button').filter({hasText:'The vaccines'}).click();await step();await screen('06-mobile-atlas');
+ await page.locator('nav button').filter({hasText:'Vaccine study'}).click();await step();await screen('06-mobile-atlas');
  assert.equal(await page.locator('.target-mark').count(),232);
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
  assert.deepEqual(errors,[]);

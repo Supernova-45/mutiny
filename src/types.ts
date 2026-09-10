@@ -13,5 +13,5 @@ export interface Cohort {
   models: { esm?: { count: number; revision: string; window: number }; binding?: { count: number; version: string } };
 }
 export interface ResidueInfo { position: number; name: string; sasa: number; contacts: { residue: string; distance: number }[] }
-export interface Structure { id: string; state: string; bound: boolean; peptide: string; platformRmsd: number; residues: ResidueInfo[] }
+export interface Structure { id: string; state: string; bound: boolean; peptide: string; platformRmsd: number; alignedSha256:string; residues: ResidueInfo[] }
 export interface StructureData { structures: Structure[]; alignment: string; sasa: string; contacts: string }

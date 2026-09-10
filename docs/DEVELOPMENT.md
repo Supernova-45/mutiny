@@ -6,6 +6,8 @@ Run the app with Node.js 22: `npm ci` then `npm run dev`. Validate with `npm tes
 
 The new local project-review flow and HHAT experiment controls have a focused check: `npm run test:research-browser` (same `CHROME_EXECUTABLE` option as below). It verifies save/reopen, invalid-import retention, no import network requests, measured/absent ligand values, static reference poses and narrow-screen layouts. These checks do not record a video.
 
+The structural comparison has a separate browser check: `npm run test:comparison-browser`. It covers prediction/reveal, local PDB comparison, linked cameras, per-residue measurements, source declarations, both investigation round trips, invalid-import retention, no import requests, PNG exports and mobile layouts. Set `APP_URL` when Vite is running on a different port. The numerical tests include a known rigid transform, chirality preservation, incompatible-input rejection and an independent NumPy baseline for the whole-HLA fit. See [comparison scope](STRUCTURE_COMPARISON.md).
+
 ## Scientific reproducibility
 
 See [methods](SCIENCE.md), [source manifest](../data/derived/source-manifest.json), and [model lock](../data/derived/model-lock.json).

@@ -1,0 +1,85 @@
+import {chromium} from '@playwright/test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const browser=await chromium.launch({headless:true,
+ ...(process.env.CHROME_EXECUTABLE?{executablePath:process.env.CHROME_EXECUTABLE}:{}),
+ args:['--enable-webgl','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const context=await browser.newContext({viewport:{width:1440,height:1080}});
+const page=await context.newPage(),errors=[];
+page.on('pageerror',e=>errors.push(e.message));
+const loaded=()=>page.waitForFunction(()=>document.querySelectorAll('.structure-stage[data-ready=true]').length===2);
+const pairLoaded=()=>page.waitForFunction(()=>document.querySelectorAll('.pair-stage[data-ready=true]').length===2);
+const download=async(name)=>{const pending=page.waitForEvent('download');await page.getByRole('button',{name,exact:true}).click();return pending};
+const save=async()=>JSON.parse(fs.readFileSync(await (await download('Save investigation')).path(),'utf8'));
+const upload=async(label,object)=>page.getByLabel(label,{exact:true}).setInputFiles({name:'investigation.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(object))});
+const noOverflow=async()=>assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+fs.mkdirSync('outputs/screenshots',{recursive:true});
+try{
+ await page.goto(process.env.APP_URL??'http://127.0.0.1:5173',{waitUntil:'networkidle'});await loaded();
+ assert.equal(await page.locator('.binding-experiment').count(),0);
+ assert.equal(await page.getByRole('button',{name:'Reveal result',exact:true}).isDisabled(),true);
+ await page.screenshot({path:'outputs/screenshots/15-compare-start.png'});
+ await page.getByRole('button',{name:'Normal',exact:true}).click();
+ await page.getByRole('button',{name:'Reveal result',exact:true}).click();
+ assert.match(await page.locator('.binding-reveal').innerText(),/200 μM[\s\S]*9 μM/);
+ assert.equal(await page.locator('.binding-experiment').count(),1);
+ await page.getByRole('button',{name:'The neighboring shape W6',exact:true}).click();await loaded();
+ await page.getByRole('textbox',{name:'Your finding',exact:true}).fill('The neighboring W6 pose deserves a closer look.');
+ const hhat=await save();assert.equal(hhat.kind,'mutiny-hhat-investigation');assert.equal(hhat.prediction,'normal');assert.equal(hhat.view.mechanism,'shape');assert.equal(hhat.view.camera.length,8);assert.equal(hhat.sources.length,4);
+ await page.getByRole('textbox',{name:'Your finding',exact:true}).fill('Discard this change');
+ await page.getByRole('button',{name:'The mutation L8 → F8',exact:true}).click();await loaded();
+ await upload('Open HHAT investigation',hhat);await loaded();
+ assert.equal(await page.getByRole('textbox',{name:'Your finding',exact:true}).inputValue(),hhat.note);
+ const hhatAgain=await save();assert.deepEqual(hhatAgain.view,hhat.view);
+ const hhatFigure=await download('Save figure');await hhatFigure.saveAs('outputs/screenshots/16-hhat-export.png');
+ await page.getByRole('button',{name:'Compare your pair',exact:true}).click();
+ await page.getByLabel('Normal PDB file',{exact:true}).waitFor();
+ await page.setViewportSize({width:390,height:844});await noOverflow();
+ await page.setViewportSize({width:1440,height:1080});
+ // Once the view is loaded, file imports and calculations must stay local.
+ await page.waitForLoadState('networkidle');const requests=[];const observe=r=>requests.push(r.url());page.on('request',observe);
+ await page.getByLabel('Normal PDB file',{exact:true}).setInputFiles('data/raw/6UJQ.pdb');
+ await page.getByLabel('Mutant PDB file',{exact:true}).setInputFiles('data/raw/6UJO.pdb');
+ await page.getByLabel('Normal coordinate source',{exact:true}).selectOption('experimental');
+ await page.getByLabel('Mutant coordinate source',{exact:true}).selectOption('experimental');
+ await page.getByLabel('Normal receptor state',{exact:true}).selectOption('unbound');
+ await page.getByLabel('Mutant receptor state',{exact:true}).selectOption('unbound');
+ assert.equal(await page.getByLabel('Normal hla chain',{exact:true}).inputValue(),'A');
+ assert.equal(await page.getByLabel('Mutant peptide chain',{exact:true}).inputValue(),'C');
+ await page.locator('.compare-pair-button').click();await pairLoaded();
+ assert.equal(await page.locator('.pair-canvas canvas').count(),2);assert.equal(await page.locator('.difference-bars>button').count(),9);
+ assert.match(await page.locator('.pair-analysis-header').innerText(),/275 Cα · 1.03 Å/);
+ assert.match(await page.locator('.difference-reading').innerText(),/Not comparable/);
+ assert.equal(await page.locator('.binding-experiment').count(),0);
+ await page.getByRole('button',{name:'Inspect supplied position 6, W',exact:true}).first().click();await pairLoaded();
+ assert.match(await page.locator('.difference-reading').innerText(),/3.50 Å RMSD/);
+ await page.getByRole('button',{name:'Backbone',exact:true}).click();
+ assert.match(await page.locator('.difference-reading').innerText(),/1.07 Å RMSD/);
+ await page.getByRole('button',{name:'Side chains',exact:true}).click();
+ // Rotation in one panel must move the other.
+ const left=page.locator('.pair-canvas canvas').first(),right=page.locator('.pair-canvas canvas').last();
+ const before=await right.screenshot();const box=await left.boundingBox();
+ await page.mouse.move(box.x+box.width*.5,box.y+box.height*.5);await page.mouse.down();await page.mouse.move(box.x+box.width*.56,box.y+box.height*.55,{steps:8});await page.mouse.up();
+ assert.notDeepEqual(await right.screenshot(),before);
+ await page.getByRole('textbox',{name:'Your finding',exact:true}).fill('Compare the W6 side chain with its backbone.');
+ const pair=await save();assert.equal(pair.kind,'mutiny-structure-pair');assert.equal(pair.view.position,6);assert.equal(pair.inputs[0].text,fs.readFileSync('data/raw/6UJQ.pdb','utf8'));assert.equal(pair.inputs[0].hash.length,64);
+ await page.getByRole('button',{name:'Inspect supplied position 4, L',exact:true}).first().click();await pairLoaded();
+ await page.getByRole('textbox',{name:'Your finding',exact:true}).fill('Another temporary note');
+ await upload('Open structure-pair investigation',pair);await pairLoaded();
+ assert.equal(await page.getByRole('textbox',{name:'Your finding',exact:true}).inputValue(),pair.note);
+ assert.deepEqual((await save()).view,pair.view);
+ await page.locator('.imported-pair').screenshot({path:'outputs/screenshots/17-your-pair.png'});
+ await page.locator('.difference-figure').screenshot({path:'outputs/screenshots/18-residue-differences.png'});
+ const figure=await download('Save figure');await figure.saveAs('outputs/screenshots/19-pair-export.png');
+ await page.getByRole('button',{name:'Inspect supplied position 4, L',exact:true}).first().click();await pairLoaded();
+ const changed=await save();assert.equal(changed.view.position,4);assert.notDeepEqual(changed.view.camera,pair.view.camera);
+ const bad=structuredClone(pair);bad.inputs[0].hash='0'.repeat(64);await upload('Open structure-pair investigation',bad);await page.getByRole('alert').waitFor();
+ assert.match(await page.getByRole('alert').innerText(),/differs from its saved hash/);assert.equal((await save()).view.position,4);
+ await upload('Open structure-pair investigation',pair);await pairLoaded();
+ page.off('request',observe);assert.deepEqual(requests,[]);
+ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(300);await noOverflow();
+ await page.screenshot({path:'outputs/screenshots/20-mobile-pair.png',fullPage:true});
+ assert.equal(await page.locator('.viewer-error').count(),0);assert.deepEqual(errors,[]);
+ console.log('PASS: prediction/reveal, HHAT notes and camera round trip, compatible local PDB input, alignment and residue differences, linked rotation, source declarations, pair save/reopen, invalid import retention, PNG exports, no import requests, mobile, no browser errors.');
+}catch(e){await page.screenshot({path:'work/comparison-browser-failure.png',fullPage:true});console.error('Page errors:',errors,'UI:',await page.locator('[role=alert],.viewer-error').allTextContents());throw e}
+finally{await context.close();await browser.close()}
