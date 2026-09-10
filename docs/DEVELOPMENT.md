@@ -2,6 +2,10 @@
 
 Run the app with Node.js 22: `npm ci` then `npm run dev`. Validate with `npm test` and `npm run build`.
 
+`npm run prepare:rosalind` regenerates the small browser evidence projection and research fixture from committed scientific outputs. It checks ligand identity/order, source hashes, four fixed-HLA ring comparisons and two contact distances against the existing display coordinates. It does not modify `rosalind/` or rerun its scientific pipeline. Run it again after accepting a changed scientific return, then inspect the resulting diff and run the tests.
+
+The new local project-review flow and HHAT experiment controls have a focused check: `npm run test:research-browser` (same `CHROME_EXECUTABLE` option as below). It verifies save/reopen, invalid-import retention, no import network requests, measured/absent ligand values, static reference poses and narrow-screen layouts. These checks do not record a video.
+
 ## Scientific reproducibility
 
 See [methods](SCIENCE.md), [source manifest](../data/derived/source-manifest.json), and [model lock](../data/derived/model-lock.json).

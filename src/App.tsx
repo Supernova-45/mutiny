@@ -5,6 +5,7 @@ import type { Cohort, Target, Lens, Outcome } from './types';
 import { orderTargets } from './lib/statistics.mjs';
 import ChanceChart from './components/ChanceChart';
 const Molecule = lazy(()=>import('./components/Molecule'));
+const Research = lazy(()=>import('./components/Research'));
 
 const names: Record<Outcome,string> = {response:'Response detected',undetected:'Not detected',pooled:'Pool unresolved',missing:'No data'};
 const lensNames: Record<Lens,string> = {published:'As published',esm:'ESM-2',binding:'Class-I binding',shuffle:'Shuffle'};
@@ -42,7 +43,7 @@ function Evidence({data,onClose}:{data:Cohort;onClose:()=>void}) {
     <div className="evidence-block"><h3>23 individual positives + 2 positive pools</h3><p>The paper’s 25 reported responses include two pools containing seven targets in patient 25. Pool members and the two missing outcomes remain visible but are excluded from binary outcome analysis. The assay does not resolve CD4/CD8 or HLA class for every response.</p></div>
     <div className="evidence-block"><h3>Two exploratory features</h3><p>ESM-2 650M: log P(mutant) − log P(normal), with the mutation masked in verified wild-type protein context, up to 511 residues. More negative scores appear first. This is a sequence-preference hypothesis, not immune foreignness.</p><p>MHCflurry: predicted affinity for the published best class-I peptide/allele pair; lower nM appears first. Predicted restriction is not experimentally demonstrated restriction. Rankings use the same jointly scored, individually labeled records, within each patient.</p><p>The shaded reference is the central 90% of 2,000 seeded within-patient random orderings. It describes chance ordering, not population uncertainty or clinical efficacy.</p><div className="inline-status"><Check size={14}/> {data.targets.filter(t=>t.comparisonEligible).length} jointly eligible records</div></div>
     <div className="evidence-block"><h3>A separate structural case</h3><p>HHAT L75F, HLA-A*02:06, receptor 302TIL. Four experimental structures; aligned on HLA platform Cα atoms, never the peptide. Normal: 6UJQ / 6UK2. Mutant: 6UJO / 6UK4. This ovarian-cancer example is not a target structure from the pancreatic trial.</p><a href="https://www.nature.com/articles/s41589-020-0610-1" target="_blank" rel="noreferrer">Devlin et al. · Nature Chemical Biology 2020 <ArrowUpRight size={14}/></a></div>
-    <div className="evidence-block"><h3>Rosalind contribution</h3><p>Pending independent work in Rosalind Workbench. This build contains local analysis and visualization; no Rosalind execution is claimed.</p></div>
+    <div className="evidence-block"><h3>Rosalind contribution</h3><p>Molecular Structure Viewer 0.1.80 verified atom displacements and receptor contacts on independently reconstructed HHAT structures. Life Sciences Literature 0.1.5 retrieved the source used to verify seven published ligand measurements. The Recognition view incorporates those experiments and the returned geometry; the fixed-HLA ring RMSD is a local calculation. Experimental density maps are not yet displayed.</p><a href="https://github.com/Supernova-45/mutiny/blob/main/rosalind/PLUGIN_EXECUTION.md" target="_blank" rel="noreferrer">Execution record <ArrowUpRight size={14}/></a></div>
     <a className="download-link" href="/data/cohort.json" download><Download size={15}/> Download records & provenance</a>
     <code className="checksum">SHA-256 {data.sourceSha256}</code>
   </section></div>;
@@ -50,7 +51,8 @@ function Evidence({data,onClose}:{data:Cohort;onClose:()=>void}) {
 
 export default function App() {
   const [data,setData]=useState<Cohort|null>(null),[error,setError]=useState('');
-  const [scene,setScene]=useState<'atlas'|'molecule'>('atlas');
+  const [scene,setScene]=useState<'atlas'|'molecule'|'research'>('atlas');
+  const [researchOpened,setResearchOpened]=useState(false);
   const [reveal,setReveal]=useState(false),[lens,setLens]=useState<Lens>('published'),[seed,setSeed]=useState(20260909);
   const [patient,setPatient]=useState(10),[targetId,setTargetId]=useState('10:1'),[evidence,setEvidence]=useState(false);
   const reduced=useReducedMotion();
@@ -66,8 +68,8 @@ export default function App() {
   return <div className="app-shell">
     <header className="topbar">
       <button className="wordmark" onClick={()=>setScene('atlas')} aria-label="mutiny home">mutiny</button>
-      <nav aria-label="Explore"><button className={scene==='atlas'?'active':''} onClick={()=>setScene('atlas')}>The vaccines</button><button className={scene==='molecule'?'active':''} onClick={()=>setScene('molecule')}>Recognition</button></nav>
-      <div className="header-actions"><button className="icon-button" title="Evidence and methods" aria-label="Evidence and methods" onClick={()=>setEvidence(true)}><BookOpen size={18}/></button><a className="icon-button github" href="https://github.com/Supernova-45/mutiny" target="_blank" rel="noreferrer" aria-label="GitHub repository"><Github size={18}/></a></div>
+      <nav aria-label="Explore"><button className={scene==='atlas'?'active':''} onClick={()=>setScene('atlas')}>The vaccines</button><button className={scene==='molecule'?'active':''} onClick={()=>setScene('molecule')}>Recognition</button><button className={scene==='research'?'active':''} onClick={()=>{setResearchOpened(true);setScene('research')}}>Your candidates</button></nav>
+      <div className="header-actions">{scene==='research'?<a className="icon-button" title="Project format and methods" aria-label="Project format and methods" href="https://github.com/Supernova-45/mutiny/blob/main/docs/PROJECTS.md" target="_blank" rel="noreferrer"><BookOpen size={18}/></a>:<button className="icon-button" title="Evidence and methods" aria-label="Evidence and methods" onClick={()=>setEvidence(true)}><BookOpen size={18}/></button>}<a className="icon-button github" href="https://github.com/Supernova-45/mutiny" target="_blank" rel="noreferrer" aria-label="GitHub repository"><Github size={18}/></a></div>
     </header>
     {scene==='atlas'?<main className="atlas-page">
       <section className="intro-bar"><div><h1>Which cancer mutations trigger T cells?</h1><p className="study-context">Pancreatic cancer vaccine trial · 16 patients · 232 targets</p></div></section>
@@ -104,7 +106,8 @@ export default function App() {
         </aside>
       </div>
 
-    </main>:<Suspense fallback={<div className="loading"><Atom size={30}/><span>Loading experimental structures…</span></div>}><Molecule onEvidence={()=>setEvidence(true)}/></Suspense>}
+    </main>:scene==='molecule'?<Suspense fallback={<div className="loading"><Atom size={30}/><span>Loading experimental structures…</span></div>}><Molecule onEvidence={()=>setEvidence(true)}/></Suspense>:null}
+    {researchOpened&&<div hidden={scene!=='research'}><Suspense fallback={<div className="loading">Opening project review…</div>}><Research/></Suspense></div>}
     {evidence&&<Evidence data={data} onClose={()=>setEvidence(false)}/>}
   </div>;
 }

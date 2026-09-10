@@ -22,13 +22,23 @@ Copper marks detected T-cell responses. Switch between ESM-2 sequence preference
 
 ![ESM-2 ordering with measured responses and a within-patient shuffle reference](outputs/screenshots/02-responses.png)
 
-### Get close enough to see the difference
+### Test the contact
 
-Compare normal and mutant peptides, inspect individual atoms, and measure the receptor interface.
+Follow the mutation → neighboring W6 → receptor contact. Compare measured crystal poses, then explore what happened when researchers altered that contact residue.
 
-![Atomic recognition interface with position-six contact measurements](outputs/screenshots/07-atomic-interface.png)
+![W6 in normal and mutant peptides, with the measured receptor-bound pose overlaid in gray](outputs/screenshots/14-w6-detail.png)
+
+![Published experiments compare receptor binding for normal, mutant and altered HHAT peptides](outputs/screenshots/12-binding-experiment.png)
 
 The comparison is exploratory: sequence preference and binding scores are not immune-response probabilities. [Biology, sources & limitations →](docs/SCIENCE.md)
+
+### Bring your candidates
+
+Open a project, compare rankings, follow a candidate, and save your notes. Includes an independent 11-candidate HCC1395 example. Project files stay in your browser.
+
+![Two prediction methods rank the same candidates, with a saved review alongside](outputs/screenshots/08-research-review.png)
+
+The first reusable release opens **normalized project JSON**. [Example file](public/research/hcc1395.project.json) · [Format and scope](docs/PROJECTS.md)
 
 ### Try it
 
@@ -39,6 +49,6 @@ npm run dev
 
 No API keys or GPU needed. Results and structures are included.
 
-[Development](docs/DEVELOPMENT.md) · [Deploy](docs/DEPLOYMENT.md) · [Rosalind handoff](outputs/ROSALIND_HANDOFF.md) · [MIT license](LICENSE)
+[Development](docs/DEVELOPMENT.md) · [Deploy](docs/DEPLOYMENT.md) · [Next Rosalind tasks](outputs/ROSALIND_FOLLOWUP.md) · [MIT license](LICENSE)
 
-Rosalind Workbench validation is pending.
+Built with results from **Molecular Structure Viewer** and **Life Sciences Literature** in the Rosalind environment. [Actual plugin contributions](rosalind/PLUGIN_EXECUTION.md).
