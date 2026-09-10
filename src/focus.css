@@ -2,13 +2,13 @@
   font-weight: 600;
 }
 .focus-dialog {
-  width: calc(100vw - 48px);
-  max-width: 1680px;
-  height: calc(100dvh - 48px);
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
   max-height: none;
   padding: 0;
-  border: 1px solid #53636c;
-  border-radius: 6px;
+  border: 0;
+  border-radius: 0;
   margin: auto;
   color: #e5e9e9;
   background: #172128;
@@ -162,6 +162,58 @@
   border: 1px solid #8c9da744;
   border-radius: 50%;
   background: #172128b3;
+}
+.focus-stage-tools button[aria-pressed="true"] {
+  color: #f0a775;
+  border-color: #f0a775;
+}
+.focus-scale {
+  position: absolute;
+  bottom: 23px;
+  left: 28px;
+  display: flex;
+  padding: 4px;
+  gap: 3px;
+  border: 1px solid #8c9da733;
+  border-radius: 24px;
+  background: #111b22e6;
+}
+.focus-scale button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 13px;
+  font-size: 11px;
+  border-radius: 20px;
+  color: #94a9b7;
+}
+.focus-scale button[aria-pressed="true"] {
+  background: #354651;
+  color: #eef0f0;
+}
+.focus-context-key {
+  position: absolute;
+  left: 30px;
+  top: 155px;
+  display: flex;
+  gap: 17px;
+  pointer-events: none;
+  color: #aebbc3;
+  font-size: 11px;
+}
+.focus-context-key span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.focus-context-key i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #81939e;
+}
+.focus-context-key .receptor i {
+  background: #c4a8e0;
 }
 .focus-loading {
   position: absolute;
@@ -370,7 +422,22 @@
     display: none;
   }
   .focus-stage {
-    min-height: 300px;
+    min-height: 340px;
+  }
+  .focus-stage-tools {
+    right: 16px;
+    bottom: 69px;
+  }
+  .focus-scale {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 13px;
+    white-space: nowrap;
+  }
+  .focus-context-key {
+    left: 18px;
+    top: 122px;
+    font-size: 10px;
   }
   .focus-annotation {
     top: 19px;

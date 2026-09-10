@@ -20,6 +20,11 @@ test("shared views preserve a curated camera and reject incompatible state", () 
   const url = new URL(focusLink("https://example.org/?case=kras", view));
   assert.equal(url.searchParams.get("case"), "hhat");
   assert.deepEqual(parseFocusLink(url.hash), view);
+  const contextView = { ...view, context: true };
+  assert.deepEqual(
+    parseFocusLink(new URL(focusLink(url.href, contextView)).hash),
+    contextView,
+  );
   assert.equal(parseFocusLink("#something-else"), null);
   for (const overrides of [
     { residue: 10 },
@@ -31,6 +36,7 @@ test("shared views preserve a curated camera and reject incompatible state", () 
     { step: 3 },
     { contour: 9 },
     { version: 2 },
+    { context: "true" },
   ])
     assert.throws(() => focusLink(url.href, { ...view, ...overrides }));
   assert.throws(() => parseFocusLink("#compare=%zz"));

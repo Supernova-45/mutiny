@@ -140,6 +140,69 @@ try {
   await page.screenshot({
     path: "outputs/screenshots/29-superimposed-hhat.png",
   });
+  await page.getByRole("button", { name: /03\s*The receptor$/ }).click();
+  await ready();
+  await dialog
+    .getByRole("button", { name: "Molecular context", exact: true })
+    .click();
+  await ready();
+  await expect(page.locator(".focus-stage")).toHaveAttribute(
+    "data-context",
+    "true",
+  );
+  await page.screenshot({
+    path: "outputs/screenshots/33-hhat-molecular-context.png",
+  });
+  await dialog.getByRole("button", { name: "Share view", exact: true }).click();
+  const contextLink = await page.evaluate(() => navigator.clipboard.readText());
+  const contextState = JSON.parse(
+    decodeURIComponent(new URL(contextLink).hash.slice(9)),
+  );
+  assert.equal(contextState.context, true);
+  await dialog
+    .getByRole("button", { name: "Orbit camera", exact: true })
+    .click();
+  await expect(page.locator(".focus-stage")).toHaveAttribute(
+    "data-orbit",
+    "true",
+  );
+  await page.waitForTimeout(600);
+  await page.locator(".focus-canvas").dispatchEvent("pointerdown");
+  await expect(page.locator(".focus-stage")).toHaveAttribute(
+    "data-orbit",
+    "false",
+  );
+  await dialog.getByRole("button", { name: /Share view|Copied/ }).click();
+  const orbitedLink = await page.evaluate(() => navigator.clipboard.readText());
+  const orbitedState = JSON.parse(
+    decodeURIComponent(new URL(orbitedLink).hash.slice(9)),
+  );
+  assert.ok(
+    orbitedState.camera.some(
+      (v, i) => Math.abs(v - contextState.camera[i]) > 1e-4,
+    ),
+    "Orbit changes the camera",
+  );
+  await page.goto(contextLink);
+  await ready();
+  await expect(page.locator(".focus-stage")).toHaveAttribute(
+    "data-context",
+    "true",
+  );
+  await expect(page.locator(".focus-stage")).toHaveAttribute(
+    "data-orbit",
+    "false",
+  );
+  await dialog
+    .getByRole("button", { name: "Peptide position 6, W", exact: true })
+    .click();
+  await ready();
+  await expect(page.locator(".focus-stage")).toHaveAttribute(
+    "data-context",
+    "false",
+  );
+  await page.getByRole("button", { name: /02\s*The neighbor$/ }).click();
+  await ready();
   await dialog
     .getByRole("button", { name: "Experimental density", exact: true })
     .click();
@@ -232,6 +295,14 @@ try {
   await page.screenshot({
     path: "outputs/screenshots/31-superimposed-kras.png",
   });
+  await page.getByRole("button", { name: /03\s*The receptor$/ }).click();
+  await dialog
+    .getByRole("button", { name: "Molecular context", exact: true })
+    .click();
+  await ready();
+  await page.screenshot({
+    path: "outputs/screenshots/34-kras-molecular-context.png",
+  });
   await page.getByRole("button", { name: "Share view", exact: true }).click();
   const krasLink = await page.evaluate(() => navigator.clipboard.readText());
   await page.goto(krasLink);
@@ -263,6 +334,16 @@ try {
   await page.screenshot({
     path: "outputs/screenshots/32-mobile-superposition.png",
   });
+  await dialog
+    .getByRole("button", { name: "The receptor", exact: true })
+    .click();
+  await dialog
+    .getByRole("button", { name: "Molecular context", exact: true })
+    .click();
+  await ready();
+  await page.screenshot({
+    path: "outputs/screenshots/35-mobile-molecular-context.png",
+  });
   assert.ok(
     await page
       .getByRole("dialog")
@@ -270,7 +351,7 @@ try {
   );
   assert.deepEqual(errors, []);
   console.log(
-    "Verified HHAT/KRAS superposition, four density maps, source-bound links, exported figure, invalid-link recovery, and mobile layout.",
+    "Verified molecular context, camera orbit and manual takeover, HHAT/KRAS superposition, four density maps, source-bound links, exported figure, invalid-link recovery, and mobile layout.",
   );
 } catch (e) {
   fs.writeFileSync(

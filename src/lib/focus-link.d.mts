@@ -4,6 +4,7 @@ export interface FocusView {
   step: number;
   residue: number;
   mode: "normal" | "mutant" | "both";
+  context?: boolean;
   density: boolean;
   contour: number;
   sources: string;

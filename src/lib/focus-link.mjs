@@ -15,6 +15,7 @@ export function parseFocusLink(hash) {
       s.residue < 1 ||
       s.residue > (s.caseId === "hhat" ? 9 : 10) ||
       !["normal", "mutant", "both"].includes(s.mode) ||
+      (s.context !== undefined && typeof s.context !== "boolean") ||
       typeof s.density !== "boolean" ||
       (s.density && (s.caseId !== "hhat" || s.mode === "both")) ||
       ![0.7, 1, 1.3, 1.6].includes(s.contour) ||

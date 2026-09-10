@@ -6,7 +6,9 @@
 
 ![Explore the mutation, neighboring W6 and receptor contact in mutiny’s interactive 3D comparison](outputs/screenshots/mutiny-hero.gif)
 
-**Superimpose. Switch. Inspect the evidence.** Compare both peptides in one 3D scene, reveal experimental density around a residue, and share the exact view.
+**From receptor to residue.** Pull back to the molecular context, orbit the assembly, then select a residue to move into the detail. Superimpose normal and mutant peptides, inspect experimental density, and share the exact view.
+
+![HHAT peptide held by HLA, with the T-cell receptor in purple: the interactive molecular context view](outputs/screenshots/33-hhat-molecular-context.png)
 
 ![Experimental electron density around the mutant HHAT peptide’s W6 residue](outputs/screenshots/30-hhat-density.png)
 

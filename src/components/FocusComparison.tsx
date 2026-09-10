@@ -1,7 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import * as mol from "3dmol";
-import { Check, ImageDown, Layers2, Link, RotateCcw, X } from "lucide-react";
+import {
+  Check,
+  Focus,
+  ImageDown,
+  Layers2,
+  Link,
+  Orbit,
+  Pause,
+  RotateCcw,
+  Scan,
+  X,
+} from "lucide-react";
 import { downloadFile, hashText } from "../lib/investigation";
 import {
   animateView,
@@ -121,6 +132,8 @@ function FocusDialog({
   const [step, setStep] = useState(shared?.step ?? initialStep);
   const [residue, setResidue] = useState(shared?.residue ?? initialResidue);
   const [mode, setMode] = useState<Mode>(shared?.mode ?? "both");
+  const [context, setContext] = useState(shared?.context ?? false);
+  const [orbit, setOrbit] = useState(false);
   const [density, setDensity] = useState(shared?.density ?? false);
   const [contour, setContour] = useState(shared?.contour ?? 1);
   const [loaded, setLoaded] = useState<Loaded | null>(null);
@@ -151,7 +164,7 @@ function FocusDialog({
   const sourceIndices = ids.map(
     (id) => loaded?.sources.findIndex((s) => s.id === id) ?? -1,
   );
-  const focusKey = `${step}/${residue}/${reset}`;
+  const focusKey = `${step}/${residue}/${reset}/${context}`;
   const drawKey = `${focusKey}/${mode}`;
   const [drawn, setDrawn] = useState("");
 
@@ -203,7 +216,10 @@ function FocusDialog({
         model.setStyle({}, {});
       });
       v.setClickable({ chain: "C" }, true, (a: mol.AtomSpec) => {
-        if (a.resi) setResidue(a.resi);
+        if (a.resi) {
+          setResidue(a.resi);
+          setContext(false);
+        }
       });
       const observer = new ResizeObserver(() => {
         v.resize();
@@ -213,6 +229,7 @@ function FocusDialog({
       setReady(true);
       return () => {
         observer.disconnect();
+        v.spin(false);
         v.clear();
         el.replaceChildren();
         viewer.current = null;
@@ -221,6 +238,33 @@ function FocusDialog({
       setError((e as Error).message);
     }
   }, [loaded]);
+
+  // An explicit camera orbit, never motion of the atomic coordinates. Touch/drag
+  // takes over immediately; changing the scientific view also stops the orbit.
+  useEffect(() => {
+    const v = viewer.current;
+    const el = div.current;
+    if (!v || !ready) return;
+    if (orbit) v.spin("y", 0.22);
+    else v.spin(false);
+    const stop = () => setOrbit(false);
+    const hidden = () => {
+      if (document.hidden) stop();
+    };
+    el?.addEventListener("pointerdown", stop);
+    el?.addEventListener("wheel", stop, { passive: true });
+    document.addEventListener("visibilitychange", hidden);
+    return () => {
+      v.spin(false);
+      el?.removeEventListener("pointerdown", stop);
+      el?.removeEventListener("wheel", stop);
+      document.removeEventListener("visibilitychange", hidden);
+    };
+  }, [orbit, ready]);
+
+  useEffect(() => {
+    setOrbit(false);
+  }, [focusKey, mode, density, contour]);
 
   useEffect(() => {
     const v = viewer.current;
@@ -245,7 +289,12 @@ function FocusDialog({
             chain: "A",
             resi: Array.from({ length: 180 }, (_, i) => i + 1),
           },
-          { cartoon: { color: colors.hla, opacity: step === 0 ? 0.25 : 0.13 } },
+          {
+            cartoon: {
+              color: colors.hla,
+              opacity: context ? 0.7 : step === 0 ? 0.25 : 0.13,
+            },
+          },
         );
         if (step === 2) {
           for (const chain of ["D", "E"])
@@ -255,7 +304,12 @@ function FocusDialog({
                 chain,
                 resi: Array.from({ length: 115 }, (_, i) => i + 1),
               },
-              { cartoon: { color: colors.receptor, opacity: 0.25 } },
+              {
+                cartoon: {
+                  color: colors.receptor,
+                  opacity: context ? 0.85 : 0.25,
+                },
+              },
             );
           if (caseId === "hhat")
             v.setStyle(
@@ -321,7 +375,24 @@ function FocusDialog({
           if (cameraHome.current) v.setView(cameraHome.current, true);
           if (step === 2) v.rotate(caseId === "hhat" ? 62 : 40, "x");
           const indices = sourceIndices;
-          if (step === 0) v.zoomTo({ model: indices, chain: "C" });
+          if (context) {
+            v.zoomTo({
+              model: contextIndex,
+              or: [
+                {
+                  chain: "A",
+                  resi: Array.from({ length: 180 }, (_, i) => i + 1),
+                },
+                { chain: "C" },
+                ...(step === 2
+                  ? ["D", "E"].map((chain) => ({
+                      chain,
+                      resi: Array.from({ length: 115 }, (_, i) => i + 1),
+                    }))
+                  : []),
+              ],
+            });
+          } else if (step === 0) v.zoomTo({ model: indices, chain: "C" });
           else if (caseId === "hhat" && step === 2)
             v.zoomTo({
               model: indices,
@@ -348,13 +419,21 @@ function FocusDialog({
                   : [residue - 1, residue, residue + 1],
             });
           v.rotate(18, "y");
-          v.zoom(step === 0 ? 1.05 : el && el.clientWidth < 600 ? 1.75 : 1.15);
+          v.zoom(
+            context
+              ? 0.95
+              : step === 0
+                ? 1.05
+                : el && el.clientWidth < 600
+                  ? 1.75
+                  : 1.15,
+          );
           if (!fitted.current && shared?.camera) v.setView(shared.camera);
           const target = v.getView();
           if (fitted.current) {
             v.setView(previous);
             await animateView(
-              420,
+              context ? 800 : 550,
               (t) => v.setView(cameraBetween(previous, target, t)),
               () => cancelled || interrupted,
             );
@@ -375,7 +454,18 @@ function FocusDialog({
       cancelled = true;
       el?.removeEventListener("pointerdown", interrupt);
     };
-  }, [ready, loaded, caseId, step, residue, mode, reset, drawKey, focusKey]);
+  }, [
+    ready,
+    loaded,
+    caseId,
+    step,
+    residue,
+    mode,
+    reset,
+    context,
+    drawKey,
+    focusKey,
+  ]);
 
   useEffect(() => {
     const v = viewer.current;
@@ -472,12 +562,14 @@ function FocusDialog({
     step,
     residue,
     mode,
+    context,
     density,
     contour,
     sources: loaded!.digest,
     camera: viewer.current?.getView() ?? null,
   });
   const share = async () => {
+    setOrbit(false);
     const url = focusLink(location.href, snapshot());
     history.replaceState(history.state, "", url);
     try {
@@ -489,6 +581,7 @@ function FocusDialog({
     }
   };
   const saveImage = async () => {
+    setOrbit(false);
     try {
       // Copy WebGL pixels directly; avoid an unnecessary PNG encode/decode before export.
       const image = viewer.current!.getCanvas();
@@ -505,7 +598,7 @@ function FocusDialog({
       ctx.fillStyle = "#e5e9e9";
       ctx.font = "18px sans-serif";
       ctx.fillText(
-        `mutiny · ${shortCase(caseId)} · ${mode === "both" ? "Normal + mutant" : mode} · peptide position ${residue}`,
+        `mutiny · ${shortCase(caseId)} · ${mode === "both" ? "Normal + mutant" : mode} · ${context ? "molecular context" : `peptide position ${residue}`}`,
         24,
         30,
         image.width / captionScale - 48,
@@ -591,6 +684,8 @@ function FocusDialog({
         className="focus-stage"
         data-ready={ready && drawn === drawKey && !error}
         data-density={densityStatus}
+        data-context={context}
+        data-orbit={orbit}
         aria-busy={busy}
       >
         <div
@@ -643,6 +738,15 @@ function FocusDialog({
         <div className="focus-stage-tools">
           {mode === "both" && <span>Normal HLA reference</span>}
           <button
+            aria-label={orbit ? "Pause camera orbit" : "Orbit camera"}
+            title={orbit ? "Pause camera orbit" : "Orbit camera"}
+            aria-pressed={orbit}
+            disabled={!ready || busy || !!error}
+            onClick={() => setOrbit((x) => !x)}
+          >
+            {orbit ? <Pause size={17} /> : <Orbit size={17} />}
+          </button>
+          <button
             aria-label="Reset superposition camera"
             title="Reset camera"
             onClick={() => setReset((x) => x + 1)}
@@ -650,6 +754,30 @@ function FocusDialog({
             <RotateCcw size={17} />
           </button>
         </div>
+        <div className="focus-scale" role="group" aria-label="Molecular scale">
+          <button aria-pressed={!context} onClick={() => setContext(false)}>
+            <Focus size={16} />
+            Residue detail
+          </button>
+          <button aria-pressed={context} onClick={() => setContext(true)}>
+            <Scan size={16} />
+            Molecular context
+          </button>
+        </div>
+        {context && (
+          <div className="focus-context-key">
+            <span>
+              <i />
+              HLA
+            </span>
+            {step === 2 && (
+              <span className="receptor">
+                <i />
+                T-cell receptor
+              </span>
+            )}
+          </div>
+        )}
         {!ready && !error && (
           <div className="focus-loading" role="status">
             Opening experimental structures…
@@ -697,7 +825,10 @@ function FocusDialog({
               aria-label={`Peptide position ${i + 1}, ${a}`}
               aria-pressed={residue === i + 1}
               className={i === (caseId === "hhat" ? 7 : 5) ? "mutation" : ""}
-              onClick={() => setResidue(i + 1)}
+              onClick={() => {
+                setResidue(i + 1);
+                setContext(false);
+              }}
             >
               {a}
               <small>{i + 1}</small>
