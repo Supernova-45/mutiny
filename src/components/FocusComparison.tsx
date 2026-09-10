@@ -421,7 +421,9 @@ function FocusDialog({
           v.rotate(18, "y");
           v.zoom(
             context
-              ? 0.95
+              ? el && el.clientWidth < 600
+                ? 1.85
+                : 0.95
               : step === 0
                 ? 1.05
                 : el && el.clientWidth < 600
