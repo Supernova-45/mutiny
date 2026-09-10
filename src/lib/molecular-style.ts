@@ -12,15 +12,37 @@ export const molecularStyle = {
   connector: "#baaa94",
 };
 
-export function styleViewer(viewer: GLViewer) {
+export function styleViewer(viewer: GLViewer, { outline = true } = {}) {
   viewer.setProjection("orthographic");
+  let software = false;
+  try {
+    const gl = viewer.getRenderer()?.getContext();
+    const debug = gl?.getExtension("WEBGL_debug_renderer_info");
+    const renderer =
+      gl &&
+      String(
+        gl.getParameter(debug ? debug.UNMASKED_RENDERER_WEBGL : gl.RENDERER),
+      );
+    software = /swiftshader|llvmpipe|softpipe|software|swrast/i.test(
+      renderer ?? "",
+    );
+  } catch {
+    /* Renderer details may be unavailable under browser privacy settings. */
+  }
+  const coarse = matchMedia("(pointer: coarse)").matches;
+  // Keep ordinary molecular lighting everywhere. Extra shading passes are for GPUs.
+  const effects = software || coarse ? [] : ["ambientOcclusion"];
+  if (outline && !software) effects.unshift("outline");
+  viewer.getCanvas().dataset.graphics = software
+    ? "software"
+    : coarse
+      ? "mobile"
+      : "hardware";
   viewer.setViewStyle({
-    style: matchMedia("(pointer: coarse)").matches
-      ? "outline"
-      : "outline ambientOcclusion",
+    style: effects.join(" "),
     color: "#11181e",
     width: 0.012,
-    strength: 0.35,
+    strength: outline ? 0.35 : 0.25,
     radius: 2,
   });
 }

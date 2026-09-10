@@ -196,9 +196,7 @@ function FocusDialog({
     try {
       v = mol.createViewer(el, { backgroundColor: "#172128", antialias: true });
       viewer.current = v;
-      styleViewer(v);
-      // Keep the translucent HLA context quiet; outlines would make it a black lattice.
-      v.setViewStyle({ style: "ambientOcclusion", strength: 0.25, radius: 2 });
+      styleViewer(v, { outline: false });
       cameraHome.current = v.getView();
       loaded.texts.forEach((text) => {
         const model = v.addModel(text, "pdb");

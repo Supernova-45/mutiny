@@ -37,3 +37,5 @@ The Python script caches unchanged public originals under ignored `work/density/
 ## Shared views
 
 A link records the curated case, stage, selected residue, visible structures, density state, contour and camera in the URL fragment. It pins the coordinate and density-asset digest (including grid placement), rejects invalid or outdated states, and includes no uploaded PDBs or notes. The density asset is itself checked against its current manifest and exact display-coordinate hash. Links are views of the curated examples; saved investigations remain the portable format for local input pairs.
+
+The viewer retains ordinary molecular lighting on all devices. Expensive ambient-occlusion passes are omitted on detected software renderers and touch devices; this changes shading, not coordinates, map values or contour thresholds.
