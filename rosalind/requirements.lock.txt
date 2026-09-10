@@ -1,11 +1,16 @@
 attrs==26.1.0
 biopython==1.85
+certifi==2026.7.22
+charset-normalizer==3.5.1
 et_xmlfile==2.0.0
+idna==3.19
 jsonschema==4.23.0
 jsonschema-specifications==2025.9.1
 numpy==1.26.4
 openpyxl==3.1.5
 referencing==0.36.2
+requests==2.32.5
 rpds-py==0.27.1
 scipy==1.13.1
 typing_extensions==4.16.0
+urllib3==2.6.3

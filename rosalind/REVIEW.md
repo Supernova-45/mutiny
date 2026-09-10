@@ -1,8 +1,10 @@
 # Scientific evidence review — 2026-09-09
 
+**Latest plugin execution update:** Life Sciences Literature 0.1.5 now successfully retrieved PMC version/rights/source metadata and PubMed metadata. Local parsing of its resolved XML independently verified seven Table 1 ligand results and the assay/temperature distinctions. See `plugin-results/assay-source-check.json` and `PLUGIN_EXECUTION.md`. Earlier capability statements below describe the initial run, before installation/runtime repair. Viewer server startup now passes, but no mounted viewer analysis or screenshot has been performed.
+
 **Capability correction:** Rosalind Workbench 0.2.5-research-preview is installed (build revision f3a14882a0b8). Its launcher is app-only. The user confirmed using it. Model-callable scientific tools remain absent in this task; attempted UI access to com.openai.codex was explicitly denied by Computer Use. This does not establish account-wide unavailability. The installed catalog names Life Sciences Literature, Molecular Structure Viewer and Sequence Viewer, but their connected status is unverified. No scientific execution attribution changes.
 
-Completed locally in Codex, **not in Rosalind Workbench**. No scientific plugin was callable. The required authentic Workbench execution/screenshots remain unsupported; this package must not be used to claim Rosalind involvement.
+Initial structural calculations were completed locally in Codex, **not in Rosalind Workbench**. The subsequent literature-plugin contribution is described above. The required authentic Workbench execution/screenshots remain unsupported; this package must not be used to claim Rosalind involvement.
 
 ## Supported conclusions and integration claims
 
@@ -34,3 +36,5 @@ No correction to existing source coordinates, scores, outcomes or eligibility is
 ## Verification and remaining work
 
 Run `analysis/run.sh` in the pinned environment. `validation.json` records 23 checks; response generation additionally checks a six-permutation exact small case. The repository's six existing scientific tests pass. No frontend was changed or browser implementation certified. Authentic Workbench screenshots, live scientific plugin use, researcher usability testing, and frontend import/export/network behavior remain uncompleted, with explicit reasons. No video, narration, captions, storyboard, player, training or simulated trajectory was generated.
+
+**HHAT-E6:** Separate 25 °C SPR perturbation experiments report W6 Bta-analogue KD values of 170 ±30 µM on the F8 background and 1600 ±500 µM on the L8 background (SD, n=3). W6 alanine variants had no binding detected, with no numeric limit supplied. These support W6 involvement; they are additional experimental ligands, not four new structures or an isolated bond-energy measurement.

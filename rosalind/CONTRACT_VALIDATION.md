@@ -1,5 +1,7 @@
 # Contract validation
 
+**Latest plugin execution update:** Life Sciences Literature 0.1.5 now successfully retrieved PMC version/rights/source metadata and PubMed metadata. Local parsing of its resolved XML independently verified seven Table 1 ligand results and the assay/temperature distinctions. See `plugin-results/assay-source-check.json` and `PLUGIN_EXECUTION.md`. Earlier capability statements below describe the initial run, before installation/runtime repair. Viewer server startup now passes, but no mounted viewer analysis or screenshot has been performed.
+
 **Capability correction:** Rosalind Workbench 0.2.5-research-preview is installed (build revision f3a14882a0b8). Its launcher is app-only. The user confirmed using it. Model-callable scientific tools remain absent in this task; attempted UI access to com.openai.codex was explicitly denied by Computer Use. This does not establish account-wide unavailability. The installed catalog names Life Sciences Literature, Molecular Structure Viewer and Sequence Viewer, but their connected status is unverified. No scientific execution attribution changes.
 
 Run `python rosalind/analysis/validate.py`; detailed results are in `validation.json`.

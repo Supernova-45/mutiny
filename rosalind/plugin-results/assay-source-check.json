@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "0.1.0",
+  "plugin": {
+    "name": "Life Sciences Literature",
+    "version": "0.1.5",
+    "operation": "ncbi-pmc-skill resolves current full-text source; ncbi-entrez-skill confirms PubMed record"
+  },
+  "execution": "Installed plugin Python scripts plus separately identified local XML validation; not a mounted Workbench UI analysis",
+  "sourceUrl": "https://pmc-oa-opendata.s3.amazonaws.com/PMC8210748.1/PMC8210748.1.xml?md5=24b209d32c491f2de1e0b1174e251896",
+  "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+  "sourceSha256": "4e350eeb61e8aff0d1e50db8e7cabd01b946b3de946ab1e7da7fcc8103eb7d01",
+  "sourceMd5": "24b209d32c491f2de1e0b1174e251896",
+  "articleVersion": 1,
+  "licenseCode": "TDM",
+  "isPmcOpenaccess": false,
+  "isManuscript": true,
+  "isRetracted": false,
+  "table1": [
+    {
+      "peptideLabel": "HHATp8F (neo)a",
+      "kdMicromolar": 9,
+      "sdMicromolar": 1,
+      "n": 9,
+      "status": "measured",
+      "reportedFreeEnergy": "\u22126.9 \u00b1 0.1c",
+      "location": "Table 1",
+      "temperatureC": 25
+    },
+    {
+      "peptideLabel": "HHAT (WT)",
+      "kdMicromolar": 200,
+      "sdMicromolar": 30,
+      "n": 9,
+      "status": "measured",
+      "reportedFreeEnergy": "\u22125.0 \u00b1 0.1",
+      "location": "Table 1",
+      "temperatureC": 25
+    },
+    {
+      "peptideLabel": "HHATp6B, p8F",
+      "kdMicromolar": 170,
+      "sdMicromolar": 30,
+      "n": 3,
+      "status": "measured",
+      "reportedFreeEnergy": "\u22125.2 \u00b1 0.1",
+      "location": "Table 1",
+      "temperatureC": 25
+    },
+    {
+      "peptideLabel": "HHATp6B",
+      "kdMicromolar": 1600,
+      "sdMicromolar": 500,
+      "n": 3,
+      "status": "measured",
+      "reportedFreeEnergy": "\u22123.8 \u00b1 0.2",
+      "location": "Table 1",
+      "temperatureC": 25
+    },
+    {
+      "peptideLabel": "HHATp6A, p8F",
+      "kdMicromolar": null,
+      "sdMicromolar": null,
+      "n": null,
+      "status": "not_detected",
+      "reportedFreeEnergy": "",
+      "location": "Table 1",
+      "temperatureC": 25
+    },
+    {
+      "peptideLabel": "HHATp6A",
+      "kdMicromolar": null,
+      "sdMicromolar": null,
+      "n": null,
+      "status": "not_detected",
+      "reportedFreeEnergy": "",
+      "location": "Table 1",
+      "temperatureC": 25
+    },
+    {
+      "peptideLabel": "HHATp8A",
+      "kdMicromolar": 700,
+      "sdMicromolar": 200,
+      "n": 3,
+      "status": "measured",
+      "reportedFreeEnergy": "\u22124.3 \u00b1 0.1",
+      "location": "Table 1",
+      "temperatureC": 25
+    }
+  ],
+  "checks": {
+    "SPR25CValuesAndSDAndN": true,
+    "KineticsAre10CAndKonDerived": true,
+    "ITCPrintedReplicates": [
+      1.7,
+      1.4
+    ],
+    "ITCProseCaptionConflict": true,
+    "figureOnlyNumericLabelsNotClaimedAsXMLExtraction": true
+  },
+  "limitations": [
+    "No measured peptide-HLA KD inferred from thermal stability.",
+    "Bta/alanine variants are additional experimental ligands, not new structural states.",
+    "No full text or published figure redistributed.",
+    "Source license/retraction metadata is not itself biological evidence."
+  ]
+}

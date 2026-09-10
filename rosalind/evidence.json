@@ -356,6 +356,82 @@
         "HHAT:L75",
         "HHAT:L75F"
       ]
+    },
+    {
+      "id": "HHAT-E6",
+      "claim": "W6 chemical substitutions weaken or abolish detectable 302TIL binding in separate SPR ligand experiments.",
+      "evidenceType": "published_experiment",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8210748/",
+      "location": "Table 1; Extended Data Figure 5; verified against plugin-resolved PMC version 1 XML",
+      "measurements": [
+        {
+          "state": "W6 Bta analogue, mutant F8 background",
+          "endpoint": "SPR equilibrium KD",
+          "value": 170,
+          "unit": "micromolar",
+          "uncertainty": 30,
+          "uncertaintyType": "SD",
+          "n": 3,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "W6 Bta analogue, normal L8 background",
+          "endpoint": "SPR equilibrium KD",
+          "value": 1600,
+          "unit": "micromolar",
+          "uncertainty": 500,
+          "uncertaintyType": "SD",
+          "n": 3,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        },
+        {
+          "state": "W6 alanine, mutant F8 background",
+          "endpoint": "SPR equilibrium KD",
+          "value": null,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "not_measurable",
+          "missingReason": "No binding detected; no numeric detection limit reported",
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "W6 alanine, normal L8 background",
+          "endpoint": "SPR equilibrium KD",
+          "value": null,
+          "unit": "micromolar",
+          "uncertainty": null,
+          "uncertaintyType": null,
+          "n": null,
+          "censoring": "not_measurable",
+          "missingReason": "No binding detected; no numeric detection limit reported",
+          "uncertaintyMissingReason": "Not reported for this extracted value"
+        },
+        {
+          "state": "position 8 alanine",
+          "endpoint": "SPR equilibrium KD",
+          "value": 700,
+          "unit": "micromolar",
+          "uncertainty": 200,
+          "uncertaintyType": "SD",
+          "n": 3,
+          "censoring": "none",
+          "missingReason": null,
+          "uncertaintyMissingReason": null
+        }
+      ],
+      "limitations": [
+        "25 C SPR as in E1. Bta is 3-benzothienyl-l-alanine: an experimental Trp analogue, not a canonical sequence B. These ligands are not any of the four exported crystal structures. Perturbations support W6 involvement but do not isolate an exact hydrogen-bond energy or establish a vaccine response probability."
+      ],
+      "candidateIds": [
+        "HHAT:L75",
+        "HHAT:L75F"
+      ]
     }
   ],
   "defaultNumericClaimIds": [
