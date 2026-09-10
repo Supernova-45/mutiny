@@ -1,34 +1,32 @@
 {
   "date": "2026-09-09",
   "scientificPluginsCallable": [
-    "Life Sciences Literature 0.1.5 via its installed Python skill scripts",
+    "Molecular Structure Viewer 0.1.80 MCP tools (executed)",
+    "Biological Sequence & Alignment Viewer 0.1.43 MCP tools (mounted records; analysis/export completion unverified)",
+    "Life Sciences Literature 0.1.5 installed Python skill scripts (executed)",
     "NGS Analysis Workbench 0.2.16 MCP tools (not used: outside scope)"
   ],
-  "workbench": "Rosalind Workbench 0.2.5-research-preview installed. Literature plugin scripts used; no mounted launcher/viewer operation or screenshot claimed.",
-  "pluginDiscovery": "Full exposed ALL_TOOLS inspected; search_plugins, suggest_plugins and tool_search not callable",
+  "workbench": "Rosalind Workbench 0.2.5-research-preview installed launcher; native molecular tools and literature scripts executed. No launcher UI screenshot or GPT-Rosalind model execution claimed.",
+  "pluginDiscovery": "Host-exposed ALL_TOOLS now contains native structure and sequence tools.",
   "availablePluginNames": [
     "Spreadsheets",
     "Plugin Management",
     "Sites"
   ],
   "nativeUIPlugin": "unified-computer-use",
-  "catalogRoutesNotVerifiedConnected": [
-    "Life Sciences Literature",
-    "Molecular Structure Viewer",
-    "Sequence Viewer"
-  ],
+  "catalogRoutesNotVerifiedConnected": [],
   "uiAccessBlock": "Computer Use denied access to com.openai.codex for safety reasons.",
   "correction": "Earlier absence-from-tools inference did not establish absence from account. User confirmed Workbench use; local plugin manifest now verifies installation.",
   "installedScientificPlugins": [
     {
       "name": "Molecular Structure Viewer",
       "version": "0.1.80",
-      "state": "Isolated MCP startup/tools-list succeeds after Node PATH repair; host model tools absent in current task snapshot"
+      "state": "Mounted four structures; native measurements, CSV, and two Mol* renders exported"
     },
     {
       "name": "Biological Sequence & Alignment Viewer",
       "version": "0.1.43",
-      "state": "Isolated MCP startup/tools-list succeeds after Node PATH repair; host model tools absent in current task snapshot"
+      "state": "Mounted four records; records query applied; alignment queued, completion and export not confirmed"
     },
     {
       "name": "Life Sciences Literature",
@@ -52,5 +50,5 @@
     "verifiedNodeVersion": "v24.19.0",
     "viewerStartupProbes": "plugin-results/structure-viewer-startup.json and sequence-viewer-startup.json"
   },
-  "nextStep": "Host reload needed to retry startup of viewer MCP servers after runtime repair; no session ID fabricated."
+  "nextStep": "Original agent can integrate measured artifacts; whole-Workbench screenshots remain unsupported."
 }

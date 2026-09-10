@@ -1,0 +1,67 @@
+{
+  "artifact": {
+    "byteLength": 6844,
+    "mediaType": "text/csv",
+    "outputPath": "../plugin-results/hhat-native-results.csv",
+    "sha256": "c5bf1792f8a90b953296cf6701002be70a751386db55113a5acce8224c19c824"
+  },
+  "createdAt": "2026-09-10T01:56:56.897Z",
+  "provenance": {
+    "analysisCoverage": [
+      {
+        "analysisId": "analysis-4",
+        "exportedRowCount": 0,
+        "resultCount": 0,
+        "status": "complete"
+      },
+      {
+        "analysisId": "analysis-12",
+        "exportedRowCount": 1,
+        "resultCount": 1,
+        "status": "complete"
+      },
+      {
+        "analysisId": "analysis-18",
+        "exportedRowCount": 8,
+        "resultCount": 8,
+        "status": "complete"
+      }
+    ],
+    "spreadsheetSafety": {
+      "byteOrderMark": false,
+      "characterEncoding": "UTF-8",
+      "dialect": "RFC 4180",
+      "fieldQuoting": "all",
+      "formulaDetection": "NFKC normalization, then leading Unicode whitespace, C0/C1 controls, format controls, or default-ignorable characters before =, +, -, or @",
+      "formulaNeutralization": "one leading U+0009 TAB inside the quoted field",
+      "recordSeparator": "CRLF",
+      "reversibility": "after CSV parsing, remove exactly one leading U+0009 TAB only when the remaining value matches the formula-detection rule"
+    },
+    "format": "results-csv",
+    "sceneRevision": 23,
+    "selectionAtomCount": 0,
+    "workspacePublication": {
+      "destination": {
+        "base": "opened-source",
+        "relativePath": "../plugin-results/hhat-native-results.csv"
+      },
+      "artifact": {
+        "kind": "export",
+        "mediaType": "text/csv"
+      },
+      "output": {
+        "workspacePath": "rosalind/plugin-results/hhat-native-results.csv"
+      },
+      "plugin": {
+        "name": "structure-viewer",
+        "version": "0.1.80"
+      },
+      "schemaVersion": 1,
+      "source": {
+        "sha256": "860ef8230846da163e75b8401d8aac8f65ded428a418a584633fe1169b3e546a",
+        "workspacePath": "rosalind/structures/6UK4.pdb"
+      }
+    }
+  },
+  "schemaVersion": 1
+}

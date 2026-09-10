@@ -1,0 +1,34 @@
+{
+  "producer": "Codex local source adapter",
+  "script": "rosalind/analysis/prepare_sequence_view.py",
+  "inputs": [
+    {
+      "pdb": "6UJQ",
+      "chain": "C",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "sourceUrl": "https://www.rcsb.org/structure/6UJQ"
+    },
+    {
+      "pdb": "6UJO",
+      "chain": "C",
+      "sha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "sourceUrl": "https://www.rcsb.org/structure/6UJO"
+    },
+    {
+      "pdb": "6UK2",
+      "chain": "C",
+      "sha256": "1b9d9e1a23b159d8c9a0065cb5f01fb300902365bcea4602faf51454a9a0428b",
+      "sourceUrl": "https://www.rcsb.org/structure/6UK2"
+    },
+    {
+      "pdb": "6UK4",
+      "chain": "C",
+      "sha256": "8a1a4ff984f3a528bafaf65f9488c6780d8c0f6ff11617beb81e0768165041f8",
+      "sourceUrl": "https://www.rcsb.org/structure/6UK4"
+    }
+  ],
+  "outputSha256": "56beac69f342d837cffea2ef6cfc390eaf330447b79e6d0a6aae173edc3426d3",
+  "method": "Exact deposited SEQRES chain-C extraction; equal-length ungapped alignment; no sequence prediction",
+  "coordinates": "Alignment columns equal peptide positions 1-9. Source HHAT position = peptide position +67; L75F = column8; W6 = column6.",
+  "notAssumed": "Not a vaccine cohort epitope; no arbitrary target structure attachment."
+}

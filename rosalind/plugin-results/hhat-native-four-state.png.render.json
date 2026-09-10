@@ -1,0 +1,482 @@
+{
+  "artifact": {
+    "byteLength": 565970,
+    "mediaType": "image/png",
+    "outputPath": "../plugin-results/hhat-native-four-state.png",
+    "sha256": "7aecfbca7d8e77a1f7bb3fa4946a7cf91365c10fb9e295616a3e3de1ee5a8d15"
+  },
+  "createdAt": "2026-09-10T01:56:27.681Z",
+  "provenance": {
+    "canonicalSpec": "{\"autoCrop\":false,\"cropPadding\":16,\"destination\":{\"base\":\"opened-source\",\"collisionPolicy\":\"exact\",\"kind\":\"workspace\",\"relativePath\":\"../plugin-results/hhat-native-four-state.png\"},\"format\":\"png\",\"height\":1000,\"kind\":\"image\",\"outputPath\":\"../plugin-results/hhat-native-four-state.png\",\"overwrite\":false,\"scene\":{\"antialiasing\":\"quality\",\"background\":\"#FFFFFF\",\"camera\":{\"clippingRadius\":18.497427417914107,\"fovDegrees\":45,\"mode\":\"perspective\",\"nearClip\":1,\"orientation\":\"current\",\"position\":[28.508887,-36.854499,97.448209],\"target\":[28.508887,-36.854499,49.112102],\"up\":[0,1,0]},\"clearExisting\":true,\"density\":[],\"layers\":[{\"color\":{\"kind\":\"uniform\",\"value\":\"#B6C3CC\"},\"labels\":false,\"opacity\":0.3,\"representation\":\"cartoon\",\"target\":{\"expression\":{\"chain\":\"A\",\"kind\":\"chain\",\"objectId\":\"normal_free\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#4575B4\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"normal_free\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#D73027\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"mutant_free\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#74ADD1\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"normal_bound\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#FDAE61\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"primary\"},\"kind\":\"expression\"},\"visible\":true}],\"lighting\":\"studio\",\"measurements\":[{\"from\":{\"expression\":{\"atomIds\":[\"normal_free|1_555|3137\",\"normal_free|1_555|3138\",\"normal_free|1_555|3139\",\"normal_free|1_555|3140\",\"normal_free|1_555|3141\",\"normal_free|1_555|3142\",\"normal_free|1_555|3143\",\"normal_free|1_555|3144\",\"normal_free|1_555|3145\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"},\"resolvedAtomIds\":[\"normal_free|1_555|3139\",\"normal_bound|1_555|3142\"],\"to\":{\"expression\":{\"atomIds\":[\"normal_bound|1_555|3137\",\"normal_bound|1_555|3138\",\"normal_bound|1_555|3139\",\"normal_bound|1_555|3140\",\"normal_bound|1_555|3141\",\"normal_bound|1_555|3142\",\"normal_bound|1_555|3143\",\"normal_bound|1_555|3144\",\"normal_bound|1_555|3145\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"}},{\"from\":{\"expression\":{\"atomIds\":[\"normal_free|1_555|3140\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"},\"resolvedAtomIds\":[\"normal_free|1_555|3140\",\"normal_bound|1_555|3140\"],\"to\":{\"expression\":{\"atomIds\":[\"normal_bound|1_555|3140\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"}},{\"from\":{\"expression\":{\"atomIds\":[\"mutant_free|1_555|3140\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"},\"resolvedAtomIds\":[\"mutant_free|1_555|3140\",\"primary|1_555|3140\"],\"to\":{\"expression\":{\"atomIds\":[\"primary|1_555|3140\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"}},{\"from\":{\"expression\":{\"atomIds\":[\"normal_free|1_555|3140\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"},\"resolvedAtomIds\":[\"normal_free|1_555|3140\",\"mutant_free|1_555|3140\"],\"to\":{\"expression\":{\"atomIds\":[\"mutant_free|1_555|3140\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"}},{\"from\":{\"expression\":{\"atomIds\":[\"normal_bound|1_555|3140\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"},\"resolvedAtomIds\":[\"normal_bound|1_555|3140\",\"primary|1_555|3140\"],\"to\":{\"expression\":{\"atomIds\":[\"primary|1_555|3140\"],\"kind\":\"atom_ids\"},\"kind\":\"expression\"}}],\"scientificAnnotations\":{\"guides\":[],\"quality\":[],\"symmetry\":[]}},\"transparent\":false,\"width\":1400}",
+    "density": {
+      "initial": [],
+      "sceneTransitions": []
+    },
+    "generatedAt": "2026-09-10T01:56:27.174Z",
+    "output": {
+      "autoCrop": false,
+      "crop": {
+        "applied": false,
+        "empty": false,
+        "height": 1000,
+        "padding": 16,
+        "width": 1400,
+        "x": 0,
+        "y": 0
+      },
+      "format": "png",
+      "height": 1000,
+      "sourceHeight": 1000,
+      "sourceWidth": 1400,
+      "transparent": false,
+      "width": 1400
+    },
+    "renderer": "Mol* 5.11.0",
+    "replay": {
+      "autoCrop": false,
+      "cropPadding": 16,
+      "destination": {
+        "base": "opened-source",
+        "collisionPolicy": "exact",
+        "kind": "workspace",
+        "relativePath": "../plugin-results/hhat-native-four-state.png"
+      },
+      "format": "png",
+      "height": 1000,
+      "kind": "image",
+      "outputPath": "../plugin-results/hhat-native-four-state.png",
+      "overwrite": false,
+      "scene": {
+        "antialiasing": "quality",
+        "background": "#FFFFFF",
+        "camera": {
+          "clippingRadius": 18.497427417914107,
+          "fovDegrees": 45,
+          "mode": "perspective",
+          "nearClip": 1,
+          "orientation": "current",
+          "position": [
+            28.508887,
+            -36.854499,
+            97.448209
+          ],
+          "target": [
+            28.508887,
+            -36.854499,
+            49.112102
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "clearExisting": true,
+        "density": [],
+        "layers": [
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#B6C3CC"
+            },
+            "labels": false,
+            "opacity": 0.3,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "chain": "A",
+                "kind": "chain",
+                "objectId": "normal_free"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#4575B4"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "normal_free"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#D73027"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "mutant_free"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#74ADD1"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "normal_bound"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#FDAE61"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          }
+        ],
+        "lighting": "studio",
+        "measurements": [
+          {
+            "from": {
+              "expression": {
+                "atomIds": [
+                  "normal_free|1_555|3137",
+                  "normal_free|1_555|3138",
+                  "normal_free|1_555|3139",
+                  "normal_free|1_555|3140",
+                  "normal_free|1_555|3141",
+                  "normal_free|1_555|3142",
+                  "normal_free|1_555|3143",
+                  "normal_free|1_555|3144",
+                  "normal_free|1_555|3145"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            },
+            "resolvedAtomIds": [
+              "normal_free|1_555|3139",
+              "normal_bound|1_555|3142"
+            ],
+            "to": {
+              "expression": {
+                "atomIds": [
+                  "normal_bound|1_555|3137",
+                  "normal_bound|1_555|3138",
+                  "normal_bound|1_555|3139",
+                  "normal_bound|1_555|3140",
+                  "normal_bound|1_555|3141",
+                  "normal_bound|1_555|3142",
+                  "normal_bound|1_555|3143",
+                  "normal_bound|1_555|3144",
+                  "normal_bound|1_555|3145"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            }
+          },
+          {
+            "from": {
+              "expression": {
+                "atomIds": [
+                  "normal_free|1_555|3140"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            },
+            "resolvedAtomIds": [
+              "normal_free|1_555|3140",
+              "normal_bound|1_555|3140"
+            ],
+            "to": {
+              "expression": {
+                "atomIds": [
+                  "normal_bound|1_555|3140"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            }
+          },
+          {
+            "from": {
+              "expression": {
+                "atomIds": [
+                  "mutant_free|1_555|3140"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            },
+            "resolvedAtomIds": [
+              "mutant_free|1_555|3140",
+              "primary|1_555|3140"
+            ],
+            "to": {
+              "expression": {
+                "atomIds": [
+                  "primary|1_555|3140"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            }
+          },
+          {
+            "from": {
+              "expression": {
+                "atomIds": [
+                  "normal_free|1_555|3140"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            },
+            "resolvedAtomIds": [
+              "normal_free|1_555|3140",
+              "mutant_free|1_555|3140"
+            ],
+            "to": {
+              "expression": {
+                "atomIds": [
+                  "mutant_free|1_555|3140"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            }
+          },
+          {
+            "from": {
+              "expression": {
+                "atomIds": [
+                  "normal_bound|1_555|3140"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            },
+            "resolvedAtomIds": [
+              "normal_bound|1_555|3140",
+              "primary|1_555|3140"
+            ],
+            "to": {
+              "expression": {
+                "atomIds": [
+                  "primary|1_555|3140"
+                ],
+                "kind": "atom_ids"
+              },
+              "kind": "expression"
+            }
+          }
+        ],
+        "scientificAnnotations": {
+          "guides": [],
+          "quality": [],
+          "symmetry": []
+        }
+      },
+      "transparent": false,
+      "width": 1400
+    },
+    "schemaVersion": 1,
+    "source": {
+      "fileName": "6UK4.pdb",
+      "name": "6UK4.pdb",
+      "resourceUri": "[redacted local viewer resource URI]",
+      "sha256": "860ef8230846da163e75b8401d8aac8f65ded428a418a584633fe1169b3e546a"
+    },
+    "structureObjects": [
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UK4.pdb",
+        "frameCount": 1,
+        "id": "primary",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": true,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": true
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UJQ.pdb",
+        "frameCount": 1,
+        "id": "normal_free",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": true
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UJO.pdb",
+        "frameCount": 1,
+        "id": "mutant_free",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": true
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UK2.pdb",
+        "frameCount": 1,
+        "id": "normal_bound",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": true
+      }
+    ],
+    "encodingDurationMs": 1755.7000000476837,
+    "jobId": "1bddb827-8e23-4384-9201-b11ab49fc84f",
+    "workspacePublication": {
+      "destination": {
+        "base": "opened-source",
+        "relativePath": "../plugin-results/hhat-native-four-state.png"
+      },
+      "artifact": {
+        "kind": "render",
+        "mediaType": "image/png"
+      },
+      "output": {
+        "workspacePath": "rosalind/plugin-results/hhat-native-four-state.png"
+      },
+      "plugin": {
+        "name": "structure-viewer",
+        "version": "0.1.80"
+      },
+      "schemaVersion": 1,
+      "source": {
+        "sha256": "860ef8230846da163e75b8401d8aac8f65ded428a418a584633fe1169b3e546a",
+        "workspacePath": "rosalind/structures/6UK4.pdb"
+      }
+    }
+  },
+  "renderer": "Mol* 5.11.0",
+  "schemaVersion": 1,
+  "publication": {
+    "publisher": "Codex",
+    "change": "Only opaque viewer-file resource URIs redacted; native PNG bytes, camera, source hashes and scientific provenance unchanged",
+    "redactedUriCount": 5,
+    "originalSidecarSha256": "06317849fc2c4df44e5b7f4038769652654a84f1bb80460c02f73223c635be98"
+  }
+}

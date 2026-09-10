@@ -119,5 +119,5 @@ def rank(rows,direction):return sorted(rows,key=lambda r:((1 if direction=='asce
 assert rank([('b',1),('a',1),('c',2)],'ascending')==[('a',1),('b',1),('c',2)]
 assert rank([('b',1),('a',1),('c',2)],'descending')==[('c',2),('a',1),('b',1)]
 checks.append({'check':'Direction and stable-ID ties; no unmatched L/F sidechain RMSD; HLA sensitivity','status':'pass'})
-report={'schemaVersion':'0.1.0','checks':checks,'geometry':geometry,'fixtures':{'rojasCandidates':232,'rojasEligible':188,'hcc1395Candidates':len(h['candidates']),'hcc1395Outcomes':0},'notTested':['Generic frontend, browser offline behavior, CSV import UI and ZIP safety are original-agent work.','No live researchers tested these contracts.','No Rosalind Workbench operations possible.']}
+report={'schemaVersion':'0.1.0','checks':checks,'geometry':geometry,'fixtures':{'rojasCandidates':232,'rojasEligible':188,'hcc1395Candidates':len(h['candidates']),'hcc1395Outcomes':0},'notTested':['Generic frontend, browser offline behavior, CSV import UI and ZIP safety are original-agent work.','No live researchers tested these contracts.','Whole-Workbench UI screenshots unavailable; native molecular measurements separately verified by verify_native.py.']}
 (OUT/'validation.json').write_text(json.dumps(report,indent=2)+'\n');print(f'{len(checks)} checks passed')

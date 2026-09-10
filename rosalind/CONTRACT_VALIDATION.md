@@ -1,8 +1,7 @@
 # Contract validation
 
-**Latest plugin execution update:** Life Sciences Literature 0.1.5 now successfully retrieved PMC version/rights/source metadata and PubMed metadata. Local parsing of its resolved XML independently verified seven Table 1 ligand results and the assay/temperature distinctions. See `plugin-results/assay-source-check.json` and `PLUGIN_EXECUTION.md`. Earlier capability statements below describe the initial run, before installation/runtime repair. Viewer server startup now passes, but no mounted viewer analysis or screenshot has been performed.
+**Verified plugin execution:** Molecular Structure Viewer 0.1.80 mounted all four structures, measured four W6 NE1 displacements and eight receptor contacts, and exported two native Mol* PNGs plus a results CSV. Biological Sequence & Alignment Viewer 0.1.43 mounted/query-returned four peptide records; subsequent analysis/export completion was not verified. Life Sciences Literature 0.1.5 retrieved PMC/PubMed metadata and enabled seven ligand-table checks. See `PLUGIN_EXECUTION.md` and `plugin-results/hhat-native-verification.json`. Local reconstruction, native measurements, and published assays retain separate provenance.
 
-**Capability correction:** Rosalind Workbench 0.2.5-research-preview is installed (build revision f3a14882a0b8). Its launcher is app-only. The user confirmed using it. Model-callable scientific tools remain absent in this task; attempted UI access to com.openai.codex was explicitly denied by Computer Use. This does not establish account-wide unavailability. The installed catalog names Life Sciences Literature, Molecular Structure Viewer and Sequence Viewer, but their connected status is unverified. No scientific execution attribution changes.
 
 Run `python rosalind/analysis/validate.py`; detailed results are in `validation.json`.
 
@@ -14,4 +13,4 @@ The structural validation additionally checks exported PDB distance endpoints ag
 
 The Rojas retrospective output deliberately reuses the app's `localeCompare` tie-breaking for exact compatibility. The proposed generic contract uses stable Unicode code-point ID order; the original agent should implement this explicitly for browser-independent results. Boundary score ties are exported. The two rules are recorded as separate contexts; neither is biological separation.
 
-Not tested: a generic frontend, actual CSV mapping UI, browser network traffic, safe ZIP extraction, HTML/TSV export escaping, device persistence, or user adoption. JSON roundtrip validation does not establish those behaviors. Actual Rosalind Workbench execution is unsupported in this session.
+Not tested: a generic frontend, actual CSV mapping UI, browser network traffic, safe ZIP extraction, HTML/TSV export escaping, device persistence, or user adoption. JSON roundtrip validation does not establish those behaviors. Native molecular viewer work is documented in PLUGIN_EXECUTION.md; these schema validations ran locally.

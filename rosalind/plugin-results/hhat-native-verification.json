@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "fixedFrameChecks": [
+    {
+      "reference": "normal_free",
+      "mobile": "normal_bound",
+      "nativeAngstrom": 5.259177100325911,
+      "independentAngstrom": 5.259177100325911,
+      "absoluteToleranceAngstrom": 2e-05
+    },
+    {
+      "reference": "mutant_free",
+      "mobile": "primary",
+      "nativeAngstrom": 0.9760995152063081,
+      "independentAngstrom": 0.976099515206308,
+      "absoluteToleranceAngstrom": 2e-05
+    },
+    {
+      "reference": "normal_free",
+      "mobile": "mutant_free",
+      "nativeAngstrom": 5.693491646641957,
+      "independentAngstrom": 5.693491646641957,
+      "absoluteToleranceAngstrom": 2e-05
+    },
+    {
+      "reference": "normal_bound",
+      "mobile": "primary",
+      "nativeAngstrom": 0.12002295085955172,
+      "independentAngstrom": 0.12002295085955172,
+      "absoluteToleranceAngstrom": 2e-05
+    }
+  ],
+  "nativeContacts": 8,
+  "authorResidues": [
+    "C:6",
+    "D:100"
+  ],
+  "nativeRenderHashesVerified": 2,
+  "limitations": [
+    "PDB coordinates rounded to 0.001 angstrom; tolerance allows float32 arithmetic.",
+    "Native RMSD refits selected ring atoms; it is not the fixed-HLA displacement.",
+    "Multi-atom distance tool uses closest pair, not centroids.",
+    "No trajectory, free energy, or statistical coordinate uncertainty computed."
+  ]
+}

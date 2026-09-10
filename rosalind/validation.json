@@ -115,6 +115,6 @@
   "notTested": [
     "Generic frontend, browser offline behavior, CSV import UI and ZIP safety are original-agent work.",
     "No live researchers tested these contracts.",
-    "No Rosalind Workbench operations possible."
+    "Whole-Workbench UI screenshots unavailable; native molecular measurements separately verified by verify_native.py."
   ]
 }

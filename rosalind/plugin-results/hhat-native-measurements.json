@@ -1,0 +1,356 @@
+{
+  "schemaVersion": "0.1.0",
+  "publisher": "Codex copied exact model-visible MCP structured results; not a native viewer JSON export",
+  "plugin": "Molecular Structure Viewer",
+  "version": "0.1.80",
+  "objects": {
+    "primary": "rosalind/structures/6UK4.pdb",
+    "normal_free": "rosalind/structures/6UJQ.pdb",
+    "mutant_free": "rosalind/structures/6UJO.pdb",
+    "normal_bound": "rosalind/structures/6UK2.pdb"
+  },
+  "frame": "Prepared structures aligned independently to 6UJQ HLA chain A CA 1–180; native object transforms identity; PDB precision 0.001 angstrom",
+  "fixedFrameAtomDistances": [
+    {
+      "reference": "normal_free",
+      "mobile": "normal_bound",
+      "atom": "C:6:NE1",
+      "request": {
+        "kind": "distance",
+        "targets": [
+          {
+            "kind": "atom_ids",
+            "atomIds": [
+              "normal_free|1_555|3140"
+            ]
+          },
+          {
+            "kind": "atom_ids",
+            "atomIds": [
+              "normal_bound|1_555|3140"
+            ]
+          }
+        ]
+      },
+      "result": {
+        "applied": true,
+        "message": "distance = 5.259 Å.",
+        "state": {
+          "appliedRevision": 14,
+          "measurement": {
+            "atomIds": [
+              "normal_free|1_555|3140",
+              "normal_bound|1_555|3140"
+            ],
+            "kind": "distance",
+            "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+            "unit": "angstrom",
+            "value": 5.259177100325911,
+            "resolvedTargets": [
+              {
+                "atomId": "normal_free|1_555|3140",
+                "sourceAtomCount": 1
+              },
+              {
+                "atomId": "normal_bound|1_555|3140",
+                "sourceAtomCount": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "reference": "mutant_free",
+      "mobile": "primary",
+      "atom": "C:6:NE1",
+      "request": {
+        "kind": "distance",
+        "targets": [
+          {
+            "kind": "atom_ids",
+            "atomIds": [
+              "mutant_free|1_555|3140"
+            ]
+          },
+          {
+            "kind": "atom_ids",
+            "atomIds": [
+              "primary|1_555|3140"
+            ]
+          }
+        ]
+      },
+      "result": {
+        "applied": true,
+        "message": "distance = 0.976 Å.",
+        "state": {
+          "appliedRevision": 15,
+          "measurement": {
+            "atomIds": [
+              "mutant_free|1_555|3140",
+              "primary|1_555|3140"
+            ],
+            "kind": "distance",
+            "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+            "unit": "angstrom",
+            "value": 0.9760995152063081,
+            "resolvedTargets": [
+              {
+                "atomId": "mutant_free|1_555|3140",
+                "sourceAtomCount": 1
+              },
+              {
+                "atomId": "primary|1_555|3140",
+                "sourceAtomCount": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "reference": "normal_free",
+      "mobile": "mutant_free",
+      "atom": "C:6:NE1",
+      "request": {
+        "kind": "distance",
+        "targets": [
+          {
+            "kind": "atom_ids",
+            "atomIds": [
+              "normal_free|1_555|3140"
+            ]
+          },
+          {
+            "kind": "atom_ids",
+            "atomIds": [
+              "mutant_free|1_555|3140"
+            ]
+          }
+        ]
+      },
+      "result": {
+        "applied": true,
+        "message": "distance = 5.693 Å.",
+        "state": {
+          "appliedRevision": 16,
+          "measurement": {
+            "atomIds": [
+              "normal_free|1_555|3140",
+              "mutant_free|1_555|3140"
+            ],
+            "kind": "distance",
+            "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+            "unit": "angstrom",
+            "value": 5.693491646641957,
+            "resolvedTargets": [
+              {
+                "atomId": "normal_free|1_555|3140",
+                "sourceAtomCount": 1
+              },
+              {
+                "atomId": "mutant_free|1_555|3140",
+                "sourceAtomCount": 1
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "reference": "normal_bound",
+      "mobile": "primary",
+      "atom": "C:6:NE1",
+      "request": {
+        "kind": "distance",
+        "targets": [
+          {
+            "kind": "atom_ids",
+            "atomIds": [
+              "normal_bound|1_555|3140"
+            ]
+          },
+          {
+            "kind": "atom_ids",
+            "atomIds": [
+              "primary|1_555|3140"
+            ]
+          }
+        ]
+      },
+      "result": {
+        "applied": true,
+        "message": "distance = 0.120 Å.",
+        "state": {
+          "appliedRevision": 17,
+          "measurement": {
+            "atomIds": [
+              "normal_bound|1_555|3140",
+              "primary|1_555|3140"
+            ],
+            "kind": "distance",
+            "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+            "unit": "angstrom",
+            "value": 0.12002295085955172,
+            "resolvedTargets": [
+              {
+                "atomId": "normal_bound|1_555|3140",
+                "sourceAtomCount": 1
+              },
+              {
+                "atomId": "primary|1_555|3140",
+                "sourceAtomCount": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "contacts": {
+    "applied": true,
+    "message": "8 atom contacts within 4.00 Å.",
+    "state": {
+      "analysis": {
+        "kind": "contacts",
+        "nextCursor": null,
+        "provenance": "All cross-selection atom pairs at or below 4.00 Å in displayed Cartesian coordinates; identical atoms excluded.",
+        "resultCount": 8,
+        "resultSetId": "bbdf3b3bfca14cb6be1ff703bcc9d6bc",
+        "retainedRowCount": 8,
+        "revision": 18,
+        "rows": [
+          {
+            "distanceAngstrom": 3.904153,
+            "firstAtomId": "primary|1_555|3138",
+            "firstResidue": "primary|1_555|C:380:TRP:",
+            "secondAtomId": "primary|1_555|3968",
+            "secondResidue": "primary|1_555|D:481:TYR:"
+          },
+          {
+            "distanceAngstrom": 3.87156,
+            "firstAtomId": "primary|1_555|3140",
+            "firstResidue": "primary|1_555|C:380:TRP:",
+            "secondAtomId": "primary|1_555|3963",
+            "secondResidue": "primary|1_555|D:481:TYR:"
+          },
+          {
+            "distanceAngstrom": 3.840898,
+            "firstAtomId": "primary|1_555|3140",
+            "firstResidue": "primary|1_555|C:380:TRP:",
+            "secondAtomId": "primary|1_555|3964",
+            "secondResidue": "primary|1_555|D:481:TYR:"
+          },
+          {
+            "distanceAngstrom": 3.599952,
+            "firstAtomId": "primary|1_555|3140",
+            "firstResidue": "primary|1_555|C:380:TRP:",
+            "secondAtomId": "primary|1_555|3965",
+            "secondResidue": "primary|1_555|D:481:TYR:"
+          },
+          {
+            "distanceAngstrom": 3.560717,
+            "firstAtomId": "primary|1_555|3140",
+            "firstResidue": "primary|1_555|C:380:TRP:",
+            "secondAtomId": "primary|1_555|3966",
+            "secondResidue": "primary|1_555|D:481:TYR:"
+          },
+          {
+            "distanceAngstrom": 3.300157,
+            "firstAtomId": "primary|1_555|3140",
+            "firstResidue": "primary|1_555|C:380:TRP:",
+            "secondAtomId": "primary|1_555|3967",
+            "secondResidue": "primary|1_555|D:481:TYR:"
+          },
+          {
+            "distanceAngstrom": 3.278193,
+            "firstAtomId": "primary|1_555|3140",
+            "firstResidue": "primary|1_555|C:380:TRP:",
+            "secondAtomId": "primary|1_555|3968",
+            "secondResidue": "primary|1_555|D:481:TYR:"
+          },
+          {
+            "distanceAngstrom": 3.785906,
+            "firstAtomId": "primary|1_555|3140",
+            "firstResidue": "primary|1_555|C:380:TRP:",
+            "secondAtomId": "primary|1_555|3969",
+            "secondResidue": "primary|1_555|D:481:TYR:"
+          }
+        ],
+        "resultsComplete": true,
+        "summary": "8 atom contacts within 4.00 Å.",
+        "truncated": false,
+        "unit": "angstrom"
+      },
+      "appliedRevision": 18
+    }
+  },
+  "ringFitControl": {
+    "applied": true,
+    "message": "RMSD 0.004 Å across 9 atom pairs using explicit atom-ID order; 0 unmatched reference atoms, 0 unmatched mobile atoms, 0 ambiguous identities, 0 atoms excluded by ambiguity.",
+    "state": {
+      "analysis": {
+        "kind": "rmsd",
+        "nextCursor": null,
+        "provenance": "Least-squares rigid-body superposition using Horn's unit-quaternion solution with at least 3 non-collinear pairs. Correspondence is positional: the two atom_ids arrays are paired in their requested order, and every ID must be unique and present in the live catalog.",
+        "resultCount": 1,
+        "resultSetId": "8f12587efffb4cc689c74f3f3422737d",
+        "retainedRowCount": 1,
+        "revision": 12,
+        "rows": [
+          {
+            "alignedAtomCount": 9,
+            "alignedAtomPairs": "reference chain C residue 6 TRP atom CG (C) [normal_free|1_555|3137] -> mobile chain C residue 6 TRP atom CG (C) [normal_bound|1_555|3137]; reference chain C residue 6 TRP atom CD1 (C) [normal_free|1_555|3138] -> mobile chain C residue 6 TRP atom CD1 (C) [normal_bound|1_555|3138]; reference chain C residue 6 TRP atom CD2 (C) [normal_free|1_555|3139] -> mobile chain C residue 6 TRP atom CD2 (C) [normal_bound|1_555|3139]; +6 more",
+            "ambiguousIdentityCount": 0,
+            "ambiguousMobileAtomCount": 0,
+            "ambiguousReferenceAtomCount": 0,
+            "ambiguousIdentities": "none",
+            "correspondenceMethod": "explicit_atom_ids",
+            "fitGeometry": "non_collinear",
+            "fitMinimumAtomPairs": 3,
+            "rmsdAngstrom": 0.004011,
+            "unmatchedMobileAtomCount": 0,
+            "unmatchedMobileAtoms": "none",
+            "unmatchedReferenceAtomCount": 0,
+            "unmatchedReferenceAtoms": "none"
+          }
+        ],
+        "resultsComplete": true,
+        "summary": "RMSD 0.004 Å across 9 atom pairs using explicit atom-ID order; 0 unmatched reference atoms, 0 unmatched mobile atoms, 0 ambiguous identities, 0 atoms excluded by ambiguity.",
+        "truncated": false,
+        "unit": "angstrom"
+      },
+      "appliedRevision": 12
+    }
+  },
+  "ringFitWarning": "Horn least-squares ring refit; NOT HLA-fixed displacement",
+  "selectionDistanceControl": {
+    "applied": true,
+    "message": "distance = 0.754 Å.",
+    "state": {
+      "appliedRevision": 13,
+      "measurement": {
+        "atomIds": [
+          "normal_free|1_555|3139",
+          "normal_bound|1_555|3142"
+        ],
+        "kind": "distance",
+        "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+        "unit": "angstrom",
+        "value": 0.7539359646846756,
+        "resolvedTargets": [
+          {
+            "atomId": "normal_free|1_555|3139",
+            "sourceAtomCount": 9
+          },
+          {
+            "atomId": "normal_bound|1_555|3142",
+            "sourceAtomCount": 9
+          }
+        ]
+      }
+    }
+  },
+  "selectionDistanceWarning": "Multi-atom distance resolves closest atom pair, NOT centroids"
+}

@@ -1,0 +1,325 @@
+{
+  "artifact": {
+    "byteLength": 676848,
+    "mediaType": "image/png",
+    "outputPath": "../plugin-results/hhat-native-interface.png",
+    "sha256": "8b618ef5aa1b437cc8d8d8d885f7ce41944c7ec5c3410577dc146399372ede26"
+  },
+  "createdAt": "2026-09-10T01:55:42.019Z",
+  "provenance": {
+    "canonicalSpec": "{\"autoCrop\":false,\"cropPadding\":16,\"destination\":{\"base\":\"opened-source\",\"collisionPolicy\":\"exact\",\"kind\":\"workspace\",\"relativePath\":\"../plugin-results/hhat-native-interface.png\"},\"format\":\"png\",\"height\":1000,\"kind\":\"image\",\"outputPath\":\"../plugin-results/hhat-native-interface.png\",\"overwrite\":false,\"scene\":{\"antialiasing\":\"quality\",\"background\":\"#FFFFFF\",\"camera\":{\"clippingRadius\":18.497427417914107,\"fovDegrees\":45,\"mode\":\"perspective\",\"nearClip\":1,\"orientation\":\"current\",\"position\":[28.508887,-36.854499,97.448209],\"target\":[28.508887,-36.854499,49.112102],\"up\":[0,1,0]},\"clearExisting\":true,\"density\":[],\"layers\":[{\"color\":{\"kind\":\"uniform\",\"value\":\"#B6C3CC\"},\"labels\":false,\"opacity\":0.45,\"representation\":\"cartoon\",\"target\":{\"expression\":{\"chain\":\"A\",\"kind\":\"chain\",\"objectId\":\"primary\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#C7A7D7\"},\"labels\":false,\"opacity\":0.5,\"representation\":\"cartoon\",\"target\":{\"expression\":{\"chain\":\"D\",\"kind\":\"chain\",\"objectId\":\"primary\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"element\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"primary\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"element\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"D\",\"kind\":\"residue\",\"objectId\":\"primary\",\"residue\":100},\"kind\":\"expression\"},\"visible\":true}],\"lighting\":\"studio\",\"scientificAnnotations\":{\"guides\":[],\"quality\":[],\"symmetry\":[]}},\"transparent\":false,\"width\":1400}",
+    "density": {
+      "initial": [],
+      "sceneTransitions": []
+    },
+    "generatedAt": "2026-09-10T01:55:41.367Z",
+    "output": {
+      "autoCrop": false,
+      "crop": {
+        "applied": false,
+        "empty": false,
+        "height": 1000,
+        "padding": 16,
+        "width": 1400,
+        "x": 0,
+        "y": 0
+      },
+      "format": "png",
+      "height": 1000,
+      "sourceHeight": 1000,
+      "sourceWidth": 1400,
+      "transparent": false,
+      "width": 1400
+    },
+    "renderer": "Mol* 5.11.0",
+    "replay": {
+      "autoCrop": false,
+      "cropPadding": 16,
+      "destination": {
+        "base": "opened-source",
+        "collisionPolicy": "exact",
+        "kind": "workspace",
+        "relativePath": "../plugin-results/hhat-native-interface.png"
+      },
+      "format": "png",
+      "height": 1000,
+      "kind": "image",
+      "outputPath": "../plugin-results/hhat-native-interface.png",
+      "overwrite": false,
+      "scene": {
+        "antialiasing": "quality",
+        "background": "#FFFFFF",
+        "camera": {
+          "clippingRadius": 18.497427417914107,
+          "fovDegrees": 45,
+          "mode": "perspective",
+          "nearClip": 1,
+          "orientation": "current",
+          "position": [
+            28.508887,
+            -36.854499,
+            97.448209
+          ],
+          "target": [
+            28.508887,
+            -36.854499,
+            49.112102
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "clearExisting": true,
+        "density": [],
+        "layers": [
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#B6C3CC"
+            },
+            "labels": false,
+            "opacity": 0.45,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "chain": "A",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#C7A7D7"
+            },
+            "labels": false,
+            "opacity": 0.5,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "chain": "D",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "element"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "element"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "D",
+                "kind": "residue",
+                "objectId": "primary",
+                "residue": 100
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          }
+        ],
+        "lighting": "studio",
+        "scientificAnnotations": {
+          "guides": [],
+          "quality": [],
+          "symmetry": []
+        }
+      },
+      "transparent": false,
+      "width": 1400
+    },
+    "schemaVersion": 1,
+    "source": {
+      "fileName": "6UK4.pdb",
+      "name": "6UK4.pdb",
+      "resourceUri": "[redacted local viewer resource URI]",
+      "sha256": "860ef8230846da163e75b8401d8aac8f65ded428a418a584633fe1169b3e546a"
+    },
+    "structureObjects": [
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UK4.pdb",
+        "frameCount": 1,
+        "id": "primary",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": true,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": true
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UJQ.pdb",
+        "frameCount": 1,
+        "id": "normal_free",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": false
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UJO.pdb",
+        "frameCount": 1,
+        "id": "mutant_free",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": false
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UK2.pdb",
+        "frameCount": 1,
+        "id": "normal_bound",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[redacted local viewer resource URI]",
+        "visible": false
+      }
+    ],
+    "encodingDurationMs": 1629,
+    "jobId": "696ba5fc-774c-4795-8991-7570051d2fcc",
+    "workspacePublication": {
+      "destination": {
+        "base": "opened-source",
+        "relativePath": "../plugin-results/hhat-native-interface.png"
+      },
+      "artifact": {
+        "kind": "render",
+        "mediaType": "image/png"
+      },
+      "output": {
+        "workspacePath": "rosalind/plugin-results/hhat-native-interface.png"
+      },
+      "plugin": {
+        "name": "structure-viewer",
+        "version": "0.1.80"
+      },
+      "schemaVersion": 1,
+      "source": {
+        "sha256": "860ef8230846da163e75b8401d8aac8f65ded428a418a584633fe1169b3e546a",
+        "workspacePath": "rosalind/structures/6UK4.pdb"
+      }
+    }
+  },
+  "renderer": "Mol* 5.11.0",
+  "schemaVersion": 1,
+  "publication": {
+    "publisher": "Codex",
+    "change": "Only opaque viewer-file resource URIs redacted; native PNG bytes, camera, source hashes and scientific provenance unchanged",
+    "redactedUriCount": 5,
+    "originalSidecarSha256": "e00ea3a99ce6ff5bd6ada2aee5148aeac47f70bc65a6b0d788f129e1e160ae57"
+  }
+}

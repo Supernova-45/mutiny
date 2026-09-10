@@ -31,8 +31,12 @@
   "proposedCorrections": [],
   "unsupported": [
     {
-      "task": "Rosalind Workbench execution and screenshots",
-      "reason": "No callable Workbench or connected scientific plugin in this session"
+      "task": "Screenshot of surrounding Rosalind Workbench UI",
+      "reason": "Native molecular PNG renders succeeded; Computer Use access to Codex host denied. Render is not a screenshot of surrounding UI."
+    },
+    {
+      "task": "Completed Sequence Viewer analysis/export",
+      "reason": "Records mounted and query succeeded; alignment queued but completion/query/export could not apply."
     }
   ],
   "provenance": {
@@ -40,7 +44,18 @@
     "script": "rosalind/analysis/structure.py",
     "python": "3.9.6",
     "numpy": "1.26.4",
-    "biopython": "1.85"
+    "biopython": "1.85",
+    "nativeVerification": {
+      "plugin": "Molecular Structure Viewer 0.1.80",
+      "receipt": "rosalind/plugin-results/hhat-native-measurements.json",
+      "verification": "rosalind/plugin-results/hhat-native-verification.json",
+      "nativeCsv": "rosalind/plugin-results/hhat-native-results.csv",
+      "nativeImages": [
+        "rosalind/plugin-results/hhat-native-interface.png",
+        "rosalind/plugin-results/hhat-native-four-state.png"
+      ],
+      "scope": "Native atom-distance/contact measurements on independently reconstructed HLA-aligned inputs; local full-precision geometry remains separately attributed."
+    }
   },
   "coordinateFrame": {
     "id": "6UJQ-HLA-raw",
