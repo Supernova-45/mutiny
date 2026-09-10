@@ -1,0 +1,902 @@
+{
+  "activeObjectId": "KRAS_mutant_7OW6",
+  "assemblySymmetry": [],
+  "analyses": [],
+  "annotations": [],
+  "background": "#FFFFFF",
+  "camera": {
+    "clippingRadius": 11.723779018790495,
+    "fovDegrees": 45,
+    "mode": "perspective",
+    "nearClip": 1,
+    "orientation": "current",
+    "position": [
+      -43.993341,
+      18.738478,
+      30.96776
+    ],
+    "target": [
+      -43.993341,
+      18.738478,
+      0.332049
+    ],
+    "up": [
+      0,
+      1,
+      0
+    ]
+  },
+  "capabilities": {
+    "analyses": [
+      "distance",
+      "angle",
+      "dihedral",
+      "contacts",
+      "clashes",
+      "hydrogen_bonds",
+      "rmsd",
+      "centroid",
+      "principal_axes",
+      "best_fit_plane",
+      "sasa",
+      "buried_area",
+      "density_fit",
+      "map_correlation",
+      "trajectory_series"
+    ],
+    "guides": [
+      "label",
+      "orientation",
+      "plane"
+    ],
+    "budgets": {
+      "analysisAtoms": 20000,
+      "pairComparisons": 5000000,
+      "queryPageRows": 500,
+      "sasaAtoms": 2000,
+      "sasaNeighborCandidateChecks": 250000,
+      "sasaOcclusionChecks": 20000000,
+      "sasaSamples": 960,
+      "trajectorySampleFrames": 2000
+    },
+    "coordinateFormats": [
+      "pdb",
+      "cif",
+      "mmcif",
+      "mol",
+      "sdf",
+      "mol2",
+      "pqr",
+      "pdbqt",
+      "gro",
+      "xyz"
+    ],
+    "densityFormats": [
+      "ccp4",
+      "map",
+      "mrc",
+      "dsn6",
+      "cube",
+      "dx",
+      "dscif"
+    ],
+    "exports": [
+      "scene-json",
+      "selection-pdb",
+      "selection-mmcif",
+      "selection-bcif",
+      "models-mmcif",
+      "models-bcif",
+      "geometry-glb",
+      "geometry-stl",
+      "geometry-obj",
+      "geometry-usdz",
+      "results-csv",
+      "png",
+      "mp4"
+    ],
+    "movieTimeline": true,
+    "performanceTiers": [
+      {
+        "atomCount": 100000,
+        "name": "small",
+        "quality": "high"
+      },
+      {
+        "atomCount": 1000000,
+        "name": "medium",
+        "quality": "medium"
+      },
+      {
+        "atomCount": 10000000,
+        "name": "large",
+        "quality": "low"
+      }
+    ],
+    "queryLanguageVersion": 1,
+    "sceneStateVersion": 2,
+    "trajectoryFormats": [
+      "xtc",
+      "dcd",
+      "trr",
+      "nctraj",
+      "lammpstrj",
+      "multi-model-pdb"
+    ]
+  },
+  "dirtyDerivedObjectIds": [],
+  "focus": {
+    "atomCount": 0,
+    "atomIds": [],
+    "atomIdsTruncated": false,
+    "expression": null,
+    "summary": null
+  },
+  "geometryRevision": 6,
+  "layers": [
+    {
+      "color": {
+        "kind": "uniform",
+        "value": "#218EAE"
+      },
+      "id": "normal",
+      "labels": false,
+      "name": "7OW5 normal KRAS",
+      "opacity": 1,
+      "representation": "sticks",
+      "target": {
+        "chain": "C",
+        "kind": "chain",
+        "objectId": "KRAS_normal_7OW5"
+      },
+      "visible": true
+    },
+    {
+      "color": {
+        "kind": "uniform",
+        "value": "#DB7B38"
+      },
+      "id": "mutant",
+      "labels": false,
+      "name": "7OW6 mutant KRAS",
+      "opacity": 1,
+      "representation": "sticks",
+      "target": {
+        "chain": "C",
+        "kind": "chain",
+        "objectId": "KRAS_mutant_7OW6"
+      },
+      "visible": true
+    },
+    {
+      "color": {
+        "kind": "uniform",
+        "value": "#778899"
+      },
+      "id": "hla70",
+      "labels": true,
+      "name": "Mutant HLA residue 70",
+      "opacity": 1,
+      "representation": "sticks",
+      "target": {
+        "chain": "A",
+        "kind": "residue",
+        "residue": 70,
+        "objectId": "KRAS_mutant_7OW6"
+      },
+      "visible": true
+    },
+    {
+      "color": {
+        "kind": "uniform",
+        "value": "#778899"
+      },
+      "id": "hla114",
+      "labels": true,
+      "name": "Mutant HLA residue 114",
+      "opacity": 1,
+      "representation": "sticks",
+      "target": {
+        "chain": "A",
+        "kind": "residue",
+        "residue": 114,
+        "objectId": "KRAS_mutant_7OW6"
+      },
+      "visible": true
+    }
+  ],
+  "lighting": "studio",
+  "measurements": [
+    {
+      "createdAt": 1789082961108,
+      "id": "measurement-17",
+      "kind": "distance",
+      "label": "distance 3.024 Å",
+      "labelMode": "auto",
+      "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+      "resolvedTargets": [
+        {
+          "atomId": "KRAS_mutant_7OW6|ASM-1|3109",
+          "point": [
+            -42.615958961254705,
+            20.907296839653863,
+            1.021027227132428
+          ],
+          "sourceAtomCount": 8
+        },
+        {
+          "atomId": "KRAS_mutant_7OW6|ASM-1|576",
+          "point": [
+            -41.44579566030074,
+            18.150459386464657,
+            0.6029063457002914
+          ],
+          "sourceAtomCount": 9
+        }
+      ],
+      "targets": [
+        {
+          "chain": "C",
+          "kind": "residue",
+          "residue": 6,
+          "objectId": "KRAS_mutant_7OW6"
+        },
+        {
+          "chain": "A",
+          "kind": "residue",
+          "residue": 70,
+          "objectId": "KRAS_mutant_7OW6"
+        }
+      ],
+      "unit": "angstrom",
+      "value": 3.023947745199281,
+      "visible": true
+    },
+    {
+      "createdAt": 1789082961620,
+      "id": "measurement-18",
+      "kind": "distance",
+      "label": "distance 2.951 Å",
+      "labelMode": "auto",
+      "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+      "resolvedTargets": [
+        {
+          "atomId": "KRAS_mutant_7OW6|ASM-1|3116",
+          "point": [
+            -42.155454851223034,
+            18.17476096185755,
+            4.115154753119148
+          ],
+          "sourceAtomCount": 8
+        },
+        {
+          "atomId": "KRAS_mutant_7OW6|ASM-1|927",
+          "point": [
+            -44.151730810740446,
+            16.0433558601529,
+            4.54215393430059
+          ],
+          "sourceAtomCount": 11
+        }
+      ],
+      "targets": [
+        {
+          "chain": "C",
+          "kind": "residue",
+          "residue": 6,
+          "objectId": "KRAS_mutant_7OW6"
+        },
+        {
+          "chain": "A",
+          "kind": "residue",
+          "residue": 114,
+          "objectId": "KRAS_mutant_7OW6"
+        }
+      ],
+      "unit": "angstrom",
+      "value": 2.9513274496147317,
+      "visible": true
+    }
+  ],
+  "sceneGuides": [],
+  "namedSelections": {},
+  "objects": [
+    {
+      "construction": {
+        "dynamicBonds": false,
+        "modelIndex": 0,
+        "kind": "model"
+      },
+      "constructionOptions": {
+        "assemblies": [],
+        "assembliesTruncated": false,
+        "assemblyCount": 0,
+        "modelCount": 1,
+        "models": [
+          {
+            "index": 0,
+            "modelNumber": 1
+          }
+        ],
+        "modelsTruncated": false,
+        "operatorCount": 1,
+        "operators": [
+          {
+            "assemblyId": null,
+            "instanceId": "1_555",
+            "modelNumber": 1,
+            "name": "1_555",
+            "operatorIds": [],
+            "unitCount": 3
+          }
+        ],
+        "operatorsTruncated": false
+      },
+      "derived": false,
+      "fileName": "6UJQ.pdb",
+      "frameCount": 1,
+      "id": "primary",
+      "label": "6UJQ.pdb",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "operationCount": 0,
+      "primary": true,
+      "visible": false
+    },
+    {
+      "construction": {
+        "dynamicBonds": false,
+        "modelIndex": 0,
+        "kind": "model"
+      },
+      "constructionOptions": {
+        "assemblies": [],
+        "assembliesTruncated": false,
+        "assemblyCount": 0,
+        "modelCount": 1,
+        "models": [
+          {
+            "index": 0,
+            "modelNumber": 1
+          }
+        ],
+        "modelsTruncated": false,
+        "operatorCount": 1,
+        "operators": [
+          {
+            "assemblyId": null,
+            "instanceId": "1_555",
+            "modelNumber": 1,
+            "name": "1_555",
+            "operatorIds": [],
+            "unitCount": 3
+          }
+        ],
+        "operatorsTruncated": false
+      },
+      "derived": false,
+      "fileName": "6UJO.pdb",
+      "frameCount": 1,
+      "id": "HHAT_mutant_free_6UJO",
+      "label": "HHAT_mutant_free_6UJO",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "operationCount": 0,
+      "primary": false,
+      "visible": false
+    },
+    {
+      "construction": {
+        "dynamicBonds": false,
+        "modelIndex": 0,
+        "kind": "model"
+      },
+      "constructionOptions": {
+        "assemblies": [],
+        "assembliesTruncated": false,
+        "assemblyCount": 0,
+        "modelCount": 1,
+        "models": [
+          {
+            "index": 0,
+            "modelNumber": 1
+          }
+        ],
+        "modelsTruncated": false,
+        "operatorCount": 1,
+        "operators": [
+          {
+            "assemblyId": null,
+            "instanceId": "1_555",
+            "modelNumber": 1,
+            "name": "1_555",
+            "operatorIds": [],
+            "unitCount": 5
+          }
+        ],
+        "operatorsTruncated": false
+      },
+      "derived": false,
+      "fileName": "6UK4.pdb",
+      "frameCount": 1,
+      "id": "HHAT_bound_mutant_6UK4",
+      "label": "HHAT_bound_mutant_6UK4",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "operationCount": 0,
+      "primary": false,
+      "visible": false
+    },
+    {
+      "construction": {
+        "dynamicBonds": false,
+        "modelIndex": 0,
+        "assemblyId": "1",
+        "kind": "assembly"
+      },
+      "constructionOptions": {
+        "assemblies": [
+          {
+            "details": "AUTHOR DETERMINED BIOLOGICAL UNIT: PENTAMERIC",
+            "id": "1"
+          }
+        ],
+        "assembliesTruncated": false,
+        "assemblyCount": 1,
+        "modelCount": 1,
+        "models": [
+          {
+            "index": 0,
+            "modelNumber": 1
+          }
+        ],
+        "modelsTruncated": false,
+        "operatorCount": 1,
+        "operators": [
+          {
+            "assemblyId": "1",
+            "instanceId": "ASM-1",
+            "modelNumber": 1,
+            "name": "ASM_1",
+            "operatorIds": [
+              "1"
+            ],
+            "unitCount": 8
+          }
+        ],
+        "operatorsTruncated": false
+      },
+      "derived": false,
+      "fileName": "7OW5.pdb",
+      "frameCount": 1,
+      "id": "KRAS_normal_7OW5",
+      "label": "KRAS_normal_7OW5",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "operationCount": 0,
+      "primary": false,
+      "visible": true
+    },
+    {
+      "construction": {
+        "dynamicBonds": false,
+        "modelIndex": 0,
+        "assemblyId": "1",
+        "kind": "assembly"
+      },
+      "constructionOptions": {
+        "assemblies": [
+          {
+            "details": "AUTHOR DETERMINED BIOLOGICAL UNIT: PENTAMERIC",
+            "id": "1"
+          }
+        ],
+        "assembliesTruncated": false,
+        "assemblyCount": 1,
+        "modelCount": 1,
+        "models": [
+          {
+            "index": 0,
+            "modelNumber": 1
+          }
+        ],
+        "modelsTruncated": false,
+        "operatorCount": 1,
+        "operators": [
+          {
+            "assemblyId": "1",
+            "instanceId": "ASM-1",
+            "modelNumber": 1,
+            "name": "ASM_1",
+            "operatorIds": [
+              "1"
+            ],
+            "unitCount": 7
+          }
+        ],
+        "operatorsTruncated": false
+      },
+      "derived": false,
+      "fileName": "7OW6.pdb",
+      "frameCount": 1,
+      "id": "KRAS_mutant_7OW6",
+      "label": "KRAS_mutant_7OW6",
+      "matrix": [
+        0.999950417627832,
+        -0.008391653452053647,
+        0.005361197488966571,
+        0,
+        0.008390774303644846,
+        0.9999647794503287,
+        0.00018645540667943175,
+        0,
+        -0.005362573333797751,
+        -0.00014146156376463812,
+        0.9999856112944517,
+        0,
+        -0.6718251115389862,
+        0.025732593920889668,
+        0.4079929827829645,
+        1
+      ],
+      "operationCount": 0,
+      "primary": false,
+      "visible": true
+    },
+    {
+      "construction": {
+        "dynamicBonds": false,
+        "modelIndex": 0,
+        "assemblyId": "1",
+        "kind": "assembly"
+      },
+      "constructionOptions": {
+        "assemblies": [
+          {
+            "details": "AUTHOR DETERMINED BIOLOGICAL UNIT: TRIMERIC",
+            "id": "1"
+          }
+        ],
+        "assembliesTruncated": false,
+        "assemblyCount": 1,
+        "modelCount": 1,
+        "models": [
+          {
+            "index": 0,
+            "modelNumber": 1
+          }
+        ],
+        "modelsTruncated": false,
+        "operatorCount": 1,
+        "operators": [
+          {
+            "assemblyId": "1",
+            "instanceId": "ASM-1",
+            "modelNumber": 1,
+            "name": "ASM_1",
+            "operatorIds": [
+              "1"
+            ],
+            "unitCount": 4
+          }
+        ],
+        "operatorsTruncated": false
+      },
+      "derived": false,
+      "fileName": "6UJQ.pdb",
+      "frameCount": 1,
+      "id": "deposited_6UJQ",
+      "label": "deposited_6UJQ",
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "operationCount": 0,
+      "primary": false,
+      "visible": false
+    }
+  ],
+  "operationLog": [
+    {
+      "at": 1789082437044,
+      "description": "Publish initial automatic Mol* camera",
+      "id": "op-1",
+      "origin": "system",
+      "revision": 1,
+      "type": "sync_initial_camera"
+    },
+    {
+      "at": 1789082496406,
+      "description": "Synchronize structure object inventory",
+      "id": "op-2",
+      "origin": "model",
+      "revision": 2,
+      "type": "sync_objects"
+    },
+    {
+      "at": 1789082531344,
+      "description": "Apply live molecular scene",
+      "id": "op-3",
+      "origin": "model",
+      "revision": 3,
+      "type": "apply_scene"
+    },
+    {
+      "at": 1789082531921,
+      "description": "Save scene 01 HHAT unbound W6 and P8",
+      "id": "op-4",
+      "origin": "model",
+      "revision": 4,
+      "type": "save_scene"
+    },
+    {
+      "at": 1789082573645,
+      "description": "Update render storyboard",
+      "id": "op-5",
+      "origin": "ui",
+      "revision": 5,
+      "type": "update_storyboard"
+    },
+    {
+      "at": 1789082577690,
+      "description": "Synchronize structure object inventory",
+      "id": "op-6",
+      "origin": "model",
+      "revision": 6,
+      "type": "sync_objects"
+    },
+    {
+      "at": 1789082598867,
+      "description": "Apply live molecular scene",
+      "id": "op-7",
+      "origin": "model",
+      "revision": 7,
+      "type": "apply_scene"
+    },
+    {
+      "at": 1789082647583,
+      "description": "Save scene 01 HHAT unbound W6 and P8",
+      "id": "op-8",
+      "origin": "model",
+      "revision": 8,
+      "type": "save_scene"
+    },
+    {
+      "at": 1789082687594,
+      "description": "Apply live molecular scene",
+      "id": "op-9",
+      "origin": "model",
+      "revision": 9,
+      "type": "apply_scene"
+    },
+    {
+      "at": 1789082687801,
+      "description": "Save scene 01 HHAT unbound W6 and P8",
+      "id": "op-10",
+      "origin": "model",
+      "revision": 10,
+      "type": "save_scene"
+    },
+    {
+      "at": 1789082816873,
+      "description": "Apply live molecular scene",
+      "id": "op-11",
+      "origin": "model",
+      "revision": 11,
+      "type": "apply_scene"
+    },
+    {
+      "at": 1789082817604,
+      "description": "Save scene 01b HHAT receptor context",
+      "id": "op-12",
+      "origin": "model",
+      "revision": 12,
+      "type": "save_scene"
+    },
+    {
+      "at": 1789082910680,
+      "description": "Synchronize structure object inventory",
+      "id": "op-13",
+      "origin": "model",
+      "revision": 13,
+      "type": "sync_objects"
+    },
+    {
+      "at": 1789082911972,
+      "description": "Synchronize structure object inventory",
+      "id": "op-14",
+      "origin": "model",
+      "revision": 14,
+      "type": "sync_objects"
+    },
+    {
+      "at": 1789082929668,
+      "description": "Synchronize structure object inventory",
+      "id": "op-15",
+      "origin": "model",
+      "revision": 15,
+      "type": "sync_objects"
+    },
+    {
+      "at": 1789082960637,
+      "description": "Apply live molecular scene",
+      "id": "op-16",
+      "origin": "model",
+      "revision": 16,
+      "type": "apply_scene"
+    },
+    {
+      "at": 1789082961108,
+      "description": "Measure distance",
+      "id": "op-17",
+      "origin": "model",
+      "revision": 17,
+      "type": "measure"
+    },
+    {
+      "at": 1789082961621,
+      "description": "Measure distance",
+      "id": "op-18",
+      "origin": "model",
+      "revision": 18,
+      "type": "measure"
+    },
+    {
+      "at": 1789082962450,
+      "description": "Save scene 02 KRAS mutant Q70 R114 contacts",
+      "id": "op-19",
+      "origin": "model",
+      "revision": 19,
+      "type": "save_scene"
+    },
+    {
+      "at": 1789083044557,
+      "description": "Synchronize structure object inventory",
+      "id": "op-20",
+      "origin": "model",
+      "revision": 20,
+      "type": "sync_objects"
+    },
+    {
+      "at": 1789083044851,
+      "description": "Apply live molecular scene",
+      "id": "op-21",
+      "origin": "model",
+      "revision": 21,
+      "type": "apply_scene"
+    },
+    {
+      "at": 1789083079498,
+      "description": "Apply live molecular scene",
+      "id": "op-22",
+      "origin": "model",
+      "revision": 22,
+      "type": "apply_scene"
+    }
+  ],
+  "pendingOperation": null,
+  "qualityAssessment": [],
+  "redoAvailable": false,
+  "revision": 22,
+  "savedScenes": [
+    {
+      "createdAt": 1789082687801,
+      "name": "01 HHAT unbound W6 and P8",
+      "sourceRevision": 9
+    },
+    {
+      "createdAt": 1789082817604,
+      "name": "01b HHAT receptor context",
+      "sourceRevision": 11
+    },
+    {
+      "createdAt": 1789082962450,
+      "name": "02 KRAS mutant Q70 R114 contacts",
+      "sourceRevision": 18
+    }
+  ],
+  "sceneName": "02 KRAS mutant Q70 R114 contacts",
+  "selection": {
+    "atomCount": 0,
+    "atomIds": [],
+    "atomIdsTruncated": false,
+    "expression": null,
+    "summary": null
+  },
+  "storyboard": [
+    {
+      "id": "storyboard-step-2",
+      "step": {
+        "axis": "vertical",
+        "degrees": 360,
+        "durationSeconds": 8,
+        "easing": "ease_in_out",
+        "kind": "rotate"
+      }
+    }
+  ],
+  "syncError": null,
+  "syncStatus": "synced",
+  "trajectory": null,
+  "undoAvailable": true,
+  "version": 2,
+  "volumes": []
+}

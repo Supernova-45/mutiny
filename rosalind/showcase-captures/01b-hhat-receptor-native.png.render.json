@@ -1,0 +1,299 @@
+{
+  "artifact": {
+    "byteLength": 577154,
+    "mediaType": "image/png",
+    "outputPath": "../../rosalind/showcase-captures/01b-hhat-receptor-native.png",
+    "sha256": "efb1b161d107615430ffe15565f78f9f81171744c19cff108e8d5493d7592ce3"
+  },
+  "createdAt": "2026-09-10T23:28:29.349Z",
+  "provenance": {
+    "canonicalSpec": "{\"autoCrop\":false,\"cropPadding\":16,\"destination\":{\"base\":\"opened-source\",\"collisionPolicy\":\"versioned\",\"kind\":\"workspace\",\"relativePath\":\"../../rosalind/showcase-captures/01b-hhat-receptor-native.png\"},\"format\":\"png\",\"height\":1080,\"kind\":\"image\",\"outputPath\":\"../../rosalind/showcase-captures/01b-hhat-receptor-native.png\",\"overwrite\":false,\"scene\":{\"antialiasing\":\"quality\",\"background\":\"#FFFFFF\",\"camera\":{\"clippingRadius\":39.04545404855759,\"fovDegrees\":45,\"mode\":\"perspective\",\"nearClip\":1,\"orientation\":\"current\",\"position\":[33.055102,-42.601489,159.25026],\"target\":[33.055102,-42.601489,57.219571],\"up\":[0,1,0]},\"clearExisting\":true,\"density\":[],\"layers\":[{\"color\":{\"kind\":\"uniform\",\"value\":\"#99ADB8\"},\"labels\":false,\"opacity\":0.7,\"representation\":\"cartoon\",\"target\":{\"expression\":{\"chain\":\"A\",\"end\":180,\"kind\":\"residue_range\",\"objectId\":\"HHAT_bound_mutant_6UK4\",\"start\":1},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#AB80BB\"},\"labels\":false,\"opacity\":1,\"representation\":\"cartoon\",\"target\":{\"expression\":{\"chain\":\"D\",\"end\":110,\"kind\":\"residue_range\",\"objectId\":\"HHAT_bound_mutant_6UK4\",\"start\":1},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#729D98\"},\"labels\":false,\"opacity\":1,\"representation\":\"cartoon\",\"target\":{\"expression\":{\"chain\":\"E\",\"end\":110,\"kind\":\"residue_range\",\"objectId\":\"HHAT_bound_mutant_6UK4\",\"start\":1},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#E28034\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"HHAT_bound_mutant_6UK4\"},\"kind\":\"expression\"},\"visible\":true}],\"lighting\":\"studio\",\"scientificAnnotations\":{\"guides\":[],\"quality\":[],\"symmetry\":[]}},\"transparent\":false,\"width\":1920}",
+    "density": {
+      "initial": [],
+      "sceneTransitions": []
+    },
+    "generatedAt": "2026-09-10T23:28:28.937Z",
+    "output": {
+      "autoCrop": false,
+      "crop": {
+        "applied": false,
+        "empty": false,
+        "height": 1080,
+        "padding": 16,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "format": "png",
+      "height": 1080,
+      "sourceHeight": 1080,
+      "sourceWidth": 1920,
+      "transparent": false,
+      "width": 1920
+    },
+    "renderer": "Mol* 5.11.0",
+    "replay": {
+      "autoCrop": false,
+      "cropPadding": 16,
+      "destination": {
+        "base": "opened-source",
+        "collisionPolicy": "versioned",
+        "kind": "workspace",
+        "relativePath": "../../rosalind/showcase-captures/01b-hhat-receptor-native.png"
+      },
+      "format": "png",
+      "height": 1080,
+      "kind": "image",
+      "outputPath": "../../rosalind/showcase-captures/01b-hhat-receptor-native.png",
+      "overwrite": false,
+      "scene": {
+        "antialiasing": "quality",
+        "background": "#FFFFFF",
+        "camera": {
+          "clippingRadius": 39.04545404855759,
+          "fovDegrees": 45,
+          "mode": "perspective",
+          "nearClip": 1,
+          "orientation": "current",
+          "position": [
+            33.055102,
+            -42.601489,
+            159.25026
+          ],
+          "target": [
+            33.055102,
+            -42.601489,
+            57.219571
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "clearExisting": true,
+        "density": [],
+        "layers": [
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#99ADB8"
+            },
+            "labels": false,
+            "opacity": 0.7,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "chain": "A",
+                "end": 180,
+                "kind": "residue_range",
+                "objectId": "HHAT_bound_mutant_6UK4",
+                "start": 1
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#AB80BB"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "chain": "D",
+                "end": 110,
+                "kind": "residue_range",
+                "objectId": "HHAT_bound_mutant_6UK4",
+                "start": 1
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#729D98"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "chain": "E",
+                "end": 110,
+                "kind": "residue_range",
+                "objectId": "HHAT_bound_mutant_6UK4",
+                "start": 1
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#E28034"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "HHAT_bound_mutant_6UK4"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          }
+        ],
+        "lighting": "studio",
+        "scientificAnnotations": {
+          "guides": [],
+          "quality": [],
+          "symmetry": []
+        }
+      },
+      "transparent": false,
+      "width": 1920
+    },
+    "schemaVersion": 1,
+    "source": {
+      "fileName": "6UJQ.pdb",
+      "name": "6UJQ.pdb",
+      "resourceUri": "[opaque-viewer-resource-redacted]",
+      "sha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62"
+    },
+    "structureObjects": [
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UJQ.pdb",
+        "frameCount": 1,
+        "id": "primary",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": true,
+        "resourceUri": "[opaque-viewer-resource-redacted]",
+        "visible": false
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UJO.pdb",
+        "frameCount": 1,
+        "id": "HHAT_mutant_free_6UJO",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[opaque-viewer-resource-redacted]",
+        "visible": false
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UK4.pdb",
+        "frameCount": 1,
+        "id": "HHAT_bound_mutant_6UK4",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[opaque-viewer-resource-redacted]",
+        "visible": true
+      }
+    ],
+    "encodingDurationMs": 4339.700000047684,
+    "jobId": "e1d75a9f-2770-498e-ade1-5da3abb65b74",
+    "workspacePublication": {
+      "destination": {
+        "base": "opened-source",
+        "relativePath": "../../rosalind/showcase-captures/01b-hhat-receptor-native.png"
+      },
+      "artifact": {
+        "kind": "render",
+        "mediaType": "image/png"
+      },
+      "output": {
+        "workspacePath": "rosalind/showcase-captures/01b-hhat-receptor-native.png"
+      },
+      "plugin": {
+        "name": "structure-viewer",
+        "version": "0.1.80"
+      },
+      "schemaVersion": 1,
+      "source": {
+        "sha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62",
+        "workspacePath": "public/structures/6UJQ.pdb"
+      }
+    }
+  },
+  "renderer": "Mol* 5.11.0",
+  "schemaVersion": 1,
+  "publicationRedactions": {
+    "originalSidecarSha256": "d53ec67905a734f8418996ddb2f36af86f6f7d188a67831140ae5405bf8cc57c",
+    "reason": "Opaque local viewer resource URLs removed; source mapping/hashes in index.json. PNG bytes unchanged."
+  }
+}

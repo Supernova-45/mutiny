@@ -1,0 +1,116 @@
+{
+  "freshSceneRestoration": true,
+  "operations": [
+    {
+      "operation": "sequence.control_viewer",
+      "request": {
+        "sessionId": "0b47940c-06ff-49f3-ae44-5bf5457d3b18",
+        "action": "set_mode",
+        "mode": "alignment"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Switched the viewer to alignment mode."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Switched the viewer to alignment mode.",
+          "state": {
+            "mode": "alignment"
+          }
+        }
+      }
+    },
+    {
+      "operation": "sequence.control_viewer",
+      "request": {
+        "sessionId": "0b47940c-06ff-49f3-ae44-5bf5457d3b18",
+        "action": "set_alignment_view_options",
+        "cellWidth": 36,
+        "colorMode": "difference",
+        "showIdenticalAsDots": false
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "The viewer could not apply the requested action."
+          }
+        ],
+        "structuredContent": {
+          "applied": false,
+          "message": "The viewer could not apply the requested action.",
+          "state": {}
+        }
+      }
+    },
+    {
+      "operation": "sequence.control_viewer",
+      "request": {
+        "sessionId": "0b47940c-06ff-49f3-ae44-5bf5457d3b18",
+        "action": "set_alignment_reference",
+        "reference": "7OW5_C"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "The viewer could not apply the requested action."
+          }
+        ],
+        "structuredContent": {
+          "applied": false,
+          "message": "The viewer could not apply the requested action.",
+          "state": {}
+        }
+      }
+    },
+    {
+      "operation": "sequence.control_viewer",
+      "request": {
+        "sessionId": "0b47940c-06ff-49f3-ae44-5bf5457d3b18",
+        "action": "select_alignment_columns",
+        "start": 6,
+        "end": 6
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "The viewer could not apply the requested action."
+          }
+        ],
+        "structuredContent": {
+          "applied": false,
+          "message": "The viewer could not apply the requested action.",
+          "state": {}
+        }
+      }
+    },
+    {
+      "operation": "sequence.query_viewer",
+      "request": {
+        "sessionId": "0b47940c-06ff-49f3-ae44-5bf5457d3b18",
+        "target": "rows",
+        "limit": 10
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "The viewer could not apply the requested action."
+          }
+        ],
+        "structuredContent": {
+          "applied": false,
+          "message": "The viewer could not apply the requested action.",
+          "result": {},
+          "schemaVersion": 1
+        }
+      }
+    }
+  ]
+}

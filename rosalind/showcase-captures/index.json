@@ -1,0 +1,173 @@
+{
+  "packageStatus": "incomplete: genuine Workbench UI screenshots pending",
+  "reviewedHandoffCommit": "1efd6e1",
+  "pluginsObserved": {
+    "rosalind": {
+      "displayName": "Rosalind Workbench",
+      "version": "0.2.5-research-preview",
+      "manifestSha256": "638bc4bfb9c0646bee841748702bed6520124b5d8c514a2bc647635a33061413",
+      "verification": "Read installed cache manifest this session; not proof of a mounted parent Workbench UI."
+    },
+    "structure-viewer": {
+      "displayName": "Molecular Structure Viewer",
+      "version": "0.1.80",
+      "manifestSha256": "1080c27e8010ee9fdae3289db58c171e6f6dfaf9351f7d7f2d3a5c92d155bebf",
+      "verification": "Read installed cache manifest this session; not proof of a mounted parent Workbench UI."
+    },
+    "sequence-viewer": {
+      "displayName": "Biological Sequence & Alignment Viewer",
+      "version": "0.1.43",
+      "manifestSha256": "e2a3160d5cfb1556546f9d3709825580f09da2faf0c036df37ec660a7ffe6ff4",
+      "verification": "Read installed cache manifest this session; not proof of a mounted parent Workbench UI."
+    },
+    "life-sciences-literature": {
+      "displayName": "Life Sciences Literature",
+      "version": "0.1.5",
+      "manifestSha256": "d326ee61d6070b15117a1a260516371c9ef1745c3ce3cf8a949b5efcec886600",
+      "verification": "Read installed cache manifest this session; not proof of a mounted parent Workbench UI."
+    }
+  },
+  "pluginsUsedThisTurn": [
+    "Molecular Structure Viewer",
+    "Biological Sequence & Alignment Viewer"
+  ],
+  "notUsedThisTurn": [
+    "Life Sciences Literature (existing receipts only)",
+    "Rosalind Workbench parent UI (installed manifest only; not captured)"
+  ],
+  "sources": {
+    "primary": {
+      "path": "public/structures/6UJQ.pdb",
+      "sha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62"
+    },
+    "HHAT_mutant_free_6UJO": {
+      "path": "public/structures/6UJO.pdb",
+      "sha256": "eb36cec705b3f6aadc0956cb8eddb3fcffb9de1b4b845cabb7c4e7c27a9815da"
+    },
+    "HHAT_bound_mutant_6UK4": {
+      "path": "rosalind/structures/6UK4.pdb",
+      "sha256": "860ef8230846da163e75b8401d8aac8f65ded428a418a584633fe1169b3e546a"
+    },
+    "KRAS_normal_7OW5": {
+      "path": "rosalind/contrast-kras/sources/7OW5.pdb",
+      "sha256": "443ec1f07ef19667495274bb89517b6bfb990993bc1c7b4b375ccb1625b953bf"
+    },
+    "KRAS_mutant_7OW6": {
+      "path": "rosalind/contrast-kras/sources/7OW6.pdb",
+      "sha256": "816c5e5d259205873879977e7714b173bf70c358430daea6bd4f695ca0cefc2c"
+    },
+    "deposited_6UJQ": {
+      "path": "data/raw/6UJQ.pdb",
+      "sha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8"
+    }
+  },
+  "images": [
+    {
+      "file": "01-hhat-native-2.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f80e6b1d9fec4d294bf73909333b113f7384581f2c5ab7ae13d2e66f188a8e33",
+      "capturedAt": "2026-09-10T23:24:14.257Z",
+      "captureType": "native component render",
+      "plugin": "Molecular Structure Viewer",
+      "pluginVersion": "0.1.80",
+      "operation": "structure.render_image",
+      "operationId": "b4d9c220-1f54-4ede-8847-fe3998215818",
+      "receipt": "01-hhat-native-2.png.render.json",
+      "sourceMappings": "index.json#sources",
+      "freshOperation": "Fresh native rendering of restored scientific scenes; not repeated research or a UI screenshot.",
+      "establishes": "Normal 6UJQ and mutant 6UJO unbound peptides in the existing locally prepared app HLA frame; native labels mark mutant TRP6/PHE8.",
+      "qa": "inspected; use this HHAT close-up",
+      "limitations": "Does not establish surrounding Workbench/plugin UI. No postprocessing, captions or compositing."
+    },
+    {
+      "file": "01-hhat-native.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "738de1d70b2e8891367b6052a630528dafa3f40d3d638b51078e02d5564c31a6",
+      "capturedAt": "2026-09-10T23:22:56.484Z",
+      "captureType": "native component render",
+      "plugin": "Molecular Structure Viewer",
+      "pluginVersion": "0.1.80",
+      "operation": "structure.render_image",
+      "operationId": "5f4279c3-9943-4ed9-a606-3ff171e692f0",
+      "receipt": "01-hhat-native.png.render.json",
+      "sourceMappings": "index.json#sources",
+      "freshOperation": "Fresh native rendering of restored scientific scenes; not repeated research or a UI screenshot.",
+      "establishes": "Do not use: overlapping native labels; retained original attempt.",
+      "qa": "rejected for label legibility",
+      "limitations": "Does not establish surrounding Workbench/plugin UI. No postprocessing, captions or compositing."
+    },
+    {
+      "file": "01b-hhat-receptor-native.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "efb1b161d107615430ffe15565f78f9f81171744c19cff108e8d5493d7592ce3",
+      "capturedAt": "2026-09-10T23:28:29.349Z",
+      "captureType": "native component render",
+      "plugin": "Molecular Structure Viewer",
+      "pluginVersion": "0.1.80",
+      "operation": "structure.render_image",
+      "operationId": "e1d75a9f-2770-498e-ade1-5da3abb65b74",
+      "receipt": "01b-hhat-receptor-native.png.render.json",
+      "sourceMappings": "index.json#sources",
+      "freshOperation": "Fresh native rendering of restored scientific scenes; not repeated research or a UI screenshot.",
+      "establishes": "Prepared reconstructed mutant 6UK4 complex; HLA A:1\u2013180, peptide C and 302TIL D/E:1\u2013110 displayed. Crystal-mate reconstruction remains the earlier local preparation.",
+      "qa": "inspected; use as receptor context",
+      "limitations": "Does not establish surrounding Workbench/plugin UI. No postprocessing, captions or compositing."
+    },
+    {
+      "file": "02-kras-contacts-native.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "03f3485eab7a4ae2e552caf142ae4660461f42b6c1695a36749b38f4c9a1892f",
+      "capturedAt": "2026-09-10T23:30:12.985Z",
+      "captureType": "native component render",
+      "plugin": "Molecular Structure Viewer",
+      "pluginVersion": "0.1.80",
+      "operation": "structure.render_image",
+      "operationId": "5efc5822-3cc1-4b6e-ada0-70b9bab3ad6f",
+      "receipt": "02-kras-contacts-native.png.render.json",
+      "sourceMappings": "index.json#sources",
+      "freshOperation": "Fresh native rendering of restored scientific scenes; not repeated research or a UI screenshot.",
+      "establishes": "7OW5/7OW6 bound JDIa41b1 peptides; both measured pairs belong to mutant 7OW6, C6 N\u2013A70 OE1 and C6 OD2\u2013A114 NH2. Closest-heavy-atom distances, not binding energies.",
+      "qa": "inspected; measurements readable at original size",
+      "limitations": "Does not establish surrounding Workbench/plugin UI. No postprocessing, captions or compositing."
+    }
+  ],
+  "requestedUiCaptures": [
+    {
+      "file": "01-workbench-hhat.png",
+      "status": "awaiting manual screenshot",
+      "scene": "01 HHAT unbound W6 and P8"
+    },
+    {
+      "file": "01b-workbench-hhat-receptor.png",
+      "status": "awaiting manual screenshot",
+      "scene": "01b HHAT receptor context"
+    },
+    {
+      "file": "02-workbench-kras-contacts.png",
+      "status": "awaiting manual screenshot",
+      "scene": "02 KRAS mutant Q70 R114 contacts"
+    },
+    {
+      "file": "03-workbench-sequences.png",
+      "status": "awaiting manual screenshot",
+      "scene": "Sequence card / side pane: peptides.afa; alignment mode accepted but later controls/row query unacknowledged"
+    },
+    {
+      "file": "04-literature-retrieval.png",
+      "status": "awaiting manual screenshot",
+      "scene": "Existing Poole Life Sciences Literature receipt; no fresh literature invocation this turn"
+    },
+    {
+      "file": "05-workbench-density.png",
+      "status": "unavailable",
+      "reason": "Native load_public_density failed before loading: active workspace-read roots not bound."
+    }
+  ],
+  "structureSessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+  "sequenceSessionId": "0b47940c-06ff-49f3-ae44-5bf5457d3b18",
+  "captureRestriction": "No UI screenshot tool is available through the native plugins. The handoff forbids retrying previously denied Computer Use or bypassing it. No retry or substitute UI was made."
+}

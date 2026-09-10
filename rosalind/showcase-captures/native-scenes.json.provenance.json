@@ -1,0 +1,37 @@
+{
+  "artifact": {
+    "byteLength": 19407,
+    "mediaType": "application/json",
+    "outputPath": "../../rosalind/showcase-captures/native-scenes.json",
+    "sha256": "ce439e8f58c0a0edf8dfcd8ec9dc93b217a46ebc733e06d2970d37bdfcdde31c"
+  },
+  "createdAt": "2026-09-10T23:31:24.148Z",
+  "provenance": {
+    "format": "scene-json",
+    "sceneRevision": 22,
+    "selectionAtomCount": 0,
+    "workspacePublication": {
+      "destination": {
+        "base": "opened-source",
+        "relativePath": "../../rosalind/showcase-captures/native-scenes.json"
+      },
+      "artifact": {
+        "kind": "export",
+        "mediaType": "application/json"
+      },
+      "output": {
+        "workspacePath": "rosalind/showcase-captures/native-scenes.json"
+      },
+      "plugin": {
+        "name": "structure-viewer",
+        "version": "0.1.80"
+      },
+      "schemaVersion": 1,
+      "source": {
+        "sha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62",
+        "workspacePath": "public/structures/6UJQ.pdb"
+      }
+    }
+  },
+  "schemaVersion": 1
+}

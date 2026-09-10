@@ -1,0 +1,324 @@
+{
+  "artifact": {
+    "byteLength": 1068735,
+    "mediaType": "image/png",
+    "outputPath": "../../rosalind/showcase-captures/01-hhat-native.png",
+    "sha256": "738de1d70b2e8891367b6052a630528dafa3f40d3d638b51078e02d5564c31a6"
+  },
+  "createdAt": "2026-09-10T23:22:56.484Z",
+  "provenance": {
+    "canonicalSpec": "{\"autoCrop\":false,\"cropPadding\":16,\"destination\":{\"base\":\"opened-source\",\"collisionPolicy\":\"versioned\",\"kind\":\"workspace\",\"relativePath\":\"../../rosalind/showcase-captures/01-hhat-native.png\"},\"format\":\"png\",\"height\":1080,\"kind\":\"image\",\"outputPath\":\"../../rosalind/showcase-captures/01-hhat-native.png\",\"overwrite\":false,\"scene\":{\"antialiasing\":\"quality\",\"background\":\"#FFFFFF\",\"camera\":{\"clippingRadius\":11.828237746535683,\"fovDegrees\":45,\"mode\":\"perspective\",\"nearClip\":1,\"orientation\":\"current\",\"position\":[-0.473388,1.121102,30.100858],\"target\":[-0.473388,1.121102,-0.807816],\"up\":[0,1,0]},\"clearExisting\":true,\"density\":[],\"layers\":[{\"color\":{\"kind\":\"uniform\",\"value\":\"#AAB8C4\"},\"labels\":false,\"opacity\":0.2,\"representation\":\"cartoon\",\"target\":{\"expression\":{\"chain\":\"A\",\"kind\":\"chain\",\"objectId\":\"primary\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#218EAE\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"primary\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#DB7B38\"},\"labels\":false,\"opacity\":1,\"representation\":\"sticks\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"chain\",\"objectId\":\"HHAT_mutant_free_6UJO\"},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#222222\"},\"labelMode\":\"residue\",\"labels\":true,\"opacity\":1,\"representation\":\"label\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"residue\",\"objectId\":\"primary\",\"residue\":6},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#222222\"},\"labelMode\":\"residue\",\"labels\":true,\"opacity\":1,\"representation\":\"label\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"residue\",\"objectId\":\"primary\",\"residue\":8},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#222222\"},\"labelMode\":\"residue\",\"labels\":true,\"opacity\":1,\"representation\":\"label\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"residue\",\"objectId\":\"HHAT_mutant_free_6UJO\",\"residue\":6},\"kind\":\"expression\"},\"visible\":true},{\"color\":{\"kind\":\"uniform\",\"value\":\"#222222\"},\"labelMode\":\"residue\",\"labels\":true,\"opacity\":1,\"representation\":\"label\",\"target\":{\"expression\":{\"chain\":\"C\",\"kind\":\"residue\",\"objectId\":\"HHAT_mutant_free_6UJO\",\"residue\":8},\"kind\":\"expression\"},\"visible\":true}],\"lighting\":\"studio\",\"scientificAnnotations\":{\"guides\":[],\"quality\":[],\"symmetry\":[]}},\"transparent\":false,\"width\":1920}",
+    "density": {
+      "initial": [],
+      "sceneTransitions": []
+    },
+    "generatedAt": "2026-09-10T23:22:55.778Z",
+    "output": {
+      "autoCrop": false,
+      "crop": {
+        "applied": false,
+        "empty": false,
+        "height": 1080,
+        "padding": 16,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "format": "png",
+      "height": 1080,
+      "sourceHeight": 1080,
+      "sourceWidth": 1920,
+      "transparent": false,
+      "width": 1920
+    },
+    "renderer": "Mol* 5.11.0",
+    "replay": {
+      "autoCrop": false,
+      "cropPadding": 16,
+      "destination": {
+        "base": "opened-source",
+        "collisionPolicy": "versioned",
+        "kind": "workspace",
+        "relativePath": "../../rosalind/showcase-captures/01-hhat-native.png"
+      },
+      "format": "png",
+      "height": 1080,
+      "kind": "image",
+      "outputPath": "../../rosalind/showcase-captures/01-hhat-native.png",
+      "overwrite": false,
+      "scene": {
+        "antialiasing": "quality",
+        "background": "#FFFFFF",
+        "camera": {
+          "clippingRadius": 11.828237746535683,
+          "fovDegrees": 45,
+          "mode": "perspective",
+          "nearClip": 1,
+          "orientation": "current",
+          "position": [
+            -0.473388,
+            1.121102,
+            30.100858
+          ],
+          "target": [
+            -0.473388,
+            1.121102,
+            -0.807816
+          ],
+          "up": [
+            0,
+            1,
+            0
+          ]
+        },
+        "clearExisting": true,
+        "density": [],
+        "layers": [
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#AAB8C4"
+            },
+            "labels": false,
+            "opacity": 0.2,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "chain": "A",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#218EAE"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#DB7B38"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "HHAT_mutant_free_6UJO"
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            },
+            "labelMode": "residue",
+            "labels": true,
+            "opacity": 1,
+            "representation": "label",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "objectId": "primary",
+                "residue": 6
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            },
+            "labelMode": "residue",
+            "labels": true,
+            "opacity": 1,
+            "representation": "label",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "objectId": "primary",
+                "residue": 8
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            },
+            "labelMode": "residue",
+            "labels": true,
+            "opacity": 1,
+            "representation": "label",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "objectId": "HHAT_mutant_free_6UJO",
+                "residue": 6
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            },
+            "labelMode": "residue",
+            "labels": true,
+            "opacity": 1,
+            "representation": "label",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "objectId": "HHAT_mutant_free_6UJO",
+                "residue": 8
+              },
+              "kind": "expression"
+            },
+            "visible": true
+          }
+        ],
+        "lighting": "studio",
+        "scientificAnnotations": {
+          "guides": [],
+          "quality": [],
+          "symmetry": []
+        }
+      },
+      "transparent": false,
+      "width": 1920
+    },
+    "schemaVersion": 1,
+    "source": {
+      "fileName": "6UJQ.pdb",
+      "name": "6UJQ.pdb",
+      "resourceUri": "[opaque-viewer-resource-redacted]",
+      "sha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62"
+    },
+    "structureObjects": [
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UJQ.pdb",
+        "frameCount": 1,
+        "id": "primary",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": true,
+        "resourceUri": "[opaque-viewer-resource-redacted]",
+        "visible": true
+      },
+      {
+        "construction": {
+          "dynamicBonds": false,
+          "kind": "model",
+          "modelIndex": 0
+        },
+        "fileName": "6UJO.pdb",
+        "frameCount": 1,
+        "id": "HHAT_mutant_free_6UJO",
+        "matrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "primary": false,
+        "resourceUri": "[opaque-viewer-resource-redacted]",
+        "visible": true
+      }
+    ],
+    "encodingDurationMs": 2355.2000000476837,
+    "jobId": "5f4279c3-9943-4ed9-a606-3ff171e692f0",
+    "workspacePublication": {
+      "destination": {
+        "base": "opened-source",
+        "relativePath": "../../rosalind/showcase-captures/01-hhat-native.png"
+      },
+      "artifact": {
+        "kind": "render",
+        "mediaType": "image/png"
+      },
+      "output": {
+        "workspacePath": "rosalind/showcase-captures/01-hhat-native.png"
+      },
+      "plugin": {
+        "name": "structure-viewer",
+        "version": "0.1.80"
+      },
+      "schemaVersion": 1,
+      "source": {
+        "sha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62",
+        "workspacePath": "public/structures/6UJQ.pdb"
+      }
+    }
+  },
+  "renderer": "Mol* 5.11.0",
+  "schemaVersion": 1,
+  "publicationRedactions": {
+    "originalSidecarSha256": "3f64c0ae05cffdac3e5769e2b52a076ee9c6000a5e9a8efbe659b73342bab326",
+    "reason": "Opaque local viewer resource URLs removed; source mapping/hashes in index.json. PNG bytes unchanged."
+  }
+}

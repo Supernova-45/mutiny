@@ -1,0 +1,1845 @@
+{
+  "freshSceneRestoration": true,
+  "operations": [
+    {
+      "operation": "structure.add_structure",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "objectId": "HHAT_mutant_free_6UJO",
+        "path": "/Users/alexandrakim/Documents/mutiny/public/structures/6UJO.pdb",
+        "color": "#dc7633"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Loaded 6UJO.pdb as structure object HHAT_mutant_free_6UJO."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Loaded 6UJO.pdb as structure object HHAT_mutant_free_6UJO.",
+          "state": {
+            "object": {
+              "construction": {
+                "dynamicBonds": false,
+                "kind": "model",
+                "modelIndex": 0
+              },
+              "constructionOptions": {
+                "assemblies": [],
+                "assembliesTruncated": false,
+                "assemblyCount": 0,
+                "modelCount": 1,
+                "models": [
+                  {
+                    "index": 0,
+                    "modelNumber": 1
+                  }
+                ],
+                "modelsTruncated": false,
+                "operatorCount": 1,
+                "operators": [
+                  {
+                    "assemblyId": null,
+                    "instanceId": "1_555",
+                    "modelNumber": 1,
+                    "name": "1_555",
+                    "operatorIds": [],
+                    "unitCount": 3
+                  }
+                ],
+                "operatorsTruncated": false
+              },
+              "fileName": "6UJO.pdb",
+              "frameCount": 1,
+              "id": "HHAT_mutant_free_6UJO",
+              "label": "HHAT_mutant_free_6UJO",
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "primary": false,
+              "resourceUri": "[opaque-viewer-resource-redacted]",
+              "visible": true
+            },
+            "appliedRevision": 2
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.apply_scene",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "expectedRevision": 2,
+        "replaceLayers": true,
+        "layers": [
+          {
+            "id": "hla",
+            "name": "Normal HLA context",
+            "target": {
+              "kind": "chain",
+              "objectId": "primary",
+              "chain": "A"
+            },
+            "representation": "cartoon",
+            "color": {
+              "kind": "uniform",
+              "value": "#aab8c4"
+            },
+            "opacity": 0.2
+          },
+          {
+            "id": "normal",
+            "name": "Normal 6UJQ peptide",
+            "target": {
+              "kind": "chain",
+              "objectId": "primary",
+              "chain": "C"
+            },
+            "representation": "sticks",
+            "color": {
+              "kind": "uniform",
+              "value": "#218eae"
+            }
+          },
+          {
+            "id": "mutant",
+            "name": "Mutant 6UJO peptide",
+            "target": {
+              "kind": "chain",
+              "objectId": "HHAT_mutant_free_6UJO",
+              "chain": "C"
+            },
+            "representation": "sticks",
+            "color": {
+              "kind": "uniform",
+              "value": "#db7b38"
+            }
+          },
+          {
+            "id": "primary6",
+            "name": "primary P6",
+            "target": {
+              "kind": "residue",
+              "objectId": "primary",
+              "chain": "C",
+              "residue": 6
+            },
+            "representation": "label",
+            "labelMode": "residue",
+            "labels": true,
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            }
+          },
+          {
+            "id": "primary8",
+            "name": "primary P8",
+            "target": {
+              "kind": "residue",
+              "objectId": "primary",
+              "chain": "C",
+              "residue": 8
+            },
+            "representation": "label",
+            "labelMode": "residue",
+            "labels": true,
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            }
+          },
+          {
+            "id": "HHAT_mutant_free_6UJO6",
+            "name": "HHAT_mutant_free_6UJO P6",
+            "target": {
+              "kind": "residue",
+              "objectId": "HHAT_mutant_free_6UJO",
+              "chain": "C",
+              "residue": 6
+            },
+            "representation": "label",
+            "labelMode": "residue",
+            "labels": true,
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            }
+          },
+          {
+            "id": "HHAT_mutant_free_6UJO8",
+            "name": "HHAT_mutant_free_6UJO P8",
+            "target": {
+              "kind": "residue",
+              "objectId": "HHAT_mutant_free_6UJO",
+              "chain": "C",
+              "residue": 8
+            },
+            "representation": "label",
+            "labelMode": "residue",
+            "labels": true,
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            }
+          }
+        ],
+        "camera": {
+          "focus": {
+            "kind": "expression",
+            "expression": {
+              "kind": "anyOf",
+              "expressions": [
+                {
+                  "kind": "chain",
+                  "objectId": "primary",
+                  "chain": "C"
+                },
+                {
+                  "kind": "chain",
+                  "objectId": "HHAT_mutant_free_6UJO",
+                  "chain": "C"
+                }
+              ]
+            }
+          },
+          "orientation": "front",
+          "zoom": 1.5
+        },
+        "background": "#ffffff"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Applied 7 live style layers and 0 annotations at scene revision 3."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Applied 7 live style layers and 0 annotations at scene revision 3.",
+          "state": {
+            "annotationCount": 0,
+            "appliedRevision": 3,
+            "layerCount": 7
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.render_image",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "width": 1920,
+        "height": 1080,
+        "scene": {
+          "antialiasing": "quality",
+          "background": "#FFFFFF",
+          "camera": {
+            "clippingRadius": 11.828237746535683,
+            "fovDegrees": 45,
+            "mode": "perspective",
+            "nearClip": 1,
+            "orientation": "current",
+            "position": [
+              -0.473388,
+              1.121102,
+              30.100858
+            ],
+            "target": [
+              -0.473388,
+              1.121102,
+              -0.807816
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "clearExisting": true,
+          "density": [],
+          "layers": [
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#AAB8C4"
+              },
+              "labels": false,
+              "opacity": 0.2,
+              "representation": "cartoon",
+              "target": {
+                "expression": {
+                  "chain": "A",
+                  "kind": "chain",
+                  "objectId": "primary"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#218EAE"
+              },
+              "labels": false,
+              "opacity": 1,
+              "representation": "sticks",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "chain",
+                  "objectId": "primary"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#DB7B38"
+              },
+              "labels": false,
+              "opacity": 1,
+              "representation": "sticks",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "chain",
+                  "objectId": "HHAT_mutant_free_6UJO"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#222222"
+              },
+              "labelMode": "residue",
+              "labels": true,
+              "opacity": 1,
+              "representation": "label",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "residue",
+                  "residue": 6,
+                  "objectId": "primary"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#222222"
+              },
+              "labelMode": "residue",
+              "labels": true,
+              "opacity": 1,
+              "representation": "label",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "residue",
+                  "residue": 8,
+                  "objectId": "primary"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#222222"
+              },
+              "labelMode": "residue",
+              "labels": true,
+              "opacity": 1,
+              "representation": "label",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "residue",
+                  "residue": 6,
+                  "objectId": "HHAT_mutant_free_6UJO"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#222222"
+              },
+              "labelMode": "residue",
+              "labels": true,
+              "opacity": 1,
+              "representation": "label",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "residue",
+                  "residue": 8,
+                  "objectId": "HHAT_mutant_free_6UJO"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            }
+          ],
+          "lighting": "studio",
+          "scientificAnnotations": {
+            "quality": [],
+            "symmetry": [],
+            "guides": []
+          }
+        },
+        "outputPath": "../../rosalind/showcase-captures/01-hhat-native.png",
+        "destination": {
+          "kind": "workspace",
+          "base": "opened-source",
+          "relativePath": "../../rosalind/showcase-captures/01-hhat-native.png",
+          "collisionPolicy": "versioned"
+        }
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Rendered PNG image and saved it to ../../rosalind/showcase-captures/01-hhat-native.png. Workspace artifact: rosalind/showcase-captures/01-hhat-native.png"
+          }
+        ],
+        "structuredContent": {
+          "cancelRequested": false,
+          "createdAt": "2026-09-10T23:22:47.608Z",
+          "jobId": "5f4279c3-9943-4ed9-a606-3ff171e692f0",
+          "kind": "image",
+          "message": "Rendered PNG image and saved it to ../../rosalind/showcase-captures/01-hhat-native.png.",
+          "progress": 1,
+          "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+          "status": "completed",
+          "updatedAt": "2026-09-10T23:22:56.565Z",
+          "result": {
+            "artifactPath": "rosalind/showcase-captures/01-hhat-native.png",
+            "byteLength": 1068735,
+            "jobId": "5f4279c3-9943-4ed9-a606-3ff171e692f0",
+            "mediaType": "image/png",
+            "metadataPath": "rosalind/showcase-captures/01-hhat-native.png.render.json",
+            "outputPath": "../../rosalind/showcase-captures/01-hhat-native.png",
+            "sha256": "738de1d70b2e8891367b6052a630528dafa3f40d3d638b51078e02d5564c31a6",
+            "status": "completed"
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.apply_scene",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "replaceLayers": true,
+        "layers": [
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#AAB8C4"
+            },
+            "labels": false,
+            "opacity": 0.2,
+            "representation": "cartoon",
+            "target": {
+              "expression": {
+                "chain": "A",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true,
+            "id": "hhat-0",
+            "name": "Normal HLA context"
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#218EAE"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "primary"
+              },
+              "kind": "expression"
+            },
+            "visible": true,
+            "id": "hhat-1",
+            "name": "Normal 6UJQ peptide"
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#DB7B38"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "chain",
+                "objectId": "HHAT_mutant_free_6UJO"
+              },
+              "kind": "expression"
+            },
+            "visible": true,
+            "id": "hhat-2",
+            "name": "Mutant 6UJO peptide"
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            },
+            "labelMode": "residue",
+            "labels": false,
+            "opacity": 1,
+            "representation": "label",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "residue": 6,
+                "objectId": "HHAT_mutant_free_6UJO"
+              },
+              "kind": "expression"
+            },
+            "visible": true,
+            "id": "hhat-3",
+            "name": "Mutant residue label"
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            },
+            "labelMode": "residue",
+            "labels": false,
+            "opacity": 1,
+            "representation": "label",
+            "target": {
+              "expression": {
+                "chain": "C",
+                "kind": "residue",
+                "residue": 8,
+                "objectId": "HHAT_mutant_free_6UJO"
+              },
+              "kind": "expression"
+            },
+            "visible": true,
+            "id": "hhat-4",
+            "name": "Mutant residue label"
+          }
+        ]
+      },
+      "outcomeNote": "This request was rejected for expression-wrapper targets; a later corrected request with plain SelectionExpr targets succeeded. This entry is not a successful receipt."
+    },
+    {
+      "operation": "structure.render_image",
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Rendered PNG image and saved it to ../../rosalind/showcase-captures/01-hhat-native-2.png. Workspace artifact: rosalind/showcase-captures/01-hhat-native-2.png"
+          }
+        ],
+        "structuredContent": {
+          "cancelRequested": false,
+          "createdAt": "2026-09-10T23:24:11.452Z",
+          "jobId": "b4d9c220-1f54-4ede-8847-fe3998215818",
+          "kind": "image",
+          "message": "Rendered PNG image and saved it to ../../rosalind/showcase-captures/01-hhat-native-2.png.",
+          "progress": 1,
+          "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+          "status": "completed",
+          "updatedAt": "2026-09-10T23:24:14.333Z",
+          "result": {
+            "artifactPath": "rosalind/showcase-captures/01-hhat-native-2.png",
+            "byteLength": 1062093,
+            "jobId": "b4d9c220-1f54-4ede-8847-fe3998215818",
+            "mediaType": "image/png",
+            "metadataPath": "rosalind/showcase-captures/01-hhat-native-2.png.render.json",
+            "outputPath": "../../rosalind/showcase-captures/01-hhat-native-2.png",
+            "sha256": "f80e6b1d9fec4d294bf73909333b113f7384581f2c5ab7ae13d2e66f188a8e33",
+            "status": "completed"
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.apply_scene",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "replaceLayers": true,
+        "layers": [
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#AAB8C4"
+            },
+            "labels": false,
+            "opacity": 0.2,
+            "representation": "cartoon",
+            "target": {
+              "chain": "A",
+              "kind": "chain",
+              "objectId": "primary"
+            },
+            "visible": true,
+            "id": "hhat-0",
+            "name": "Normal HLA"
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#218EAE"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "chain": "C",
+              "kind": "chain",
+              "objectId": "primary"
+            },
+            "visible": true,
+            "id": "hhat-1",
+            "name": "Normal 6UJQ"
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#DB7B38"
+            },
+            "labels": false,
+            "opacity": 1,
+            "representation": "sticks",
+            "target": {
+              "chain": "C",
+              "kind": "chain",
+              "objectId": "HHAT_mutant_free_6UJO"
+            },
+            "visible": true,
+            "id": "hhat-2",
+            "name": "Mutant 6UJO"
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            },
+            "labelMode": "residue",
+            "labels": false,
+            "opacity": 1,
+            "representation": "label",
+            "target": {
+              "chain": "C",
+              "kind": "residue",
+              "residue": 6,
+              "objectId": "HHAT_mutant_free_6UJO"
+            },
+            "visible": true,
+            "id": "hhat-3",
+            "name": "W6 unchanged"
+          },
+          {
+            "color": {
+              "kind": "uniform",
+              "value": "#222222"
+            },
+            "labelMode": "residue",
+            "labels": false,
+            "opacity": 1,
+            "representation": "label",
+            "target": {
+              "chain": "C",
+              "kind": "residue",
+              "residue": 8,
+              "objectId": "HHAT_mutant_free_6UJO"
+            },
+            "visible": true,
+            "id": "hhat-4",
+            "name": "P8 mutation"
+          }
+        ]
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Applied 5 live style layers and 0 annotations at scene revision 9."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Applied 5 live style layers and 0 annotations at scene revision 9.",
+          "state": {
+            "annotationCount": 0,
+            "appliedRevision": 9,
+            "layerCount": 5
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.apply_scene",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "replaceLayers": true,
+        "objectUpdates": [
+          {
+            "id": "primary",
+            "visible": false
+          },
+          {
+            "id": "HHAT_mutant_free_6UJO",
+            "visible": false
+          },
+          {
+            "id": "HHAT_bound_mutant_6UK4",
+            "visible": true
+          }
+        ],
+        "layers": [
+          {
+            "id": "hla",
+            "name": "HLA groove A:1-180",
+            "target": {
+              "kind": "residue_range",
+              "objectId": "HHAT_bound_mutant_6UK4",
+              "chain": "A",
+              "start": 1,
+              "end": 180
+            },
+            "representation": "cartoon",
+            "color": {
+              "kind": "uniform",
+              "value": "#99adb8"
+            },
+            "opacity": 0.7
+          },
+          {
+            "id": "alpha",
+            "name": "302TIL alpha binding domain",
+            "target": {
+              "kind": "residue_range",
+              "objectId": "HHAT_bound_mutant_6UK4",
+              "chain": "D",
+              "start": 1,
+              "end": 110
+            },
+            "representation": "cartoon",
+            "color": {
+              "kind": "uniform",
+              "value": "#ab80bb"
+            }
+          },
+          {
+            "id": "beta",
+            "name": "302TIL beta binding domain",
+            "target": {
+              "kind": "residue_range",
+              "objectId": "HHAT_bound_mutant_6UK4",
+              "chain": "E",
+              "start": 1,
+              "end": 110
+            },
+            "representation": "cartoon",
+            "color": {
+              "kind": "uniform",
+              "value": "#729d98"
+            }
+          },
+          {
+            "id": "peptide",
+            "name": "Mutant HHAT peptide",
+            "target": {
+              "kind": "chain",
+              "objectId": "HHAT_bound_mutant_6UK4",
+              "chain": "C"
+            },
+            "representation": "sticks",
+            "color": {
+              "kind": "uniform",
+              "value": "#e28034"
+            }
+          }
+        ],
+        "camera": {
+          "focus": {
+            "kind": "expression",
+            "expression": {
+              "kind": "anyOf",
+              "expressions": [
+                {
+                  "kind": "residue_range",
+                  "objectId": "HHAT_bound_mutant_6UK4",
+                  "chain": "A",
+                  "start": 1,
+                  "end": 180
+                },
+                {
+                  "kind": "residue_range",
+                  "objectId": "HHAT_bound_mutant_6UK4",
+                  "chain": "D",
+                  "start": 1,
+                  "end": 110
+                },
+                {
+                  "kind": "residue_range",
+                  "objectId": "HHAT_bound_mutant_6UK4",
+                  "chain": "E",
+                  "start": 1,
+                  "end": 110
+                },
+                {
+                  "kind": "chain",
+                  "objectId": "HHAT_bound_mutant_6UK4",
+                  "chain": "C"
+                }
+              ]
+            }
+          },
+          "orientation": "front",
+          "zoom": 1.15
+        }
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Applied 4 live style layers and 0 annotations at scene revision 11."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Applied 4 live style layers and 0 annotations at scene revision 11.",
+          "state": {
+            "annotationCount": 0,
+            "appliedRevision": 11,
+            "layerCount": 4
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.render_image",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "scene": {
+          "antialiasing": "quality",
+          "background": "#FFFFFF",
+          "camera": {
+            "clippingRadius": 39.04545404855759,
+            "fovDegrees": 45,
+            "mode": "perspective",
+            "nearClip": 1,
+            "orientation": "current",
+            "position": [
+              33.055102,
+              -42.601489,
+              159.25026
+            ],
+            "target": [
+              33.055102,
+              -42.601489,
+              57.219571
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "clearExisting": true,
+          "density": [],
+          "layers": [
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#99ADB8"
+              },
+              "labels": false,
+              "opacity": 0.7,
+              "representation": "cartoon",
+              "target": {
+                "expression": {
+                  "chain": "A",
+                  "end": 180,
+                  "kind": "residue_range",
+                  "start": 1,
+                  "objectId": "HHAT_bound_mutant_6UK4"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#AB80BB"
+              },
+              "labels": false,
+              "opacity": 1,
+              "representation": "cartoon",
+              "target": {
+                "expression": {
+                  "chain": "D",
+                  "end": 110,
+                  "kind": "residue_range",
+                  "start": 1,
+                  "objectId": "HHAT_bound_mutant_6UK4"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#729D98"
+              },
+              "labels": false,
+              "opacity": 1,
+              "representation": "cartoon",
+              "target": {
+                "expression": {
+                  "chain": "E",
+                  "end": 110,
+                  "kind": "residue_range",
+                  "start": 1,
+                  "objectId": "HHAT_bound_mutant_6UK4"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#E28034"
+              },
+              "labels": false,
+              "opacity": 1,
+              "representation": "sticks",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "chain",
+                  "objectId": "HHAT_bound_mutant_6UK4"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            }
+          ],
+          "lighting": "studio",
+          "scientificAnnotations": {
+            "quality": [],
+            "symmetry": [],
+            "guides": []
+          }
+        },
+        "width": 1920,
+        "height": 1080,
+        "outputPath": "../../rosalind/showcase-captures/01b-hhat-receptor-native.png",
+        "destination": {
+          "kind": "workspace",
+          "base": "opened-source",
+          "relativePath": "../../rosalind/showcase-captures/01b-hhat-receptor-native.png",
+          "collisionPolicy": "versioned"
+        }
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Rendered PNG image and saved it to ../../rosalind/showcase-captures/01b-hhat-receptor-native.png. Workspace artifact: rosalind/showcase-captures/01b-hhat-receptor-native.png"
+          }
+        ],
+        "structuredContent": {
+          "cancelRequested": false,
+          "createdAt": "2026-09-10T23:28:14.015Z",
+          "jobId": "e1d75a9f-2770-498e-ade1-5da3abb65b74",
+          "kind": "image",
+          "message": "Rendered PNG image and saved it to ../../rosalind/showcase-captures/01b-hhat-receptor-native.png.",
+          "progress": 1,
+          "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+          "status": "completed",
+          "updatedAt": "2026-09-10T23:28:29.425Z",
+          "result": {
+            "artifactPath": "rosalind/showcase-captures/01b-hhat-receptor-native.png",
+            "byteLength": 577154,
+            "jobId": "e1d75a9f-2770-498e-ade1-5da3abb65b74",
+            "mediaType": "image/png",
+            "metadataPath": "rosalind/showcase-captures/01b-hhat-receptor-native.png.render.json",
+            "outputPath": "../../rosalind/showcase-captures/01b-hhat-receptor-native.png",
+            "sha256": "efb1b161d107615430ffe15565f78f9f81171744c19cff108e8d5493d7592ce3",
+            "status": "completed"
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.add_structure",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "objectId": "KRAS_normal_7OW5",
+        "path": "/Users/alexandrakim/Documents/mutiny/rosalind/contrast-kras/sources/7OW5.pdb"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Loaded 7OW5.pdb as structure object KRAS_normal_7OW5."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Loaded 7OW5.pdb as structure object KRAS_normal_7OW5.",
+          "state": {
+            "object": {
+              "construction": {
+                "assemblyId": "1",
+                "dynamicBonds": false,
+                "kind": "assembly",
+                "modelIndex": 0
+              },
+              "constructionOptions": {
+                "assemblies": [
+                  {
+                    "details": "AUTHOR DETERMINED BIOLOGICAL UNIT: PENTAMERIC",
+                    "id": "1"
+                  }
+                ],
+                "assembliesTruncated": false,
+                "assemblyCount": 1,
+                "modelCount": 1,
+                "models": [
+                  {
+                    "index": 0,
+                    "modelNumber": 1
+                  }
+                ],
+                "modelsTruncated": false,
+                "operatorCount": 1,
+                "operators": [
+                  {
+                    "assemblyId": "1",
+                    "instanceId": "ASM-1",
+                    "modelNumber": 1,
+                    "name": "ASM_1",
+                    "operatorIds": [
+                      "1"
+                    ],
+                    "unitCount": 8
+                  }
+                ],
+                "operatorsTruncated": false
+              },
+              "fileName": "7OW5.pdb",
+              "frameCount": 1,
+              "id": "KRAS_normal_7OW5",
+              "label": "KRAS_normal_7OW5",
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "primary": false,
+              "resourceUri": "[opaque-viewer-resource-redacted]",
+              "visible": true
+            },
+            "appliedRevision": 13
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.add_structure",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "objectId": "KRAS_mutant_7OW6",
+        "path": "/Users/alexandrakim/Documents/mutiny/rosalind/contrast-kras/sources/7OW6.pdb"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Loaded 7OW6.pdb as structure object KRAS_mutant_7OW6."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Loaded 7OW6.pdb as structure object KRAS_mutant_7OW6.",
+          "state": {
+            "object": {
+              "construction": {
+                "assemblyId": "1",
+                "dynamicBonds": false,
+                "kind": "assembly",
+                "modelIndex": 0
+              },
+              "constructionOptions": {
+                "assemblies": [
+                  {
+                    "details": "AUTHOR DETERMINED BIOLOGICAL UNIT: PENTAMERIC",
+                    "id": "1"
+                  }
+                ],
+                "assembliesTruncated": false,
+                "assemblyCount": 1,
+                "modelCount": 1,
+                "models": [
+                  {
+                    "index": 0,
+                    "modelNumber": 1
+                  }
+                ],
+                "modelsTruncated": false,
+                "operatorCount": 1,
+                "operators": [
+                  {
+                    "assemblyId": "1",
+                    "instanceId": "ASM-1",
+                    "modelNumber": 1,
+                    "name": "ASM_1",
+                    "operatorIds": [
+                      "1"
+                    ],
+                    "unitCount": 7
+                  }
+                ],
+                "operatorsTruncated": false
+              },
+              "fileName": "7OW6.pdb",
+              "frameCount": 1,
+              "id": "KRAS_mutant_7OW6",
+              "label": "KRAS_mutant_7OW6",
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "primary": false,
+              "resourceUri": "[opaque-viewer-resource-redacted]",
+              "visible": true
+            },
+            "appliedRevision": 14
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.align_structures",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "method": "structure",
+        "reference": {
+          "kind": "residue_range",
+          "objectId": "KRAS_normal_7OW5",
+          "chain": "A",
+          "start": 2,
+          "end": 276
+        },
+        "mobile": {
+          "kind": "residue_range",
+          "objectId": "KRAS_mutant_7OW6",
+          "chain": "A",
+          "start": 2,
+          "end": 276
+        }
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Aligned Residues A:2-276 in structure object KRAS_mutant_7OW6 to Residues A:2-276 in structure object KRAS_normal_7OW5 with structure superposition: RMSD 0.337 \u00c5 across 275 aligned positions."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Aligned Residues A:2-276 in structure object KRAS_mutant_7OW6 to Residues A:2-276 in structure object KRAS_normal_7OW5 with structure superposition: RMSD 0.337 \u00c5 across 275 aligned positions.",
+          "state": {
+            "alignment": {
+              "alignedCount": 275,
+              "matrix": [
+                0.999950417627832,
+                -0.008391653452053647,
+                0.005361197488966571,
+                0,
+                0.008390774303644846,
+                0.9999647794503287,
+                0.00018645540667943175,
+                0,
+                -0.005362573333797751,
+                -0.00014146156376463812,
+                0.9999856112944517,
+                0,
+                -0.6718251115389862,
+                0.025732593920889668,
+                0.4079929827829645,
+                1
+              ],
+              "method": "structure",
+              "provenance": {
+                "implementation": {
+                  "library": "Mol*",
+                  "version": "5.11.0",
+                  "routine": "tmAlign"
+                },
+                "correspondence": {
+                  "kind": "selected-protein-residue-c-alpha",
+                  "description": "One C-alpha coordinate per selected atomic protein residue is supplied to Mol* tmAlign; tmAlign determines the aligned correspondence."
+                }
+              },
+              "rmsd": 0.3372518644179729,
+              "tmScoreMobile": 0.9969831157892519,
+              "tmScoreReference": 0.9969831157892519,
+              "mobileTarget": {
+                "objectId": "KRAS_mutant_7OW6",
+                "chain": "A",
+                "end": 276,
+                "kind": "residue_range",
+                "start": 2
+              },
+              "referenceTarget": {
+                "objectId": "KRAS_normal_7OW5",
+                "chain": "A",
+                "end": 276,
+                "kind": "residue_range",
+                "start": 2
+              },
+              "appliedMatrix": [
+                0.999950417627832,
+                -0.008391653452053647,
+                0.005361197488966571,
+                0,
+                0.008390774303644846,
+                0.9999647794503287,
+                0.00018645540667943175,
+                0,
+                -0.005362573333797751,
+                -0.00014146156376463812,
+                0.9999856112944517,
+                0,
+                -0.6718251115389862,
+                0.025732593920889668,
+                0.4079929827829645,
+                1
+              ],
+              "mobileObjectId": "KRAS_mutant_7OW6",
+              "referenceObjectId": "KRAS_normal_7OW5"
+            },
+            "appliedRevision": 15
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.apply_scene",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "replaceLayers": true,
+        "objectUpdates": [
+          {
+            "id": "HHAT_bound_mutant_6UK4",
+            "visible": false
+          },
+          {
+            "id": "KRAS_normal_7OW5",
+            "visible": true
+          },
+          {
+            "id": "KRAS_mutant_7OW6",
+            "visible": true
+          }
+        ],
+        "layers": [
+          {
+            "id": "normal",
+            "name": "7OW5 normal KRAS",
+            "target": {
+              "kind": "chain",
+              "objectId": "KRAS_normal_7OW5",
+              "chain": "C"
+            },
+            "representation": "sticks",
+            "color": {
+              "kind": "uniform",
+              "value": "#218eae"
+            }
+          },
+          {
+            "id": "mutant",
+            "name": "7OW6 mutant KRAS",
+            "target": {
+              "kind": "chain",
+              "objectId": "KRAS_mutant_7OW6",
+              "chain": "C"
+            },
+            "representation": "sticks",
+            "color": {
+              "kind": "uniform",
+              "value": "#db7b38"
+            }
+          },
+          {
+            "id": "hla70",
+            "name": "Mutant HLA residue 70",
+            "target": {
+              "kind": "residue",
+              "objectId": "KRAS_mutant_7OW6",
+              "chain": "A",
+              "residue": 70
+            },
+            "representation": "sticks",
+            "labels": true,
+            "color": {
+              "kind": "uniform",
+              "value": "#778899"
+            }
+          },
+          {
+            "id": "hla114",
+            "name": "Mutant HLA residue 114",
+            "target": {
+              "kind": "residue",
+              "objectId": "KRAS_mutant_7OW6",
+              "chain": "A",
+              "residue": 114
+            },
+            "representation": "sticks",
+            "labels": true,
+            "color": {
+              "kind": "uniform",
+              "value": "#778899"
+            }
+          }
+        ],
+        "camera": {
+          "focus": {
+            "kind": "expression",
+            "expression": {
+              "kind": "chain",
+              "objectId": "KRAS_mutant_7OW6",
+              "chain": "C"
+            }
+          },
+          "orientation": "front",
+          "zoom": 1.5
+        }
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Applied 4 live style layers and 0 annotations at scene revision 16."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Applied 4 live style layers and 0 annotations at scene revision 16.",
+          "state": {
+            "annotationCount": 0,
+            "appliedRevision": 16,
+            "layerCount": 4
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.measure",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "kind": "distance",
+        "targets": [
+          {
+            "kind": "residue",
+            "objectId": "KRAS_mutant_7OW6",
+            "chain": "C",
+            "residue": 6
+          },
+          {
+            "kind": "residue",
+            "objectId": "KRAS_mutant_7OW6",
+            "chain": "A",
+            "residue": 70
+          }
+        ]
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "distance = 3.024 \u00c5."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "distance = 3.024 \u00c5.",
+          "state": {
+            "appliedRevision": 17,
+            "measurement": {
+              "atomIds": [
+                "KRAS_mutant_7OW6|ASM-1|3109",
+                "KRAS_mutant_7OW6|ASM-1|576"
+              ],
+              "kind": "distance",
+              "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+              "unit": "angstrom",
+              "value": 3.023947745199281,
+              "resolvedTargets": [
+                {
+                  "atomId": "KRAS_mutant_7OW6|ASM-1|3109",
+                  "sourceAtomCount": 8
+                },
+                {
+                  "atomId": "KRAS_mutant_7OW6|ASM-1|576",
+                  "sourceAtomCount": 9
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.measure",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "kind": "distance",
+        "targets": [
+          {
+            "kind": "residue",
+            "objectId": "KRAS_mutant_7OW6",
+            "chain": "C",
+            "residue": 6
+          },
+          {
+            "kind": "residue",
+            "objectId": "KRAS_mutant_7OW6",
+            "chain": "A",
+            "residue": 114
+          }
+        ]
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "distance = 2.951 \u00c5."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "distance = 2.951 \u00c5.",
+          "state": {
+            "appliedRevision": 18,
+            "measurement": {
+              "atomIds": [
+                "KRAS_mutant_7OW6|ASM-1|3116",
+                "KRAS_mutant_7OW6|ASM-1|927"
+              ],
+              "kind": "distance",
+              "provenance": "Closest atom-pair Euclidean distance in the displayed Cartesian coordinates.",
+              "unit": "angstrom",
+              "value": 2.9513274496147317,
+              "resolvedTargets": [
+                {
+                  "atomId": "KRAS_mutant_7OW6|ASM-1|3116",
+                  "sourceAtomCount": 8
+                },
+                {
+                  "atomId": "KRAS_mutant_7OW6|ASM-1|927",
+                  "sourceAtomCount": 11
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.query",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "expression": {
+          "kind": "atom_ids",
+          "atomIds": [
+            "KRAS_mutant_7OW6|ASM-1|3109",
+            "KRAS_mutant_7OW6|ASM-1|576",
+            "KRAS_mutant_7OW6|ASM-1|3116",
+            "KRAS_mutant_7OW6|ASM-1|927"
+          ]
+        },
+        "level": "atom",
+        "limit": 10
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Query matched 4 atoms and 4 atom rows."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Query matched 4 atoms and 4 atom rows.",
+          "state": {
+            "query": {
+              "matchedAtomCount": 4,
+              "nextCursor": null,
+              "queryHash": "bd9375ab",
+              "revision": 19,
+              "rows": [
+                {
+                  "authAsymId": "C",
+                  "atomCount": 1,
+                  "atomName": "N",
+                  "chain": "C",
+                  "compId": "ASP",
+                  "element": "N",
+                  "entityId": "3",
+                  "id": "KRAS_mutant_7OW6|ASM-1|3109",
+                  "insertionCode": "",
+                  "instanceId": "ASM-1",
+                  "labelAsymId": "C",
+                  "objectId": "KRAS_mutant_7OW6",
+                  "occupancy": 1,
+                  "operatorName": "ASM_1",
+                  "residueNumber": 6,
+                  "unitId": 2
+                },
+                {
+                  "authAsymId": "A",
+                  "atomCount": 1,
+                  "atomName": "OE1",
+                  "chain": "A",
+                  "compId": "GLN",
+                  "element": "O",
+                  "entityId": "1",
+                  "id": "KRAS_mutant_7OW6|ASM-1|576",
+                  "insertionCode": "",
+                  "instanceId": "ASM-1",
+                  "labelAsymId": "A",
+                  "objectId": "KRAS_mutant_7OW6",
+                  "occupancy": 1,
+                  "operatorName": "ASM_1",
+                  "residueNumber": 70,
+                  "unitId": 0
+                },
+                {
+                  "authAsymId": "C",
+                  "atomCount": 1,
+                  "atomName": "OD2",
+                  "chain": "C",
+                  "compId": "ASP",
+                  "element": "O",
+                  "entityId": "3",
+                  "id": "KRAS_mutant_7OW6|ASM-1|3116",
+                  "insertionCode": "",
+                  "instanceId": "ASM-1",
+                  "labelAsymId": "C",
+                  "objectId": "KRAS_mutant_7OW6",
+                  "occupancy": 1,
+                  "operatorName": "ASM_1",
+                  "residueNumber": 6,
+                  "unitId": 2
+                },
+                {
+                  "authAsymId": "A",
+                  "atomCount": 1,
+                  "atomName": "NH2",
+                  "chain": "A",
+                  "compId": "ARG",
+                  "element": "N",
+                  "entityId": "1",
+                  "id": "KRAS_mutant_7OW6|ASM-1|927",
+                  "insertionCode": "",
+                  "instanceId": "ASM-1",
+                  "labelAsymId": "A",
+                  "objectId": "KRAS_mutant_7OW6",
+                  "occupancy": 1,
+                  "operatorName": "ASM_1",
+                  "residueNumber": 114,
+                  "unitId": 0
+                }
+              ],
+              "totalRowCount": 4,
+              "truncated": false
+            },
+            "sceneRevision": 19
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.render_image",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "scene": {
+          "antialiasing": "quality",
+          "background": "#FFFFFF",
+          "camera": {
+            "clippingRadius": 11.723779018790495,
+            "fovDegrees": 45,
+            "mode": "perspective",
+            "nearClip": 1,
+            "orientation": "current",
+            "position": [
+              -43.993341,
+              18.738478,
+              30.96776
+            ],
+            "target": [
+              -43.993341,
+              18.738478,
+              0.332049
+            ],
+            "up": [
+              0,
+              1,
+              0
+            ]
+          },
+          "clearExisting": true,
+          "density": [],
+          "layers": [
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#218EAE"
+              },
+              "labels": false,
+              "opacity": 1,
+              "representation": "sticks",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "chain",
+                  "objectId": "KRAS_normal_7OW5"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#DB7B38"
+              },
+              "labels": false,
+              "opacity": 1,
+              "representation": "sticks",
+              "target": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "chain",
+                  "objectId": "KRAS_mutant_7OW6"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#778899"
+              },
+              "labels": true,
+              "opacity": 1,
+              "representation": "sticks",
+              "target": {
+                "expression": {
+                  "chain": "A",
+                  "kind": "residue",
+                  "residue": 70,
+                  "objectId": "KRAS_mutant_7OW6"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            },
+            {
+              "color": {
+                "kind": "uniform",
+                "value": "#778899"
+              },
+              "labels": true,
+              "opacity": 1,
+              "representation": "sticks",
+              "target": {
+                "expression": {
+                  "chain": "A",
+                  "kind": "residue",
+                  "residue": 114,
+                  "objectId": "KRAS_mutant_7OW6"
+                },
+                "kind": "expression"
+              },
+              "visible": true
+            }
+          ],
+          "lighting": "studio",
+          "measurements": [
+            {
+              "from": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "residue",
+                  "residue": 6,
+                  "objectId": "KRAS_mutant_7OW6"
+                },
+                "kind": "expression"
+              },
+              "resolvedAtomIds": [
+                "KRAS_mutant_7OW6|ASM-1|3109",
+                "KRAS_mutant_7OW6|ASM-1|576"
+              ],
+              "to": {
+                "expression": {
+                  "chain": "A",
+                  "kind": "residue",
+                  "residue": 70,
+                  "objectId": "KRAS_mutant_7OW6"
+                },
+                "kind": "expression"
+              }
+            },
+            {
+              "from": {
+                "expression": {
+                  "chain": "C",
+                  "kind": "residue",
+                  "residue": 6,
+                  "objectId": "KRAS_mutant_7OW6"
+                },
+                "kind": "expression"
+              },
+              "resolvedAtomIds": [
+                "KRAS_mutant_7OW6|ASM-1|3116",
+                "KRAS_mutant_7OW6|ASM-1|927"
+              ],
+              "to": {
+                "expression": {
+                  "chain": "A",
+                  "kind": "residue",
+                  "residue": 114,
+                  "objectId": "KRAS_mutant_7OW6"
+                },
+                "kind": "expression"
+              }
+            }
+          ],
+          "scientificAnnotations": {
+            "quality": [],
+            "symmetry": [],
+            "guides": []
+          }
+        },
+        "width": 1920,
+        "height": 1080,
+        "outputPath": "../../rosalind/showcase-captures/02-kras-contacts-native.png",
+        "destination": {
+          "kind": "workspace",
+          "base": "opened-source",
+          "relativePath": "../../rosalind/showcase-captures/02-kras-contacts-native.png",
+          "collisionPolicy": "versioned"
+        }
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Rendered PNG image and saved it to ../../rosalind/showcase-captures/02-kras-contacts-native.png. Workspace artifact: rosalind/showcase-captures/02-kras-contacts-native.png"
+          }
+        ],
+        "structuredContent": {
+          "cancelRequested": false,
+          "createdAt": "2026-09-10T23:29:58.372Z",
+          "jobId": "5efc5822-3cc1-4b6e-ada0-70b9bab3ad6f",
+          "kind": "image",
+          "message": "Rendered PNG image and saved it to ../../rosalind/showcase-captures/02-kras-contacts-native.png.",
+          "progress": 1,
+          "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+          "status": "completed",
+          "updatedAt": "2026-09-10T23:30:13.069Z",
+          "result": {
+            "artifactPath": "rosalind/showcase-captures/02-kras-contacts-native.png",
+            "byteLength": 332908,
+            "jobId": "5efc5822-3cc1-4b6e-ada0-70b9bab3ad6f",
+            "mediaType": "image/png",
+            "metadataPath": "rosalind/showcase-captures/02-kras-contacts-native.png.render.json",
+            "outputPath": "../../rosalind/showcase-captures/02-kras-contacts-native.png",
+            "sha256": "03f3485eab7a4ae2e552caf142ae4660461f42b6c1695a36749b38f4c9a1892f",
+            "status": "completed"
+          }
+        }
+      }
+    }
+  ]
+}

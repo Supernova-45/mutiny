@@ -1,0 +1,116 @@
+{
+  "operations": [
+    {
+      "operation": "structure.add_structure",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "objectId": "deposited_6UJQ",
+        "path": "/Users/alexandrakim/Documents/mutiny/data/raw/6UJQ.pdb"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Loaded 6UJQ.pdb as structure object deposited_6UJQ."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Loaded 6UJQ.pdb as structure object deposited_6UJQ.",
+          "state": {
+            "object": {
+              "construction": {
+                "assemblyId": "1",
+                "dynamicBonds": false,
+                "kind": "assembly",
+                "modelIndex": 0
+              },
+              "constructionOptions": {
+                "assemblies": [
+                  {
+                    "details": "AUTHOR DETERMINED BIOLOGICAL UNIT: TRIMERIC",
+                    "id": "1"
+                  }
+                ],
+                "assembliesTruncated": false,
+                "assemblyCount": 1,
+                "modelCount": 1,
+                "models": [
+                  {
+                    "index": 0,
+                    "modelNumber": 1
+                  }
+                ],
+                "modelsTruncated": false,
+                "operatorCount": 1,
+                "operators": [
+                  {
+                    "assemblyId": "1",
+                    "instanceId": "ASM-1",
+                    "modelNumber": 1,
+                    "name": "ASM_1",
+                    "operatorIds": [
+                      "1"
+                    ],
+                    "unitCount": 4
+                  }
+                ],
+                "operatorsTruncated": false
+              },
+              "fileName": "6UJQ.pdb",
+              "frameCount": 1,
+              "id": "deposited_6UJQ",
+              "label": "deposited_6UJQ",
+              "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "primary": false,
+              "resourceUri": "[opaque-viewer-resource-redacted]",
+              "visible": true
+            },
+            "appliedRevision": 20
+          }
+        }
+      }
+    },
+    {
+      "operation": "structure.load_public_density",
+      "request": {
+        "sessionId": "27b2aa7a-46bf-4964-98de-7c5d2c651c43",
+        "expectedRevision": 21,
+        "id": "hhat_6ujq_density",
+        "mapId": "6ujq",
+        "publicPdbId": "6UJQ",
+        "source": "x-ray",
+        "region": {
+          "kind": "cell"
+        },
+        "detail": 0
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Workspace read access is unavailable because active workspace roots were not bound to this viewer session."
+          }
+        ],
+        "isError": true
+      }
+    }
+  ]
+}

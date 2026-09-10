@@ -1,0 +1,1299 @@
+{
+  "producer": "Local independent NumPy/gzip review; not a Workbench analysis",
+  "reviewedManifestSha256": "28f95e1d4295e19d2fcaef96e23fd64baf41fbb8fb1987e77200e722da1733e3",
+  "sources": [
+    {
+      "id": "6UJQ",
+      "channel": "2Fo-Fc",
+      "sourceUrl": "https://www.ebi.ac.uk/pdbe/coordinates/files/6ujq.ccp4",
+      "sourceMapSha256FromManifest": "09c118642f70dbc6ccbe2ccdb463b3ac8a7a1183674f1f112dc7f9fe356ac95d",
+      "distributedAssetSha256": "c4f52137fa05fb31a7f0a56f3e0edd946ce4e101082c87f6b0e87d0e97705bb5",
+      "rawPdbSha256": "119de6d35bb8f73302529dedf538a55dc3aede2da40cd865a757d66b0462edb8",
+      "displayPdbSha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62",
+      "gridShape": [
+        96,
+        53,
+        56
+      ],
+      "gridSpacingAngstrom": 0.35,
+      "normalizationAsDeclared": {
+        "mean": 8.516425441034947e-11,
+        "sigma": 0.17653339595768933,
+        "population": "full symmetry-expanded unit-cell map; before crop and interpolation"
+      },
+      "determinant": 1.0000000000000004,
+      "matchedHlaCa": 180,
+      "maxHlaCoordinateResidualAngstrom": 0.0007733136017416955,
+      "maxPeptideCoordinateResidualAngstrom": 0.000813225945624312,
+      "maxInversePeptideCoordinateResidualAngstrom": 0.0008132259456026979,
+      "maxDistributedVersusRecordedSourceSampleDifferenceSigma": 0.2520498850138915,
+      "samples": [
+        {
+          "residue": 1,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.755235138550393,
+          "manifestOriginalSampleSigma": 4.007285023564284,
+          "absoluteDifferenceSigma": 0.2520498850138915
+        },
+        {
+          "residue": 1,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.7644464273710767,
+          "manifestOriginalSampleSigma": 2.764576396846312,
+          "absoluteDifferenceSigma": 0.00012996947523546964
+        },
+        {
+          "residue": 1,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.8130935365637944,
+          "manifestOriginalSampleSigma": 1.8608567994613552,
+          "absoluteDifferenceSigma": 0.04776326289756083
+        },
+        {
+          "residue": 1,
+          "atom": "CD",
+          "distributedInterpolatedSigma": 1.5985637809499846,
+          "manifestOriginalSampleSigma": 1.632793314008799,
+          "absoluteDifferenceSigma": 0.034229533058814265
+        },
+        {
+          "residue": 1,
+          "atom": "CE",
+          "distributedInterpolatedSigma": 1.0062644353537107,
+          "manifestOriginalSampleSigma": 1.048567020083199,
+          "absoluteDifferenceSigma": 0.042302584729488224
+        },
+        {
+          "residue": 1,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 1.5676897045371307,
+          "manifestOriginalSampleSigma": 1.5597227273714547,
+          "absoluteDifferenceSigma": 0.00796697716567607
+        },
+        {
+          "residue": 1,
+          "atom": "N",
+          "distributedInterpolatedSigma": 1.7285165267325406,
+          "manifestOriginalSampleSigma": 1.830011069092862,
+          "absoluteDifferenceSigma": 0.1014945423603213
+        },
+        {
+          "residue": 1,
+          "atom": "NZ",
+          "distributedInterpolatedSigma": 0.9700184150993285,
+          "manifestOriginalSampleSigma": 1.0450837623432712,
+          "absoluteDifferenceSigma": 0.07506534724394265
+        },
+        {
+          "residue": 1,
+          "atom": "O",
+          "distributedInterpolatedSigma": 1.91778815241444,
+          "manifestOriginalSampleSigma": 1.9180772381470532,
+          "absoluteDifferenceSigma": 0.0002890857326132146
+        },
+        {
+          "residue": 2,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.307306029077317,
+          "manifestOriginalSampleSigma": 3.285361497817339,
+          "absoluteDifferenceSigma": 0.021944531259978195
+        },
+        {
+          "residue": 2,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 3.115832141959211,
+          "manifestOriginalSampleSigma": 3.22056442910363,
+          "absoluteDifferenceSigma": 0.10473228714441873
+        },
+        {
+          "residue": 2,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.884517757552014,
+          "manifestOriginalSampleSigma": 1.877063157068953,
+          "absoluteDifferenceSigma": 0.0074546004830609025
+        },
+        {
+          "residue": 2,
+          "atom": "CD",
+          "distributedInterpolatedSigma": 3.665790601026463,
+          "manifestOriginalSampleSigma": 3.792521326218607,
+          "absoluteDifferenceSigma": 0.1267307251921439
+        },
+        {
+          "residue": 2,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 2.21848984423501,
+          "manifestOriginalSampleSigma": 2.2348561733821373,
+          "absoluteDifferenceSigma": 0.016366329147127434
+        },
+        {
+          "residue": 2,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.687849851703717,
+          "manifestOriginalSampleSigma": 2.7303024439738346,
+          "absoluteDifferenceSigma": 0.04245259227011777
+        },
+        {
+          "residue": 2,
+          "atom": "NE2",
+          "distributedInterpolatedSigma": 1.789270914247869,
+          "manifestOriginalSampleSigma": 1.8271791179181764,
+          "absoluteDifferenceSigma": 0.03790820367030734
+        },
+        {
+          "residue": 2,
+          "atom": "O",
+          "distributedInterpolatedSigma": 2.0186893177892733,
+          "manifestOriginalSampleSigma": 2.0238426377887375,
+          "absoluteDifferenceSigma": 0.005153319999464223
+        },
+        {
+          "residue": 2,
+          "atom": "OE1",
+          "distributedInterpolatedSigma": 2.2991769243360807,
+          "manifestOriginalSampleSigma": 2.318622672423329,
+          "absoluteDifferenceSigma": 0.019445748087248305
+        },
+        {
+          "residue": 3,
+          "atom": "C",
+          "distributedInterpolatedSigma": 2.361498056351621,
+          "manifestOriginalSampleSigma": 2.4080236991787567,
+          "absoluteDifferenceSigma": 0.046525642827135893
+        },
+        {
+          "residue": 3,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.7104906232882118,
+          "manifestOriginalSampleSigma": 2.7651147630040516,
+          "absoluteDifferenceSigma": 0.05462413971583979
+        },
+        {
+          "residue": 3,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 2.0135740707471994,
+          "manifestOriginalSampleSigma": 2.0433051905830615,
+          "absoluteDifferenceSigma": 0.029731119835862074
+        },
+        {
+          "residue": 3,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 2.4026043694064017,
+          "manifestOriginalSampleSigma": 2.433124831361128,
+          "absoluteDifferenceSigma": 0.03052046195472613
+        },
+        {
+          "residue": 3,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 2.2732124578943056,
+          "manifestOriginalSampleSigma": 2.3151804378807457,
+          "absoluteDifferenceSigma": 0.041967979986440085
+        },
+        {
+          "residue": 3,
+          "atom": "CE2",
+          "distributedInterpolatedSigma": 2.2008488767365604,
+          "manifestOriginalSampleSigma": 2.3121361114704264,
+          "absoluteDifferenceSigma": 0.11128723473386604
+        },
+        {
+          "residue": 3,
+          "atom": "CE3",
+          "distributedInterpolatedSigma": 1.3093626342545839,
+          "manifestOriginalSampleSigma": 1.3319466575299208,
+          "absoluteDifferenceSigma": 0.02258402327533693
+        },
+        {
+          "residue": 3,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 2.36142333970195,
+          "manifestOriginalSampleSigma": 2.4454120386545486,
+          "absoluteDifferenceSigma": 0.08398869895259864
+        },
+        {
+          "residue": 3,
+          "atom": "CH2",
+          "distributedInterpolatedSigma": 1.6157444674435386,
+          "manifestOriginalSampleSigma": 1.7144509168309645,
+          "absoluteDifferenceSigma": 0.0987064493874259
+        },
+        {
+          "residue": 3,
+          "atom": "CZ2",
+          "distributedInterpolatedSigma": 1.2830970446586611,
+          "manifestOriginalSampleSigma": 1.502037190296114,
+          "absoluteDifferenceSigma": 0.2189401456374529
+        },
+        {
+          "residue": 3,
+          "atom": "CZ3",
+          "distributedInterpolatedSigma": 1.3913864415888377,
+          "manifestOriginalSampleSigma": 1.5414913769566825,
+          "absoluteDifferenceSigma": 0.15010493536784475
+        },
+        {
+          "residue": 3,
+          "atom": "N",
+          "distributedInterpolatedSigma": 1.9741508679660507,
+          "manifestOriginalSampleSigma": 2.0149784195872944,
+          "absoluteDifferenceSigma": 0.04082755162124374
+        },
+        {
+          "residue": 3,
+          "atom": "NE1",
+          "distributedInterpolatedSigma": 3.0244551330454317,
+          "manifestOriginalSampleSigma": 3.0876897864466155,
+          "absoluteDifferenceSigma": 0.06323465340118384
+        },
+        {
+          "residue": 3,
+          "atom": "O",
+          "distributedInterpolatedSigma": 1.9045641611916662,
+          "manifestOriginalSampleSigma": 2.038837376106874,
+          "absoluteDifferenceSigma": 0.13427321491520794
+        },
+        {
+          "residue": 4,
+          "atom": "C",
+          "distributedInterpolatedSigma": 2.331678563275839,
+          "manifestOriginalSampleSigma": 2.4432435490665405,
+          "absoluteDifferenceSigma": 0.11156498579070151
+        },
+        {
+          "residue": 4,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 1.4380504618823202,
+          "manifestOriginalSampleSigma": 1.4751487635035252,
+          "absoluteDifferenceSigma": 0.03709830162120498
+        },
+        {
+          "residue": 4,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 0.9452062156644987,
+          "manifestOriginalSampleSigma": 0.9767673084648132,
+          "absoluteDifferenceSigma": 0.031561092800314494
+        },
+        {
+          "residue": 4,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 0.7807074386111372,
+          "manifestOriginalSampleSigma": 0.7915960237218549,
+          "absoluteDifferenceSigma": 0.010888585110717663
+        },
+        {
+          "residue": 4,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 0.3541436407429311,
+          "manifestOriginalSampleSigma": 0.3689609060287417,
+          "absoluteDifferenceSigma": 0.014817265285810621
+        },
+        {
+          "residue": 4,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 0.6802928342395923,
+          "manifestOriginalSampleSigma": 0.7032789041209471,
+          "absoluteDifferenceSigma": 0.022986069881354765
+        },
+        {
+          "residue": 4,
+          "atom": "N",
+          "distributedInterpolatedSigma": 1.2089201678835486,
+          "manifestOriginalSampleSigma": 1.255305702165696,
+          "absoluteDifferenceSigma": 0.04638553428214731
+        },
+        {
+          "residue": 4,
+          "atom": "O",
+          "distributedInterpolatedSigma": 0.6179340923717211,
+          "manifestOriginalSampleSigma": 0.6523583961631969,
+          "absoluteDifferenceSigma": 0.03442430379147576
+        },
+        {
+          "residue": 5,
+          "atom": "C",
+          "distributedInterpolatedSigma": 2.5521405295797415,
+          "manifestOriginalSampleSigma": 2.6027484931303855,
+          "absoluteDifferenceSigma": 0.05060796355064401
+        },
+        {
+          "residue": 5,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 1.5153277803179697,
+          "manifestOriginalSampleSigma": 1.5090001605613839,
+          "absoluteDifferenceSigma": 0.0063276197565858006
+        },
+        {
+          "residue": 5,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.7365530622318017,
+          "manifestOriginalSampleSigma": 1.807243363386586,
+          "absoluteDifferenceSigma": 0.07069030115478436
+        },
+        {
+          "residue": 5,
+          "atom": "CG1",
+          "distributedInterpolatedSigma": 1.3262353169561905,
+          "manifestOriginalSampleSigma": 1.373247647759817,
+          "absoluteDifferenceSigma": 0.047012330803626545
+        },
+        {
+          "residue": 5,
+          "atom": "CG2",
+          "distributedInterpolatedSigma": 0.3509274348709924,
+          "manifestOriginalSampleSigma": 0.36248949664769786,
+          "absoluteDifferenceSigma": 0.011562061776705435
+        },
+        {
+          "residue": 5,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.1952926851823107,
+          "manifestOriginalSampleSigma": 2.2348018134251624,
+          "absoluteDifferenceSigma": 0.03950912824285169
+        },
+        {
+          "residue": 5,
+          "atom": "O",
+          "distributedInterpolatedSigma": 1.8762227239177478,
+          "manifestOriginalSampleSigma": 1.9208264676480817,
+          "absoluteDifferenceSigma": 0.044603743730333933
+        },
+        {
+          "residue": 6,
+          "atom": "C",
+          "distributedInterpolatedSigma": 2.0839599760507914,
+          "manifestOriginalSampleSigma": 2.08327900440999,
+          "absoluteDifferenceSigma": 0.0006809716408016087
+        },
+        {
+          "residue": 6,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 1.3355972298706935,
+          "manifestOriginalSampleSigma": 1.3576070051081877,
+          "absoluteDifferenceSigma": 0.022009775237494145
+        },
+        {
+          "residue": 6,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.313313437292903,
+          "manifestOriginalSampleSigma": 1.325572446115424,
+          "absoluteDifferenceSigma": 0.012259008822520956
+        },
+        {
+          "residue": 6,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 1.5240875273960461,
+          "manifestOriginalSampleSigma": 1.5711087748812407,
+          "absoluteDifferenceSigma": 0.04702124748519454
+        },
+        {
+          "residue": 6,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 2.2574620833312817,
+          "manifestOriginalSampleSigma": 2.265664932227098,
+          "absoluteDifferenceSigma": 0.008202848895816128
+        },
+        {
+          "residue": 6,
+          "atom": "CE2",
+          "distributedInterpolatedSigma": 2.913592354244777,
+          "manifestOriginalSampleSigma": 3.0151985891643545,
+          "absoluteDifferenceSigma": 0.10160623491957743
+        },
+        {
+          "residue": 6,
+          "atom": "CE3",
+          "distributedInterpolatedSigma": 2.0656816184623867,
+          "manifestOriginalSampleSigma": 2.1093935615045303,
+          "absoluteDifferenceSigma": 0.04371194304214354
+        },
+        {
+          "residue": 6,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 2.184910548899992,
+          "manifestOriginalSampleSigma": 2.225682846232804,
+          "absoluteDifferenceSigma": 0.04077229733281218
+        },
+        {
+          "residue": 6,
+          "atom": "CH2",
+          "distributedInterpolatedSigma": 1.800171932811133,
+          "manifestOriginalSampleSigma": 1.8076017676991856,
+          "absoluteDifferenceSigma": 0.0074298348880526
+        },
+        {
+          "residue": 6,
+          "atom": "CZ2",
+          "distributedInterpolatedSigma": 1.8784815917100306,
+          "manifestOriginalSampleSigma": 1.950339703791729,
+          "absoluteDifferenceSigma": 0.07185811208169834
+        },
+        {
+          "residue": 6,
+          "atom": "CZ3",
+          "distributedInterpolatedSigma": 1.978865295339603,
+          "manifestOriginalSampleSigma": 2.030001181982629,
+          "absoluteDifferenceSigma": 0.05113588664302582
+        },
+        {
+          "residue": 6,
+          "atom": "N",
+          "distributedInterpolatedSigma": 1.563806269382712,
+          "manifestOriginalSampleSigma": 1.5535868050230126,
+          "absoluteDifferenceSigma": 0.010219464359699337
+        },
+        {
+          "residue": 6,
+          "atom": "NE1",
+          "distributedInterpolatedSigma": 2.698142333206006,
+          "manifestOriginalSampleSigma": 2.7805327324157756,
+          "absoluteDifferenceSigma": 0.08239039920976943
+        },
+        {
+          "residue": 6,
+          "atom": "O",
+          "distributedInterpolatedSigma": 1.6995749258936397,
+          "manifestOriginalSampleSigma": 1.8070764006615927,
+          "absoluteDifferenceSigma": 0.10750147476795302
+        },
+        {
+          "residue": 7,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.4182235585220457,
+          "manifestOriginalSampleSigma": 3.5658244365788128,
+          "absoluteDifferenceSigma": 0.14760087805676703
+        },
+        {
+          "residue": 7,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 1.8847546803541049,
+          "manifestOriginalSampleSigma": 1.896324645550368,
+          "absoluteDifferenceSigma": 0.011569965196263077
+        },
+        {
+          "residue": 7,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.3823367056965825,
+          "manifestOriginalSampleSigma": 1.4131005866513606,
+          "absoluteDifferenceSigma": 0.03076388095477811
+        },
+        {
+          "residue": 7,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 0.30350266712454604,
+          "manifestOriginalSampleSigma": 0.3431539596068792,
+          "absoluteDifferenceSigma": 0.03965129248233318
+        },
+        {
+          "residue": 7,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 1.5938431116389657,
+          "manifestOriginalSampleSigma": 1.5995525379583229,
+          "absoluteDifferenceSigma": 0.005709426319357114
+        },
+        {
+          "residue": 7,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 2.049019260488575,
+          "manifestOriginalSampleSigma": 2.1907093043488275,
+          "absoluteDifferenceSigma": 0.1416900438602524
+        },
+        {
+          "residue": 7,
+          "atom": "N",
+          "distributedInterpolatedSigma": 1.7798786114807124,
+          "manifestOriginalSampleSigma": 1.9252858411371616,
+          "absoluteDifferenceSigma": 0.14540722965644926
+        },
+        {
+          "residue": 7,
+          "atom": "O",
+          "distributedInterpolatedSigma": 2.0133325572042593,
+          "manifestOriginalSampleSigma": 2.024471491328273,
+          "absoluteDifferenceSigma": 0.011138934124013566
+        },
+        {
+          "residue": 8,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.9366977352692865,
+          "manifestOriginalSampleSigma": 3.958490715849132,
+          "absoluteDifferenceSigma": 0.021792980579845356
+        },
+        {
+          "residue": 8,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.683600299466815,
+          "manifestOriginalSampleSigma": 2.676746406611399,
+          "absoluteDifferenceSigma": 0.006853892855416266
+        },
+        {
+          "residue": 8,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.9008317350065083,
+          "manifestOriginalSampleSigma": 1.912175637600725,
+          "absoluteDifferenceSigma": 0.011343902594216804
+        },
+        {
+          "residue": 8,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 1.0466427096750595,
+          "manifestOriginalSampleSigma": 1.1118033502806652,
+          "absoluteDifferenceSigma": 0.06516064060560578
+        },
+        {
+          "residue": 8,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 1.4818003009947576,
+          "manifestOriginalSampleSigma": 1.5895067503815221,
+          "absoluteDifferenceSigma": 0.10770644938676455
+        },
+        {
+          "residue": 8,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 2.934621509422989,
+          "manifestOriginalSampleSigma": 3.0472436149811317,
+          "absoluteDifferenceSigma": 0.11262210555814267
+        },
+        {
+          "residue": 8,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.855708147492625,
+          "manifestOriginalSampleSigma": 2.8947841940364714,
+          "absoluteDifferenceSigma": 0.03907604654384622
+        },
+        {
+          "residue": 8,
+          "atom": "O",
+          "distributedInterpolatedSigma": 2.2697695313600383,
+          "manifestOriginalSampleSigma": 2.2901782340672785,
+          "absoluteDifferenceSigma": 0.020408702707240156
+        },
+        {
+          "residue": 9,
+          "atom": "C",
+          "distributedInterpolatedSigma": 1.810971335782167,
+          "manifestOriginalSampleSigma": 1.841559521194603,
+          "absoluteDifferenceSigma": 0.03058818541243591
+        },
+        {
+          "residue": 9,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 1.7313556107541919,
+          "manifestOriginalSampleSigma": 1.7308142767987684,
+          "absoluteDifferenceSigma": 0.0005413339554234398
+        },
+        {
+          "residue": 9,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 2.401735602026182,
+          "manifestOriginalSampleSigma": 2.5306871109116567,
+          "absoluteDifferenceSigma": 0.12895150888547446
+        },
+        {
+          "residue": 9,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 0.8901998155641073,
+          "manifestOriginalSampleSigma": 0.9203147463763168,
+          "absoluteDifferenceSigma": 0.030114930812209506
+        },
+        {
+          "residue": 9,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 1.246174765851654,
+          "manifestOriginalSampleSigma": 1.3480453925518936,
+          "absoluteDifferenceSigma": 0.10187062670023961
+        },
+        {
+          "residue": 9,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 2.188006709888888,
+          "manifestOriginalSampleSigma": 2.1995637310052256,
+          "absoluteDifferenceSigma": 0.011557021116337829
+        },
+        {
+          "residue": 9,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.4079822689939885,
+          "manifestOriginalSampleSigma": 2.409443810849782,
+          "absoluteDifferenceSigma": 0.0014615418557935023
+        },
+        {
+          "residue": 9,
+          "atom": "O",
+          "distributedInterpolatedSigma": 1.143780997591602,
+          "manifestOriginalSampleSigma": 1.1852250819816963,
+          "absoluteDifferenceSigma": 0.04144408439009428
+        },
+        {
+          "residue": 9,
+          "atom": "OXT",
+          "distributedInterpolatedSigma": 1.002959350991385,
+          "manifestOriginalSampleSigma": 1.0041457345590128,
+          "absoluteDifferenceSigma": 0.0011863835676277912
+        }
+      ]
+    },
+    {
+      "id": "6UJO",
+      "channel": "2Fo-Fc",
+      "sourceUrl": "https://www.ebi.ac.uk/pdbe/coordinates/files/6ujo.ccp4",
+      "sourceMapSha256FromManifest": "0f0bfbb4c007df4b5f7295fbee9f10710969c64edf4418b5c86c022f9c31487b",
+      "distributedAssetSha256": "6cbeb7aee22ec4c5ca4a99f43412076bd55194d3ff0770270797206c724e8cd4",
+      "rawPdbSha256": "41f2dac70ebbe036f05101a8301d2121b2d1cf2afcc8c3d4dcc31e1375fa80c8",
+      "displayPdbSha256": "eb36cec705b3f6aadc0956cb8eddb3fcffb9de1b4b845cabb7c4e7c27a9815da",
+      "gridShape": [
+        98,
+        53,
+        58
+      ],
+      "gridSpacingAngstrom": 0.35,
+      "normalizationAsDeclared": {
+        "mean": 9.541661990434354e-12,
+        "sigma": 0.16760510661394543,
+        "population": "full symmetry-expanded unit-cell map; before crop and interpolation"
+      },
+      "determinant": 0.9999999999999982,
+      "matchedHlaCa": 180,
+      "maxHlaCoordinateResidualAngstrom": 0.0007910836076172409,
+      "maxPeptideCoordinateResidualAngstrom": 0.0007151444345206578,
+      "maxInversePeptideCoordinateResidualAngstrom": 0.0007151444345155061,
+      "maxDistributedVersusRecordedSourceSampleDifferenceSigma": 0.46158520419571225,
+      "samples": [
+        {
+          "residue": 1,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.7402826618888003,
+          "manifestOriginalSampleSigma": 3.8933719954614436,
+          "absoluteDifferenceSigma": 0.15308933357264332
+        },
+        {
+          "residue": 1,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.4719444594003543,
+          "manifestOriginalSampleSigma": 2.5339365593787395,
+          "absoluteDifferenceSigma": 0.06199209997838517
+        },
+        {
+          "residue": 1,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.4471491501873504,
+          "manifestOriginalSampleSigma": 1.4779663830700693,
+          "absoluteDifferenceSigma": 0.03081723288271898
+        },
+        {
+          "residue": 1,
+          "atom": "CD",
+          "distributedInterpolatedSigma": 1.3675931482321495,
+          "manifestOriginalSampleSigma": 1.4543284915326797,
+          "absoluteDifferenceSigma": 0.08673534330053023
+        },
+        {
+          "residue": 1,
+          "atom": "CE",
+          "distributedInterpolatedSigma": 1.00104735439973,
+          "manifestOriginalSampleSigma": 1.0044355114573666,
+          "absoluteDifferenceSigma": 0.0033881570576366205
+        },
+        {
+          "residue": 1,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 1.3298358073464671,
+          "manifestOriginalSampleSigma": 1.3791463333132326,
+          "absoluteDifferenceSigma": 0.04931052596676544
+        },
+        {
+          "residue": 1,
+          "atom": "N",
+          "distributedInterpolatedSigma": 1.5439380767204198,
+          "manifestOriginalSampleSigma": 1.5697053962855863,
+          "absoluteDifferenceSigma": 0.025767319565166424
+        },
+        {
+          "residue": 1,
+          "atom": "NZ",
+          "distributedInterpolatedSigma": 0.6819750366725589,
+          "manifestOriginalSampleSigma": 0.7018793192904309,
+          "absoluteDifferenceSigma": 0.019904282617872027
+        },
+        {
+          "residue": 1,
+          "atom": "O",
+          "distributedInterpolatedSigma": 4.183438917923859,
+          "manifestOriginalSampleSigma": 4.645024122119572,
+          "absoluteDifferenceSigma": 0.46158520419571225
+        },
+        {
+          "residue": 2,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.3083670036814157,
+          "manifestOriginalSampleSigma": 3.5581540932744464,
+          "absoluteDifferenceSigma": 0.24978708959303075
+        },
+        {
+          "residue": 2,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.5057508462916838,
+          "manifestOriginalSampleSigma": 2.5290303503977962,
+          "absoluteDifferenceSigma": 0.02327950410611246
+        },
+        {
+          "residue": 2,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 2.7875047094862806,
+          "manifestOriginalSampleSigma": 2.968149390147333,
+          "absoluteDifferenceSigma": 0.18064468066105244
+        },
+        {
+          "residue": 2,
+          "atom": "CD",
+          "distributedInterpolatedSigma": 3.5012954298410897,
+          "manifestOriginalSampleSigma": 3.532176363958707,
+          "absoluteDifferenceSigma": 0.030880934117617276
+        },
+        {
+          "residue": 2,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 2.1029728882162777,
+          "manifestOriginalSampleSigma": 2.1505219819629944,
+          "absoluteDifferenceSigma": 0.047549093746716675
+        },
+        {
+          "residue": 2,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.8448405153410765,
+          "manifestOriginalSampleSigma": 2.957089438037494,
+          "absoluteDifferenceSigma": 0.11224892269641762
+        },
+        {
+          "residue": 2,
+          "atom": "NE2",
+          "distributedInterpolatedSigma": 2.342058124622701,
+          "manifestOriginalSampleSigma": 2.5091738244804684,
+          "absoluteDifferenceSigma": 0.16711569985776764
+        },
+        {
+          "residue": 2,
+          "atom": "O",
+          "distributedInterpolatedSigma": 3.1684615457698744,
+          "manifestOriginalSampleSigma": 3.32312050905269,
+          "absoluteDifferenceSigma": 0.1546589632828157
+        },
+        {
+          "residue": 2,
+          "atom": "OE1",
+          "distributedInterpolatedSigma": 2.9868342897834004,
+          "manifestOriginalSampleSigma": 3.1154675966249146,
+          "absoluteDifferenceSigma": 0.1286333068415142
+        },
+        {
+          "residue": 3,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.2979922023811015,
+          "manifestOriginalSampleSigma": 3.548895384168991,
+          "absoluteDifferenceSigma": 0.25090318178788973
+        },
+        {
+          "residue": 3,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.7480824130131496,
+          "manifestOriginalSampleSigma": 2.799882709747495,
+          "absoluteDifferenceSigma": 0.05180029673434561
+        },
+        {
+          "residue": 3,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.9801944440585866,
+          "manifestOriginalSampleSigma": 2.2127519938543254,
+          "absoluteDifferenceSigma": 0.23255754979573884
+        },
+        {
+          "residue": 3,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 2.350628354807292,
+          "manifestOriginalSampleSigma": 2.3545766758876394,
+          "absoluteDifferenceSigma": 0.003948321080347483
+        },
+        {
+          "residue": 3,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 2.627581233043279,
+          "manifestOriginalSampleSigma": 2.659052889965862,
+          "absoluteDifferenceSigma": 0.0314716569225828
+        },
+        {
+          "residue": 3,
+          "atom": "CE2",
+          "distributedInterpolatedSigma": 3.6060490950227053,
+          "manifestOriginalSampleSigma": 3.6999184967906342,
+          "absoluteDifferenceSigma": 0.0938694017679289
+        },
+        {
+          "residue": 3,
+          "atom": "CE3",
+          "distributedInterpolatedSigma": 2.2794236451612204,
+          "manifestOriginalSampleSigma": 2.4181132557549048,
+          "absoluteDifferenceSigma": 0.13868961059368434
+        },
+        {
+          "residue": 3,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 3.33501243947181,
+          "manifestOriginalSampleSigma": 3.354782911502699,
+          "absoluteDifferenceSigma": 0.019770472030888886
+        },
+        {
+          "residue": 3,
+          "atom": "CH2",
+          "distributedInterpolatedSigma": 1.8368997166499685,
+          "manifestOriginalSampleSigma": 1.8588893595382405,
+          "absoluteDifferenceSigma": 0.021989642888271987
+        },
+        {
+          "residue": 3,
+          "atom": "CZ2",
+          "distributedInterpolatedSigma": 2.154400820658506,
+          "manifestOriginalSampleSigma": 2.3065441218131904,
+          "absoluteDifferenceSigma": 0.15214330115468444
+        },
+        {
+          "residue": 3,
+          "atom": "CZ3",
+          "distributedInterpolatedSigma": 1.5911937286119047,
+          "manifestOriginalSampleSigma": 1.6630657949241507,
+          "absoluteDifferenceSigma": 0.07187206631224607
+        },
+        {
+          "residue": 3,
+          "atom": "N",
+          "distributedInterpolatedSigma": 3.168257241948075,
+          "manifestOriginalSampleSigma": 3.231331085926833,
+          "absoluteDifferenceSigma": 0.06307384397875815
+        },
+        {
+          "residue": 3,
+          "atom": "NE1",
+          "distributedInterpolatedSigma": 2.648688334030533,
+          "manifestOriginalSampleSigma": 2.6291168713588506,
+          "absoluteDifferenceSigma": 0.019571462671682305
+        },
+        {
+          "residue": 3,
+          "atom": "O",
+          "distributedInterpolatedSigma": 1.953698495717309,
+          "manifestOriginalSampleSigma": 1.9755193995402478,
+          "absoluteDifferenceSigma": 0.021820903822938886
+        },
+        {
+          "residue": 4,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.3635237889521203,
+          "manifestOriginalSampleSigma": 3.360280525639869,
+          "absoluteDifferenceSigma": 0.003243263312251443
+        },
+        {
+          "residue": 4,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 1.8458352708737114,
+          "manifestOriginalSampleSigma": 1.8524729869999201,
+          "absoluteDifferenceSigma": 0.006637716126208781
+        },
+        {
+          "residue": 4,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.8193977143133517,
+          "manifestOriginalSampleSigma": 1.8432740229733864,
+          "absoluteDifferenceSigma": 0.02387630866003465
+        },
+        {
+          "residue": 4,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 1.6748301349390762,
+          "manifestOriginalSampleSigma": 1.7538523542252566,
+          "absoluteDifferenceSigma": 0.07902221928618047
+        },
+        {
+          "residue": 4,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 0.9859053462294164,
+          "manifestOriginalSampleSigma": 0.9955048668477742,
+          "absoluteDifferenceSigma": 0.009599520618357782
+        },
+        {
+          "residue": 4,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 1.760613610127728,
+          "manifestOriginalSampleSigma": 1.8388326164814321,
+          "absoluteDifferenceSigma": 0.07821900635370405
+        },
+        {
+          "residue": 4,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.4833984807486473,
+          "manifestOriginalSampleSigma": 2.676285077729024,
+          "absoluteDifferenceSigma": 0.1928865969803768
+        },
+        {
+          "residue": 4,
+          "atom": "O",
+          "distributedInterpolatedSigma": 2.163551497439514,
+          "manifestOriginalSampleSigma": 2.1638750071019084,
+          "absoluteDifferenceSigma": 0.0003235096623943612
+        },
+        {
+          "residue": 5,
+          "atom": "C",
+          "distributedInterpolatedSigma": 2.3675776741661783,
+          "manifestOriginalSampleSigma": 2.40124024971621,
+          "absoluteDifferenceSigma": 0.033662575550031715
+        },
+        {
+          "residue": 5,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.080391292411682,
+          "manifestOriginalSampleSigma": 2.1141112682406202,
+          "absoluteDifferenceSigma": 0.033719975828938153
+        },
+        {
+          "residue": 5,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.7255571546118824,
+          "manifestOriginalSampleSigma": 1.826622571602358,
+          "absoluteDifferenceSigma": 0.10106541699047566
+        },
+        {
+          "residue": 5,
+          "atom": "CG1",
+          "distributedInterpolatedSigma": 0.9368698840666787,
+          "manifestOriginalSampleSigma": 0.970440917176608,
+          "absoluteDifferenceSigma": 0.03357103310992926
+        },
+        {
+          "residue": 5,
+          "atom": "CG2",
+          "distributedInterpolatedSigma": 0.9389604552121824,
+          "manifestOriginalSampleSigma": 1.017500479965767,
+          "absoluteDifferenceSigma": 0.07854002475358457
+        },
+        {
+          "residue": 5,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.011138697395071,
+          "manifestOriginalSampleSigma": 2.0210060308766153,
+          "absoluteDifferenceSigma": 0.009867333481544449
+        },
+        {
+          "residue": 5,
+          "atom": "O",
+          "distributedInterpolatedSigma": 2.3225019551537955,
+          "manifestOriginalSampleSigma": 2.3465791925107227,
+          "absoluteDifferenceSigma": 0.024077237356927128
+        },
+        {
+          "residue": 6,
+          "atom": "C",
+          "distributedInterpolatedSigma": 2.375898923788887,
+          "manifestOriginalSampleSigma": 2.4115674355455883,
+          "absoluteDifferenceSigma": 0.03566851175670127
+        },
+        {
+          "residue": 6,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.2444377765772305,
+          "manifestOriginalSampleSigma": 2.2678257544174802,
+          "absoluteDifferenceSigma": 0.023387977840249707
+        },
+        {
+          "residue": 6,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.7585410365543703,
+          "manifestOriginalSampleSigma": 1.862439035164747,
+          "absoluteDifferenceSigma": 0.10389799861037674
+        },
+        {
+          "residue": 6,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 2.7708203196307033,
+          "manifestOriginalSampleSigma": 2.893333437255381,
+          "absoluteDifferenceSigma": 0.12251311762467765
+        },
+        {
+          "residue": 6,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 2.968365244121496,
+          "manifestOriginalSampleSigma": 3.015695092953667,
+          "absoluteDifferenceSigma": 0.04732984883217117
+        },
+        {
+          "residue": 6,
+          "atom": "CE2",
+          "distributedInterpolatedSigma": 2.5935128744753273,
+          "manifestOriginalSampleSigma": 2.6052079932134964,
+          "absoluteDifferenceSigma": 0.011695118738169086
+        },
+        {
+          "residue": 6,
+          "atom": "CE3",
+          "distributedInterpolatedSigma": 2.5083138865154777,
+          "manifestOriginalSampleSigma": 2.5121338730780964,
+          "absoluteDifferenceSigma": 0.003819986562618727
+        },
+        {
+          "residue": 6,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 1.9770446360066773,
+          "manifestOriginalSampleSigma": 1.9719805704905693,
+          "absoluteDifferenceSigma": 0.005064065516108052
+        },
+        {
+          "residue": 6,
+          "atom": "CH2",
+          "distributedInterpolatedSigma": 0.7030154913764338,
+          "manifestOriginalSampleSigma": 0.721172623370011,
+          "absoluteDifferenceSigma": 0.018157131993577158
+        },
+        {
+          "residue": 6,
+          "atom": "CZ2",
+          "distributedInterpolatedSigma": 0.8648850852364416,
+          "manifestOriginalSampleSigma": 0.8704895338940662,
+          "absoluteDifferenceSigma": 0.005604448657624661
+        },
+        {
+          "residue": 6,
+          "atom": "CZ3",
+          "distributedInterpolatedSigma": 1.5574625164689824,
+          "manifestOriginalSampleSigma": 1.6528445854847638,
+          "absoluteDifferenceSigma": 0.09538206901578139
+        },
+        {
+          "residue": 6,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.957437015367089,
+          "manifestOriginalSampleSigma": 2.9788017954688155,
+          "absoluteDifferenceSigma": 0.021364780101726488
+        },
+        {
+          "residue": 6,
+          "atom": "NE1",
+          "distributedInterpolatedSigma": 2.3843211748405375,
+          "manifestOriginalSampleSigma": 2.4050738922803276,
+          "absoluteDifferenceSigma": 0.020752717439790125
+        },
+        {
+          "residue": 6,
+          "atom": "O",
+          "distributedInterpolatedSigma": 1.0183087903610566,
+          "manifestOriginalSampleSigma": 1.0279693825448484,
+          "absoluteDifferenceSigma": 0.009660592183791783
+        },
+        {
+          "residue": 7,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.3107943504567823,
+          "manifestOriginalSampleSigma": 3.4380760865302866,
+          "absoluteDifferenceSigma": 0.12728173607350435
+        },
+        {
+          "residue": 7,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.6833214229960523,
+          "manifestOriginalSampleSigma": 2.7500828749010253,
+          "absoluteDifferenceSigma": 0.06676145190497307
+        },
+        {
+          "residue": 7,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 2.620316856122698,
+          "manifestOriginalSampleSigma": 2.7445365400744968,
+          "absoluteDifferenceSigma": 0.12421968395179883
+        },
+        {
+          "residue": 7,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 1.0673452908771175,
+          "manifestOriginalSampleSigma": 1.2661664331329416,
+          "absoluteDifferenceSigma": 0.19882114225582415
+        },
+        {
+          "residue": 7,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 1.9890026846102726,
+          "manifestOriginalSampleSigma": 1.999644320158487,
+          "absoluteDifferenceSigma": 0.010641635548214401
+        },
+        {
+          "residue": 7,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 3.529553378764092,
+          "manifestOriginalSampleSigma": 3.5785805090070806,
+          "absoluteDifferenceSigma": 0.04902713024298855
+        },
+        {
+          "residue": 7,
+          "atom": "N",
+          "distributedInterpolatedSigma": 2.91730078874214,
+          "manifestOriginalSampleSigma": 2.9904865815290393,
+          "absoluteDifferenceSigma": 0.0731857927868993
+        },
+        {
+          "residue": 7,
+          "atom": "O",
+          "distributedInterpolatedSigma": 1.783341821506102,
+          "manifestOriginalSampleSigma": 1.8741730753525343,
+          "absoluteDifferenceSigma": 0.0908312538464322
+        },
+        {
+          "residue": 8,
+          "atom": "C",
+          "distributedInterpolatedSigma": 3.028371516363377,
+          "manifestOriginalSampleSigma": 3.100010335581373,
+          "absoluteDifferenceSigma": 0.0716388192179962
+        },
+        {
+          "residue": 8,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 2.9385450773011166,
+          "manifestOriginalSampleSigma": 3.0373868241077417,
+          "absoluteDifferenceSigma": 0.09884174680662516
+        },
+        {
+          "residue": 8,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 2.607958406866804,
+          "manifestOriginalSampleSigma": 2.71421484564552,
+          "absoluteDifferenceSigma": 0.10625643877871616
+        },
+        {
+          "residue": 8,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 2.910532437336437,
+          "manifestOriginalSampleSigma": 3.0931264933630405,
+          "absoluteDifferenceSigma": 0.18259405602660328
+        },
+        {
+          "residue": 8,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 2.657151535997527,
+          "manifestOriginalSampleSigma": 2.7370019032464854,
+          "absoluteDifferenceSigma": 0.07985036724895833
+        },
+        {
+          "residue": 8,
+          "atom": "CE1",
+          "distributedInterpolatedSigma": 1.865118399904437,
+          "manifestOriginalSampleSigma": 1.8980890660072838,
+          "absoluteDifferenceSigma": 0.032970666102846824
+        },
+        {
+          "residue": 8,
+          "atom": "CE2",
+          "distributedInterpolatedSigma": 2.5831585372979267,
+          "manifestOriginalSampleSigma": 2.7730363652218433,
+          "absoluteDifferenceSigma": 0.1898778279239166
+        },
+        {
+          "residue": 8,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 3.8833588863645274,
+          "manifestOriginalSampleSigma": 4.164848655323324,
+          "absoluteDifferenceSigma": 0.2814897689587963
+        },
+        {
+          "residue": 8,
+          "atom": "CZ",
+          "distributedInterpolatedSigma": 2.4155377915240592,
+          "manifestOriginalSampleSigma": 2.4831242588198355,
+          "absoluteDifferenceSigma": 0.06758646729577622
+        },
+        {
+          "residue": 8,
+          "atom": "N",
+          "distributedInterpolatedSigma": 3.332195837916165,
+          "manifestOriginalSampleSigma": 3.4063539390013564,
+          "absoluteDifferenceSigma": 0.0741581010851915
+        },
+        {
+          "residue": 8,
+          "atom": "O",
+          "distributedInterpolatedSigma": 2.684263827346446,
+          "manifestOriginalSampleSigma": 2.7502788245348686,
+          "absoluteDifferenceSigma": 0.06601499718842252
+        },
+        {
+          "residue": 9,
+          "atom": "C",
+          "distributedInterpolatedSigma": 1.5153762936111885,
+          "manifestOriginalSampleSigma": 1.5228954825762056,
+          "absoluteDifferenceSigma": 0.007519188965017021
+        },
+        {
+          "residue": 9,
+          "atom": "CA",
+          "distributedInterpolatedSigma": 1.537654509229442,
+          "manifestOriginalSampleSigma": 1.556646117784702,
+          "absoluteDifferenceSigma": 0.018991608555259942
+        },
+        {
+          "residue": 9,
+          "atom": "CB",
+          "distributedInterpolatedSigma": 1.5888020721131437,
+          "manifestOriginalSampleSigma": 1.6376222150640052,
+          "absoluteDifferenceSigma": 0.048820142950861456
+        },
+        {
+          "residue": 9,
+          "atom": "CD1",
+          "distributedInterpolatedSigma": 1.2347372387842832,
+          "manifestOriginalSampleSigma": 1.2292162355729268,
+          "absoluteDifferenceSigma": 0.005521003211356401
+        },
+        {
+          "residue": 9,
+          "atom": "CD2",
+          "distributedInterpolatedSigma": 1.447961322413236,
+          "manifestOriginalSampleSigma": 1.4604609860397564,
+          "absoluteDifferenceSigma": 0.01249966362652044
+        },
+        {
+          "residue": 9,
+          "atom": "CG",
+          "distributedInterpolatedSigma": 2.0386820086744786,
+          "manifestOriginalSampleSigma": 2.0927870760095524,
+          "absoluteDifferenceSigma": 0.05410506733507381
+        },
+        {
+          "residue": 9,
+          "atom": "N",
+          "distributedInterpolatedSigma": 1.2504713931180995,
+          "manifestOriginalSampleSigma": 1.305544396868707,
+          "absoluteDifferenceSigma": 0.05507300375060753
+        },
+        {
+          "residue": 9,
+          "atom": "O",
+          "distributedInterpolatedSigma": 0.9789009111682462,
+          "manifestOriginalSampleSigma": 1.0394114542219548,
+          "absoluteDifferenceSigma": 0.06051054305370862
+        },
+        {
+          "residue": 9,
+          "atom": "OXT",
+          "distributedInterpolatedSigma": 1.9383539387255295,
+          "manifestOriginalSampleSigma": 2.10849754238757,
+          "absoluteDifferenceSigma": 0.1701436036620403
+        }
+      ]
+    }
+  ],
+  "verified": [
+    "Original/display PDB and distributed gzip hashes match manifest",
+    "Little-endian float32 size, finite grid values, z-fastest reshape",
+    "Proper rigid transform and inverse; all corresponding peptide coordinates",
+    "Independent trilinear sampling at peptide atoms versus recorded original-map samples"
+  ],
+  "notVerified": [
+    "Original CCP4 bytes, axis order, unit-cell symmetry expansion and full-cell mean/SD",
+    "Original-frame map appearance and contour usefulness",
+    "Native map loading or experimental side-chain certainty"
+  ],
+  "interpolationCaveat": "Distributed samples undergo a second trilinear interpolation. Differences from the recorded original-map samples do not alone indicate frame error."
+}

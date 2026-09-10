@@ -1,0 +1,49 @@
+{
+  "operations": [
+    {
+      "operation": "sequence.control_viewer",
+      "request": {
+        "sessionId": "0b47940c-06ff-49f3-ae44-5bf5457d3b18",
+        "action": "set_display_mode",
+        "displayMode": "fullscreen"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Moved the viewer to the side pane."
+          }
+        ],
+        "structuredContent": {
+          "applied": true,
+          "message": "Moved the viewer to the side pane.",
+          "state": {
+            "displayMode": "fullscreen"
+          }
+        }
+      }
+    },
+    {
+      "operation": "sequence.query_viewer",
+      "request": {
+        "sessionId": "0b47940c-06ff-49f3-ae44-5bf5457d3b18",
+        "target": "rows",
+        "limit": 10
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "The viewer could not apply the requested action."
+          }
+        ],
+        "structuredContent": {
+          "applied": false,
+          "message": "The viewer could not apply the requested action.",
+          "result": {},
+          "schemaVersion": 1
+        }
+      }
+    }
+  ]
+}
