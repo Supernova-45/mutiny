@@ -11,7 +11,8 @@
     "test:browser": "node tests/browser.mjs",
     "test:research-browser": "node tests/research-browser.mjs",
     "prepare:rosalind": "node scripts/prepare_rosalind.mjs",
-    "test:comparison-browser": "node tests/comparison-browser.mjs"
+    "test:comparison-browser": "node tests/comparison-browser.mjs",
+    "test:rendering-browser": "node tests/rendering-browser.mjs"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.3.0",

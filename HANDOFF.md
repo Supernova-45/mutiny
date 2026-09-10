@@ -6,4 +6,4 @@ The next scientific work is independent comparison validation, experimental dens
 
 Keep the accepted scientific artifacts. The older [follow-up](outputs/ROSALIND_FOLLOWUP.md) contains supporting detail for the density task; its broader candidate-evidence work is deferred. Earlier dashboard and application specifications are background, not the current work queue.
 
-Push scientific returns to GitHub and report the commit SHA. The original account handles frontend integration and the later video with concise captions. Do not generate video or narration in the Rosalind handoff.
+Push scientific returns to GitHub and report the commit SHA. This account handles all frontend work, rendering, reveal interactions, source formatting, deployment links, README media and the later video with concise captions. Do not generate video or narration in the Rosalind handoff.

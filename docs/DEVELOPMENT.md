@@ -43,3 +43,11 @@ With the app running, run `npx playwright install chromium` and `npm run test:br
 - ESM-2 [checkpoint](https://huggingface.co/facebook/esm2_t33_650M_UR50D) and [MHCflurry](https://github.com/openvax/mhcflurry).
 
 Original mutiny code is MIT licensed. Third-party data, model weights and dependencies retain their own terms. Model weights are not redistributed in this repository.
+
+## Rendering and README loop
+
+`src/lib/molecular-style.ts` defines the shared stage palette and view style. Ambient occlusion is limited to fine-pointer devices; reduced-motion preference disables camera/opacity/chart transitions. Both original and imported comparisons use the same lighting. Format source with `npm exec --yes --package=prettier@3.6.2 -- prettier --write 'src/**/*.{ts,tsx,mjs,mts,css}'`.
+
+The short README loop uses real browser captures: `node scripts/capture_hero.mjs`, then `python scripts/make_hero.py` with Pillow 12.3.0. Set `APP_URL` and `CHROME_EXECUTABLE` as in the browser checks. Frames stay in ignored `work/hero-frames/`; the final GIF and scientific source-hash manifest are committed. The GIF moves the camera around three discrete experimental views. It is not a molecular trajectory or a recording of a Rosalind UI.
+
+`npm run test:rendering-browser` checks that camera transitions remain visible, reduced-motion settings are honored, rapidly changed selections settle on the correct experimental structures, and the new stages fit mobile.

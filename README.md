@@ -1,12 +1,14 @@
 # mutiny
 
+**[Try mutiny →](https://callback-psi-liard.vercel.app)**
+
 **Compare a normal and cancer-mutant peptide structure. See what changes beyond the mutation.**
 
-One changed amino acid can reshape a neighboring residue—and change how a T-cell receptor binds. Explore the published HHAT case, make a prediction, then reveal the experiment.
+![Explore the mutation, neighboring W6 and receptor contact in mutiny’s interactive 3D comparison](outputs/screenshots/mutiny-hero.gif)
 
-![Normal and mutant HHAT with the receptor-bound W6 reference in gray, exported directly from mutiny](outputs/screenshots/16-hhat-export.png)
+[Still image](outputs/screenshots/16-hhat-export.png)
 
-**Bring your pair.** Open compatible PDBs, inspect neighboring residues in linked 3D, and compare backbone or side-chain differences. Save your view or export a figure. Files stay in your browser.
+**Bring your pair.** Open compatible PDBs, inspect neighboring residues in linked 3D, and compare backbone or side-chain differences. Save your view or export a figure. Files stay in your browser. Or start with the published HHAT case: inspect the structures, make a prediction, then reveal the binding experiment.
 
 ![Per-residue structural differences from locally supplied normal and mutant coordinates](outputs/screenshots/18-residue-differences.png)
 
@@ -21,8 +23,10 @@ npm ci
 npm run dev
 ```
 
-No API keys or GPU needed to run the app. Experimental structures and completed model scores are included.
+No API keys or model-compute setup needed. The interactive viewer uses WebGL. Experimental structures and completed model scores are included.
 
 Built with evidence from **Molecular Structure Viewer** and **Life Sciences Literature** in the Rosalind environment. The reusable comparison engine runs locally. [Actual plugin contributions](rosalind/PLUGIN_EXECUTION.md) · [Next Rosalind work](outputs/ROSALIND_STRUCTURAL_COMPARISON.md)
+
+Source tables and reference sequences are committed to preserve the exact bytes used in the analysis.
 
 [Science](docs/SCIENCE.md) · [Development](docs/DEVELOPMENT.md) · [Deploy](docs/DEPLOYMENT.md) · [MIT license](LICENSE)

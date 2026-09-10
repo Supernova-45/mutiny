@@ -1,62 +1,744 @@
-import {useEffect,useMemo,useRef,useState} from 'react';
-import * as mol from '3dmol';
-import {ArrowLeft,Download,FileUp,ImageDown,RotateCcw} from 'lucide-react';
-import {compareStructures,parsePdb,MAX_PDB_BYTES,type Assignment,type PairComparison,type Chain} from '../lib/structure-pair.mjs';
-import {downloadFile,exportFigure,hashText,validView} from '../lib/investigation';
+import { useEffect, useMemo, useRef, useState } from "react";
+import * as mol from "3dmol";
+import {
+  ArrowLeft,
+  Download,
+  FileUp,
+  ImageDown,
+  RotateCcw,
+} from "lucide-react";
+import {
+  compareStructures,
+  parsePdb,
+  MAX_PDB_BYTES,
+  type Assignment,
+  type PairComparison,
+  type Chain,
+} from "../lib/structure-pair.mjs";
+import {
+  downloadFile,
+  exportFigure,
+  hashText,
+  validView,
+} from "../lib/investigation";
+import { molecularStyle as stage, styleViewer } from "../lib/molecular-style";
 
-interface Input {name:string;text:string;hash:string;assignment:Assignment;kind:string;state:string}
-const blankRoles={hla:'',peptide:''};
-function PairCanvas({pdb,sequence,index,position,mutation,overlay,reference,reset,onReady,onPick,restore}:{pdb:string;sequence:string;index:number;position:number;mutation:number;overlay:boolean;reference:string;reset:number;onReady:(v:mol.GLViewer)=>void;onPick:(p:number)=>void;restore:number[]|null}){
- const element=useRef<HTMLDivElement>(null),viewer=useRef<mol.GLViewer|null>(null),priorReset=useRef(-1),ready=useRef(onReady),pick=useRef(onPick),[error,setError]=useState(''),[done,setDone]=useState('');ready.current=onReady;pick.current=onPick;
- const signature=`${pdb.length}/${position}/${mutation}/${overlay}/${reset}`;
- useEffect(()=>{if(!element.current)return;const node=element.current;try{const v=mol.createViewer(node,{backgroundColor:'#f3f1ec',antialias:true});viewer.current=v;v.setProjection('orthographic');ready.current(v);const resize=new ResizeObserver(()=>{v.resize();v.render()});resize.observe(node);return()=>{resize.disconnect();v.clear();node.replaceChildren();viewer.current=null}}catch{setError('WebGL is unavailable. The numerical comparison remains accessible.')}},[]);
- useEffect(()=>{const v=viewer.current;if(!v)return;try{
-  const camera=v.getModel()?v.getView():null;v.clear();const model=v.addModel(pdb,'pdb');model.setStyle({chain:'A'},{cartoon:{color:'#acb8bd',opacity:.3}});
-  model.setStyle({chain:'C'},{stick:{radius:.2,color:index?'#71829e':'#496887'},sphere:{scale:.18,color:index?'#71829e':'#496887'}});
-  model.setStyle({chain:'C',resi:mutation},{stick:{radius:.27,color:'#c47651'},sphere:{scale:.23,color:'#c47651'}});
-  if(position!==mutation)model.setStyle({chain:'C',resi:position},{stick:{radius:.28,color:'#497775'},sphere:{scale:.23,color:'#497775'}});
-  v.setClickable({chain:'C'},true,(a:mol.AtomSpec)=>{if(a.resi)pick.current(a.resi)});
-  if(overlay){const ghost=v.addModel(reference.split('\n').filter(l=>l.startsWith('ATOM')&&l[21]==='C'&&Number(l.slice(22,26))===position).join('\n'),'pdb');ghost.setStyle({},{stick:{radius:.09,color:'#928899'}})}
-  if(camera&&priorReset.current===reset)v.setView(camera);else{v.zoomTo({model:0,chain:'C',resi:[Math.max(1,position-1),position,Math.min(sequence.length,position+1)]});v.zoom(.95);if(restore)v.setView(restore)}
-  priorReset.current=reset;v.setSlab(-100,100);v.render();setDone(signature);setError('');
- }catch(e){setError(e instanceof Error?e.message:String(e))}},[pdb,reference,position,mutation,overlay,reset,restore,sequence.length]);
- return <div className="pair-stage" data-ready={!error&&done===signature}><div ref={element} className="pair-canvas" aria-label={`Interactive ${index?'mutant':'normal'} supplied peptide structure`}/>{error&&<p className="viewer-error">{error}</p>}</div>;
+interface Input {
+  name: string;
+  text: string;
+  hash: string;
+  assignment: Assignment;
+  kind: string;
+  state: string;
+}
+const blankRoles = { hla: "", peptide: "" };
+function PairCanvas({
+  pdb,
+  sequence,
+  index,
+  position,
+  mutation,
+  overlay,
+  reference,
+  reset,
+  onReady,
+  onPick,
+  restore,
+}: {
+  pdb: string;
+  sequence: string;
+  index: number;
+  position: number;
+  mutation: number;
+  overlay: boolean;
+  reference: string;
+  reset: number;
+  onReady: (v: mol.GLViewer) => void;
+  onPick: (p: number) => void;
+  restore: number[] | null;
+}) {
+  const element = useRef<HTMLDivElement>(null),
+    viewer = useRef<mol.GLViewer | null>(null),
+    priorReset = useRef(-1),
+    ready = useRef(onReady),
+    pick = useRef(onPick),
+    [error, setError] = useState(""),
+    [done, setDone] = useState("");
+  ready.current = onReady;
+  pick.current = onPick;
+  const signature = `${pdb.length}/${position}/${mutation}/${overlay}/${reset}`;
+  useEffect(() => {
+    if (!element.current) return;
+    const node = element.current;
+    try {
+      const v = mol.createViewer(node, {
+        backgroundColor: stage.background,
+        antialias: true,
+      });
+      viewer.current = v;
+      styleViewer(v);
+      ready.current(v);
+      const resize = new ResizeObserver(() => {
+        v.resize();
+        v.render();
+      });
+      resize.observe(node);
+      return () => {
+        resize.disconnect();
+        v.clear();
+        node.replaceChildren();
+        viewer.current = null;
+      };
+    } catch {
+      setError(
+        "WebGL is unavailable. The numerical comparison remains accessible.",
+      );
+    }
+  }, []);
+  useEffect(() => {
+    const v = viewer.current;
+    if (!v) return;
+    try {
+      const camera = v.getModel() ? v.getView() : null;
+      v.clear();
+      const model = v.addModel(pdb, "pdb");
+      model.setStyle(
+        { chain: "A" },
+        { cartoon: { color: stage.hla, opacity: 0.3 } },
+      );
+      model.setStyle(
+        { chain: "C" },
+        {
+          stick: { radius: 0.2, color: index ? stage.mutant : stage.normal },
+          sphere: { scale: 0.18, color: index ? stage.mutant : stage.normal },
+        },
+      );
+      model.setStyle(
+        { chain: "C", resi: mutation },
+        {
+          stick: { radius: 0.27, color: stage.mutation },
+          sphere: { scale: 0.23, color: stage.mutation },
+        },
+      );
+      if (position !== mutation)
+        model.setStyle(
+          { chain: "C", resi: position },
+          {
+            stick: { radius: 0.28, color: stage.selected },
+            sphere: { scale: 0.23, color: stage.selected },
+          },
+        );
+      v.setClickable({ chain: "C" }, true, (a: mol.AtomSpec) => {
+        if (a.resi) pick.current(a.resi);
+      });
+      if (overlay) {
+        const ghost = v.addModel(
+          reference
+            .split("\n")
+            .filter(
+              (l) =>
+                l.startsWith("ATOM") &&
+                l[21] === "C" &&
+                Number(l.slice(22, 26)) === position,
+            )
+            .join("\n"),
+          "pdb",
+        );
+        ghost.setStyle({}, { stick: { radius: 0.09, color: stage.reference } });
+      }
+      if (camera && priorReset.current === reset) v.setView(camera);
+      else {
+        v.zoomTo({
+          model: 0,
+          chain: "C",
+          resi: [
+            Math.max(1, position - 1),
+            position,
+            Math.min(sequence.length, position + 1),
+          ],
+        });
+        v.zoom(0.95);
+        if (restore) v.setView(restore);
+      }
+      priorReset.current = reset;
+      v.setSlab(-100, 100);
+      v.render();
+      setDone(signature);
+      setError("");
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+    }
+  }, [
+    pdb,
+    reference,
+    position,
+    mutation,
+    overlay,
+    reset,
+    restore,
+    sequence.length,
+  ]);
+  return (
+    <div className="pair-stage" data-ready={!error && done === signature}>
+      <div
+        ref={element}
+        className="pair-canvas"
+        aria-label={`Interactive ${index ? "mutant" : "normal"} supplied peptide structure`}
+      />
+      {error && <p className="viewer-error">{error}</p>}
+    </div>
+  );
 }
 
-export default function PairWorkbench({onBack}:{onBack:()=>void}){
- const [inputs,setInputs]=useState<(Input|null)[]>([null,null]),[pair,setPair]=useState<PairComparison|null>(null),[error,setError]=useState(''),[busy,setBusy]=useState(false);
- const [position,setPosition]=useState(1),[metric,setMetric]=useState<'sidechain'|'backbone'>('sidechain'),[overlay,setOverlay]=useState(true),[note,setNote]=useState(''),[reset,setReset]=useState(0),[restore,setRestore]=useState<number[]|null>(null);
- const loadToken=useRef([0,0]);
- const file=useRef<HTMLInputElement>(null),viewers=useRef<(mol.GLViewer|null)[]>([null,null]);
- const chains=useMemo(()=>inputs.map(input=>input?parsePdb(input.text).chains:[]),[inputs]);
- const register=(i:number)=>(v:mol.GLViewer)=>{viewers.current[i]=v;if(viewers.current.every(Boolean)){viewers.current[0]!.linkViewer(viewers.current[1]!);viewers.current[1]!.linkViewer(viewers.current[0]!)}};
- const assign=(index:number,patch:Partial<Input>)=>setInputs(prior=>prior.map((v,i)=>i===index&&v?{...v,...patch}:v));
- const load=async(f:File,index:number)=>{const token=++loadToken.current[index];setError('');if(f.size>MAX_PDB_BYTES){setError('Each PDB must be at most 3 MB.');return}try{const text=await f.text(),parsed=parsePdb(text),hla=parsed.chains.filter(c=>c.sequence.length>=150),peptide=parsed.chains.filter(c=>c.sequence.length>=8&&c.sequence.length<=14);const input={name:f.name,text,hash:await hashText(text),assignment:{hla:hla.length===1?hla[0].id:'',peptide:peptide.length===1?peptide[0].id:''},kind:'unspecified',state:'unspecified'};if(token!==loadToken.current[index])return;setInputs(prior=>prior.map((v,i)=>i===index?input:v))}catch(e){setError((e as Error).message)}};
- const compare=()=>{try{if(!inputs[0]||!inputs[1])throw Error('Open both coordinate files.');const result=compareStructures(inputs[0].text,inputs[1].text,inputs.map(i=>i!.assignment));setPair(result);setNote('');setPosition(result.mutationPosition);setRestore(null);setReset(r=>r+1);setError('')}catch(e){setError((e as Error).message)}};
- const reopen=async(f:File)=>{setError('');setBusy(true);try{
-  if(f.size>10*1024*1024)throw Error('Investigation exceeds 10 MB.');const saved=JSON.parse(await f.text());
-  if(saved.kind!=='mutiny-structure-pair'||saved.version!==1||!Array.isArray(saved.inputs)||saved.inputs.length!==2)throw Error('Open a mutiny structure-pair investigation.');
-  for(const input of saved.inputs){if(!input||typeof input.name!=='string'||!['unspecified','experimental','predicted'].includes(input.kind)||!['unspecified','unbound','bound'].includes(input.state)||typeof input.assignment?.hla!=='string'||typeof input.assignment?.peptide!=='string')throw Error('Invalid structure metadata.');parsePdb(input.text);if(await hashText(input.text)!==input.hash)throw Error('A coordinate file differs from its saved hash.');}
-  const result=compareStructures(saved.inputs[0].text,saved.inputs[1].text,saved.inputs.map((i:Input)=>i.assignment));
-  if(!saved.view||!Number.isInteger(saved.view.position)||saved.view.position<1||saved.view.position>result.sequences[0].length||!['sidechain','backbone'].includes(saved.view.metric)||typeof saved.view.overlay!=='boolean'||typeof saved.note!=='string'||saved.note.length>2000||(saved.view.camera!==null&&!validView(saved.view.camera)))throw Error('Invalid saved view or note.');
-  setInputs(saved.inputs);setPair(result);setPosition(saved.view.position);setMetric(saved.view.metric);setOverlay(saved.view.overlay);setNote(saved.note);setRestore(saved.view.camera);setReset(r=>r+1);
- }catch(e){setError((e as Error).message)}finally{setBusy(false)}};
- const save=()=>{if(!pair)return;downloadFile(JSON.stringify({kind:'mutiny-structure-pair',version:1,inputs,note,view:{position,metric,overlay,camera:viewers.current[0]?.getView()??null},analysis:pair.alignment,differences:pair.differences,policy:pair.policy},null,2),'mutiny-structure-pair.json')};
- const figure=async()=>{setError('');try{if(!pair||document.querySelectorAll('.pair-stage[data-ready=true]').length!==2)throw Error('Wait for both structures to finish rendering.');await exportFigure(viewers.current.map(v=>v!.pngURI()),inputs.map((i,n)=>`${n?'Mutant':'Normal'} · ${i!.name} · ${i!.kind}`),[`Position ${position} · ${metric==='sidechain'?'common side-chain atoms':'common backbone atoms'} · ${pair.differences[position-1][metric].value?.toFixed(2)??'unavailable'} Å RMSD`,`HLA alignment: ${pair.alignment.atomCount} Cα atoms · ${pair.alignment.rmsd.toFixed(2)} Å RMSD · source roles assigned by uploader`,`${overlay?'Gray: other supplied structure at selected position. ':''}Receptor states: ${inputs.map(i=>i!.state).join(' / ')}. No binding experiment attached.`],note,'mutiny-structure-comparison.png')}catch(e){setError((e as Error).message)}};
- const inspect=(p:number)=>{setPosition(p);setRestore(null);setReset(v=>v+1)};
- const selected=pair?.differences[position-1],max=pair?Math.max(.1,...pair.differences.map(r=>r[metric].value??0)):1;
- return <main className="pair-page">
-  <section className="intro-bar"><div><h1>What changes beyond the mutation?</h1><p className="study-context">Your normal and mutant peptide–HLA structures</p></div></section>
-  <div className="pair-actions"><button className="text-button" onClick={onBack}><ArrowLeft size={14}/> HHAT example</button><div><button className="project-action" disabled={busy} onClick={()=>file.current?.click()}><FileUp size={15}/> Open investigation</button>{pair&&<><button className="project-action" onClick={save}><Download size={15}/> Save investigation</button><button className="project-action" onClick={figure}><ImageDown size={15}/> Save figure</button></>}</div></div>
-  <input className="file-input" ref={file} type="file" accept=".json" aria-label="Open structure-pair investigation" onChange={e=>{const f=e.target.files?.[0];e.target.value='';if(f)void reopen(f)}}/>
-  {error&&<p className="project-error" role="alert">{error}</p>}
-  {!pair?<section className="pair-setup"><div className="pair-inputs">{[0,1].map(index=>{const input=inputs[index];return <div className="pair-input" key={index} onDragOver={e=>e.preventDefault()} onDrop={e=>{e.preventDefault();const f=e.dataTransfer.files[0];if(f)void load(f,index)}}><h2>{index?'Mutant':'Normal'}</h2><label className="coordinate-drop"><FileUp size={22}/><span>{input?.name??'Open a PDB file'}</span><input type="file" accept=".pdb,.ent" aria-label={`${index?'Mutant':'Normal'} PDB file`} onChange={e=>{const f=e.target.files?.[0];e.target.value='';if(f)void load(f,index)}}/></label>{input&&<><div className="chain-assignments">{(['hla','peptide'] as const).map(role=><label key={role}>{role==='hla'?'HLA heavy chain':'Peptide chain'}<select aria-label={`${index?'Mutant':'Normal'} ${role} chain`} value={input.assignment[role]} onChange={e=>assign(index,{assignment:{...input.assignment,[role]:e.target.value}})}><option value="">Choose chain</option>{chains[index].map((chain:Chain)=><option key={chain.id} value={chain.id}>{chain.id.trim()||'(blank)'} · {chain.sequence.length} residues</option>)}</select></label>)}</div><div className="chain-assignments"><label>Coordinate source<select aria-label={`${index?'Mutant':'Normal'} coordinate source`} value={input.kind} onChange={e=>assign(index,{kind:e.target.value})}><option value="unspecified">Unspecified</option><option value="experimental">Experimental · user supplied</option><option value="predicted">Predicted · user supplied</option></select></label><label>Receptor state<select aria-label={`${index?'Mutant':'Normal'} receptor state`} value={input.state} onChange={e=>assign(index,{state:e.target.value})}><option value="unspecified">Unspecified</option><option value="unbound">Unbound</option><option value="bound">Receptor-bound</option></select></label></div></>}</div>})}</div><button className="compare-pair-button" disabled={inputs.some(i=>!i||!i.assignment.hla||!i.assignment.peptide)} onClick={compare}>Compare structures <span>→</span></button><details className="pair-methods"><summary>Compatible structures</summary><p>Class-I peptide–HLA pairs with identical observed HLA sequences and one peptide substitution. Peptides must have 8–14 residues. Select the HLA heavy chain and peptide explicitly; roles are not independently verified. First PDB model, heavy ATOM records, blank/A alternate locations. Each file stays in this browser. Up to 3 MB per PDB.</p></details></section>:<>
-   <div className="pair-analysis"><div className="pair-analysis-header"><span>{pair.sequences[0][pair.mutationPosition-1]}{pair.mutationPosition} → {pair.sequences[1][pair.mutationPosition-1]}{pair.mutationPosition}</span><span>HLA fit · {pair.alignment.atomCount} Cα · {pair.alignment.rmsd.toFixed(2)} Å</span><button className="text-button" onClick={()=>setPair(null)}>Change files</button></div>
-   {inputs[0]?.state!==inputs[1]?.state&&<p className="pair-context-note">Different declared receptor states; the comparison includes that difference.</p>}
-   <div className="pair-view-tools"><button aria-pressed={overlay} className={overlay?'selected':''} onClick={()=>setOverlay(v=>!v)}>Overlay other structure</button><button className="icon-button" aria-label="Reset pair cameras" onClick={()=>{setRestore(null);setReset(v=>v+1)}}><RotateCcw size={15}/></button></div>
-   <div className="viewer-pair imported-pair" key={inputs.map(i=>i?.hash).join(':')}>{pair.pdbs.map((pdb,index)=><article className="structure-card" key={index}><div className="structure-title"><h3>{index?'Mutant peptide':'Normal peptide'}</h3><span>{inputs[index]?.kind} · user supplied</span></div><PairCanvas pdb={pdb} sequence={pair.sequences[index]} index={index} position={position} mutation={pair.mutationPosition} overlay={overlay} reference={pair.pdbs[1-index]} reset={reset} restore={restore} onReady={register(index)} onPick={inspect}/><div className="peptide-strip">{pair.sequences[index].split('').map((aa,j)=><button key={j} className={`${j+1===pair.mutationPosition?'mutation':''} ${position===j+1?'active':''}`} aria-pressed={position===j+1} aria-label={`Inspect supplied position ${j+1}, ${aa}`} onClick={()=>inspect(j+1)}><span>{aa}</span><small>{j+1}</small></button>)}</div><div className="structure-caption"><span>{inputs[index]?.name}</span><span>{inputs[index]?.state==='bound'?'Receptor-bound':inputs[index]?.state==='unbound'?'Unbound':'Receptor state unspecified'}</span></div></article>)}</div>
-   <section className="difference-figure" aria-label="Per-residue structural differences"><div className="difference-heading"><h2>What changed nearby?</h2><div className="segmented">{(['sidechain','backbone'] as const).map(value=><button key={value} className={metric===value?'selected':''} aria-pressed={metric===value} onClick={()=>setMetric(value)}>{value==='sidechain'?'Side chains':'Backbone'}</button>)}</div></div><div className="difference-bars">{pair.differences.map(r=><button key={r.position} className={`${r.changed?'mutation':''} ${position===r.position?'selected':''}`} aria-pressed={position===r.position} aria-label={`Position ${r.position}: ${r[metric].value===null?'not comparable':`${r[metric].value!.toFixed(2)} angstrom RMSD`}`} onClick={()=>inspect(r.position)}><span className="difference-bar-space">{r[metric].value!==null?<i style={{height:`${Math.max(2,100*r[metric].value!/max)}%`}}/>:<span>—</span>}</span><strong>{r.normal}{r.changed?`→${r.mutant}`:''}</strong><small>{r.position}</small></button>)}</div><div className="difference-reading"><span>Position {position} · {selected?.[metric].atoms.length} common atoms</span><strong>{selected?.[metric].value===null?'Not comparable':`${selected?.[metric].value?.toFixed(2)} Å RMSD`}</strong><span>{selected?.changed&&metric==='sidechain'?'Different amino acids':'HLA-aligned; no peptide fitting'}</span></div></section>
-   <details className="pair-methods"><summary>Alignment & sources</summary><p>{pair.policy}</p><p>{pair.alignment.method}. This whole-chain fit differs from the curated HHAT example’s HLA-platform fit. The displayed pair contains the assigned HLA heavy chain and peptide; other source chains are retained in the saved inputs. Backbone and side-chain differences use the listed common atoms; missing atoms and chemically symmetric atom names can affect RMSD. No new structures or experimental binding outcomes are inferred.</p>{inputs.map((input,i)=><p key={i}>{i?'Mutant':'Normal'}: {input?.name} · SHA-256 <code>{input?.hash}</code></p>)}</details>
-   </div></>}
- </main>;
+export default function PairWorkbench({ onBack }: { onBack: () => void }) {
+  const [inputs, setInputs] = useState<(Input | null)[]>([null, null]),
+    [pair, setPair] = useState<PairComparison | null>(null),
+    [error, setError] = useState(""),
+    [busy, setBusy] = useState(false);
+  const [position, setPosition] = useState(1),
+    [metric, setMetric] = useState<"sidechain" | "backbone">("sidechain"),
+    [overlay, setOverlay] = useState(true),
+    [note, setNote] = useState(""),
+    [reset, setReset] = useState(0),
+    [restore, setRestore] = useState<number[] | null>(null);
+  const loadToken = useRef([0, 0]);
+  const file = useRef<HTMLInputElement>(null),
+    viewers = useRef<(mol.GLViewer | null)[]>([null, null]);
+  const chains = useMemo(
+    () => inputs.map((input) => (input ? parsePdb(input.text).chains : [])),
+    [inputs],
+  );
+  const register = (i: number) => (v: mol.GLViewer) => {
+    viewers.current[i] = v;
+    if (viewers.current.every(Boolean)) {
+      viewers.current[0]!.linkViewer(viewers.current[1]!);
+      viewers.current[1]!.linkViewer(viewers.current[0]!);
+    }
+  };
+  const assign = (index: number, patch: Partial<Input>) =>
+    setInputs((prior) =>
+      prior.map((v, i) => (i === index && v ? { ...v, ...patch } : v)),
+    );
+  const load = async (f: File, index: number) => {
+    const token = ++loadToken.current[index];
+    setError("");
+    if (f.size > MAX_PDB_BYTES) {
+      setError("Each PDB must be at most 3 MB.");
+      return;
+    }
+    try {
+      const text = await f.text(),
+        parsed = parsePdb(text),
+        hla = parsed.chains.filter((c) => c.sequence.length >= 150),
+        peptide = parsed.chains.filter(
+          (c) => c.sequence.length >= 8 && c.sequence.length <= 14,
+        );
+      const input = {
+        name: f.name,
+        text,
+        hash: await hashText(text),
+        assignment: {
+          hla: hla.length === 1 ? hla[0].id : "",
+          peptide: peptide.length === 1 ? peptide[0].id : "",
+        },
+        kind: "unspecified",
+        state: "unspecified",
+      };
+      if (token !== loadToken.current[index]) return;
+      setInputs((prior) => prior.map((v, i) => (i === index ? input : v)));
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  };
+  const compare = () => {
+    try {
+      if (!inputs[0] || !inputs[1]) throw Error("Open both coordinate files.");
+      const result = compareStructures(
+        inputs[0].text,
+        inputs[1].text,
+        inputs.map((i) => i!.assignment),
+      );
+      setPair(result);
+      setNote("");
+      setPosition(result.mutationPosition);
+      setRestore(null);
+      setReset((r) => r + 1);
+      setError("");
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  };
+  const reopen = async (f: File) => {
+    setError("");
+    setBusy(true);
+    try {
+      if (f.size > 10 * 1024 * 1024)
+        throw Error("Investigation exceeds 10 MB.");
+      const saved = JSON.parse(await f.text());
+      if (
+        saved.kind !== "mutiny-structure-pair" ||
+        saved.version !== 1 ||
+        !Array.isArray(saved.inputs) ||
+        saved.inputs.length !== 2
+      )
+        throw Error("Open a mutiny structure-pair investigation.");
+      for (const input of saved.inputs) {
+        if (
+          !input ||
+          typeof input.name !== "string" ||
+          !["unspecified", "experimental", "predicted"].includes(input.kind) ||
+          !["unspecified", "unbound", "bound"].includes(input.state) ||
+          typeof input.assignment?.hla !== "string" ||
+          typeof input.assignment?.peptide !== "string"
+        )
+          throw Error("Invalid structure metadata.");
+        parsePdb(input.text);
+        if ((await hashText(input.text)) !== input.hash)
+          throw Error("A coordinate file differs from its saved hash.");
+      }
+      const result = compareStructures(
+        saved.inputs[0].text,
+        saved.inputs[1].text,
+        saved.inputs.map((i: Input) => i.assignment),
+      );
+      if (
+        !saved.view ||
+        !Number.isInteger(saved.view.position) ||
+        saved.view.position < 1 ||
+        saved.view.position > result.sequences[0].length ||
+        !["sidechain", "backbone"].includes(saved.view.metric) ||
+        typeof saved.view.overlay !== "boolean" ||
+        typeof saved.note !== "string" ||
+        saved.note.length > 2000 ||
+        (saved.view.camera !== null && !validView(saved.view.camera))
+      )
+        throw Error("Invalid saved view or note.");
+      setInputs(saved.inputs);
+      setPair(result);
+      setPosition(saved.view.position);
+      setMetric(saved.view.metric);
+      setOverlay(saved.view.overlay);
+      setNote(saved.note);
+      setRestore(saved.view.camera);
+      setReset((r) => r + 1);
+    } catch (e) {
+      setError((e as Error).message);
+    } finally {
+      setBusy(false);
+    }
+  };
+  const save = () => {
+    if (!pair) return;
+    downloadFile(
+      JSON.stringify(
+        {
+          kind: "mutiny-structure-pair",
+          version: 1,
+          inputs,
+          note,
+          view: {
+            position,
+            metric,
+            overlay,
+            camera: viewers.current[0]?.getView() ?? null,
+          },
+          analysis: pair.alignment,
+          differences: pair.differences,
+          policy: pair.policy,
+        },
+        null,
+        2,
+      ),
+      "mutiny-structure-pair.json",
+    );
+  };
+  const figure = async () => {
+    setError("");
+    try {
+      if (
+        !pair ||
+        document.querySelectorAll(".pair-stage[data-ready=true]").length !== 2
+      )
+        throw Error("Wait for both structures to finish rendering.");
+      await exportFigure(
+        viewers.current.map((v) => v!.pngURI()),
+        inputs.map(
+          (i, n) => `${n ? "Mutant" : "Normal"} · ${i!.name} · ${i!.kind}`,
+        ),
+        [
+          `Position ${position} · ${metric === "sidechain" ? "common side-chain atoms" : "common backbone atoms"} · ${pair.differences[position - 1][metric].value?.toFixed(2) ?? "unavailable"} Å RMSD`,
+          `HLA alignment: ${pair.alignment.atomCount} Cα atoms · ${pair.alignment.rmsd.toFixed(2)} Å RMSD · source roles assigned by uploader`,
+          `${overlay ? "Gray: other supplied structure at selected position. " : ""}Receptor states: ${inputs.map((i) => i!.state).join(" / ")}. No binding experiment attached.`,
+        ],
+        note,
+        "mutiny-structure-comparison.png",
+      );
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  };
+  const inspect = (p: number) => {
+    setPosition(p);
+    setRestore(null);
+    setReset((v) => v + 1);
+  };
+  const selected = pair?.differences[position - 1],
+    max = pair
+      ? Math.max(0.1, ...pair.differences.map((r) => r[metric].value ?? 0))
+      : 1;
+  return (
+    <main className="pair-page">
+      <section className="intro-bar">
+        <div>
+          <h1>What changes beyond the mutation?</h1>
+          <p className="study-context">
+            Your normal and mutant peptide–HLA structures
+          </p>
+        </div>
+      </section>
+      <div className="pair-actions">
+        <button className="text-button" onClick={onBack}>
+          <ArrowLeft size={14} /> HHAT example
+        </button>
+        <div>
+          <button
+            className="project-action"
+            disabled={busy}
+            onClick={() => file.current?.click()}
+          >
+            <FileUp size={15} /> Open investigation
+          </button>
+          {pair && (
+            <>
+              <button className="project-action" onClick={save}>
+                <Download size={15} /> Save investigation
+              </button>
+              <button className="project-action" onClick={figure}>
+                <ImageDown size={15} /> Save figure
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+      <input
+        className="file-input"
+        ref={file}
+        type="file"
+        accept=".json"
+        aria-label="Open structure-pair investigation"
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          e.target.value = "";
+          if (f) void reopen(f);
+        }}
+      />
+      {error && (
+        <p className="project-error" role="alert">
+          {error}
+        </p>
+      )}
+      {!pair ? (
+        <section className="pair-setup">
+          <div className="pair-inputs">
+            {[0, 1].map((index) => {
+              const input = inputs[index];
+              return (
+                <div
+                  className="pair-input"
+                  key={index}
+                  onDragOver={(e) => e.preventDefault()}
+                  onDrop={(e) => {
+                    e.preventDefault();
+                    const f = e.dataTransfer.files[0];
+                    if (f) void load(f, index);
+                  }}
+                >
+                  <h2>{index ? "Mutant" : "Normal"}</h2>
+                  <label className="coordinate-drop">
+                    <FileUp size={22} />
+                    <span>{input?.name ?? "Open a PDB file"}</span>
+                    <input
+                      type="file"
+                      accept=".pdb,.ent"
+                      aria-label={`${index ? "Mutant" : "Normal"} PDB file`}
+                      onChange={(e) => {
+                        const f = e.target.files?.[0];
+                        e.target.value = "";
+                        if (f) void load(f, index);
+                      }}
+                    />
+                  </label>
+                  {input && (
+                    <>
+                      <div className="chain-assignments">
+                        {(["hla", "peptide"] as const).map((role) => (
+                          <label key={role}>
+                            {role === "hla"
+                              ? "HLA heavy chain"
+                              : "Peptide chain"}
+                            <select
+                              aria-label={`${index ? "Mutant" : "Normal"} ${role} chain`}
+                              value={input.assignment[role]}
+                              onChange={(e) =>
+                                assign(index, {
+                                  assignment: {
+                                    ...input.assignment,
+                                    [role]: e.target.value,
+                                  },
+                                })
+                              }
+                            >
+                              <option value="">Choose chain</option>
+                              {chains[index].map((chain: Chain) => (
+                                <option key={chain.id} value={chain.id}>
+                                  {chain.id.trim() || "(blank)"} ·{" "}
+                                  {chain.sequence.length} residues
+                                </option>
+                              ))}
+                            </select>
+                          </label>
+                        ))}
+                      </div>
+                      <div className="chain-assignments">
+                        <label>
+                          Coordinate source
+                          <select
+                            aria-label={`${index ? "Mutant" : "Normal"} coordinate source`}
+                            value={input.kind}
+                            onChange={(e) =>
+                              assign(index, { kind: e.target.value })
+                            }
+                          >
+                            <option value="unspecified">Unspecified</option>
+                            <option value="experimental">
+                              Experimental · user supplied
+                            </option>
+                            <option value="predicted">
+                              Predicted · user supplied
+                            </option>
+                          </select>
+                        </label>
+                        <label>
+                          Receptor state
+                          <select
+                            aria-label={`${index ? "Mutant" : "Normal"} receptor state`}
+                            value={input.state}
+                            onChange={(e) =>
+                              assign(index, { state: e.target.value })
+                            }
+                          >
+                            <option value="unspecified">Unspecified</option>
+                            <option value="unbound">Unbound</option>
+                            <option value="bound">Receptor-bound</option>
+                          </select>
+                        </label>
+                      </div>
+                    </>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <button
+            className="compare-pair-button"
+            disabled={inputs.some(
+              (i) => !i || !i.assignment.hla || !i.assignment.peptide,
+            )}
+            onClick={compare}
+          >
+            Compare structures <span>→</span>
+          </button>
+          <details className="pair-methods">
+            <summary>Compatible structures</summary>
+            <p>
+              Class-I peptide–HLA pairs with identical observed HLA sequences
+              and one peptide substitution. Peptides must have 8–14 residues.
+              Select the HLA heavy chain and peptide explicitly; roles are not
+              independently verified. First PDB model, heavy ATOM records,
+              blank/A alternate locations. Each file stays in this browser. Up
+              to 3 MB per PDB.
+            </p>
+          </details>
+        </section>
+      ) : (
+        <>
+          <div className="pair-analysis">
+            <div className="pair-analysis-header">
+              <span>
+                {pair.sequences[0][pair.mutationPosition - 1]}
+                {pair.mutationPosition} →{" "}
+                {pair.sequences[1][pair.mutationPosition - 1]}
+                {pair.mutationPosition}
+              </span>
+              <span>
+                HLA fit · {pair.alignment.atomCount} Cα ·{" "}
+                {pair.alignment.rmsd.toFixed(2)} Å
+              </span>
+              <button className="text-button" onClick={() => setPair(null)}>
+                Change files
+              </button>
+            </div>
+            {inputs[0]?.state !== inputs[1]?.state && (
+              <p className="pair-context-note">
+                Different declared receptor states; the comparison includes that
+                difference.
+              </p>
+            )}
+            <div className="pair-view-tools">
+              <button
+                aria-pressed={overlay}
+                className={overlay ? "selected" : ""}
+                onClick={() => setOverlay((v) => !v)}
+              >
+                Overlay other structure
+              </button>
+              <button
+                className="icon-button"
+                aria-label="Reset pair cameras"
+                onClick={() => {
+                  setRestore(null);
+                  setReset((v) => v + 1);
+                }}
+              >
+                <RotateCcw size={15} />
+              </button>
+            </div>
+            <div
+              className="viewer-pair imported-pair"
+              key={inputs.map((i) => i?.hash).join(":")}
+            >
+              {pair.pdbs.map((pdb, index) => (
+                <article className="structure-card" key={index}>
+                  <div className="structure-title">
+                    <h3>{index ? "Mutant peptide" : "Normal peptide"}</h3>
+                    <span>{inputs[index]?.kind} · user supplied</span>
+                  </div>
+                  <PairCanvas
+                    pdb={pdb}
+                    sequence={pair.sequences[index]}
+                    index={index}
+                    position={position}
+                    mutation={pair.mutationPosition}
+                    overlay={overlay}
+                    reference={pair.pdbs[1 - index]}
+                    reset={reset}
+                    restore={restore}
+                    onReady={register(index)}
+                    onPick={inspect}
+                  />
+                  <div className="peptide-strip">
+                    {pair.sequences[index].split("").map((aa, j) => (
+                      <button
+                        key={j}
+                        className={`${j + 1 === pair.mutationPosition ? "mutation" : ""} ${position === j + 1 ? "active" : ""}`}
+                        aria-pressed={position === j + 1}
+                        aria-label={`Inspect supplied position ${j + 1}, ${aa}`}
+                        onClick={() => inspect(j + 1)}
+                      >
+                        <span>{aa}</span>
+                        <small>{j + 1}</small>
+                      </button>
+                    ))}
+                  </div>
+                  <div className="structure-caption">
+                    <span>{inputs[index]?.name}</span>
+                    <span>
+                      {inputs[index]?.state === "bound"
+                        ? "Receptor-bound"
+                        : inputs[index]?.state === "unbound"
+                          ? "Unbound"
+                          : "Receptor state unspecified"}
+                    </span>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <section
+              className="difference-figure"
+              aria-label="Per-residue structural differences"
+            >
+              <div className="difference-heading">
+                <h2>What changed nearby?</h2>
+                <div className="segmented">
+                  {(["sidechain", "backbone"] as const).map((value) => (
+                    <button
+                      key={value}
+                      className={metric === value ? "selected" : ""}
+                      aria-pressed={metric === value}
+                      onClick={() => setMetric(value)}
+                    >
+                      {value === "sidechain" ? "Side chains" : "Backbone"}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="difference-bars">
+                {pair.differences.map((r) => (
+                  <button
+                    key={r.position}
+                    className={`${r.changed ? "mutation" : ""} ${position === r.position ? "selected" : ""}`}
+                    aria-pressed={position === r.position}
+                    aria-label={`Position ${r.position}: ${r[metric].value === null ? "not comparable" : `${r[metric].value!.toFixed(2)} angstrom RMSD`}`}
+                    onClick={() => inspect(r.position)}
+                  >
+                    <span className="difference-bar-space">
+                      {r[metric].value !== null ? (
+                        <i
+                          style={{
+                            height: `${Math.max(2, (100 * r[metric].value!) / max)}%`,
+                          }}
+                        />
+                      ) : (
+                        <span>—</span>
+                      )}
+                    </span>
+                    <strong>
+                      {r.normal}
+                      {r.changed ? `→${r.mutant}` : ""}
+                    </strong>
+                    <small>{r.position}</small>
+                  </button>
+                ))}
+              </div>
+              <div className="difference-reading">
+                <span>
+                  Position {position} · {selected?.[metric].atoms.length} common
+                  atoms
+                </span>
+                <strong>
+                  {selected?.[metric].value === null
+                    ? "Not comparable"
+                    : `${selected?.[metric].value?.toFixed(2)} Å RMSD`}
+                </strong>
+                <span>
+                  {selected?.changed && metric === "sidechain"
+                    ? "Different amino acids"
+                    : "HLA-aligned; no peptide fitting"}
+                </span>
+              </div>
+            </section>
+            <details className="pair-methods">
+              <summary>Alignment & sources</summary>
+              <p>{pair.policy}</p>
+              <p>
+                {pair.alignment.method}. This whole-chain fit differs from the
+                curated HHAT example’s HLA-platform fit. The displayed pair
+                contains the assigned HLA heavy chain and peptide; other source
+                chains are retained in the saved inputs. Backbone and side-chain
+                differences use the listed common atoms; missing atoms and
+                chemically symmetric atom names can affect RMSD. No new
+                structures or experimental binding outcomes are inferred.
+              </p>
+              {inputs.map((input, i) => (
+                <p key={i}>
+                  {i ? "Mutant" : "Normal"}: {input?.name} · SHA-256{" "}
+                  <code>{input?.hash}</code>
+                </p>
+              ))}
+            </details>
+          </div>
+        </>
+      )}
+    </main>
+  );
 }

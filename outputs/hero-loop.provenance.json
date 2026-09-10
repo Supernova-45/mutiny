@@ -1,0 +1,32 @@
+{
+  "description": "Actual app captures with paired camera rotation. Three discrete experimental views; no atom interpolation. Caption bands added from the frame manifest and bundled experimental evidence.",
+  "frames": 54,
+  "durationMs": 15420,
+  "sources": [
+    {
+      "path": "public/data/structures.json",
+      "sha256": "b2e55067b4767e19b98b9353c7809c722767c78a2ee4f73b579205885ceec7e8"
+    },
+    {
+      "path": "public/data/hhat-evidence.json",
+      "sha256": "3bf4f1b35acaec497593101a0a17a47b8ac5f47bd499b91934769ae35f01daa1"
+    },
+    {
+      "path": "public/structures/6UJQ.pdb",
+      "sha256": "817ad59b1c41e09f5ff317661c68c9676584b550656a9d02e33e7f3dee7a4e62"
+    },
+    {
+      "path": "public/structures/6UJO.pdb",
+      "sha256": "eb36cec705b3f6aadc0956cb8eddb3fcffb9de1b4b845cabb7c4e7c27a9815da"
+    },
+    {
+      "path": "public/structures/6UK2.pdb",
+      "sha256": "4b62cae78cacbd31c24120119fc2a790b609a12db9d84ef2b8fab53cc5cf7b7c"
+    },
+    {
+      "path": "public/structures/6UK4.pdb",
+      "sha256": "9388b2c07fec4dc4dbde6328ae1e9f416415307a4312b9b42de3d7a9c9e1eb84"
+    }
+  ],
+  "paper": "https://doi.org/10.1038/s41589-020-0610-1"
+}
