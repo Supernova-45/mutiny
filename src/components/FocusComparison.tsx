@@ -492,9 +492,8 @@ function FocusDialog({
   };
   const saveImage = async () => {
     try {
-      const image = new Image();
-      image.src = viewer.current!.pngURI();
-      await image.decode();
+      // Copy WebGL pixels directly; avoid an unnecessary PNG encode/decode before export.
+      const image = viewer.current!.getCanvas();
       const canvas = document.createElement("canvas");
       const captionScale = Math.max(1, image.width / 1400);
       canvas.width = image.width;
