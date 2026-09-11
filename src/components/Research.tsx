@@ -184,9 +184,6 @@ export default function Research() {
             >
               Example project JSON <Download size={13} />
             </a>
-            <p className="format-note">
-              Normalized project JSON · schema 0.1.0 · up to 8 MB
-            </p>
           </div>
         </section>
       ) : (
@@ -448,16 +445,6 @@ export default function Research() {
           </aside>
         </div>
       )}
-      <footer className="page-footer">
-        <span>Local project review</span>
-        <a
-          href="https://github.com/Supernova-45/mutiny/blob/main/rosalind/project.schema.json"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Project format <ArrowUpRight size={12} />
-        </a>
-      </footer>
     </main>
   );
 }

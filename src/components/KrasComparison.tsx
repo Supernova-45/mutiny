@@ -697,7 +697,6 @@ export default function KrasComparison({
                   </button>
                 ))}
               </div>
-              <p>Backbone atoms only. Side-chain naming can mimic movement.</p>
             </div>
           </div>
           <section

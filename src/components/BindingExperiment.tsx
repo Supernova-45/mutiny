@@ -67,7 +67,6 @@ export default function BindingExperiment({
     <section className="binding-experiment" aria-labelledby="binding-title">
       <div className="experiment-heading">
         <div>
-          <p className="figure-kicker">THE EXPERIMENT</p>
           <h2 id="binding-title">Does that contact matter?</h2>
         </div>
         <a

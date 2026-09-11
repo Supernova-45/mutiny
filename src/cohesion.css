@@ -93,6 +93,7 @@
 }
 .molecule-page .mechanism-path {
   grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  border-top: 0;
   border-bottom: 0;
   margin-bottom: 0;
 }

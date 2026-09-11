@@ -1026,7 +1026,6 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
           <>
             <div>
               <h2>Which peptide binds the T-cell receptor more tightly?</h2>
-              <p>Make a prediction, then reveal the experiment.</p>
             </div>
             <div className="prediction-options">
               {(["normal", "mutant", "similar"] as const).map((value) => (
@@ -1063,12 +1062,12 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
           <>
             <div>
               <h2>The mutant bound more tightly.</h2>
-              <p>
-                {prediction
-                  ? `Your prediction: ${prediction === "similar" ? "similar binding" : prediction}. `
-                  : ""}
-                The measured structures help explain why.
-              </p>
+              {prediction && (
+                <p>
+                  Your prediction:{" "}
+                  {prediction === "similar" ? "similar binding" : prediction}.
+                </p>
+              )}
             </div>
             <div className="binding-reveal">
               <span>
