@@ -109,11 +109,7 @@ export default function Research() {
       <section className="intro-bar">
         <div>
           <h1>Which candidates deserve a closer look?</h1>
-          <p className="study-context">
-            {project
-              ? project.title
-              : "Compare predictions. Keep the evidence."}
-          </p>
+          {project && <p className="study-context">{project.title}</p>}
         </div>
       </section>
       <div className="research-toolbar">
@@ -173,11 +169,7 @@ export default function Research() {
             ))}
           </div>
           <div>
-            <h2>Bring your shortlist.</h2>
-            <p>
-              Open a mutiny project with candidate sequences and declared score
-              methods. Your file stays in this browser.
-            </p>
+            <h2>Bring your candidate sequences and declared score methods</h2>
             <button
               className="project-action primary"
               disabled={busy}
