@@ -7,6 +7,7 @@ import "@fontsource/ibm-plex-mono/500.css";
 import "./style.css";
 import "./research.css";
 import "./comparison.css";
+import "./cohesion.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />

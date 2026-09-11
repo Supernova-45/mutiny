@@ -16,6 +16,8 @@ jobs:
       - run: npm run test:deployment
       - run: npm run test:focus-browser
         timeout-minutes: 5
+      - run: npm run test:cohesion-browser
+        timeout-minutes: 3
       - uses: actions/upload-artifact@v4
         if: failure()
         with:

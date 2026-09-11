@@ -52,7 +52,15 @@ function Sequence({ target }: { target: Target }) {
   );
 }
 
-function Evidence({ data, onClose }: { data: Cohort; onClose: () => void }) {
+function Evidence({
+  data,
+  onClose,
+  study,
+}: {
+  data: Cohort;
+  onClose: () => void;
+  study: boolean;
+}) {
   useEffect(() => {
     const previous = document.activeElement as HTMLElement | null;
     const overflow = document.body.style.overflow;
@@ -100,131 +108,147 @@ function Evidence({ data, onClose }: { data: Cohort; onClose: () => void }) {
           <X size={20} />
         </button>
         <h2>Sources & methods</h2>
-        <div className="evidence-block">
-          <h3>One selected vaccine cohort</h3>
-          <p>
-            232 administered target records from 16 patients in the Rojas
-            pancreatic-cancer trial. These are already selected vaccine targets,
-            not all tumor mutations. “Not detected” means no response detected
-            under this ELISpot assay, not proof of absent immunity.
-          </p>
-          <a
-            href="https://www.nature.com/articles/s41586-023-06063-y"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Rojas et al. · Nature 2023 <ArrowUpRight size={14} />
-          </a>
-        </div>
-        <div className="evidence-counts">
-          {(["response", "undetected", "pooled", "missing"] as Outcome[]).map(
-            (o) => (
-              <div key={o}>
-                <strong>
-                  {data.targets.filter((t) => t.outcome === o).length}
-                </strong>
-                <span>{names[o]}</span>
+        {study && (
+          <>
+            <div className="evidence-block">
+              <h3>One selected vaccine cohort</h3>
+              <p>
+                232 administered target records from 16 patients in the Rojas
+                pancreatic-cancer trial. These are already selected vaccine
+                targets, not all tumor mutations. “Not detected” means no
+                response detected under this ELISpot assay, not proof of absent
+                immunity.
+              </p>
+              <a
+                href="https://www.nature.com/articles/s41586-023-06063-y"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Rojas et al. · Nature 2023 <ArrowUpRight size={14} />
+              </a>
+            </div>
+            <div className="evidence-counts">
+              {(
+                ["response", "undetected", "pooled", "missing"] as Outcome[]
+              ).map((o) => (
+                <div key={o}>
+                  <strong>
+                    {data.targets.filter((t) => t.outcome === o).length}
+                  </strong>
+                  <span>{names[o]}</span>
+                </div>
+              ))}
+            </div>
+            <div className="evidence-block">
+              <h3>23 individual positives + 2 positive pools</h3>
+              <p>
+                The paper’s 25 reported responses include two pools containing
+                seven targets in patient 25. Pool members and the two missing
+                outcomes remain visible but are excluded from binary outcome
+                analysis. The assay does not resolve CD4/CD8 or HLA class for
+                every response.
+              </p>
+            </div>
+            <div className="evidence-block">
+              <h3>Two exploratory features</h3>
+              <p>
+                ESM-2 650M: log P(mutant) − log P(normal), with the mutation
+                masked in verified wild-type protein context, up to 511
+                residues. More negative scores appear first. This is a
+                sequence-preference hypothesis, not immune foreignness.
+              </p>
+              <p>
+                MHCflurry: predicted affinity for the published best class-I
+                peptide/allele pair; lower nM appears first. Predicted
+                restriction is not experimentally demonstrated restriction.
+                Rankings use the same jointly scored, individually labeled
+                records, within each patient.
+              </p>
+              <p>
+                The shaded reference is the central 90% of 2,000 seeded
+                within-patient random orderings. It describes chance ordering,
+                not population uncertainty or clinical efficacy.
+              </p>
+              <div className="inline-status">
+                <Check size={14} />{" "}
+                {data.targets.filter((t) => t.comparisonEligible).length}{" "}
+                jointly eligible records
               </div>
-            ),
-          )}
-        </div>
-        <div className="evidence-block">
-          <h3>23 individual positives + 2 positive pools</h3>
-          <p>
-            The paper’s 25 reported responses include two pools containing seven
-            targets in patient 25. Pool members and the two missing outcomes
-            remain visible but are excluded from binary outcome analysis. The
-            assay does not resolve CD4/CD8 or HLA class for every response.
-          </p>
-        </div>
-        <div className="evidence-block">
-          <h3>Two exploratory features</h3>
-          <p>
-            ESM-2 650M: log P(mutant) − log P(normal), with the mutation masked
-            in verified wild-type protein context, up to 511 residues. More
-            negative scores appear first. This is a sequence-preference
-            hypothesis, not immune foreignness.
-          </p>
-          <p>
-            MHCflurry: predicted affinity for the published best class-I
-            peptide/allele pair; lower nM appears first. Predicted restriction
-            is not experimentally demonstrated restriction. Rankings use the
-            same jointly scored, individually labeled records, within each
-            patient.
-          </p>
-          <p>
-            The shaded reference is the central 90% of 2,000 seeded
-            within-patient random orderings. It describes chance ordering, not
-            population uncertainty or clinical efficacy.
-          </p>
-          <div className="inline-status">
-            <Check size={14} />{" "}
-            {data.targets.filter((t) => t.comparisonEligible).length} jointly
-            eligible records
-          </div>
-        </div>
-        <div className="evidence-block">
-          <h3>A separate structural case</h3>
-          <p>
-            HHAT L75F, HLA-A*02:06, receptor 302TIL. Four experimental
-            structures; aligned on HLA platform Cα atoms, never the peptide.
-            Normal: 6UJQ / 6UK2. Mutant: 6UJO / 6UK4. This ovarian-cancer
-            example is not a target structure from the pancreatic trial.
-          </p>
-          <a
-            href="https://www.nature.com/articles/s41589-020-0610-1"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Devlin et al. · Nature Chemical Biology 2020{" "}
-            <ArrowUpRight size={14} />
-          </a>
-        </div>
-        <div className="evidence-block">
-          <h3>A contrasting KRAS example</h3>
-          <p>
-            KRAS G12D, HLA-A*11:01, engineered receptor JDIa41b1. Both
-            structures are receptor-bound: normal 7OW5 and mutant 7OW6. A
-            reviewed mapping fits 275 shared HLA Cα atoms; the mutant-only HLA
-            residue 1 is excluded. Similar bound geometry accompanies over
-            4,000-fold measured mutant selectivity. This is receptor affinity,
-            not vaccine efficacy.
-          </p>
-          <a
-            href="https://www.nature.com/articles/s41467-022-32811-1"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Poole et al. · Nature Communications 2022 <ArrowUpRight size={14} />
-          </a>
-        </div>
-        <div className="evidence-block">
-          <h3>Rosalind contribution</h3>
-          <p>
-            Molecular Structure Viewer 0.1.80 verified atom displacements and
-            receptor contacts on independently reconstructed HHAT structures.
-            Life Sciences Literature 0.1.5 retrieved the source used to verify
-            seven published ligand measurements. The Recognition view
-            incorporates those experiments and the returned geometry; the
-            fixed-HLA ring RMSD is a local calculation. Experimental HHAT
-            density is available in the superimposed view, prepared locally from
-            PDBe maps with Gemmi. The second return independently verified
-            HHAT/KRAS alignment and KRAS contacts with Molecular Structure
-            Viewer, peptide identities with Biological Sequence & Alignment
-            Viewer, and the KRAS paper with Life Sciences Literature.
-          </p>
-          <a
-            href="https://github.com/Supernova-45/mutiny/blob/main/rosalind/PLUGIN_EXECUTION.md"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Execution record <ArrowUpRight size={14} />
-          </a>
-        </div>
-        <a className="download-link" href="/data/cohort.json" download>
-          <Download size={15} /> Download records & provenance
-        </a>
-        <code className="checksum">SHA-256 {data.sourceSha256}</code>
+            </div>
+          </>
+        )}
+        {!study && (
+          <>
+            <div className="evidence-block">
+              <h3>HHAT L75F</h3>
+              <p>
+                HHAT L75F, HLA-A*02:06, receptor 302TIL. Four experimental
+                structures; aligned on HLA platform Cα atoms, never the peptide.
+                Normal: 6UJQ / 6UK2. Mutant: 6UJO / 6UK4. This ovarian-cancer
+                example is not a target structure from the pancreatic trial.
+              </p>
+              <a
+                href="https://www.nature.com/articles/s41589-020-0610-1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Devlin et al. · Nature Chemical Biology 2020{" "}
+                <ArrowUpRight size={14} />
+              </a>
+            </div>
+            <div className="evidence-block">
+              <h3>KRAS G12D</h3>
+              <p>
+                KRAS G12D, HLA-A*11:01, engineered receptor JDIa41b1. Both
+                structures are receptor-bound: normal 7OW5 and mutant 7OW6. A
+                reviewed mapping fits 275 shared HLA Cα atoms; the mutant-only
+                HLA residue 1 is excluded. Similar bound geometry accompanies
+                over 4,000-fold measured mutant selectivity. This is receptor
+                affinity, not vaccine efficacy.
+              </p>
+              <a
+                href="https://www.nature.com/articles/s41467-022-32811-1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Poole et al. · Nature Communications 2022{" "}
+                <ArrowUpRight size={14} />
+              </a>
+            </div>
+            <div className="evidence-block">
+              <h3>Rosalind contribution</h3>
+              <p>
+                Molecular Structure Viewer 0.1.80 verified atom displacements
+                and receptor contacts on independently reconstructed HHAT
+                structures. Life Sciences Literature 0.1.5 retrieved the source
+                used to verify seven published ligand measurements. The
+                Recognition view incorporates those experiments and the returned
+                geometry; the fixed-HLA ring RMSD is a local calculation.
+                Experimental HHAT density is available in the superimposed view,
+                prepared locally from PDBe maps with Gemmi. The second return
+                independently verified HHAT/KRAS alignment and KRAS contacts
+                with Molecular Structure Viewer, peptide identities with
+                Biological Sequence & Alignment Viewer, and the KRAS paper with
+                Life Sciences Literature.
+              </p>
+              <a
+                href="https://github.com/Supernova-45/mutiny/blob/main/rosalind/PLUGIN_EXECUTION.md"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Execution record <ArrowUpRight size={14} />
+              </a>
+            </div>
+          </>
+        )}
+        {study && (
+          <>
+            <a className="download-link" href="/data/cohort.json" download>
+              <Download size={15} /> Download records & provenance
+            </a>
+            <code className="checksum">SHA-256 {data.sourceSha256}</code>
+          </>
+        )}
       </section>
     </div>
   );
@@ -322,6 +346,15 @@ export default function App() {
             onClick={() => setScene("atlas")}
           >
             Vaccine study
+          </button>
+          <button
+            className={scene === "research" ? "active" : ""}
+            onClick={() => {
+              setResearchOpened(true);
+              setScene("research");
+            }}
+          >
+            Candidate review
           </button>
         </nav>
         <div className="header-actions">
@@ -650,14 +683,6 @@ export default function App() {
         </div>
       )}
       <div className="secondary-tools">
-        <button
-          onClick={() => {
-            setResearchOpened(true);
-            setScene("research");
-          }}
-        >
-          Candidate review
-        </button>
         <a
           href="https://www.radicalnumerics.ai/blog/omnii-cancer-vaccines"
           target="_blank"
@@ -666,7 +691,13 @@ export default function App() {
           Inspired by Omnii <ArrowUpRight size={11} />
         </a>
       </div>
-      {evidence && <Evidence data={data} onClose={() => setEvidence(false)} />}
+      {evidence && (
+        <Evidence
+          data={data}
+          study={scene === "atlas"}
+          onClose={() => setEvidence(false)}
+        />
+      )}
     </div>
   );
 }

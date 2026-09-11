@@ -1,0 +1,293 @@
+/* One flow: structure, observation, experiment. */
+.topbar {
+  height: 66px;
+  gap: 48px;
+}
+.topbar nav {
+  gap: 30px;
+}
+.molecule-page > .molecular-intro {
+  padding-block: 28px 24px;
+}
+.molecule-page > .molecular-intro h1 {
+  font-size: clamp(30px, 3.5vw, 50px);
+  letter-spacing: -0.035em;
+}
+.molecule-page .study-context {
+  margin-top: 12px;
+}
+.molecule-page > .pair-actions {
+  justify-content: flex-start;
+  gap: 24px;
+  padding-block: 12px;
+  margin-bottom: 20px;
+  border-top: 0;
+}
+.molecule-page > .pair-actions > .curated-cases {
+  margin: 0 auto 0 0;
+  gap: 22px;
+  border: 0;
+}
+.pair-actions > .curated-cases button {
+  padding: 10px 0;
+  margin: 0;
+  font-size: 12px;
+}
+.molecule-page > .pair-actions > .focus-launch {
+  background: var(--ink);
+  color: #f3f1ec;
+  padding: 12px 16px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.pair-actions > .focus-launch:hover {
+  background: #3c4e58;
+  color: #fff;
+}
+.investigation-actions {
+  position: relative;
+  flex-shrink: 0;
+}
+.investigation-actions summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 12px 0;
+  list-style: none;
+}
+.investigation-actions summary::-webkit-details-marker {
+  display: none;
+}
+.investigation-actions[open] summary svg {
+  transform: rotate(180deg);
+}
+.investigation-actions > div {
+  position: absolute;
+  z-index: 12;
+  top: calc(100% + 5px);
+  right: 0;
+  min-width: 205px;
+  padding: 8px;
+  background: var(--bg);
+  box-shadow: 0 8px 30px #17212826;
+}
+.investigation-actions .project-action {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 12px;
+  text-align: left;
+}
+.investigation-actions .project-action:hover {
+  background: #2527270a;
+}
+.investigation-actions summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.molecule-page .molecular-workspace {
+  gap: 0;
+}
+.molecule-page .mechanism-path {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.molecule-page .mechanism-path button {
+  padding: 15px 18px;
+  gap: 10px;
+}
+.molecule-page .mechanism-path .experiment-jump {
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  gap: 12px;
+  color: var(--ink);
+  border-bottom-color: transparent;
+  justify-content: flex-end;
+  font-size: 11px;
+}
+.molecule-page .molecular-rail {
+  padding: 10px 20px;
+  background: #20272d;
+  color: #c4cfd6;
+  border-bottom: 1px solid #ffffff14;
+  gap: 24px;
+  min-height: 58px;
+}
+.molecule-page .molecular-rail .segmented button,
+.molecule-page .molecular-rail .molecule-legend,
+.molecule-page .molecular-rail .receptor-toggle,
+.molecule-page .molecular-rail .icon-button,
+.molecule-page .molecular-rail button {
+  color: #b9c8d1;
+}
+.molecule-page .molecular-rail button.selected,
+.molecule-page .molecular-rail button[aria-pressed="true"] {
+  color: #ffc299;
+}
+.molecule-page .molecular-rail .segmented button.selected {
+  border-color: #ffc299;
+}
+.molecule-page .molecular-rail button:hover {
+  color: #fff;
+}
+.molecule-page .molecular-rail .molecule-legend span {
+  color: #b9c8d1;
+}
+.molecule-page.kras-page .molecular-rail button[aria-pressed="true"] {
+  color: #ffc299;
+}
+.molecule-page .molecular-rail .camera-controls button[aria-pressed="true"] {
+  background: #ffffff12;
+}
+.molecule-page .viewer-pair {
+  border-top: 0;
+}
+.molecule-page .structure-stage {
+  height: clamp(400px, 47vh, 620px);
+}
+.molecule-page > .prediction-strip {
+  margin-top: 28px;
+  margin-bottom: 30px;
+  border-top: 1px solid var(--line);
+  padding-block: 24px;
+  scroll-margin: 24px;
+}
+.prediction-strip:focus {
+  outline: none;
+}
+.prediction-strip:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 8px;
+}
+.pose-heading {
+  margin-bottom: 18px;
+}
+.secondary-tools {
+  justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+  .topbar {
+    gap: 28px;
+  }
+  .topbar nav {
+    gap: 22px;
+  }
+  .molecule-page > .pair-actions {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .molecule-page .mechanism-path button {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 13px 10px;
+  }
+  .molecule-page .mechanism-path .path-arrow {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .topbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    height: auto;
+    gap: 0;
+    padding-block: 15px 0;
+  }
+  .topbar .wordmark {
+    justify-self: start;
+  }
+  .topbar .header-actions {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .topbar nav {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 12px;
+    width: 100%;
+  }
+  .topbar nav button {
+    font-size: 11px;
+    padding: 13px 0;
+    white-space: nowrap;
+  }
+  .molecule-page > .molecular-intro {
+    padding-block: 24px 20px;
+  }
+  .molecule-page > .molecular-intro h1 {
+    font-size: 31px;
+    line-height: 1.12;
+  }
+  .molecule-page > .pair-actions {
+    gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-bottom: 10px;
+  }
+  .molecule-page > .pair-actions > .curated-cases {
+    grid-column: 1;
+    grid-row: 1;
+    gap: 20px;
+  }
+  .investigation-actions {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .molecule-page > .pair-actions > .focus-launch {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 12px;
+    font-size: 11px;
+    justify-content: center;
+  }
+  .molecule-page > .pair-actions > .project-action:not(.focus-launch) {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 11px;
+  }
+  .molecule-page .mechanism-path {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .molecule-page .mechanism-path button {
+    padding: 12px 8px;
+    font-size: 10px;
+    gap: 7px;
+  }
+  .molecule-page .mechanism-path .experiment-jump {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+  .molecule-page .molecular-rail {
+    gap: 12px;
+    padding: 10px 12px;
+  }
+  .molecule-page .molecular-rail .molecule-legend {
+    display: none;
+  }
+  /* The receptor step above provides the same action without a second row. */
+  .molecule-page .molecular-rail .receptor-toggle {
+    display: none;
+  }
+  .molecule-page .molecular-rail .camera-controls {
+    margin-left: auto;
+  }
+  .molecule-page .structure-stage {
+    height: 350px;
+  }
+  .molecule-page .molecular-workspace.expanded .structure-stage {
+    height: 350px;
+  }
+  .molecule-page > .prediction-strip {
+    margin-top: 24px;
+    gap: 18px;
+  }
+}

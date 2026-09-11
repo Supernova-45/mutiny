@@ -9,3 +9,5 @@ The secondary vaccine-study view uses one patient per row on an open canvas, wit
 Source guidance: [Impeccable](https://github.com/pbakaus/impeccable), particularly distill and craft-floor. Scientific constraints remain in docs/SCIENCE.md.
 
 Camera changes use a short user-triggered transition; reference opacity and measurement bars may animate, never atom coordinates. Pointer interaction interrupts camera motion. Reduced-motion preference disables transitions. Keep source code formatted for readers.
+
+The navigation contains Compare structures, Vaccine study and Candidate review. Structural pages put case selection and the immersive 3D action on one row, with file operations in Save & open. The figure comes before the prediction/reveal. Binding experiment in the mechanism path moves to the experimental question, including when exiting expanded mode. The dark molecular control strip belongs to the 3D figure; evidence stays on paper. Methods follow the current structural or vaccine-study context. Keep W6 measurements without a decorative heading. On phones, receptor selection uses the mechanism path instead of a duplicate toggle.

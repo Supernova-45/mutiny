@@ -11,6 +11,8 @@ import {
   RotateCcw,
 } from "lucide-react";
 import CuratedCases from "./CuratedCases";
+import InvestigationActions from "./InvestigationActions";
+import ExperimentJump from "./ExperimentJump";
 import FocusComparison from "./FocusComparison";
 import { downloadFile, exportFigure, hashText } from "../lib/investigation";
 import {
@@ -487,12 +489,6 @@ export default function KrasComparison({
   };
   return (
     <main className="molecule-page kras-page">
-      <CuratedCases
-        selected="kras"
-        onSelect={(id) => {
-          if (id === "hhat") onHhat(snapshot());
-        }}
-      />
       <section className="intro-bar molecular-intro">
         <div>
           <h1>Similar shapes. Different recognition?</h1>
@@ -510,6 +506,12 @@ export default function KrasComparison({
         </a>
       </section>
       <div className="pair-actions">
+        <CuratedCases
+          selected="kras"
+          onSelect={(id) => {
+            if (id === "hhat") onHhat(snapshot());
+          }}
+        />
         <FocusComparison
           caseId="kras"
           initialStep={scene === "peptide" ? 0 : scene === "contacts" ? 1 : 2}
@@ -521,7 +523,7 @@ export default function KrasComparison({
         >
           <FileUp size={15} /> Compare your pair
         </button>
-        <div>
+        <InvestigationActions>
           <button
             className="project-action"
             disabled={!loaded}
@@ -544,7 +546,7 @@ export default function KrasComparison({
           <button className="project-action" onClick={figure}>
             <ImageDown size={15} /> Save figure
           </button>
-        </div>
+        </InvestigationActions>
       </div>
       <input
         className="file-input"
@@ -565,86 +567,6 @@ export default function KrasComparison({
       )}
       {loaded && (
         <>
-          <section
-            className={`prediction-strip ${revealed ? "revealed" : ""}`}
-            aria-label="Your KRAS binding prediction"
-          >
-            {!revealed ? (
-              <>
-                <div>
-                  <h2>Which peptide binds this receptor more tightly?</h2>
-                </div>
-                <div className="prediction-options">
-                  {predictions.map(([id, label]) => (
-                    <button
-                      key={id}
-                      aria-pressed={prediction === id}
-                      className={prediction === id ? "selected" : ""}
-                      onClick={() => setPrediction(id)}
-                    >
-                      {label}
-                    </button>
-                  ))}
-                  <button
-                    className="reveal-experiment"
-                    disabled={!prediction}
-                    onClick={() => setRevealed(true)}
-                  >
-                    Reveal result
-                  </button>
-                </div>
-                <button
-                  className="skip-prediction"
-                  onClick={() => setRevealed(true)}
-                >
-                  Skip to evidence
-                </button>
-              </>
-            ) : (
-              <>
-                <div>
-                  <h2>Over 4,000× tighter binding to the mutant.</h2>
-                  <p>
-                    {prediction === "cannot-infer"
-                      ? "Right: shape alone could not tell us. "
-                      : prediction
-                        ? `Your prediction: ${predictions.find(([id]) => id === prediction)?.[1].toLowerCase()}. `
-                        : ""}
-                    The difference was measured by SPR.
-                  </p>
-                </div>
-                <div className="binding-reveal">
-                  <span>
-                    Normal
-                    <strong>
-                      {Number(
-                        (loaded.data.assay.normal.value * 1e9).toPrecision(6),
-                      ).toLocaleString("en-US")}{" "}
-                      nM
-                    </strong>
-                  </span>
-                  <span>
-                    Mutant
-                    <strong>
-                      {Number(
-                        (loaded.data.assay.mutant.value * 1e9).toPrecision(6),
-                      )}{" "}
-                      nM
-                    </strong>
-                  </span>
-                  <small>
-                    Kᴅ · lower means tighter · mutant ±{" "}
-                    {Number(
-                      (
-                        loaded.data.assay.mutant.standardDeviation * 1e9
-                      ).toPrecision(6),
-                    )}{" "}
-                    nM (SD, n=2)
-                  </small>
-                </div>
-              </>
-            )}
-          </section>
           <div className={`molecular-workspace ${expanded ? "expanded" : ""}`}>
             <div
               className="mechanism-path"
@@ -661,6 +583,7 @@ export default function KrasComparison({
                   <strong>{s.detail}</strong>
                 </button>
               ))}
+              <ExperimentJump onBeforeJump={() => setExpanded(false)} />
             </div>
             <aside className="molecular-rail">
               <button
@@ -777,6 +700,87 @@ export default function KrasComparison({
               <p>Backbone atoms only. Side-chain naming can mimic movement.</p>
             </div>
           </div>
+          <section
+            className={`prediction-strip ${revealed ? "revealed" : ""}`}
+            tabIndex={-1}
+            aria-label="Your KRAS binding prediction"
+          >
+            {!revealed ? (
+              <>
+                <div>
+                  <h2>Which peptide binds this receptor more tightly?</h2>
+                </div>
+                <div className="prediction-options">
+                  {predictions.map(([id, label]) => (
+                    <button
+                      key={id}
+                      aria-pressed={prediction === id}
+                      className={prediction === id ? "selected" : ""}
+                      onClick={() => setPrediction(id)}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                  <button
+                    className="reveal-experiment"
+                    disabled={!prediction}
+                    onClick={() => setRevealed(true)}
+                  >
+                    Reveal result
+                  </button>
+                </div>
+                <button
+                  className="skip-prediction"
+                  onClick={() => setRevealed(true)}
+                >
+                  Skip to evidence
+                </button>
+              </>
+            ) : (
+              <>
+                <div>
+                  <h2>Over 4,000× tighter binding to the mutant.</h2>
+                  <p>
+                    {prediction === "cannot-infer"
+                      ? "Right: shape alone could not tell us. "
+                      : prediction
+                        ? `Your prediction: ${predictions.find(([id]) => id === prediction)?.[1].toLowerCase()}. `
+                        : ""}
+                    The difference was measured by SPR.
+                  </p>
+                </div>
+                <div className="binding-reveal">
+                  <span>
+                    Normal
+                    <strong>
+                      {Number(
+                        (loaded.data.assay.normal.value * 1e9).toPrecision(6),
+                      ).toLocaleString("en-US")}{" "}
+                      nM
+                    </strong>
+                  </span>
+                  <span>
+                    Mutant
+                    <strong>
+                      {Number(
+                        (loaded.data.assay.mutant.value * 1e9).toPrecision(6),
+                      )}{" "}
+                      nM
+                    </strong>
+                  </span>
+                  <small>
+                    Kᴅ · lower means tighter · mutant ±{" "}
+                    {Number(
+                      (
+                        loaded.data.assay.mutant.standardDeviation * 1e9
+                      ).toPrecision(6),
+                    )}{" "}
+                    nM (SD, n=2)
+                  </small>
+                </div>
+              </>
+            )}
+          </section>
           <details className="kras-evidence">
             <summary>Evidence & structure quality</summary>
             <p>

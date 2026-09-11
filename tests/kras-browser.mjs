@@ -84,6 +84,7 @@ try {
     await page.locator(".kras-evidence").innerText(),
     /OD2 → R114 NH2/,
   );
+  await page.locator(".investigation-actions summary").click();
   let dl = page.waitForEvent("download");
   await page
     .getByRole("button", { name: "Save investigation", exact: true })
@@ -115,6 +116,7 @@ try {
     "true",
   );
   dl = page.waitForEvent("download");
+  await page.locator(".investigation-actions summary").click();
   await page
     .getByRole("button", { name: "Save investigation", exact: true })
     .click();
@@ -145,6 +147,7 @@ try {
     "true",
   );
   dl = page.waitForEvent("download");
+  await page.locator(".investigation-actions summary").click();
   await page.getByRole("button", { name: "Save figure", exact: true }).click();
   file = await dl;
   await file.saveAs("work/kras-export.png");

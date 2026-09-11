@@ -2,6 +2,8 @@
 
 **Updated 2026-09-10.** The earlier independent comparison review and curated KRAS return are complete and integrated. Do not repeat them or find another cancer case. Keep the accepted scientific receipts in `rosalind/`.
 
+**Return received at `cdbf614`:** native molecular renders and restored scenes are ready; [genuine Workbench UI captures](../rosalind/showcase-captures/README.md) still require the account owner. The [density review](../rosalind/density-review/README.md) checked distributed crops numerically but could not load original maps natively. Do not repeat the same blocked calls. Complete the outstanding manual captures first; further native map review needs a supported change in capability.
+
 The app now adds **Superimpose in 3D** to HHAT and KRAS: normal/mutant switching in one HLA-aligned scene, a residue selector, source-captioned figure export, and shareable curated views. HHAT also has locally processed PDBe 2Fo-Fc density for all four experimental states. The original account handles the app, public-data analysis, rendering, deployment and the later video.
 
 ## First: capture the actual Workbench contribution

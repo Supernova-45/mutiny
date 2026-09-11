@@ -18,6 +18,8 @@ import BindingExperiment, { type HhatEvidence } from "./BindingExperiment";
 import { downloadFile, exportFigure, validView } from "../lib/investigation";
 import PairWorkbench from "./PairWorkbench";
 import CuratedCases from "./CuratedCases";
+import InvestigationActions from "./InvestigationActions";
+import ExperimentJump from "./ExperimentJump";
 import FocusComparison from "./FocusComparison";
 import KrasComparison from "./KrasComparison";
 import type { KrasInvestigation } from "../lib/kras-investigation";
@@ -664,18 +666,6 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
   };
   return (
     <main className="molecule-page">
-      <CuratedCases
-        selected="hhat"
-        onSelect={(id) => {
-          if (id === "kras") {
-            setRestore(viewers.current[0]?.getView() ?? null);
-            setOrbit(false);
-            setExpanded(false);
-            viewers.current = [null, null];
-            setSelectedCase(id);
-          }
-        }}
-      />
       <section className="intro-bar molecular-intro">
         <div>
           <h1>What changes beyond a cancer mutation?</h1>
@@ -691,6 +681,18 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
         </a>
       </section>
       <div className="pair-actions">
+        <CuratedCases
+          selected="hhat"
+          onSelect={(id) => {
+            if (id === "kras") {
+              setRestore(viewers.current[0]?.getView() ?? null);
+              setOrbit(false);
+              setExpanded(false);
+              viewers.current = [null, null];
+              setSelectedCase(id);
+            }
+          }}
+        />
         <FocusComparison
           caseId="hhat"
           initialStep={
@@ -707,7 +709,7 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
         >
           <FileUp size={15} /> Compare your pair
         </button>
-        <div>
+        <InvestigationActions>
           <button
             className="project-action"
             onClick={() => investigationFile.current?.click()}
@@ -724,7 +726,7 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
           <button className="project-action" onClick={figure}>
             <ImageDown size={15} /> Save figure
           </button>
-        </div>
+        </InvestigationActions>
       </div>
       <input
         className="file-input"
@@ -743,78 +745,7 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
           {saveError}
         </p>
       )}
-      <section
-        className={`prediction-strip ${revealed ? "revealed" : ""}`}
-        aria-label="Your binding prediction"
-      >
-        {!revealed ? (
-          <>
-            <div>
-              <h2>Which peptide binds the T-cell receptor more tightly?</h2>
-              <p>Make a prediction, then reveal the experiment.</p>
-            </div>
-            <div className="prediction-options">
-              {(["normal", "mutant", "similar"] as const).map((value) => (
-                <button
-                  key={value}
-                  className={prediction === value ? "selected" : ""}
-                  aria-pressed={prediction === value}
-                  onClick={() => setPrediction(value)}
-                >
-                  {value === "normal"
-                    ? "Normal"
-                    : value === "mutant"
-                      ? "Mutant"
-                      : "Similar"}
-                </button>
-              ))}
-              <button
-                className="reveal-experiment"
-                disabled={!prediction || !evidence}
-                onClick={() => setRevealed(true)}
-              >
-                Reveal result
-              </button>
-            </div>
-            <button
-              className="skip-prediction"
-              disabled={!evidence}
-              onClick={() => setRevealed(true)}
-            >
-              Skip to evidence
-            </button>
-          </>
-        ) : (
-          <>
-            <div>
-              <h2>The mutant bound more tightly.</h2>
-              <p>
-                {prediction
-                  ? `Your prediction: ${prediction === "similar" ? "similar binding" : prediction}. `
-                  : ""}
-                The measured structures help explain why.
-              </p>
-            </div>
-            <div className="binding-reveal">
-              <span>
-                Normal{" "}
-                <strong>
-                  {evidence?.experiments.find((r) => r.id === "normal")?.value}{" "}
-                  μM
-                </strong>
-              </span>
-              <span>
-                Mutant{" "}
-                <strong>
-                  {evidence?.experiments.find((r) => r.id === "mutant")?.value}{" "}
-                  μM
-                </strong>
-              </span>
-              <small>Kᴅ · lower means tighter binding</small>
-            </div>
-          </>
-        )}
-      </section>
+
       <div className={`molecular-workspace ${expanded ? "expanded" : ""}`}>
         <div
           className="mechanism-path"
@@ -846,6 +777,7 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
               )}
             </button>
           ))}
+          <ExperimentJump onBeforeJump={() => setExpanded(false)} />
         </div>
         <aside className="molecular-rail">
           <div className="segmented">
@@ -987,7 +919,6 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
               aria-label="W6 ring pose differences"
             >
               <div className="pose-heading">
-                <h2>Same residue. Different poses.</h2>
                 <span>Unbound / receptor-bound · HLA-aligned</span>
               </div>
               <div className="pose-measurements">
@@ -1086,6 +1017,79 @@ export default function Molecule({ onEvidence }: { onEvidence: () => void }) {
           </div>
         </section>
       </div>
+      <section
+        className={`prediction-strip ${revealed ? "revealed" : ""}`}
+        tabIndex={-1}
+        aria-label="Your binding prediction"
+      >
+        {!revealed ? (
+          <>
+            <div>
+              <h2>Which peptide binds the T-cell receptor more tightly?</h2>
+              <p>Make a prediction, then reveal the experiment.</p>
+            </div>
+            <div className="prediction-options">
+              {(["normal", "mutant", "similar"] as const).map((value) => (
+                <button
+                  key={value}
+                  className={prediction === value ? "selected" : ""}
+                  aria-pressed={prediction === value}
+                  onClick={() => setPrediction(value)}
+                >
+                  {value === "normal"
+                    ? "Normal"
+                    : value === "mutant"
+                      ? "Mutant"
+                      : "Similar"}
+                </button>
+              ))}
+              <button
+                className="reveal-experiment"
+                disabled={!prediction || !evidence}
+                onClick={() => setRevealed(true)}
+              >
+                Reveal result
+              </button>
+            </div>
+            <button
+              className="skip-prediction"
+              disabled={!evidence}
+              onClick={() => setRevealed(true)}
+            >
+              Skip to evidence
+            </button>
+          </>
+        ) : (
+          <>
+            <div>
+              <h2>The mutant bound more tightly.</h2>
+              <p>
+                {prediction
+                  ? `Your prediction: ${prediction === "similar" ? "similar binding" : prediction}. `
+                  : ""}
+                The measured structures help explain why.
+              </p>
+            </div>
+            <div className="binding-reveal">
+              <span>
+                Normal{" "}
+                <strong>
+                  {evidence?.experiments.find((r) => r.id === "normal")?.value}{" "}
+                  μM
+                </strong>
+              </span>
+              <span>
+                Mutant{" "}
+                <strong>
+                  {evidence?.experiments.find((r) => r.id === "mutant")?.value}{" "}
+                  μM
+                </strong>
+              </span>
+              <small>Kᴅ · lower means tighter binding</small>
+            </div>
+          </>
+        )}
+      </section>
       {evidence && revealed && (
         <BindingExperiment
           data={evidence}

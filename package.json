@@ -16,7 +16,8 @@
     "prepare:kras": "node scripts/prepare_kras.mjs",
     "test:kras-browser": "node tests/kras-browser.mjs",
     "test:deployment": "node tests/deployment-browser.mjs",
-    "test:focus-browser": "node tests/focus-browser.mjs"
+    "test:focus-browser": "node tests/focus-browser.mjs",
+    "test:cohesion-browser": "node tests/cohesion-browser.mjs"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.3.0",
